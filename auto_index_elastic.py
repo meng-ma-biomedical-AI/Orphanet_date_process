@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import json
 from elasticsearch import Elasticsearch
 # or: elastic = Elasticsearch(hosts=["localhost"])
 
@@ -31,17 +32,17 @@ demo_mapping = {
 # make some API call to the Elasticsearch cluster
 
 
-def clear_test_mapping(elastic_node):
-    elastic_node.indices.delete(index="tmp_index", ignore=[400, 404])
+def clear_test_mapping(elastic):
+    elastic.indices.delete(index="tmp_index", ignore=[400, 404])
 
 
-def get_mapping(elastic_node):
-    tmp_indice = elastic_node.indices.get_mapping("tmp_index")
+def get_mapping(elastic, index="tmp_index"):
+    tmp_indice = elastic.indices.get_mapping(index)
     return tmp_indice
 
 
-def create_mapping(elastic_node, mapping):
-    response = elastic_node.indices.create(
+def create_mapping(elastic, mapping):
+    response = elastic.indices.create(
         index="tmp_index",
         body=mapping,
         ignore=400  # ignore 400 already exists code
@@ -61,8 +62,14 @@ def create_mapping(elastic_node, mapping):
     return detailed_response
 
 
+def bulk_data(elastic, json_line):
+    complete_line = "{\"index\": {}}" + "\n" + json.dumps(json_line)
+    response = elastic.bulk(complete_line, index="tmp_index")
+    return response
+
+
 if __name__ == "__main__":
-    elastic_node = Elasticsearch(hosts=["localhost"])
-    clear_test_mapping(elastic_node)
-    print(create_mapping(elastic_node, demo_mapping))
-    print(get_mapping(elastic_node))
+    elastic = Elasticsearch(hosts=["localhost"])
+    clear_test_mapping(elastic)
+    print(create_mapping(elastic, demo_mapping))
+    print(get_mapping(elastic))

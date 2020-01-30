@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
 
+import tools
+import time
 import json
 import pathlib
 from elasticsearch import Elasticsearch
 import auto_index_elastic
-
-file_path = pathlib.Path("C:/Users/cbigot/Downloads/orphapackets.json")
-
-orphapackets = {}
-
-# print(orphapackets["558"])
-# print(json.dumps(orphapackets["558"], indent=4))
 
 
 def find_all_keys(json_line, key_list):
@@ -24,25 +19,50 @@ def find_all_keys(json_line, key_list):
     return key_list
 
 
-def auto_index(elastic, mapping):
-    auto_index_elastic.clear_test_mapping(elastic)
-    print(auto_index_elastic.create_mapping(elastic, mapping))
-    # print(auto_index_elastic.get_mapping(elastic))
+def auto_index(elastic, file_path, out_path):
+    with open(file_path, "r") as ini:
+        best_index = ""
+        best_index_bytes = "a".encode()
+        biggest_size = 0
+        for line in ini:
+            if not line.startswith("{\"index"):
+                json_line = json.loads(line)
+                # print(json_line)
+                auto_index_elastic.bulk_data(elastic, json_line)
+                auto_index = auto_index_elastic.get_mapping(elastic)
+                auto_index_bytes = json.dumps(auto_index).encode()
+
+                if auto_index_bytes != best_index_bytes:
+                    size_obj = tools.get_size(auto_index)
+                    if size_obj.size > biggest_size:
+                        best_index = auto_index
+                        biggest_size = size_obj.size
+                        best_index_bytes = auto_index_bytes
+                        print(best_index)
+                        print(size_obj.size)
+                auto_index_elastic.clear_test_mapping(elastic)
+
+    with open(out_path, "w") as out:
+        json.dump(best_index["tmp_index"], out)
+
+    return best_index["tmp_index"]
 
 
 ########################################################################################################################
 
+start_time = time.time()
+
+file_path = pathlib.Path("C:/Users/cbigot/Downloads/orphapackets.json")
+# file_path = pathlib.Path("C:/Users/cbigot/Downloads/orphapackets_short.json")
+out_path = pathlib.Path("./index.json")
+
+orphapackets = {}
 elastic = Elasticsearch(hosts=["localhost"])
 
+best_index = auto_index(elastic, file_path, out_path)
+print(best_index)
 
-with open(file_path, "r") as ini:
-    key_list = []
-    for line in ini:
-        if not line.startswith("{\"index"):
-            json_line = json.loads(line)
-            print(json_line)
-            # orphapackets[json_line["ORPHApacketID"]] = json_line["ORPHApacket"]
-            # key_list = find_all_keys(json_line, key_list)
-            auto_index(elastic, demo_mapping)
-            exit()
-    print(key_list)
+# print(orphapackets["558"])
+# print(json.dumps(orphapackets["558"], indent=4))
+
+print(time.time() - start_time)
