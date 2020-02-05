@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import xmltodict
 
 import tools
 import time
@@ -7,22 +8,16 @@ import pathlib
 from elasticsearch import Elasticsearch
 import auto_index_elastic
 
-
-def find_all_keys(json_line, key_list):
-    print("################################")
-    # print("key_list:", key_list)
-    for list_item in json_line["ORPHApacket"]:
-        # print("key:", list_item)
-        if isinstance(list_item, dict):
-            print("will append key:", list_item)
-            key_list.append(list_item)
-    return key_list
+"""
+This module find the most complete elastic search mapping in order to index a set of file
+The process upload each file in a local elastic node, query the mapping and keep the 
+biggest ~= (wished to be the most complete)
+"""
 
 
-def auto_index(elastic, file_path, out_path):
-    with open(file_path, "r") as ini:
-        best_index = ""
-        best_index_bytes = "a".encode()
+def auto_index(elastic, in_file_path, out_path, best_index=""):
+    with open(in_file_path, "r") as ini:
+        best_index_bytes = best_index.encode()
         biggest_size = 0
         for line in ini:
             if not line.startswith("{\"index"):
@@ -48,21 +43,58 @@ def auto_index(elastic, file_path, out_path):
     return best_index["tmp_index"]
 
 
+def parse_xml(in_file_path):
+    with open(in_file_path, "r") as ini:
+        xml_dict = xmltodict.parse(ini.read(), xml_attribs=False)
+    return xml_dict
+
+
 ########################################################################################################################
+start = time.time()
 
-start_time = time.time()
+in_file_path = pathlib.Path("data_in\\orphapackets.json")
 
-file_path = pathlib.Path("C:/Users/cbigot/Downloads/orphapackets.json")
-# file_path = pathlib.Path("C:/Users/cbigot/Downloads/orphapackets_short.json")
-out_path = pathlib.Path("./index.json")
+out_file_path = pathlib.Path("./index.json")
 
-orphapackets = {}
+in_folder = pathlib.Path("data_in\\Orphanet_Nomenclature_Pack_EN\\Classification_en\\en")
+
+target = "folder"
 elastic = Elasticsearch(hosts=["localhost"])
+best_index = ""
 
-best_index = auto_index(elastic, file_path, out_path)
-print(best_index)
+if target == "folder":
+    all_json = []
+    for file in in_folder.iterdir():
+        file_stem = file.stem
+        print(file_stem)
+        if file.suffix == ".xml":
+            json_file = json.dumps(parse_xml(file))
+        elif file.suffix == ".json":
+            json_file = json.load(file)
+        else:
+            exit(1)
+        print(json_file)
+        all_json.append(json_file)
 
-# print(orphapackets["558"])
-# print(json.dumps(orphapackets["558"], indent=4))
+    tmp_out_file = pathlib.Path("./tmp.json")
+    with open(tmp_out_file, "w") as out:
+        for json_file in all_json:
+            print(json_file)
+            out.write(json_file + "\n")
+    best_index = auto_index(elastic, tmp_out_file, out_file_path, best_index)
+    print(best_index)
+    print()
+else:
+    print()
+    print(in_file_path.stem)
+    if in_file_path.suffix == ".xml":
+        json_file = json.dumps(parse_xml(in_file_path))
+    elif in_file_path.suffix == ".json":
+        json_file = json.load(in_file_path)
+    else:
+        exit(1)
+    best_index = auto_index(elastic, json_file, out_file_path, best_index)
 
-print(time.time() - start_time)
+print()
+print(time.time() - start, "s total")
+
