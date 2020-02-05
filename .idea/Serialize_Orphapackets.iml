@@ -3,6 +3,9 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/data" />
+      <excludeFolder url="file://$MODULE_DIR$/data_in" />
+      <excludeFolder url="file://$MODULE_DIR$/data_in2" />
+      <excludeFolder url="file://$MODULE_DIR$/data_out" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (Serialize_Orphapackets)" jdkType="Python SDK" />
