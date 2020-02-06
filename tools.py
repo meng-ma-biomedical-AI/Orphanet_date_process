@@ -13,8 +13,9 @@ def retrieve_name(var):
 
 
 class SizeObj:
-    def __init__(self, ret_text, size, round_size, unit, name):
+    def __init__(self, ret_text, exact_size, size, round_size, unit, name):
         self.text = ret_text
+        self.exact_size = exact_size
         self.size = size
         self.round_size = round_size
         self.unit = unit
@@ -42,6 +43,7 @@ def get_size(obj, seen=None, level=1):
         size += get_size(obj.__dict__, seen, level + 1)
     elif hasattr(obj, '__iter__') and not isinstance(obj, (str, bytes, bytearray)):
         size += sum([get_size(i, seen, level + 1) for i in obj])
+    exact_size = size
     if level == 1:
         unit = "b"
         if size / 10**9 > 1:
@@ -56,6 +58,6 @@ def get_size(obj, seen=None, level=1):
         name = retrieve_name(obj)
         round_size = round(size, 2)
         ret_text = "{} {} for {}\n".format(round_size, unit, name)
-        size_obj = SizeObj(ret_text, size, round_size, unit, name)
+        size_obj = SizeObj(ret_text, exact_size, size, round_size, unit, name)
         return size_obj
     return size
