@@ -59,7 +59,7 @@ out_file_path = pathlib.Path("./index.json")
 in_folder = pathlib.Path("data_out")
 out_folder = pathlib.Path("data_out")
 
-target = "folder"
+target = ""
 elastic = Elasticsearch(hosts=["localhost"])
 best_index = ""
 biggest_size = 0
