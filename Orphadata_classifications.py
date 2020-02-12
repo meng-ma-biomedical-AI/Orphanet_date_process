@@ -7,7 +7,8 @@ import time
 class Node(dict):
     def __init__(self):
         self["name"] = ""
-        self["orph_id"] = 0
+        self["OrphaNumber"] = ""
+        self["hch_id"] = ""
         self["parents"] = []
         self["childs"] = []
 
@@ -36,36 +37,34 @@ def bypass_list(parent, key):
     child_value = parent.pop(key)
     if child_value is not None:
         child_value = [child_value[child] for child in child_value if child][0]
+        if isinstance(child_value, dict):
+            child_value = [child_value]
+            # print(child_value)
         parent["child"] = child_value
     else:
         parent["child"] = None
     return parent
 
 
-def make_node_dict(xml_dict, parent=0):
+def make_node_dict(hch_id, xml_dict, parent=0):
     # print(xml_dict)
     global node_dict
     node = Node()
-    node["orph_id"] = xml_dict["Disorder"]["OrphaNumber"]
+    node["OrphaNumber"] = xml_dict["Disorder"]["OrphaNumber"]
     node["name"] = xml_dict["Disorder"]["Name"]
+    node["hch_id"] = hch_id
     node["parents"] = [parent]
     # print(node)
     if xml_dict["child"] is not None:
-        if isinstance(xml_dict["child"], list):
-            for child in xml_dict["child"]:
-                node["childs"].append(child["Disorder"]["OrphaNumber"])
-                make_node_dict(child, parent)
-        # elif isinstance(xml_dict["child"], dict):
-        #     # print(xml_dict["child"]["Disorder"])
-        #     node["childs"].append(xml_dict["child"]["Disorder"]["OrphaNumber"])
-        #     if xml_dict["child"]["child"] is not None:
-        #         make_node_dict(xml_dict["child"]["child"], parent)
-    if node["orph_id"] in node_dict:
-        node_dict[node["orph_id"]]["childs"] = merge_unique(node_dict[node["orph_id"]]["childs"], node["childs"])
-        node_dict[node["orph_id"]]["parents"] = merge_unique(node_dict[node["orph_id"]]["parents"], node["parents"])
-        # print(node_dict[node.orph_id].childs)
+        for child in xml_dict["child"]:
+            node["childs"].append(child["Disorder"]["OrphaNumber"])
+            make_node_dict(hch_id, child, parent)
+    if node["OrphaNumber"] in node_dict:
+        node_dict[node["OrphaNumber"]]["childs"] = merge_unique(node_dict[node["OrphaNumber"]]["childs"], node["childs"])
+        node_dict[node["OrphaNumber"]]["parents"] = merge_unique(node_dict[node["OrphaNumber"]]["parents"], node["parents"])
+        # print(node_dict[node.OrphaNumber].childs)
     else:
-        node_dict[node["orph_id"]] = node
+        node_dict[node["OrphaNumber"]] = node
 
 
 def merge_unique(list1, list2):
@@ -75,21 +74,23 @@ def merge_unique(list1, list2):
     return list1
 
 
-def convert(index, in_file_path, out_file_path):
+def convert(index, hch_id, in_file_path, out_file_path):
     start = time.time()
     global node_dict
     xml_dict = parse_file(in_file_path)
     unherit_node_list(xml_dict)
-    xml_dict["Disorder"]["child"] = xml_dict["Disorder"]["child"]["child"]
+    xml_dict["child"] = xml_dict["Disorder"]["child"][0]["child"]
+    xml_dict["Disorder"].pop("child")
 
     # print(xml_dict)
     node = Node()
-    node["orph_id"] = xml_dict["Disorder"]["OrphaNumber"]
+    node["OrphaNumber"] = xml_dict["Disorder"]["OrphaNumber"]
     node["name"] = xml_dict["Disorder"]["Name"]
-    for child in xml_dict["Disorder"]["child"]:
+    node["hch_id"] = hch_id
+    for child in xml_dict["child"]:
         node["childs"].append(child["Disorder"]["OrphaNumber"])
-        make_node_dict(child, node["orph_id"])
-    node_dict[node["orph_id"]] = node
+        make_node_dict(hch_id, child, node["OrphaNumber"])
+    node_dict[node["OrphaNumber"]] = node
     print(node_dict)
     print(len(node_dict))
 
@@ -97,15 +98,13 @@ def convert(index, in_file_path, out_file_path):
     # with open(out_file_path, "w", encoding="iso-8859-1") as out:
     #     out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
     #     out.write(json.dumps(xml_dict, indent=2) + "\n")
-        # out.write(json.dumps(xml_dict) + "\n")
 
-    # with open(out_file_path, "w", encoding="iso-8859-1") as out:
-    #     for val in node_dict.values():
-    #         if len(val["parents"]) > 1:
-    #             print(val["parents"])
-    #         out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
-    #         # out.write(json.dumps(val, indent=2) + "\n")
-    #         out.write(json.dumps(val) + "\n")
+    # Output elasticsearch injection ready file
+    with open(out_file_path, "w", encoding="iso-8859-1") as out:
+        for val in node_dict.values():
+            out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
+            # out.write(json.dumps(val, indent=2) + "\n")
+            out.write(json.dumps(val) + "\n")
 
     print(time.time() - start, "s")
 
@@ -127,20 +126,23 @@ global node_dict
 node_dict = {}
 
 if target == "folder":
+
     for file in in_folder.iterdir():
         node_dict = {}
         file_stem = file.stem
         print(file_stem)
         out_file_name = file_stem + ".json"
         out_file_path = out_folder / out_file_name
-        convert(index, file, out_file_path)
+        hch_id = file_stem.split("_")[1]
+        convert(index, hch_id, file, out_file_path)
         print()
 else:
     print()
     print(in_file_path.stem)
     out_file_name = in_file_path.stem + ".json"
     out_file_path = out_folder / out_file_name
-    convert(index, in_file_path, out_file_path)
+    hch_id = in_file_path.split("_")[1]
+    convert(index, hch_id, in_file_path, out_file_path)
 
 print()
 print(time.time() - start, "s total")
