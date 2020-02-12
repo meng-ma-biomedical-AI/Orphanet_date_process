@@ -146,8 +146,8 @@ if target == "folder":
         print()
 
         # Upload to elasticsearch node
-        # full_file = out_file_path.read_text(encoding="iso-8859-1")
-        # elastic.bulk(body=full_file)
+        full_file = out_file_path.read_text(encoding="iso-8859-1")
+        elastic.bulk(body=full_file)
 else:
     # Process single file
     node_dict = {}
@@ -167,5 +167,6 @@ else:
     full_file = out_file_path.read_text(encoding="iso-8859-1")
     elastic.bulk(body=full_file)
 
-print()
+print("Example query for 1 disorder in 1 classification")
+print("http://localhost:9200/classification_orphanet/_search?q=OrphaNumber:558%20AND%20hch_id:147")
 print(time.time() - start, "s total")
