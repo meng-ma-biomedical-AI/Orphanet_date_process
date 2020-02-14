@@ -138,7 +138,7 @@ def convert(hch_id, in_file_path):
         "parents": ["97965"],
         "childs": ["99129", "99130", "99131"]
         },
-        2847: {...}
+    2847: {...}
     }
     """
     start = time.time()
@@ -214,7 +214,7 @@ def output_elasticsearch_file(out_file_path, index, node_dict):
             "parents": ["97965"],
             "childs": ["99129", "99130", "99131"]
             },
-            2847: {...}
+        2847: {...}
         }
     :return: None
     """
