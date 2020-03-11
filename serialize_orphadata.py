@@ -1,3 +1,5 @@
+import copy
+
 import xmltodict
 import json
 import pathlib
@@ -24,6 +26,8 @@ def parse_file(in_file_path):
     with open(in_file_path, "r", encoding="iso-8859-1") as ini:
         file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
     xml_dict = file_dict["JDBOR"]["DisorderList"]
+    # print(xml_dict)
+    xml_dict = json.loads(json.dumps(xml_dict))
     return xml_dict
 
 
@@ -35,7 +39,7 @@ def simplify_node_list(xml_dict):
         <ClassificationNode>
             <ClassificationNodeChildList count="XX">
     To produce
-    Child: [{}, ...]
+    ClassificationNode: [{..., ClassificationNodeChild: {}}, ...]
 
     :param xml_dict: xml source file parsed as a dictionary
     :return: simplified xml_dict
@@ -62,21 +66,22 @@ def simplify_list(parent, key):
     :param key: Dictionary key containing the term "*List"
     :return: simplified dictionary
     """
-    child_value = parent.pop(key)
+    # child_value = parent.pop(key)
+    child_value = parent[key]
     if child_value is not None:
         # print(child_value)
         child_value = [child_value[child] for child in child_value if child][0]
         # print(child_value)
-        if isinstance(child_value, dict):
+        if isinstance(child_value, dict) or isinstance(child_value, str):
             child_value = [child_value]
             # print(child_value)
-        parent["child"] = child_value
+        parent[key] = child_value
     else:
-        parent["child"] = None
+        parent[key] = None
     return parent
 
 
-def make_node_dict(node_dict, hch_id, xml_dict, parent):
+def make_node_dict(node_dict, xml_dict, parent):
     """
     Recursively parse xml_dict to output a collection of Disorder with all their children
 
@@ -99,13 +104,12 @@ def make_node_dict(node_dict, hch_id, xml_dict, parent):
     node = Node()
     node["OrphaNumber"] = xml_dict["Disorder"]["OrphaNumber"]
     node["name"] = xml_dict["Disorder"]["Name"]
-    node["hch_id"] = hch_id
     node["parents"] = [parent]
     # print(node)
     if xml_dict["child"] is not None:
         for child in xml_dict["child"]:
             node["childs"].append(child["Disorder"]["OrphaNumber"])
-            node_dict = make_node_dict(node_dict, hch_id, child, parent)
+            node_dict = make_node_dict(node_dict, child, parent)
     if node["OrphaNumber"] in node_dict:
         node_dict[node["OrphaNumber"]]["childs"] = merge_unique(node_dict[node["OrphaNumber"]]["childs"], node["childs"])
         node_dict[node["OrphaNumber"]]["parents"] = merge_unique(node_dict[node["OrphaNumber"]]["parents"], node["parents"])
@@ -125,9 +129,8 @@ def merge_unique(list1, list2):
     return list1
 
 
-def convert(hch_id, in_file_path):
+def convert(in_file_path):
     """
-    :param hch_id: String, Orphanet classification number
     :param in_file_path: path, source xml file
     :return: node_dict: Dictionary collection of Disorder
     i.e.:
@@ -146,31 +149,18 @@ def convert(hch_id, in_file_path):
     # Parse source xml file
     xml_dict = parse_file(in_file_path)
 
+    # xml_dict = xml_dict["Disorder"][0]
     # Simplify the xml structure for homogeneity
     xml_dict = simplify_node_list(xml_dict)
-    # Simplify special case for classification root
-    xml_dict["child"] = xml_dict["Disorder"]["child"][0]["child"]
-    xml_dict["Disorder"].pop("child")
 
     # print(xml_dict)
+    # output_simplified_dictionary(out_file_path, index, xml_dict)
 
-    node_dict = {}
-    node = Node()
-    node["OrphaNumber"] = xml_dict["Disorder"]["OrphaNumber"]
-    node["name"] = xml_dict["Disorder"]["Name"]
-    node["hch_id"] = hch_id
-
-    for child in xml_dict["child"]:
-        node["childs"].append(child["Disorder"]["OrphaNumber"])
-        node_dict = make_node_dict(node_dict, hch_id, child, node["OrphaNumber"])
-
-    node_dict[node["OrphaNumber"]] = node
-
-    print(node_dict)
-    print(len(node_dict))
+    node_list = xml_dict["Disorder"]
+    print(len(node_list))
 
     print(time.time() - start, "s")
-    return node_dict
+    return node_list
 
 
 def output_simplified_dictionary(out_file_path, index, xml_dict):
@@ -199,27 +189,17 @@ def output_simplified_dictionary(out_file_path, index, xml_dict):
         out.write(json.dumps(xml_dict, indent=2) + "\n")
 
 
-def output_elasticsearch_file(out_file_path, index, node_dict):
+def output_elasticsearch_file(out_file_path, index, node_list):
     """
     Output json file, elasticsearch injection ready
 
     :param out_file_path: path to output file
     :param index: name of the elasticsearch index
-    :param node_dict: Dictionary collection of Disorder
-        i.e.:
-        {2846: {
-            "name": "Congenital pericardium anomaly",
-            "OrphaNumber": "2846",
-            "hch_id": "148",
-            "parents": ["97965"],
-            "childs": ["99129", "99130", "99131"]
-            },
-        2847: {...}
-        }
+    :param node_list: list of Disorder, each will form an elasticsearch document
     :return: None
     """
     with open(out_file_path, "w", encoding="iso-8859-1") as out:
-        for val in node_dict.values():
+        for val in node_list:
             out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
             # out.write(json.dumps(val, indent=2) + "\n")
             out.write(json.dumps(val) + "\n")
@@ -234,7 +214,7 @@ def upload_es(elastic, out_file_path):
 
 start = time.time()
 
-in_file_path = pathlib.Path("data_in\\Orphanet_Nomenclature_Pack_EN\\Classification_en\\en")
+in_file_path = pathlib.Path("data_in\\en_product1.xml")
 
 in_folder = pathlib.Path("data_in\\Orphanet_Nomenclature_Pack_EN\\Classification_en\\en")
 
@@ -243,7 +223,7 @@ out_folder = pathlib.Path("data_out")
 index = "classification_orphanet"
 
 # Process all input folder or single input file ?
-parse_folder = True
+parse_folder = False
 
 upload = False
 
@@ -264,7 +244,7 @@ if parse_folder:
         # String, Orphanet classification number
         hch_id = file_stem.split("_")[1]
 
-        node_dict = convert(hch_id, file)
+        node_dict = convert(file)
         output_elasticsearch_file(out_file_path, index, node_dict)
         print()
 
@@ -280,17 +260,15 @@ else:
     out_file_name = file_stem + ".json"
     out_file_path = out_folder / out_file_name
 
-    # String, Orphanet classification number
-    hch_id = file_stem.split("_")[1]
-
-    node_dict = convert(hch_id, in_file_path)
-    output_elasticsearch_file(out_file_path, index, node_dict)
+    node_list = convert(in_file_path)
+    # print(node_dict)
+    output_elasticsearch_file(out_file_path, index, node_list)
     print()
 
     if upload:
         # Upload to elasticsearch node
         upload_es(elastic, out_file_path)
 
-print("Example query for 1 disorder in 1 classification")
-print("http://localhost:9200/classification_orphanet/_search?q=OrphaNumber:558%20AND%20hch_id:147")
+# print("Example query for 1 disorder in 1 classification")
+# print("http://localhost:9200/classification_orphanet/_search?q=OrphaNumber:558%20AND%20hch_id:147")
 print(time.time() - start, "s total")
