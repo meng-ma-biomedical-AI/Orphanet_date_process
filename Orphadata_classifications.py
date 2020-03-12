@@ -197,7 +197,7 @@ def output_simplified_dictionary(out_file_path, index, xml_dict):
     :param xml_dict: xml source file parsed as a dictionary
     :return: None
     """
-    with open(out_file_path, "w", encoding="iso-8859-1") as out:
+    with open(out_file_path, "w", encoding="UTF-8") as out:
         out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
         out.write(json.dumps(xml_dict, indent=2) + "\n")
 
@@ -221,7 +221,7 @@ def output_elasticsearch_file(out_file_path, index, node_dict):
         }
     :return: None
     """
-    with open(out_file_path, "w", encoding="iso-8859-1") as out:
+    with open(out_file_path, "w", encoding="UTF-8") as out:
         for val in node_dict.values():
             out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
             # out.write(json.dumps(val, indent=2) + "\n")
@@ -229,7 +229,7 @@ def output_elasticsearch_file(out_file_path, index, node_dict):
 
 
 def upload_es(elastic, out_file_path):
-    full_file = out_file_path.read_text(encoding="iso-8859-1")
+    full_file = out_file_path.read_text(encoding="UTF-8")
     elastic.bulk(body=full_file)
 
 ########################################################################################################################

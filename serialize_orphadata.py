@@ -7,6 +7,8 @@ import time
 
 from elasticsearch import Elasticsearch
 
+from xml.dom import minidom
+
 
 class Node(dict):
     def __init__(self):
@@ -23,11 +25,17 @@ def parse_file(in_file_path):
     :param in_file_path: path, source xml file
     :return: xml_dict: xml source file parsed as a dictionary
     """
-    with open(in_file_path, "r", encoding="iso-8859-1") as ini:
+    print(in_file_path.absolute())
+    mypath = str(in_file_path.resolve())
+    print(mypath)
+    dom1 = minidom.parse("data_in/data_xml/Disorders cross referenced with other nomenclatures/cz_product1.xml")
+    print(dom1.encoding)
+    exit()
+    with open(in_file_path, "r", encoding="UTF-8") as ini:
         file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
     xml_dict = file_dict["JDBOR"]["DisorderList"]
     # print(xml_dict)
-    xml_dict = json.loads(json.dumps(xml_dict))
+    xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
     return xml_dict
 
 
@@ -68,7 +76,7 @@ def simplify_list(parent, key):
     """
     # child_value = parent.pop(key)
     child_value = parent[key]
-    if child_value is not None:
+    if child_value is not None and child_value != "0":
         # print(child_value)
         child_value = [child_value[child] for child in child_value if child][0]
         # print(child_value)
@@ -184,9 +192,9 @@ def output_simplified_dictionary(out_file_path, index, xml_dict):
     :param xml_dict: xml source file parsed as a dictionary
     :return: None
     """
-    with open(out_file_path, "w", encoding="iso-8859-1") as out:
+    with open(out_file_path, "w", encoding="UTF-8") as out:
         out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
-        out.write(json.dumps(xml_dict, indent=2) + "\n")
+        out.write(json.dumps(xml_dict, indent=2, ensure_ascii=False) + "\n")
 
 
 def output_elasticsearch_file(out_file_path, index, node_list):
@@ -198,15 +206,15 @@ def output_elasticsearch_file(out_file_path, index, node_list):
     :param node_list: list of Disorder, each will form an elasticsearch document
     :return: None
     """
-    with open(out_file_path, "w", encoding="iso-8859-1") as out:
+    with open(out_file_path, "w", encoding="UTF-8") as out:
         for val in node_list:
             out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
             # out.write(json.dumps(val, indent=2) + "\n")
-            out.write(json.dumps(val) + "\n")
+            out.write(json.dumps(val, ensure_ascii=False) + "\n")
 
 
 def upload_es(elastic, out_file_path):
-    full_file = out_file_path.read_text(encoding="iso-8859-1")
+    full_file = out_file_path.read_text(encoding="UTF-8")
     elastic.bulk(body=full_file)
 
 ########################################################################################################################
@@ -214,16 +222,16 @@ def upload_es(elastic, out_file_path):
 
 start = time.time()
 
-in_file_path = pathlib.Path("data_in\\en_product1.xml")
+in_file_path = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures\\pl_product1.xml")
 
-in_folder = pathlib.Path("data_in\\Orphanet_Nomenclature_Pack_EN\\Classification_en\\en")
+in_folder = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures")
 
 out_folder = pathlib.Path("data_out")
 
-index = "classification_orphanet"
+# index = "classification_orphanet"
 
 # Process all input folder or single input file ?
-parse_folder = False
+parse_folder = True
 
 upload = False
 
@@ -235,8 +243,8 @@ print()
 if parse_folder:
     # Process files in designated folder
     for file in in_folder.iterdir():
-
         file_stem = file.stem
+        index = file_stem
         print(file_stem)
         out_file_name = file_stem + ".json"
         out_file_path = out_folder / out_file_name
@@ -257,6 +265,7 @@ else:
 
     file_stem = in_file_path.stem
     print(file_stem)
+    index = file_stem
     out_file_name = file_stem + ".json"
     out_file_path = out_folder / out_file_name
 
