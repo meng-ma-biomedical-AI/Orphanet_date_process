@@ -105,7 +105,7 @@ def make_node_dict(node_dict, hch_id, xml_dict, parent):
     if xml_dict["child"] is not None:
         for child in xml_dict["child"]:
             node["childs"].append(child["Disorder"]["OrphaNumber"])
-            node_dict = make_node_dict(node_dict, hch_id, child, parent)
+            node_dict = make_node_dict(node_dict, hch_id, child, node["OrphaNumber"])
     if node["OrphaNumber"] in node_dict:
         node_dict[node["OrphaNumber"]]["childs"] = merge_unique(node_dict[node["OrphaNumber"]]["childs"], node["childs"])
         node_dict[node["OrphaNumber"]]["parents"] = merge_unique(node_dict[node["OrphaNumber"]]["parents"], node["parents"])
@@ -149,9 +149,11 @@ def convert(hch_id, in_file_path):
     # Simplify the xml structure for homogeneity
     xml_dict = simplify_node_list(xml_dict)
     # Simplify special case for classification root
-    xml_dict["child"] = xml_dict["Disorder"]["child"][0]["child"]
-    xml_dict["Disorder"].pop("child")
-
+    try:
+        xml_dict["child"] = xml_dict["Disorder"]["child"][0]["child"]
+        xml_dict["Disorder"].pop("child")
+    except TypeError:
+        xml_dict["child"] = None
     # print(xml_dict)
 
     node_dict = {}
@@ -160,9 +162,10 @@ def convert(hch_id, in_file_path):
     node["name"] = xml_dict["Disorder"]["Name"]
     node["hch_id"] = hch_id
 
-    for child in xml_dict["child"]:
-        node["childs"].append(child["Disorder"]["OrphaNumber"])
-        node_dict = make_node_dict(node_dict, hch_id, child, node["OrphaNumber"])
+    if xml_dict["child"] is not None:
+        for child in xml_dict["child"]:
+                node["childs"].append(child["Disorder"]["OrphaNumber"])
+                node_dict = make_node_dict(node_dict, hch_id, child, node["OrphaNumber"])
 
     node_dict[node["OrphaNumber"]] = node
 
@@ -234,9 +237,9 @@ def upload_es(elastic, out_file_path):
 
 start = time.time()
 
-in_file_path = pathlib.Path("data_in\\Orphanet_Nomenclature_Pack_EN\\Classification_en\\en")
+in_file_path = pathlib.Path("data_in\data_xml\Orphanet classifications")
 
-in_folder = pathlib.Path("data_in\\Orphanet_Nomenclature_Pack_EN\\Classification_en\\en")
+in_folder = pathlib.Path("data_in\data_xml\Orphanet classifications")
 
 out_folder = pathlib.Path("data_out")
 
@@ -262,7 +265,7 @@ if parse_folder:
         out_file_path = out_folder / out_file_name
 
         # String, Orphanet classification number
-        hch_id = file_stem.split("_")[1]
+        hch_id = file_stem.split("_")[2]
 
         node_dict = convert(hch_id, file)
         output_elasticsearch_file(out_file_path, index, node_dict)
@@ -281,7 +284,7 @@ else:
     out_file_path = out_folder / out_file_name
 
     # String, Orphanet classification number
-    hch_id = file_stem.split("_")[1]
+    hch_id = file_stem.split("_")[2]
 
     node_dict = convert(hch_id, in_file_path)
     output_elasticsearch_file(out_file_path, index, node_dict)
