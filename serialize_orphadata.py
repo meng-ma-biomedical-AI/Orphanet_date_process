@@ -11,16 +11,6 @@ from elasticsearch import Elasticsearch
 from xml.dom import minidom
 
 
-class Node(dict):
-    def __init__(self):
-        super().__init__()
-        self["name"] = ""
-        self["OrphaNumber"] = ""
-        self["hch_id"] = ""
-        self["parents"] = []
-        self["childs"] = []
-
-
 def parse_file(in_file_path):
     """
     :param in_file_path: path, source xml file
@@ -29,8 +19,9 @@ def parse_file(in_file_path):
     start = time.time()
     dom1 = minidom.parse(str(in_file_path.resolve()))
     print(dom1.encoding)
-
+    #
     with open(in_file_path, "r", encoding=dom1.encoding) as ini:
+    # with open(in_file_path, "r", encoding="iso-8859-1") as ini:
         file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
     xml_dict = file_dict["JDBOR"]["DisorderList"]
     # print(xml_dict)
@@ -89,44 +80,6 @@ def simplify_list(parent, key):
     return parent
 
 
-def make_node_dict(node_dict, xml_dict, parent):
-    """
-    Recursively parse xml_dict to output a collection of Disorder with all their children
-
-    :param node_dict: Dictionary of Disorders i.e.
-    {2846: {
-        "name": "Congenital pericardium anomaly",
-        "OrphaNumber": "2846",
-        "hch_id": "148",
-        "parents": ["97965"],
-        "childs": ["99129", "99130", "99131"]
-        },
-    2847: {...}
-    }
-    :param hch_id: String, Orphanet classification number
-    :param xml_dict: xml source file parsed as a dictionary
-    :param parent: Orpha_ID of parent Disorder
-    :return: node_dict
-    """
-    # print(xml_dict)
-    node = Node()
-    node["OrphaNumber"] = xml_dict["Disorder"]["OrphaNumber"]
-    node["name"] = xml_dict["Disorder"]["Name"]
-    node["parents"] = [parent]
-    # print(node)
-    if xml_dict["child"] is not None:
-        for child in xml_dict["child"]:
-            node["childs"].append(child["Disorder"]["OrphaNumber"])
-            node_dict = make_node_dict(node_dict, child, parent)
-    if node["OrphaNumber"] in node_dict:
-        node_dict[node["OrphaNumber"]]["childs"] = merge_unique(node_dict[node["OrphaNumber"]]["childs"], node["childs"])
-        node_dict[node["OrphaNumber"]]["parents"] = merge_unique(node_dict[node["OrphaNumber"]]["parents"], node["parents"])
-        # print(node_dict[node.OrphaNumber].childs)
-    else:
-        node_dict[node["OrphaNumber"]] = node
-    return node_dict
-
-
 def merge_unique(list1, list2):
     """
     Merge two list and keep unique values
@@ -172,6 +125,67 @@ def simplify(xml_dict):
     return node_list
 
 
+def recursive_template(elem):
+    if isinstance(elem, dict):
+        for child in elem:
+            recursive_template(child)
+    elif isinstance(elem, list):
+        for sub_elem in elem:
+            recursive_template(sub_elem)
+    return elem
+
+
+def recursive_unwanted_orphacode(elem):
+    if isinstance(elem, dict):
+        if "OrphaNumber" in elem.keys():
+            elem.pop("OrphaNumber")
+        for child in elem:
+            recursive_unwanted_orphacode(elem[child])
+    elif isinstance(elem, list):
+        for sub_elem in elem:
+            recursive_unwanted_orphacode(sub_elem)
+    return elem
+
+
+def remove_unwanted_orphacode(node_list):
+    # print(node_list)
+    # Node is a disorder object
+    for node in node_list:
+        # elem is an attribute of the disorder
+        for elem in node:
+            recursive_unwanted_orphacode(node[elem])
+        # print()
+    return node_list
+
+
+def clean_textual_info(node_list):
+    # for each disorder object in the file
+    for disorder in node_list:
+        TextAuto = ""
+        textual_information_list = []
+        if "TextAuto" in disorder:
+            temp = {}
+            TextAuto = disorder["TextAuto"]["Info"]
+            temp["Info"] = TextAuto
+            textual_information_list.append(temp)
+            disorder.pop("TextAuto")
+        if "TextualInformation" in disorder:
+            if disorder["TextualInformation"] is not None:
+                for text in disorder["TextualInformation"]:
+                    if text["TextSection"] is not None:
+                        temp = {}
+                        key = text["TextSection"][0]["TextSectionType"]["Name"]
+                        temp[key] = text["TextSection"][0]["Contents"]
+                        textual_information_list.append(temp)
+            if textual_information_list:
+                disorder["TextualInformation"] = textual_information_list
+            else:
+                disorder["TextualInformation"] = None
+        else:
+            disorder["TextualInformation"] = None
+    return node_list
+
+
 def output_simplified_dictionary(out_file_path, index, xml_dict):
     """
     Output simplified dictionary in json format
@@ -211,7 +225,7 @@ def output_elasticsearch_file(out_file_path, index, node_list):
     with open(out_file_path, "w", encoding="UTF-8") as out:
         for val in node_list:
             out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
-            # out.write(json.dumps(val, indent=2) + "\n")
+            # out.write(json.dumps(val, indent=2, ensure_ascii=False) + "\n")
             out.write(json.dumps(val, ensure_ascii=False) + "\n")
     print("writing:", time.time() - start)
 
@@ -233,29 +247,35 @@ def process(in_file_path, out_folder, elastic):
     # Parse source xml file
     xml_dict = parse_file(in_file_path)
 
-    node_dict = simplify(xml_dict)
-    output_elasticsearch_file(out_file_path, index, node_dict)
+    node_list = simplify(xml_dict)
+
+    node_list = remove_unwanted_orphacode(node_list)
+
+    node_list = clean_textual_info(node_list)
+
+    output_elasticsearch_file(out_file_path, index, node_list)
     print()
 
     if elastic:
         # Upload to elasticsearch node
         upload_es(elastic, out_file_path)
+        print()
 
 ########################################################################################################################
 
 
 start = time.time()
 
-in_file_path = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures\\pl_product1.xml")
+in_file_path = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures\\en_product1.xml")
 
 in_folder = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures")
 
 out_folder = pathlib.Path("data_out")
 
 # Process all input folder or single input file ?
-parse_folder = False
+parse_folder = True
 
-upload = False
+upload = True
 
 if upload:
     elastic = Elasticsearch(hosts=["localhost"])
