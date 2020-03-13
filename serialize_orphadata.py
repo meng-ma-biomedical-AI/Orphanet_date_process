@@ -1,4 +1,5 @@
 import copy
+import re
 
 import xmltodict
 import json
@@ -160,8 +161,13 @@ def simplify(xml_dict):
     # output_simplified_dictionary(out_file_path, index, xml_dict)
 
     node_list = xml_dict["Disorder"]
-    print(len(node_list))
+    node_list = json.dumps(node_list, ensure_ascii=False)
 
+    pattern = re.compile("List\":")
+    node_list = pattern.sub("\":", node_list)
+    node_list = json.loads(node_list)
+
+    print(len(node_list))
     print("conversion:", time.time() - start, "s")
     return node_list
 
@@ -211,8 +217,10 @@ def output_elasticsearch_file(out_file_path, index, node_list):
 
 
 def upload_es(elastic, out_file_path):
+    start = time.time()
     full_file = out_file_path.read_text(encoding="UTF-8")
     elastic.bulk(body=full_file)
+    print("upload ES:", time.time() - start, "s")
 
 
 def process(in_file_path, out_folder, elastic):
@@ -245,14 +253,14 @@ in_folder = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with oth
 out_folder = pathlib.Path("data_out")
 
 # Process all input folder or single input file ?
-parse_folder = True
+parse_folder = False
 
 upload = False
 
-elastic = False
 if upload:
     elastic = Elasticsearch(hosts=["localhost"])
-
+else:
+    elastic = False
 print()
 
 if parse_folder:
