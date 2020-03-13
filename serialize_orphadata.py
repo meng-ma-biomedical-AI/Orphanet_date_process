@@ -25,21 +25,20 @@ def parse_file(in_file_path):
     :param in_file_path: path, source xml file
     :return: xml_dict: xml source file parsed as a dictionary
     """
-    print(in_file_path.absolute())
-    mypath = str(in_file_path.resolve())
-    print(mypath)
-    dom1 = minidom.parse("data_in/data_xml/Disorders cross referenced with other nomenclatures/cz_product1.xml")
+    start = time.time()
+    dom1 = minidom.parse(str(in_file_path.resolve()))
     print(dom1.encoding)
-    exit()
-    with open(in_file_path, "r", encoding="UTF-8") as ini:
+
+    with open(in_file_path, "r", encoding=dom1.encoding) as ini:
         file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
     xml_dict = file_dict["JDBOR"]["DisorderList"]
     # print(xml_dict)
     xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
+    print("parsing:", time.time() - start)
     return xml_dict
 
 
-def simplify_node_list(xml_dict):
+def simplify_xml_list(xml_dict):
     """
     Recursively simplify the xml structure for homogeneity
     Remove
@@ -58,10 +57,10 @@ def simplify_node_list(xml_dict):
                 # print(xml_dict)
                 xml_dict = simplify_list(xml_dict, key)
                 # print()
-            simplify_node_list(elem)
+            simplify_xml_list(elem)
     elif isinstance(xml_dict, list):
         for elem_list in xml_dict:
-            simplify_node_list(elem_list)
+            simplify_xml_list(elem_list)
     return xml_dict
 
 
@@ -137,29 +136,25 @@ def merge_unique(list1, list2):
     return list1
 
 
-def convert(in_file_path):
+def simplify(xml_dict):
     """
-    :param in_file_path: path, source xml file
-    :return: node_dict: Dictionary collection of Disorder
+    :param xml_dict: xml source file parsed as a dictionary
+    :return: node_list: List of Disorder object with simplified structure
     i.e.:
-    {2846: {
+    [{
         "name": "Congenital pericardium anomaly",
         "OrphaNumber": "2846",
         "hch_id": "148",
         "parents": ["97965"],
         "childs": ["99129", "99130", "99131"]
-        },
-    2847: {...}
-    }
+    },
+    {...}
+    ]
     """
     start = time.time()
 
-    # Parse source xml file
-    xml_dict = parse_file(in_file_path)
-
-    # xml_dict = xml_dict["Disorder"][0]
     # Simplify the xml structure for homogeneity
-    xml_dict = simplify_node_list(xml_dict)
+    xml_dict = simplify_xml_list(xml_dict)
 
     # print(xml_dict)
     # output_simplified_dictionary(out_file_path, index, xml_dict)
@@ -167,7 +162,7 @@ def convert(in_file_path):
     node_list = xml_dict["Disorder"]
     print(len(node_list))
 
-    print(time.time() - start, "s")
+    print("conversion:", time.time() - start, "s")
     return node_list
 
 
@@ -206,16 +201,37 @@ def output_elasticsearch_file(out_file_path, index, node_list):
     :param node_list: list of Disorder, each will form an elasticsearch document
     :return: None
     """
+    start = time.time()
     with open(out_file_path, "w", encoding="UTF-8") as out:
         for val in node_list:
             out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
             # out.write(json.dumps(val, indent=2) + "\n")
             out.write(json.dumps(val, ensure_ascii=False) + "\n")
+    print("writing:", time.time() - start)
 
 
 def upload_es(elastic, out_file_path):
     full_file = out_file_path.read_text(encoding="UTF-8")
     elastic.bulk(body=full_file)
+
+
+def process(in_file_path, out_folder, elastic):
+    file_stem = in_file_path.stem
+    index = file_stem
+    print(file_stem)
+    out_file_name = file_stem + ".json"
+    out_file_path = out_folder / out_file_name
+
+    # Parse source xml file
+    xml_dict = parse_file(in_file_path)
+
+    node_dict = simplify(xml_dict)
+    output_elasticsearch_file(out_file_path, index, node_dict)
+    print()
+
+    if elastic:
+        # Upload to elasticsearch node
+        upload_es(elastic, out_file_path)
 
 ########################################################################################################################
 
@@ -228,13 +244,12 @@ in_folder = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with oth
 
 out_folder = pathlib.Path("data_out")
 
-# index = "classification_orphanet"
-
 # Process all input folder or single input file ?
 parse_folder = True
 
 upload = False
 
+elastic = False
 if upload:
     elastic = Elasticsearch(hosts=["localhost"])
 
@@ -243,40 +258,12 @@ print()
 if parse_folder:
     # Process files in designated folder
     for file in in_folder.iterdir():
-        file_stem = file.stem
-        index = file_stem
-        print(file_stem)
-        out_file_name = file_stem + ".json"
-        out_file_path = out_folder / out_file_name
-
-        # String, Orphanet classification number
-        hch_id = file_stem.split("_")[1]
-
-        node_dict = convert(file)
-        output_elasticsearch_file(out_file_path, index, node_dict)
-        print()
-
-        if upload:
-            # Upload to elasticsearch node
-            upload_es(elastic, out_file_path)
+        process(file, out_folder, elastic)
 
 else:
     # Process single file
+    process(in_file_path, out_folder, elastic)
 
-    file_stem = in_file_path.stem
-    print(file_stem)
-    index = file_stem
-    out_file_name = file_stem + ".json"
-    out_file_path = out_folder / out_file_name
-
-    node_list = convert(in_file_path)
-    # print(node_dict)
-    output_elasticsearch_file(out_file_path, index, node_list)
-    print()
-
-    if upload:
-        # Upload to elasticsearch node
-        upload_es(elastic, out_file_path)
 
 # print("Example query for 1 disorder in 1 classification")
 # print("http://localhost:9200/classification_orphanet/_search?q=OrphaNumber:558%20AND%20hch_id:147")
