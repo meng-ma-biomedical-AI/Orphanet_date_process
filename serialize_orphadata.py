@@ -149,6 +149,7 @@ def recursive_unwanted_orphacode(elem):
 
 def remove_unwanted_orphacode(node_list):
     # print(node_list)
+    # TODO: keep disorder Orphanumber
     # Node is a disorder object
     for node in node_list:
         # elem is an attribute of the disorder
@@ -225,8 +226,8 @@ def output_elasticsearch_file(out_file_path, index, node_list):
     with open(out_file_path, "w", encoding="UTF-8") as out:
         for val in node_list:
             out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
-            # out.write(json.dumps(val, indent=2, ensure_ascii=False) + "\n")
-            out.write(json.dumps(val, ensure_ascii=False) + "\n")
+            out.write(json.dumps(val, indent=2, ensure_ascii=False) + "\n")
+            # out.write(json.dumps(val, ensure_ascii=False) + "\n")
     print("writing:", time.time() - start)
 
 
@@ -273,9 +274,9 @@ in_folder = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with oth
 out_folder = pathlib.Path("data_out")
 
 # Process all input folder or single input file ?
-parse_folder = True
+parse_folder = False
 
-upload = True
+upload = False
 
 if upload:
     elastic = Elasticsearch(hosts=["localhost"])
