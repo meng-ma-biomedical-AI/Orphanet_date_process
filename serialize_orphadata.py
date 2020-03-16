@@ -17,11 +17,11 @@ def parse_file(in_file_path):
     :return: xml_dict: xml source file parsed as a dictionary
     """
     start = time.time()
-    dom1 = minidom.parse(str(in_file_path.resolve()))
-    print(dom1.encoding)
+    # dom1 = minidom.parse(str(in_file_path.resolve()))
+    # print(dom1.encoding)
     #
-    with open(in_file_path, "r", encoding=dom1.encoding) as ini:
-    # with open(in_file_path, "r", encoding="iso-8859-1") as ini:
+    # with open(in_file_path, "r", encoding=dom1.encoding) as ini:
+    with open(in_file_path, "r", encoding="iso-8859-1") as ini:
         file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
     xml_dict = file_dict["JDBOR"]["DisorderList"]
     # print(xml_dict)
@@ -149,12 +149,10 @@ def recursive_unwanted_orphacode(elem):
 
 def remove_unwanted_orphacode(node_list):
     # print(node_list)
-    # TODO: keep disorder Orphanumber
-    # Node is a disorder object
-    for node in node_list:
+    for disorder in node_list:
         # elem is an attribute of the disorder
-        for elem in node:
-            recursive_unwanted_orphacode(node[elem])
+        for elem in disorder:
+            recursive_unwanted_orphacode(disorder[elem])
         # print()
     return node_list
 
@@ -184,6 +182,52 @@ def clean_textual_info(node_list):
                 disorder["TextualInformation"] = None
         else:
             disorder["TextualInformation"] = None
+    return node_list
+
+
+def recursive_clean_single_name_object(elem):
+    """
+    Take the list of disorder and substitute object by a text if they contain only one "Name" property
+    keeps multi-property object otherwise
+    i.e.:
+    disorder["DisorderType"]["Name"] = "Disease"
+    to =>
+    disorder["DisorderType"] = "Disease"
+    Work in depth recursively
+    :param elem: property of disorder
+    :return: list of disorder without single name object
+    """
+    if isinstance(elem, dict):
+        keys = elem.keys()
+        if len(keys) == 1:
+            if "Name" in keys:
+                name = elem.pop("Name")
+                print(name)
+                elem = name
+        else:
+            for child in elem:
+                elem[child] = recursive_clean_single_name_object(elem[child])
+    elif isinstance(elem, list):
+        for sub_elem in elem:
+            recursive_clean_single_name_object(sub_elem)
+    return elem
+
+
+def clean_single_name_object(node_list):
+    """
+    Take the list of disorder and substitute object by a text if they contain only one "Name" property
+    keeps multi-property object otherwise
+    i.e.:
+    disorder["DisorderType"]["Name"] = "Disease"
+    to =>
+    disorder["DisorderType"] = "Disease"
+    Work in depth recursively
+    :param node_list: list of disorder
+    :return: list of disorder without single name object
+    """
+    for disorder in node_list:
+        for elem in disorder:
+            disorder[elem] = recursive_clean_single_name_object(disorder[elem])
     return node_list
 
 
@@ -253,6 +297,8 @@ def process(in_file_path, out_folder, elastic):
     node_list = remove_unwanted_orphacode(node_list)
 
     node_list = clean_textual_info(node_list)
+
+    node_list = clean_single_name_object(node_list)
 
     output_elasticsearch_file(out_file_path, index, node_list)
     print()
