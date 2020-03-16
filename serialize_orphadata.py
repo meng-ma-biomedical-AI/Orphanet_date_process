@@ -17,13 +17,24 @@ def parse_file(in_file_path):
     :return: xml_dict: xml source file parsed as a dictionary
     """
     start = time.time()
-    # dom1 = minidom.parse(str(in_file_path.resolve()))
-    # print(dom1.encoding)
-    #
-    # with open(in_file_path, "r", encoding=dom1.encoding) as ini:
-    with open(in_file_path, "r", encoding="iso-8859-1") as ini:
+    dom1 = minidom.parse(str(in_file_path.resolve()))
+    print(dom1.encoding)
+
+    with open(in_file_path, "r", encoding=dom1.encoding) as ini:
+    # with open(in_file_path, "r", encoding="iso-8859-1") as ini:
         file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
-    xml_dict = file_dict["JDBOR"]["DisorderList"]
+
+    key = list(file_dict["JDBOR"].keys())
+    key.pop(key.index("Availability"))
+    # print(key)
+    if len(key) == 1:
+        key = key[0]
+    else:
+        print("ERROR: Multiple root XML key:")
+        print(key)
+        exit(1)
+
+    xml_dict = file_dict["JDBOR"][key]
     # print(xml_dict)
     xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
     print("parsing:", time.time() - start)
@@ -113,7 +124,16 @@ def simplify(xml_dict):
     # print(xml_dict)
     # output_simplified_dictionary(out_file_path, index, xml_dict)
 
-    node_list = xml_dict["Disorder"]
+    key = list(xml_dict.keys())
+    # print(key)
+    if len(key) == 1:
+        key = key[0]
+    else:
+        print("ERROR: Multiple disorder level key:")
+        print(key)
+        exit(1)
+
+    node_list = xml_dict[key]
     node_list = json.dumps(node_list, ensure_ascii=False)
 
     pattern = re.compile("List\":")
@@ -158,6 +178,12 @@ def remove_unwanted_orphacode(node_list):
 
 
 def clean_textual_info(node_list):
+    """
+    For product 1 (cross references)
+
+    :param node_list: list of disorder
+    :return: list of disorder with reworked textual info
+    """
     # for each disorder object in the file
     for disorder in node_list:
         TextAuto = ""
@@ -202,7 +228,6 @@ def recursive_clean_single_name_object(elem):
         if len(keys) == 1:
             if "Name" in keys:
                 name = elem.pop("Name")
-                print(name)
                 elem = name
         else:
             for child in elem:
@@ -292,14 +317,20 @@ def process(in_file_path, out_folder, elastic):
     # Parse source xml file
     xml_dict = parse_file(in_file_path)
 
+    # remove intermediary dictionary (xml conversion artifact)
     node_list = simplify(xml_dict)
 
+    # Remove orphacode past the main one (/!\ NO QUALITY CHECK)
     node_list = remove_unwanted_orphacode(node_list)
 
-    node_list = clean_textual_info(node_list)
+    # Regroup textual_info for product1
+    if "product1" in file_stem:
+        node_list = clean_textual_info(node_list)
 
+    # Remap object with single "Name" to string
     node_list = clean_single_name_object(node_list)
 
+    # Output a json elasticsearch ready, with index name as indexing instruction
     output_elasticsearch_file(out_file_path, index, node_list)
     print()
 
@@ -316,11 +347,12 @@ start = time.time()
 in_file_path = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures\\en_product1.xml")
 
 in_folder = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures")
+# in_folder = pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders")
 
 out_folder = pathlib.Path("data_out")
 
 # Process all input folder or single input file ?
-parse_folder = False
+parse_folder = True
 
 upload = False
 
@@ -333,7 +365,8 @@ print()
 if parse_folder:
     # Process files in designated folder
     for file in in_folder.iterdir():
-        process(file, out_folder, elastic)
+        if not str(file.stem).endswith("_status"):
+            process(file, out_folder, elastic)
 
 else:
     # Process single file
