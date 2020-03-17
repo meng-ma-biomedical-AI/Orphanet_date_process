@@ -101,14 +101,14 @@ def merge_unique(list1, list2):
     return list1
 
 
-def simplify(xml_dict):
+def simplify(xml_dict, rename_orpha):
     """
     :param xml_dict: xml source file parsed as a dictionary
     :return: node_list: List of Disorder object with simplified structure
     i.e.:
     [{
         "name": "Congenital pericardium anomaly",
-        "OrphaNumber": "2846",
+        "ORPHAcode": "2846",
         "hch_id": "148",
         "parents": ["97965"],
         "childs": ["99129", "99130", "99131"]
@@ -138,6 +138,9 @@ def simplify(xml_dict):
 
     pattern = re.compile("List\":")
     node_list = pattern.sub("\":", node_list)
+    if rename_orpha:
+        pattern = re.compile("OrphaNumber")
+        node_list = pattern.sub("ORPHAcode", node_list)
     node_list = json.loads(node_list)
 
     print(len(node_list))
@@ -157,8 +160,8 @@ def recursive_template(elem):
 
 def recursive_unwanted_orphacode(elem):
     if isinstance(elem, dict):
-        if "OrphaNumber" in elem.keys():
-            elem.pop("OrphaNumber")
+        if "ORPHAcode" in elem.keys():
+            elem.pop("ORPHAcode")
         for child in elem:
             recursive_unwanted_orphacode(elem[child])
     elif isinstance(elem, list):
@@ -318,8 +321,9 @@ def process(in_file_path, out_folder, elastic):
     # Parse source xml file
     xml_dict = parse_file(in_file_path)
 
-    # remove intermediary dictionary (xml conversion artifact)
-    node_list = simplify(xml_dict)
+    # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber
+    rename_orpha = True  # OrphaNumber to ORPHAcode
+    node_list = simplify(xml_dict, rename_orpha)
 
     # Remove orphacode past the main one (/!\ NO QUALITY CHECK)
     node_list = remove_unwanted_orphacode(node_list)
@@ -345,20 +349,23 @@ def process(in_file_path, out_folder, elastic):
 
 start = time.time()
 
+
 in_file_path = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures\\en_product1.xml")
 
+folders = list()
+
 # Product 1
-# in_folder = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures")
+folders.append(pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures"))
 
 # Product 4
-# in_folder = pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders")
+folders.append(pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders"))
 
 # Product 6
-in_folder = pathlib.Path("data_in\\data_xml\\Disorders with their associated genes")
+folders.append(pathlib.Path("data_in\\data_xml\\Disorders with their associated genes"))
 
 # Product 9
-# in_folder = pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology")
-# in_folder = pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history")
+folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology"))
+folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history"))
 
 out_folder = pathlib.Path("data_out")
 
@@ -374,10 +381,11 @@ else:
 print()
 
 if parse_folder:
-    # Process files in designated folder
-    for file in in_folder.iterdir():
-        if not str(file.stem).endswith("_status"):
-            process(file, out_folder, elastic)
+    # Process files in designated folders
+    for folder in folders:
+        for file in folder.iterdir():
+            if not str(file.stem).endswith("_status"):
+                process(file, out_folder, elastic)
 
 else:
     # Process single file
@@ -385,5 +393,5 @@ else:
 
 
 # print("Example query for 1 disorder in 1 classification")
-# print("http://localhost:9200/classification_orphanet/_search?q=OrphaNumber:558%20AND%20hch_id:147")
+# print("http://localhost:9200/classification_orphanet/_search?q=ORPHAcode:558%20AND%20hch_id:147")
 print(time.time() - start, "s total")
