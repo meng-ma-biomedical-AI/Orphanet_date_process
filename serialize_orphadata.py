@@ -233,8 +233,9 @@ def recursive_clean_single_name_object(elem):
             for child in elem:
                 elem[child] = recursive_clean_single_name_object(elem[child])
     elif isinstance(elem, list):
-        for sub_elem in elem:
-            recursive_clean_single_name_object(sub_elem)
+        for index, sub_elem in enumerate(elem):
+            sub_elem = recursive_clean_single_name_object(sub_elem)
+            elem[index] = sub_elem
     return elem
 
 
@@ -346,8 +347,18 @@ start = time.time()
 
 in_file_path = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures\\en_product1.xml")
 
-in_folder = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures")
+# Product 1
+# in_folder = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures")
+
+# Product 4
 # in_folder = pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders")
+
+# Product 6
+in_folder = pathlib.Path("data_in\\data_xml\\Disorders with their associated genes")
+
+# Product 9
+# in_folder = pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology")
+# in_folder = pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history")
 
 out_folder = pathlib.Path("data_out")
 
