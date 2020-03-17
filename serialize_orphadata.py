@@ -260,6 +260,28 @@ def clean_single_name_object(node_list):
     return node_list
 
 
+def gene_indexing(node_list_gene):
+    gene_dict = dict()
+    for disorder in node_list_gene:
+        # disorder_info : ready to use
+        disorder_info = copy.deepcopy(disorder)
+        # association_info : list, need to exploit with according gene
+        association_info = disorder_info.pop("DisorderGeneAssociation")
+        for index, gene in enumerate(disorder["DisorderGeneAssociation"]):
+            this_association_info = copy.deepcopy(association_info[index])
+            gene_index = gene["Gene"]["Symbol"]
+            gene_info = copy.deepcopy(gene)
+            if gene_index not in gene_dict:
+                gene_dict[gene_index] = gene_info
+                gene_info["GeneDisorderAssociation"] = []
+            this_association_info["disorder"] = disorder_info
+            gene_dict[gene_index]["GeneDisorderAssociation"].append(this_association_info)
+    node_list_gene = []
+    for gene in gene_dict:
+        node_list_gene.append(gene_dict[gene])
+    return node_list_gene
+
+
 def output_simplified_dictionary(out_file_path, index, xml_dict):
     """
     Output simplified dictionary in json format
@@ -335,14 +357,32 @@ def process(in_file_path, out_folder, elastic):
     # Remap object with single "Name" to string
     node_list = clean_single_name_object(node_list)
 
-    # Output a json elasticsearch ready, with index name as indexing instruction
-    output_elasticsearch_file(out_file_path, index, node_list)
-    print()
+    # Index product6 "gene" by gene symbol
+    if "product6" in file_stem:
+        node_list_gene = copy.deepcopy(node_list)
+        node_list_gene = gene_indexing(node_list_gene)
 
-    if elastic:
-        # Upload to elasticsearch node
-        upload_es(elastic, out_file_path)
+        # Output a json elasticsearch ready, with index name as indexing instruction
+        output_elasticsearch_file(out_file_path, index, node_list)
+
+        out_file_path_gene = str(out_file_path.absolute()).split(".")[0] + "_gene" + out_file_path.suffix
+        output_elasticsearch_file(out_file_path_gene, index, node_list_gene)
         print()
+
+        if elastic:
+            # Upload to elasticsearch node
+            upload_es(elastic, out_file_path)
+            upload_es(elastic, out_file_path_gene)
+            print()
+    else:
+        # Output a json elasticsearch ready, with index name as indexing instruction
+        output_elasticsearch_file(out_file_path, index, node_list)
+        print()
+
+        if elastic:
+            # Upload to elasticsearch node
+            upload_es(elastic, out_file_path)
+            print()
 
 ########################################################################################################################
 
@@ -355,17 +395,17 @@ in_file_path = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with 
 folders = list()
 
 # Product 1
-folders.append(pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures"))
+# folders.append(pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures"))
 
 # Product 4
-folders.append(pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders"))
+# folders.append(pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders"))
 
 # Product 6
 folders.append(pathlib.Path("data_in\\data_xml\\Disorders with their associated genes"))
 
 # Product 9
-folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology"))
-folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history"))
+# folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology"))
+# folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history"))
 
 out_folder = pathlib.Path("data_out")
 
