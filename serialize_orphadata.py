@@ -432,10 +432,10 @@ def process(in_file_path, out_folder, elastic):
     if "product6" in file_stem:
         node_list_gene = copy.deepcopy(node_list)
         node_list_gene = gene_indexing(node_list_gene)
-        out_file_path_gene = str(out_file_path.absolute()).split(".")[0] + "_gene" + out_file_path.suffix
-
+        out_file_path_gene = pathlib.Path(str(out_file_path.absolute()).split(".")[0] + "_gene" + out_file_path.suffix)
+        index_gene = out_file_path_gene.stem
         # Output/upload function
-        output_process(out_file_path_gene, index, node_list_gene, elastic)
+        output_process(out_file_path_gene, index_gene, node_list_gene, elastic)
 
     print("convert:", time.time() - start, "s")
 
