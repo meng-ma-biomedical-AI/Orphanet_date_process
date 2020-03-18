@@ -261,6 +261,11 @@ def clean_single_name_object(node_list):
 
 
 def gene_indexing(node_list_gene):
+    """
+
+    :param node_list_gene: copy of processed node list
+    :return:
+    """
     gene_dict = dict()
     for disorder in node_list_gene:
         # disorder_info : ready to use
@@ -269,11 +274,17 @@ def gene_indexing(node_list_gene):
         association_info = disorder_info.pop("DisorderGeneAssociation")
         for index, gene in enumerate(disorder["DisorderGeneAssociation"]):
             this_association_info = copy.deepcopy(association_info[index])
+            this_association_info.pop("Gene")
             gene_index = gene["Gene"]["Symbol"]
             gene_info = copy.deepcopy(gene)
+            gene_info.pop("SourceOfValidation")
+            gene_info.pop("DisorderGeneAssociationType")
+            gene_info.pop("DisorderGeneAssociationStatus")
             if gene_index not in gene_dict:
-                gene_dict[gene_index] = gene_info
-                gene_info["GeneDisorderAssociation"] = []
+                gene_dict[gene_index] = {}
+                for gene_prop, gene_prop_value in gene_info["Gene"].items():
+                    gene_dict[gene_index][gene_prop] = gene_prop_value
+                gene_dict[gene_index]["GeneDisorderAssociation"] = []
             this_association_info["disorder"] = disorder_info
             gene_dict[gene_index]["GeneDisorderAssociation"].append(this_association_info)
     node_list_gene = []
