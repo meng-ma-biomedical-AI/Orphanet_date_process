@@ -10,6 +10,8 @@ from elasticsearch import Elasticsearch
 
 from xml.dom import minidom
 
+import Orphadata_classifications
+
 
 def parse_file(in_file_path):
     """
@@ -36,7 +38,8 @@ def parse_file(in_file_path):
 
     xml_dict = file_dict["JDBOR"][key]
     # print(xml_dict)
-    xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
+    # DumpS then loadS: BAD WAY to convert ordered dict to dict: need fix some day
+    # xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
     print("parsing:", time.time() - start)
     return xml_dict
 
@@ -418,6 +421,9 @@ def process(in_file_path, out_folder, elastic):
     rename_orpha = True  # OrphaNumber to ORPHAcode
     node_list = simplify(xml_dict, rename_orpha)
 
+    # Output this simplified dictionnary for debug purpose
+    output_simplified_dictionary(out_file_path, index, node_list)
+
     # Remove orphacode past the main one (/!\ NO QUALITY CHECK)
     node_list = remove_unwanted_orphacode(node_list)
 
@@ -465,51 +471,60 @@ def output_process(out_file_path, index, node_list, elastic):
 ########################################################################################################################
 
 
-start = time.time()
+if __name__ == "__main__":
+    start = time.time()
+
+    in_file_path = pathlib.Path("data_in\\data_xml\\Orphanet classifications\\en_product3_146.xml")
+
+    folders = list()
+
+    # Product 1
+    # folders.append(pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures"))
+
+    # Product 3
+    # folders.append(pathlib.Path("data_in\\data_xml\\Orphanet classifications"))
+
+    # Product 4
+    # folders.append(pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders"))
+
+    # Product 6
+    folders.append(pathlib.Path("data_in\\data_xml\\Disorders with their associated genes"))
+
+    # Product 9
+    # folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology"))
+    # folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history"))
+
+    out_folder = pathlib.Path("data_out")
+
+    # Process all input folder or single input file ?
+    parse_folder = False
+
+    upload = False
+
+    if upload:
+        elastic = Elasticsearch(hosts=["localhost"])
+    else:
+        elastic = False
+    print()
+
+    if parse_folder:
+        # Process files in designated folders
+        for folder in folders:
+            for file in folder.iterdir():
+                if not str(file.stem).endswith("_status"):
+                    if "product3" in file.stem:
+                        Orphadata_classifications.process_classification(file, out_folder, elastic)
+                    else:
+                        process(file, out_folder, elastic)
+
+    else:
+        # Process single file
+        if "product3" in in_file_path.stem:
+            Orphadata_classifications.process_classification(in_file_path, out_folder, elastic)
+        else:
+            process(in_file_path, out_folder, elastic)
 
 
-in_file_path = pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures\\en_product1.xml")
-
-folders = list()
-
-# Product 1
-# folders.append(pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures"))
-
-# Product 4
-# folders.append(pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders"))
-
-# Product 6
-folders.append(pathlib.Path("data_in\\data_xml\\Disorders with their associated genes"))
-
-# Product 9
-# folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology"))
-# folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history"))
-
-out_folder = pathlib.Path("data_out")
-
-# Process all input folder or single input file ?
-parse_folder = True
-
-upload = False
-
-if upload:
-    elastic = Elasticsearch(hosts=["localhost"])
-else:
-    elastic = False
-print()
-
-if parse_folder:
-    # Process files in designated folders
-    for folder in folders:
-        for file in folder.iterdir():
-            if not str(file.stem).endswith("_status"):
-                process(file, out_folder, elastic)
-
-else:
-    # Process single file
-    process(in_file_path, out_folder, elastic)
-
-
-# print("Example query for 1 disorder in 1 classification")
-# print("http://localhost:9200/classification_orphanet/_search?q=ORPHAcode:558%20AND%20hch_id:147")
-print(time.time() - start, "s total")
+    # print("Example query for 1 disorder in 1 classification")
+    # print("http://localhost:9200/classification_orphanet/_search?q=ORPHAcode:558%20AND%20hch_id:147")
+    print(time.time() - start, "s total")

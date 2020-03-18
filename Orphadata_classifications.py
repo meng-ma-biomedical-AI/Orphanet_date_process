@@ -1,9 +1,14 @@
+import copy
+import re
+
 import xmltodict
 import json
 import pathlib
 import time
 
 from elasticsearch import Elasticsearch
+
+import serialize_orphadata
 
 
 class Node(dict):
@@ -14,17 +19,6 @@ class Node(dict):
         self["hch_id"] = ""
         self["parents"] = []
         self["childs"] = []
-
-
-def parse_file(in_file_path):
-    """
-    :param in_file_path: path, source xml file
-    :return: xml_dict: xml source file parsed as a dictionary
-    """
-    with open(in_file_path, "r", encoding="iso-8859-1") as ini:
-        file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
-    xml_dict = file_dict["JDBOR"]["DisorderList"]
-    return xml_dict
 
 
 def simplify_node_list(xml_dict):
@@ -125,29 +119,31 @@ def merge_unique(list1, list2):
     return list1
 
 
-def convert(hch_id, in_file_path):
+def convert(hch_id, in_file_path, rename_orpha=True):
     """
     :param hch_id: String, Orphanet classification number
     :param in_file_path: path, source xml file
-    :return: node_dict: Dictionary collection of Disorder
+    :param rename_orpha: boolean, change label OrphaNumber to ORPHAcode
+    :return: node_list: List collection of Disorder
     i.e.:
-    {2846: {
-        "name": "Congenital pericardium anomaly",
-        "OrphaNumber": "2846",
-        "hch_id": "148",
-        "parents": ["97965"],
-        "childs": ["99129", "99130", "99131"]
-        },
-    2847: {...}
-    }
+    [
+    {"name": "Congenital pericardium anomaly",
+    "OrphaNumber": "2846",
+    "hch_id": "148",
+    "parents": ["97965"],
+    "childs": ["99129", "99130", "99131"]
+    },
+    {...}
+    ]
     """
     start = time.time()
 
     # Parse source xml file
-    xml_dict = parse_file(in_file_path)
+    xml_dict = serialize_orphadata.parse_file(in_file_path)
 
     # Simplify the xml structure for homogeneity
     xml_dict = simplify_node_list(xml_dict)
+
     # Simplify special case for classification root
     try:
         xml_dict["child"] = xml_dict["Disorder"]["child"][0]["child"]
@@ -164,136 +160,50 @@ def convert(hch_id, in_file_path):
 
     if xml_dict["child"] is not None:
         for child in xml_dict["child"]:
-                node["childs"].append(child["Disorder"]["OrphaNumber"])
-                node_dict = make_node_dict(node_dict, hch_id, child, node["OrphaNumber"])
+            node["childs"].append(child["Disorder"]["OrphaNumber"])
+            node_dict = make_node_dict(node_dict, hch_id, child, node["OrphaNumber"])
 
     node_dict[node["OrphaNumber"]] = node
 
-    print(node_dict)
-    print(len(node_dict))
+    node_list = list(node_dict.values())
+
+    if rename_orpha:
+        node_list = json.dumps(node_list, ensure_ascii=False)
+        pattern = re.compile("OrphaNumber")
+        node_list = pattern.sub("ORPHAcode", node_list)
+        node_list = json.loads(node_list)
+
+    # print(node_list)
+    print(len(node_list))
 
     print(time.time() - start, "s")
-    return node_dict
+    return node_list
 
 
-def output_simplified_dictionary(out_file_path, index, xml_dict):
+def process_classification(in_file_path, out_folder, elastic):
     """
-    Output simplified dictionary in json format
-    Simplified the xml structure to give a consistent hierarchy:
-    Disorder: {}
-    Child: [
-        {
-        Disorder: {}
-        Child: []
-        },
-        {
-        Disorder: {}
-        Child: []
-        }
-    ]
+    Complete Orphadata XML to Elasticsearch JSON process
 
-    :param out_file_path: path to output file
-    :param index: name of the elasticsearch index
-    :param xml_dict: xml source file parsed as a dictionary
-    :return: None
+    :param in_file_path: input file path
+    :param out_folder: output folder path
+    :param elastic: URI to elastic node, False otherwise
+    :return: None (Write file (mandatory) / upload to elastic cluster)
     """
-    with open(out_file_path, "w", encoding="UTF-8") as out:
-        out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
-        out.write(json.dumps(xml_dict, indent=2) + "\n")
 
-
-def output_elasticsearch_file(out_file_path, index, node_dict):
-    """
-    Output json file, elasticsearch injection ready
-
-    :param out_file_path: path to output file
-    :param index: name of the elasticsearch index
-    :param node_dict: Dictionary collection of Disorder
-        i.e.:
-        {2846: {
-            "name": "Congenital pericardium anomaly",
-            "OrphaNumber": "2846",
-            "hch_id": "148",
-            "parents": ["97965"],
-            "childs": ["99129", "99130", "99131"]
-            },
-        2847: {...}
-        }
-    :return: None
-    """
-    with open(out_file_path, "w", encoding="UTF-8") as out:
-        for val in node_dict.values():
-            out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
-            # out.write(json.dumps(val, indent=2) + "\n")
-            out.write(json.dumps(val) + "\n")
-
-
-def upload_es(elastic, out_file_path):
-    full_file = out_file_path.read_text(encoding="UTF-8")
-    elastic.bulk(body=full_file)
-
-########################################################################################################################
-
-
-start = time.time()
-
-in_file_path = pathlib.Path("data_in\data_xml\Orphanet classifications")
-
-in_folder = pathlib.Path("data_in\data_xml\Orphanet classifications")
-
-out_folder = pathlib.Path("data_out")
-
-index = "classification_orphanet"
-
-# Process all input folder or single input file ?
-parse_folder = True
-
-upload = False
-
-if upload:
-    elastic = Elasticsearch(hosts=["localhost"])
-
-print()
-
-if parse_folder:
-    # Process files in designated folder
-    for file in in_folder.iterdir():
-
-        file_stem = file.stem
-        print(file_stem)
-        out_file_name = file_stem + ".json"
-        out_file_path = out_folder / out_file_name
-
-        # String, Orphanet classification number
-        hch_id = file_stem.split("_")[2]
-
-        node_dict = convert(hch_id, file)
-        output_elasticsearch_file(out_file_path, index, node_dict)
-        print()
-
-        if upload:
-            # Upload to elasticsearch node
-            upload_es(elastic, out_file_path)
-
-else:
-    # Process single file
+    start = time.time()
 
     file_stem = in_file_path.stem
+    index = file_stem
     print(file_stem)
     out_file_name = file_stem + ".json"
     out_file_path = out_folder / out_file_name
 
-    # String, Orphanet classification number
     hch_id = file_stem.split("_")[2]
 
-    node_dict = convert(hch_id, in_file_path)
-    output_elasticsearch_file(out_file_path, index, node_dict)
-    print()
+    # Output this simplified dictionnary for debug purpose
+    node_list = convert(hch_id, in_file_path)
 
-    if upload:
-        # Upload to elasticsearch node
-        upload_es(elastic, out_file_path)
+    print("convert:", time.time() - start, "s")
 
-print("Example query for 1 disorder in 1 classification")
-print("http://localhost:9200/classification_orphanet/_search?q=OrphaNumber:558%20AND%20hch_id:147")
-print(time.time() - start, "s total")
+    # Output/upload function
+    serialize_orphadata.output_process(out_file_path, index, node_list, elastic)
