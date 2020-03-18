@@ -144,7 +144,7 @@ def simplify(xml_dict, rename_orpha):
     node_list = json.loads(node_list)
 
     print(len(node_list))
-    print("conversion:", time.time() - start, "s")
+    # print("simplify:", time.time() - start, "s")
     return node_list
 
 
@@ -262,40 +262,84 @@ def clean_single_name_object(node_list):
 
 def gene_indexing(node_list_gene):
     """
+    Invert the indexing of the product6 "gene" to index the relationships between gene and disorder
+    from the gene point of view
 
-    :param node_list_gene: copy of processed node list
-    :return:
+    :param node_list_gene: copy of processed node_list
+    :return: similar list of disorder-gene relation but indexed by gene
+    ie.
+    [
+    {
+    "Name": "kinesin family member 7",
+    "Symbol": "KIF7",
+    "Synonym": [
+        "JBTS12"
+    ],
+    "GeneType": "gene with protein product",
+    "ExternalReference": [
+        {
+        "Source": "Ensembl",
+        "Reference": "ENSG00000166813"
+        },
+        {...},
+    ],
+    "Locus": [
+        {
+        "GeneLocus": "15q26.1",
+        "LocusKey": "1"
+        }
+    ],
+    "GeneDisorderAssociation": [
+        {
+        "SourceOfValidation": "22587682[PMID]",
+        "DisorderGeneAssociationType": "Disease-causing germline mutation(s) in",
+        "DisorderGeneAssociationStatus": "Assessed",
+        "disorder": {
+            "ORPHAcode": "166024",
+            "ExpertLink": "http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&Expert=166024",
+            "Name": "Multiple epiphyseal dysplasia, Al-Gazali type",
+            "DisorderType": "Disease",
+            "DisorderGroup": "Disorder"
+        }
+        },
+        {...}
+    ]
+    }
+    ]
     """
     gene_dict = dict()
     for disorder in node_list_gene:
-        # disorder_info : ready to use
+        # disorder still contains gene association
         disorder_info = copy.deepcopy(disorder)
-        # association_info : list, need to exploit with according gene
-        association_info = disorder_info.pop("DisorderGeneAssociation")
-        for index, gene in enumerate(disorder["DisorderGeneAssociation"]):
-            this_association_info = copy.deepcopy(association_info[index])
-            this_association_info.pop("Gene")
-            gene_index = gene["Gene"]["Symbol"]
-            gene_info = copy.deepcopy(gene)
-            gene_info.pop("SourceOfValidation")
-            gene_info.pop("DisorderGeneAssociationType")
-            gene_info.pop("DisorderGeneAssociationStatus")
+
+        # association_list : list, need to exploit with according gene
+        # disorder_info now only contains disorder
+        association_list = disorder_info.pop("DisorderGeneAssociation")
+
+        for association_info in association_list:
+            # Each association_info contains a different Gene,
+            # we need to index the Gene then substitute it with disorder_info
+            gene_info = association_info.pop("Gene")
+            gene_index = gene_info["Symbol"]
+            # Initialize the Gene index on first occurrence
             if gene_index not in gene_dict:
                 gene_dict[gene_index] = {}
-                for gene_prop, gene_prop_value in gene_info["Gene"].items():
+                for gene_prop, gene_prop_value in gene_info.items():
                     gene_dict[gene_index][gene_prop] = gene_prop_value
                 gene_dict[gene_index]["GeneDisorderAssociation"] = []
-            this_association_info["disorder"] = disorder_info
-            gene_dict[gene_index]["GeneDisorderAssociation"].append(this_association_info)
-    node_list_gene = []
-    for gene in gene_dict:
-        node_list_gene.append(gene_dict[gene])
+            # insert disorder_info in the association_info
+            association_info["disorder"] = disorder_info
+            # Extend the GeneDisorderAssociation with this new disorder relation
+            gene_dict[gene_index]["GeneDisorderAssociation"].append(association_info)
+
+    node_list_gene = list(gene_dict.values())
     return node_list_gene
 
 
 def output_simplified_dictionary(out_file_path, index, xml_dict):
     """
-    Output simplified dictionary in json format
+    Output simplified dictionary in json format DEBUG helper function
+
     Simplified the xml structure to give a consistent hierarchy:
     Disorder: {}
     Child: [
@@ -337,14 +381,29 @@ def output_elasticsearch_file(out_file_path, index, node_list):
     print("writing:", time.time() - start)
 
 
-def upload_es(elastic, out_file_path):
+def upload_es(elastic, processed_json_file):
+    """
+    Upload processed json file to elasticsearch node
+
+    :param elastic: URI to elastic node, False otherwise
+    :param processed_json_file: path
+    :return: None
+    """
     start = time.time()
-    full_file = out_file_path.read_text(encoding="UTF-8")
+    full_file = processed_json_file.read_text(encoding="UTF-8")
     elastic.bulk(body=full_file)
     print("upload ES:", time.time() - start, "s")
 
 
 def process(in_file_path, out_folder, elastic):
+    """
+    Complete Orphadata XML to Elasticsearch JSON process
+
+    :param in_file_path: input file path
+    :param out_folder: output folder path
+    :param elastic: URI to elastic node, False otherwise
+    :return: None (Write file (mandatory) / upload to elastic cluster)
+    """
     file_stem = in_file_path.stem
     index = file_stem
     print(file_stem)
@@ -354,6 +413,7 @@ def process(in_file_path, out_folder, elastic):
     # Parse source xml file
     xml_dict = parse_file(in_file_path)
 
+    start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber
     rename_orpha = True  # OrphaNumber to ORPHAcode
     node_list = simplify(xml_dict, rename_orpha)
@@ -372,28 +432,35 @@ def process(in_file_path, out_folder, elastic):
     if "product6" in file_stem:
         node_list_gene = copy.deepcopy(node_list)
         node_list_gene = gene_indexing(node_list_gene)
-
-        # Output a json elasticsearch ready, with index name as indexing instruction
-        output_elasticsearch_file(out_file_path, index, node_list)
-
         out_file_path_gene = str(out_file_path.absolute()).split(".")[0] + "_gene" + out_file_path.suffix
-        output_elasticsearch_file(out_file_path_gene, index, node_list_gene)
-        print()
 
-        if elastic:
-            # Upload to elasticsearch node
-            upload_es(elastic, out_file_path)
-            upload_es(elastic, out_file_path_gene)
-            print()
-    else:
-        # Output a json elasticsearch ready, with index name as indexing instruction
-        output_elasticsearch_file(out_file_path, index, node_list)
-        print()
+        # Output/upload function
+        output_process(out_file_path_gene, index, node_list_gene, elastic)
 
-        if elastic:
-            # Upload to elasticsearch node
-            upload_es(elastic, out_file_path)
-            print()
+    print("convert:", time.time() - start, "s")
+
+    # Output/upload function
+    output_process(out_file_path, index, node_list, elastic)
+
+
+def output_process(out_file_path, index, node_list, elastic):
+    """
+    Output processed node list in elasticsearch JSON and eventually upload the file to "elastic" URI
+
+    :param out_file_path: path
+    :param index: index name that will be in elasticsearch indexing instruction
+    :param node_list: collection of Disorder (Orphanet concept) object
+    :param elastic: URI to elastic node, False otherwise
+    :return: None
+    """
+    # Output a json elasticsearch ready, with index name as indexing instruction
+    output_elasticsearch_file(out_file_path, index, node_list)
+    print()
+
+    if elastic:
+        # Upload to elasticsearch node
+        upload_es(elastic, out_file_path)
+        print()
 
 ########################################################################################################################
 
