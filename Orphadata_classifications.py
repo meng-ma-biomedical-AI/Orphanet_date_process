@@ -1,12 +1,10 @@
 import copy
 import re
 
-import xmltodict
 import json
 import pathlib
 import time
 
-from elasticsearch import Elasticsearch
 
 import serialize_orphadata
 
@@ -177,7 +175,7 @@ def convert(hch_id, xml_dict, rename_orpha):
     return node_list
 
 
-def process_classification(in_file_path, out_folder, elastic, indent_output):
+def process_classification(in_file_path, out_folder, elastic, input_encoding, indent_output):
     """
     Complete Orphadata XML to Elasticsearch JSON process
 
@@ -199,7 +197,7 @@ def process_classification(in_file_path, out_folder, elastic, indent_output):
     hch_id = file_stem.split("_")[2]
 
     # Parse source xml file
-    xml_dict = serialize_orphadata.parse_file(in_file_path)
+    xml_dict = serialize_orphadata.parse_file(in_file_path, input_encoding)
 
     start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber

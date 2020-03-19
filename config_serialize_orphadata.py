@@ -28,11 +28,15 @@ out_folder = pathlib.Path("data_out")
 # Process all input folders or single input file ?
 parse_folder = True
 
-# Upload to elasticsearch node
-upload = False
-
-# input encoding: auto or valid encoding ("UTF-8" or "iso-8859-1")
+# input encoding: "auto" or valid encoding ("UTF-8" or "iso-8859-1")
 input_encoding = "auto"
+
+
+######################################################## OUTPUT ########################################################
+
 
 # Indent output file (True for visual data control, need to be False for elasticsearch upload)
 indent_output = False
+
+# Upload to elasticsearch node
+upload = False

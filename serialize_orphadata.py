@@ -8,25 +8,30 @@ import time
 
 from elasticsearch import Elasticsearch
 
-from xml.dom import minidom
+# from xml.dom import minidom
 
 import Orphadata_classifications
 from config_serialize_orphadata import *
 
 
-def parse_file(in_file_path):
+def parse_file(in_file_path, input_encoding):
     """
     :param in_file_path: path, source xml file
+    :param input_encoding:
     :return: xml_dict: xml source file parsed as a dictionary
     """
     start = time.time()
 
     if input_encoding.lower() == "auto":
-        dom1 = minidom.parse(str(in_file_path.resolve()))
-        print(dom1.encoding, "(from xml metadata)")
+        with open(in_file_path, "r") as ini:
+            xml_declaration = ini.readline()
+            pattern = re.compile("encoding=\"(.*)\"[ ?]")
+            encoding = pattern.search(xml_declaration).group(1)
+            print(encoding)
 
-        with open(in_file_path, "r", encoding=dom1.encoding) as ini:
+        with open(in_file_path, "r", encoding=encoding) as ini:
             file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
+
     else:
         with open(in_file_path, "r", encoding=input_encoding) as ini:
             print(input_encoding, "(from config file)")
@@ -411,24 +416,26 @@ def upload_es(elastic, processed_json_file):
     print("upload ES:", time.time() - start, "s")
 
 
-def process(in_file_path, out_folder, elastic, indent_output):
+def process(in_file_path, out_folder, elastic, input_encoding, indent_output):
     """
     Complete Orphadata XML to Elasticsearch JSON process
 
     :param in_file_path: input file path
     :param out_folder: output folder path
     :param elastic: URI to elastic node, False otherwise
-    :param indent_output
+    :param elastic: input_encoding
+    :param indent_output:
     :return: None (Write file (mandatory) / upload to elastic cluster)
     """
     file_stem = in_file_path.stem
     index = file_stem
+    print("####################")
     print(file_stem)
     out_file_name = file_stem + ".json"
     out_file_path = out_folder / out_file_name
 
     # Parse source xml file
-    xml_dict = parse_file(in_file_path)
+    xml_dict = parse_file(in_file_path, input_encoding)
 
     start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber
@@ -503,16 +510,17 @@ if __name__ == "__main__":
                 # this line will be deprecated in future Orphadata generation
                 if not str(file.stem).endswith("_status"):
                     if "product3" in file.stem:
-                        Orphadata_classifications.process_classification(file, out_folder, elastic, indent_output)
+                        Orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding, indent_output)
                     else:
-                        process(file, out_folder, elastic, indent_output)
+                        process(file, out_folder, elastic, input_encoding, indent_output)
 
     else:
         # Process single file
-        if "product3" in in_file_path.stem:
-            Orphadata_classifications.process_classification(in_file_path, out_folder, elastic, indent_output)
+        file = in_file_path
+        if "product3" in file.stem:
+            Orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding, indent_output)
         else:
-            process(in_file_path, out_folder, elastic, indent_output)
+            process(file, out_folder, elastic, input_encoding, indent_output)
 
 
     # print("Example query for 1 disorder in 1 classification")
