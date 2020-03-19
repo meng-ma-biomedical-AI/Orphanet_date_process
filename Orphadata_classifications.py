@@ -122,7 +122,7 @@ def merge_unique(list1, list2):
 def convert(hch_id, xml_dict, rename_orpha):
     """
     :param hch_id: String, Orphanet classification number
-    :param in_file_path: path, source xml file
+    :param xml_dict: xml source file parsed as a dictionary
     :param rename_orpha: boolean, change label OrphaNumber to ORPHAcode
     :return: node_list: List collection of Disorder
     i.e.:
@@ -177,13 +177,14 @@ def convert(hch_id, xml_dict, rename_orpha):
     return node_list
 
 
-def process_classification(in_file_path, out_folder, elastic):
+def process_classification(in_file_path, out_folder, elastic, indent_output):
     """
     Complete Orphadata XML to Elasticsearch JSON process
 
     :param in_file_path: input file path
     :param out_folder: output folder path
     :param elastic: URI to elastic node, False otherwise
+    :param indent_output: indent output file (True for visual data control, MUST be False for elasticsearch upload)
     :return: None (Write file (mandatory) / upload to elastic cluster)
     """
 
@@ -210,4 +211,4 @@ def process_classification(in_file_path, out_folder, elastic):
     print("convert:", time.time() - start, "s")
 
     # Output/upload function
-    serialize_orphadata.output_process(out_file_path, index, node_list, elastic)
+    serialize_orphadata.output_process(out_file_path, index, node_list, elastic, indent_output)

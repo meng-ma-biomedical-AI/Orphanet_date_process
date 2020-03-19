@@ -152,7 +152,7 @@ def simplify(xml_dict, rename_orpha):
         node_list = pattern.sub("ORPHAcode", node_list)
     node_list = json.loads(node_list)
 
-    print(len(node_list))
+    print(len(node_list), "disorder concepts")
     # print("simplify:", time.time() - start, "s")
     return node_list
 
@@ -345,7 +345,7 @@ def gene_indexing(node_list_gene):
     return node_list_gene
 
 
-def output_simplified_dictionary(out_file_path, index, xml_dict):
+def output_simplified_dictionary(out_file_path, index, xml_dict, indent_output):
     """
     Output simplified dictionary in json format DEBUG helper function
 
@@ -367,12 +367,16 @@ def output_simplified_dictionary(out_file_path, index, xml_dict):
     :param xml_dict: xml source file parsed as a dictionary
     :return: None
     """
+    if indent_output:
+        indent = 2
+    else:
+        indent = None
     with open(out_file_path, "w", encoding="UTF-8") as out:
         out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
-        out.write(json.dumps(xml_dict, indent=2, ensure_ascii=False) + "\n")
+        out.write(json.dumps(xml_dict, indent=indent, ensure_ascii=False) + "\n")
 
 
-def output_elasticsearch_file(out_file_path, index, node_list):
+def output_elasticsearch_file(out_file_path, index, node_list, indent_output):
     """
     Output json file, elasticsearch injection ready
 
@@ -382,11 +386,14 @@ def output_elasticsearch_file(out_file_path, index, node_list):
     :return: None
     """
     start = time.time()
+    if indent_output:
+        indent = 2
+    else:
+        indent = None
     with open(out_file_path, "w", encoding="UTF-8") as out:
         for val in node_list:
             out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
-            out.write(json.dumps(val, indent=2, ensure_ascii=False) + "\n")
-            # out.write(json.dumps(val, ensure_ascii=False) + "\n")
+            out.write(json.dumps(val, indent=indent, ensure_ascii=False) + "\n")
     print("writing:", time.time() - start)
 
 
@@ -404,13 +411,14 @@ def upload_es(elastic, processed_json_file):
     print("upload ES:", time.time() - start, "s")
 
 
-def process(in_file_path, out_folder, elastic):
+def process(in_file_path, out_folder, elastic, indent_output):
     """
     Complete Orphadata XML to Elasticsearch JSON process
 
     :param in_file_path: input file path
     :param out_folder: output folder path
     :param elastic: URI to elastic node, False otherwise
+    :param indent_output
     :return: None (Write file (mandatory) / upload to elastic cluster)
     """
     file_stem = in_file_path.stem
@@ -428,7 +436,7 @@ def process(in_file_path, out_folder, elastic):
     node_list = simplify(xml_dict, rename_orpha)
 
     # Output this simplified dictionnary for debug purpose
-    output_simplified_dictionary(out_file_path, index, node_list)
+    output_simplified_dictionary(out_file_path, index, node_list, indent_output)
 
     # Remove orphacode past the main one (/!\ NO QUALITY CHECK)
     node_list = remove_unwanted_orphacode(node_list)
@@ -447,15 +455,15 @@ def process(in_file_path, out_folder, elastic):
         out_file_path_gene = pathlib.Path(str(out_file_path.absolute()).split(".")[0] + "_gene" + out_file_path.suffix)
         index_gene = out_file_path_gene.stem
         # Output/upload function
-        output_process(out_file_path_gene, index_gene, node_list_gene, elastic)
+        output_process(out_file_path_gene, index_gene, node_list_gene, elastic, indent_output)
 
     print("convert:", time.time() - start, "s")
 
     # Output/upload function
-    output_process(out_file_path, index, node_list, elastic)
+    output_process(out_file_path, index, node_list, elastic, indent_output)
 
 
-def output_process(out_file_path, index, node_list, elastic):
+def output_process(out_file_path, index, node_list, elastic, indent_output):
     """
     Output processed node list in elasticsearch JSON and eventually upload the file to "elastic" URI
 
@@ -463,10 +471,11 @@ def output_process(out_file_path, index, node_list, elastic):
     :param index: index name that will be in elasticsearch indexing instruction
     :param node_list: collection of Disorder (Orphanet concept) object
     :param elastic: URI to elastic node, False otherwise
+    :param indent_output: Indent output file (True for visual data control, MUST be False for elasticsearch upload)
     :return: None
     """
     # Output a json elasticsearch ready, with index name as indexing instruction
-    output_elasticsearch_file(out_file_path, index, node_list)
+    output_elasticsearch_file(out_file_path, index, node_list, indent_output)
     print()
 
     if elastic:
@@ -494,16 +503,16 @@ if __name__ == "__main__":
                 # this line will be deprecated in future Orphadata generation
                 if not str(file.stem).endswith("_status"):
                     if "product3" in file.stem:
-                        Orphadata_classifications.process_classification(file, out_folder, elastic)
+                        Orphadata_classifications.process_classification(file, out_folder, elastic, indent_output)
                     else:
-                        process(file, out_folder, elastic)
+                        process(file, out_folder, elastic, indent_output)
 
     else:
         # Process single file
         if "product3" in in_file_path.stem:
-            Orphadata_classifications.process_classification(in_file_path, out_folder, elastic)
+            Orphadata_classifications.process_classification(in_file_path, out_folder, elastic, indent_output)
         else:
-            process(in_file_path, out_folder, elastic)
+            process(in_file_path, out_folder, elastic, indent_output)
 
 
     # print("Example query for 1 disorder in 1 classification")
