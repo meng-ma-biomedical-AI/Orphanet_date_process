@@ -11,6 +11,7 @@ from elasticsearch import Elasticsearch
 from xml.dom import minidom
 
 import Orphadata_classifications
+from config_serialize_orphadata import *
 
 
 def parse_file(in_file_path):
@@ -19,12 +20,17 @@ def parse_file(in_file_path):
     :return: xml_dict: xml source file parsed as a dictionary
     """
     start = time.time()
-    dom1 = minidom.parse(str(in_file_path.resolve()))
-    print(dom1.encoding)
 
-    with open(in_file_path, "r", encoding=dom1.encoding) as ini:
-    # with open(in_file_path, "r", encoding="iso-8859-1") as ini:
-        file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
+    if input_encoding.lower() == "auto":
+        dom1 = minidom.parse(str(in_file_path.resolve()))
+        print(dom1.encoding, "(from xml metadata)")
+
+        with open(in_file_path, "r", encoding=dom1.encoding) as ini:
+            file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
+    else:
+        with open(in_file_path, "r", encoding=input_encoding) as ini:
+            print(input_encoding, "(from config file)")
+            file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
 
     key = list(file_dict["JDBOR"].keys())
     key.pop(key.index("Availability"))
@@ -474,33 +480,6 @@ def output_process(out_file_path, index, node_list, elastic):
 if __name__ == "__main__":
     start = time.time()
 
-    in_file_path = pathlib.Path("data_in\\data_xml\\Orphanet classifications\\en_product3_146.xml")
-
-    folders = list()
-
-    # Product 1
-    # folders.append(pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures"))
-
-    # Product 3
-    # folders.append(pathlib.Path("data_in\\data_xml\\Orphanet classifications"))
-
-    # Product 4
-    # folders.append(pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders"))
-
-    # Product 6
-    folders.append(pathlib.Path("data_in\\data_xml\\Disorders with their associated genes"))
-
-    # Product 9
-    # folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology"))
-    # folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history"))
-
-    out_folder = pathlib.Path("data_out")
-
-    # Process all input folder or single input file ?
-    parse_folder = False
-
-    upload = False
-
     if upload:
         elastic = Elasticsearch(hosts=["localhost"])
     else:
@@ -511,6 +490,8 @@ if __name__ == "__main__":
         # Process files in designated folders
         for folder in folders:
             for file in folder.iterdir():
+                # Test to remove "product4_HPO_status" from process
+                # this line will be deprecated in future Orphadata generation
                 if not str(file.stem).endswith("_status"):
                     if "product3" in file.stem:
                         Orphadata_classifications.process_classification(file, out_folder, elastic)

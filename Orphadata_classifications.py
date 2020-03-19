@@ -119,7 +119,7 @@ def merge_unique(list1, list2):
     return list1
 
 
-def convert(hch_id, in_file_path, rename_orpha=True):
+def convert(hch_id, xml_dict, rename_orpha):
     """
     :param hch_id: String, Orphanet classification number
     :param in_file_path: path, source xml file
@@ -137,9 +137,6 @@ def convert(hch_id, in_file_path, rename_orpha=True):
     ]
     """
     start = time.time()
-
-    # Parse source xml file
-    xml_dict = serialize_orphadata.parse_file(in_file_path)
 
     # Simplify the xml structure for homogeneity
     xml_dict = simplify_node_list(xml_dict)
@@ -200,8 +197,15 @@ def process_classification(in_file_path, out_folder, elastic):
 
     hch_id = file_stem.split("_")[2]
 
+    # Parse source xml file
+    xml_dict = serialize_orphadata.parse_file(in_file_path)
+
+    start = time.time()
+    # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber
+    rename_orpha = True  # OrphaNumber to ORPHAcode
+
     # Output this simplified dictionnary for debug purpose
-    node_list = convert(hch_id, in_file_path)
+    node_list = convert(hch_id, xml_dict, rename_orpha)
 
     print("convert:", time.time() - start, "s")
 
