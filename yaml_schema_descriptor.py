@@ -1,12 +1,14 @@
 import pathlib
 import json
+import time
+
 from config_serialize_orphadata import *
 
 
-def input_type(data, encoding="UTF-8"):
+def input_type(data, encoding):
     if isinstance(data, type(pathlib.Path())):
-        print("Path as input")
-        # it's a path, parse the file
+        # print("Path as input")
+        # parse the file keep the first element
         with open(data, "r", encoding=encoding) as ini:
             for line in ini:
                 # skip index declaration
@@ -16,68 +18,85 @@ def input_type(data, encoding="UTF-8"):
                         pass
                     else:
                         break
-
-    elif isinstance(data, list()):
-        print("Serialize_orphadata as input")
-        data = data[0]
-
     return data
 
 
-def format_schema(data):
-    text = 'disorder:\n' \
-           '  type: object\n' \
-           '  properties:\n' \
-           '    ORPHAcode:\n' \
-           '      type: string\n' \
-           '      example: "558"\n'
+def recursive_format_schema(data, main_indent):
     prop_list = list()
-    # main_indent = " " * 4
-    indent = " " * 4
     for key, value in data.items():
-        skip = False
-        print(key)
-        if key == "ORPHAcode":
-            skip = True
-        elif isinstance(value, str):
-            prop = '{}{}:\n'.format(indent, key) + \
-                   '{}  type: string\n'.format(indent) + \
-                   '{}  example: {}\n'.format(indent, value)
-        elif isinstance(value, list):
-            prop = '{}{}:\n'.format(indent, key) + \
-                   '{}  type: array\n'.format(indent) + \
-                   '{}  items:\n'.format(indent) + \
-                   '{}    type: string\n'.format(indent) + \
-                   '{}    example: {}\n'.format(indent, [x for x in value[0:2]])
-        elif isinstance(value, dict):
-            print("DICT")
-
-        if not skip:
+        # print(key)
+        if isinstance(value, str):
+            prop = '{}{}:\n'.format(main_indent, key) + \
+                   '{}  type: string\n'.format(main_indent) + \
+                   '{}  example: \"{}\"\n'.format(main_indent, value)
             prop_list.append(prop)
 
-    prop_list.append('  required:\n    - ORPHAcode')
-    vartext = "".join(prop_list)
-    schema = text + vartext
+        elif isinstance(value, dict):
+            prop = '{}{}:\n'.format(main_indent, key) + \
+                   '{}  type: array\n'.format(main_indent) + \
+                   '{}  items:\n'.format(main_indent) + \
+                   '{}    type: string\n'.format(main_indent) + \
+                   '{}    example: {}\n'.format(main_indent, [x for x in value])
+            prop_list.append(prop)
+
+            indent = main_indent + "    "
+            prop = recursive_format_schema(value, indent)
+            prop_list.append("".join(prop))
+
+        elif isinstance(value, list):
+            if len(value) > 0:
+                prop = '{}{}:\n'.format(main_indent, key) + \
+                       '{}  type: array\n'.format(main_indent) + \
+                       '{}  items:\n'.format(main_indent) + \
+                       '{}    type: string\n'.format(main_indent) + \
+                       '{}    example: {}\n'.format(main_indent, [x for x in value[0:2]])
+                prop_list.append(prop)
+
+                indent = main_indent + "    "
+
+                if isinstance(value[0], dict):
+                    prop = recursive_format_schema(value[0], indent)
+                    prop_list.append("".join(prop))
+
+    prop_list = "".join(prop_list)
+
+    return prop_list
+
+
+def format_schema(data):
+    main_indent = " " * 4
+
+    text = 'disorder:\n' \
+           '  type: object\n' \
+           '  properties:\n'
+
+    var_text = recursive_format_schema(data, main_indent)
+
+    required = '  required:\n    - ORPHAcode'
+
+    schema = text + var_text + required
     return schema
 
 
 def output_schema(out_file_path, schema):
     with open(out_file_path, "w", encoding="UTF-8") as out:
         out.write(schema)
-    pass
 
 
-def yaml_schema(out_file_path, data):
-    data = input_type(data)
-    print(data)
+def yaml_schema(out_folder, in_file_path, output_encoding):
+    start = time.time()
+    data = input_type(in_file_path, output_encoding)
+    # print(data)
     schema = format_schema(data)
+
+    out_file_path = pathlib.Path(str(out_folder) + "\\schema\\" +
+                                 str(in_file_path.stem) + ".yaml")
+
     output_schema(out_file_path, schema)
+    print("yaml_schema", time.time() - start, "s")
 
 
-data = pathlib.Path("data_out\\produit6 gene\\new_product6_04032020.json")
+if __name__ == "__main__":
+    in_file_path = pathlib.Path("data_out\\produit6 gene\\new_product6_04032020_gene.json")
 
-out_file_path = out_folder / "schema" / "en_product3_146.yaml"
-
-# out_file_path = pathlib.Path("data_out\\schema\\en_product3_146.yaml")
-
-yaml_schema(out_file_path, data)
+    yaml_schema(out_folder, in_file_path, output_encoding)

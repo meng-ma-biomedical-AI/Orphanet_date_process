@@ -40,3 +40,8 @@ indent_output = False
 
 # Upload to elasticsearch node
 upload = False
+
+# Make the yaml schema description
+make_schema = True
+
+output_encoding = "UTF-8"

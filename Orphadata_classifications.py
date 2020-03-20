@@ -175,14 +175,16 @@ def convert(hch_id, xml_dict, rename_orpha):
     return node_list
 
 
-def process_classification(in_file_path, out_folder, elastic, input_encoding, indent_output):
+def process_classification(in_file_path, out_folder, elastic, input_encoding, indent_output, output_encoding):
     """
     Complete Orphadata XML to Elasticsearch JSON process
 
     :param in_file_path: input file path
     :param out_folder: output folder path
     :param elastic: URI to elastic node, False otherwise
+    :param input_encoding:
     :param indent_output: indent output file (True for visual data control, MUST be False for elasticsearch upload)
+    :param output_encoding:
     :return: None (Write file (mandatory) / upload to elastic cluster)
     """
 
@@ -209,4 +211,4 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     print("convert:", time.time() - start, "s")
 
     # Output/upload function
-    serialize_orphadata.output_process(out_file_path, index, node_list, elastic, indent_output)
+    serialize_orphadata.output_process(out_file_path, index, node_list, elastic, indent_output, output_encoding)
