@@ -77,6 +77,10 @@ def recursive_format_schema(data, main_indent):
                 if isinstance(value[0], dict):
                     prop = recursive_format_schema(value[0], indent)
                     prop_list.append("".join(prop))
+                else:
+                    prop = '{}    type: string\n'.format(main_indent) + \
+                           '{}    example: \"{}\"\n'.format(main_indent, value)
+                    prop_list.append(prop)
         else:
             # For the remaining None value
             prop = '{}{}:\n'.format(main_indent, key) + \
@@ -143,7 +147,7 @@ if __name__ == "__main__":
     parse_folder = True
 
     # single JSON
-    in_file_path = pathlib.Path("data_out\\produit4_HPO\\en_product4_HPO.json")
+    in_file_path = pathlib.Path("data_out\\produit3_classification\\en_product3_146.json")
 
     # List of folder of JSON
     folders.append(pathlib.Path("data_out\\produit1"))
