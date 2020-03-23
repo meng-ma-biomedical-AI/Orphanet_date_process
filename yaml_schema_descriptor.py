@@ -67,14 +67,13 @@ def recursive_format_schema(data, main_indent):
                        '{}  items:\n'.format(main_indent)
                 prop_list.append(prop)
                 if isinstance(value[0], dict):
-                    main_indent += "  "
-                    prop = '{}  type: object\n'.format(main_indent) + \
-                           '{}  properties:\n'.format(main_indent)
+                    indent = main_indent + "  "
+                    prop = '{}  type: object\n'.format(indent) + \
+                           '{}  properties:\n'.format(indent)
                     prop_list.append(prop)
 
-                indent = main_indent + "    "
+                    indent = main_indent + "      "
 
-                if isinstance(value[0], dict):
                     prop = recursive_format_schema(value[0], indent)
                     prop_list.append("".join(prop))
                 else:
@@ -144,7 +143,7 @@ if __name__ == "__main__":
     start = time.time()
 
     folders = list()
-    parse_folder = True
+    parse_folder = False
 
     # single JSON
     in_file_path = pathlib.Path("data_out\\produit3_classification\\en_product3_146.json")
