@@ -431,7 +431,7 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     :param output_encoding:
     :return: None (Write file (mandatory) / upload to elastic cluster)
     """
-    file_stem = in_file_path.stem
+    file_stem = in_file_path.stem.lower()
     index = file_stem
     print("####################")
     print(file_stem)
