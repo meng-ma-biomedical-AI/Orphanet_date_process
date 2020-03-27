@@ -1,0 +1,2350 @@
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Anal fistula",
+  "ORPHAcode": "228113",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Chylous ascites",
+  "ORPHAcode": "1160",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "IgG4-related retroperitoneal fibrosis",
+  "ORPHAcode": "49041",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Renal nutcracker syndrome",
+  "ORPHAcode": "71273",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Adenoma of pancreas",
+  "ORPHAcode": "93292",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Esophageal atresia",
+  "ORPHAcode": "1199",
+  "hch_id": "182",
+  "parents": [
+    "108959"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Esophageal duplication cyst",
+  "ORPHAcode": "100047",
+  "hch_id": "182",
+  "parents": [
+    "91357"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Tubular duplication of the esophagus",
+  "ORPHAcode": "100048",
+  "hch_id": "182",
+  "parents": [
+    "91357"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Duplication of the esophagus",
+  "ORPHAcode": "91357",
+  "hch_id": "182",
+  "parents": [
+    "108959"
+  ],
+  "childs": [
+    "100047",
+    "100048"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Congenital esophageal diverticulum",
+  "ORPHAcode": "91358",
+  "hch_id": "182",
+  "parents": [
+    "108959"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Laryngotracheoesophageal cleft type 4",
+  "ORPHAcode": "93941",
+  "hch_id": "182",
+  "parents": [
+    "2004"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Laryngotracheoesophageal cleft type 1",
+  "ORPHAcode": "93938",
+  "hch_id": "182",
+  "parents": [
+    "2004"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Laryngotracheoesophageal cleft type 2",
+  "ORPHAcode": "93939",
+  "hch_id": "182",
+  "parents": [
+    "2004"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Laryngotracheoesophageal cleft type 3",
+  "ORPHAcode": "93940",
+  "hch_id": "182",
+  "parents": [
+    "2004"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Laryngotracheoesophageal cleft type 0",
+  "ORPHAcode": "280205",
+  "hch_id": "182",
+  "parents": [
+    "2004"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Laryngotracheoesophageal cleft",
+  "ORPHAcode": "2004",
+  "hch_id": "182",
+  "parents": [
+    "108959"
+  ],
+  "childs": [
+    "93941",
+    "93938",
+    "93939",
+    "93940",
+    "280205"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Isolated tracheoesophageal fistula",
+  "ORPHAcode": "454750",
+  "hch_id": "182",
+  "parents": [
+    "108959"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Non-syndromic esophageal malformation",
+  "ORPHAcode": "108959",
+  "hch_id": "182",
+  "parents": [
+    "88993"
+  ],
+  "childs": [
+    "1199",
+    "91357",
+    "91358",
+    "2004",
+    "454750"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "VACTERL/VATER association",
+  "ORPHAcode": "887",
+  "hch_id": "182",
+  "parents": [
+    "108961",
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Triple A syndrome",
+  "ORPHAcode": "869",
+  "hch_id": "182",
+  "parents": [
+    "108961"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Achalasia-microcephaly syndrome",
+  "ORPHAcode": "929",
+  "hch_id": "182",
+  "parents": [
+    "108961"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Feingold syndrome type 1",
+  "ORPHAcode": "391641",
+  "hch_id": "182",
+  "parents": [
+    "1305"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Feingold syndrome type 2",
+  "ORPHAcode": "391646",
+  "hch_id": "182",
+  "parents": [
+    "1305"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Feingold syndrome",
+  "ORPHAcode": "1305",
+  "hch_id": "182",
+  "parents": [
+    "108961",
+    "117573",
+    "108965"
+  ],
+  "childs": [
+    "391641",
+    "391646"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Anophthalmia/microphthalmia-esophageal atresia syndrome",
+  "ORPHAcode": "77298",
+  "hch_id": "182",
+  "parents": [
+    "108961"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Congenital brachyesophagus-intrathoracic stomach-vertebral anomalies syndrome",
+  "ORPHAcode": "514352",
+  "hch_id": "182",
+  "parents": [
+    "108961"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Syndromic esophageal malformation",
+  "ORPHAcode": "108961",
+  "hch_id": "182",
+  "parents": [
+    "88993"
+  ],
+  "childs": [
+    "887",
+    "869",
+    "929",
+    "1305",
+    "77298",
+    "514352"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Esophageal malformation",
+  "ORPHAcode": "88993",
+  "hch_id": "182",
+  "parents": [
+    "98039"
+  ],
+  "childs": [
+    "108959",
+    "108961"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "High isolated anorectal malformation",
+  "ORPHAcode": "171201",
+  "hch_id": "182",
+  "parents": [
+    "557"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Intermediate isolated anorectal malformation",
+  "ORPHAcode": "171208",
+  "hch_id": "182",
+  "parents": [
+    "557"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Low isolated anorectal malformation",
+  "ORPHAcode": "171215",
+  "hch_id": "182",
+  "parents": [
+    "557"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Isolated anorectal malformation",
+  "ORPHAcode": "557",
+  "hch_id": "182",
+  "parents": [
+    "96346"
+  ],
+  "childs": [
+    "171201",
+    "171208",
+    "171215"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "22q11.2 deletion syndrome",
+  "ORPHAcode": "567",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Townes-Brocks syndrome",
+  "ORPHAcode": "857",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Cat-eye syndrome",
+  "ORPHAcode": "195",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Trisomy 13",
+  "ORPHAcode": "3378",
+  "hch_id": "182",
+  "parents": [
+    "117573",
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Trisomy 18",
+  "ORPHAcode": "3380",
+  "hch_id": "182",
+  "parents": [
+    "117573",
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Tetrasomy 12p",
+  "ORPHAcode": "884",
+  "hch_id": "182",
+  "parents": [
+    "117573",
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Fraser syndrome",
+  "ORPHAcode": "2052",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Currarino syndrome",
+  "ORPHAcode": "1552",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Distal monosomy 13q",
+  "ORPHAcode": "1590",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Baller-Gerold syndrome",
+  "ORPHAcode": "1225",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Cataract-intellectual disability-anal atresia-urinary defects syndrome",
+  "ORPHAcode": "1381",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "X-linked skeletal dysplasia-intellectual disability syndrome",
+  "ORPHAcode": "1436",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Caudal duplication",
+  "ORPHAcode": "1756",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Axial mesodermal dysplasia spectrum",
+  "ORPHAcode": "1834",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Pallister-Hall syndrome",
+  "ORPHAcode": "672",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Johanson-Blizzard syndrome",
+  "ORPHAcode": "2315",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Kabuki syndrome",
+  "ORPHAcode": "2322",
+  "hch_id": "182",
+  "parents": [
+    "117573",
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Lowe-Kohn-Cohen syndrome",
+  "ORPHAcode": "2408",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Microphthalmia with linear skin defects syndrome",
+  "ORPHAcode": "2556",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Mayer-Rokitansky-Küster-Hauser syndrome type 2",
+  "ORPHAcode": "2578",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "46,XX disorder of sex development-anorectal anomalies syndrome",
+  "ORPHAcode": "2973",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Ulnar-mammary syndrome",
+  "ORPHAcode": "3138",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "X-linked intellectual disability, Porteous type",
+  "ORPHAcode": "93945",
+  "hch_id": "182",
+  "parents": [
+    "3242"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Hamel cerebro-palato-cardiac syndrome",
+  "ORPHAcode": "93946",
+  "hch_id": "182",
+  "parents": [
+    "3242"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "X-linked intellectual disability, Golabi-Ito-Hall type",
+  "ORPHAcode": "93947",
+  "hch_id": "182",
+  "parents": [
+    "3242"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "X-linked intellectual disability, Sutherland-Haan type",
+  "ORPHAcode": "93950",
+  "hch_id": "182",
+  "parents": [
+    "3242",
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Renpenning syndrome",
+  "ORPHAcode": "3242",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": [
+    "93945",
+    "93946",
+    "93947",
+    "93950"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "VACTERL with hydrocephalus",
+  "ORPHAcode": "3412",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Autosomal dominant Opitz G/BBB syndrome",
+  "ORPHAcode": "306588",
+  "hch_id": "182",
+  "parents": [
+    "2745"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "X-linked Opitz G/BBB syndrome",
+  "ORPHAcode": "306597",
+  "hch_id": "182",
+  "parents": [
+    "2745"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Opitz G/BBB syndrome",
+  "ORPHAcode": "2745",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": [
+    "306588",
+    "306597"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Axenfeld-Rieger syndrome",
+  "ORPHAcode": "782",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Goldberg-Shprintzen megacolon syndrome",
+  "ORPHAcode": "66629",
+  "hch_id": "182",
+  "parents": [
+    "117573",
+    "557866"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "6q terminal deletion syndrome",
+  "ORPHAcode": "75857",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "LUMBAR syndrome",
+  "ORPHAcode": "83628",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Short rib-polydactyly syndrome, Verma-Naumoff type",
+  "ORPHAcode": "93271",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Okihiro syndrome due to 20q13 microdeletion",
+  "ORPHAcode": "261638",
+  "hch_id": "182",
+  "parents": [
+    "93293"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Okihiro syndrome due to a point mutation",
+  "ORPHAcode": "261647",
+  "hch_id": "182",
+  "parents": [
+    "93293"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Okihiro syndrome",
+  "ORPHAcode": "93293",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": [
+    "261638",
+    "261647"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Cloacal exstrophy",
+  "ORPHAcode": "93929",
+  "hch_id": "182",
+  "parents": [
+    "117573",
+    "322"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Spondylocostal dysostosis-anal atresia-genitourinary malformation syndrome",
+  "ORPHAcode": "94095",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Monosomy 13q34",
+  "ORPHAcode": "96168",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Ring chromosome 13 syndrome",
+  "ORPHAcode": "96176",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Maternal uniparental disomy of chromosome 16",
+  "ORPHAcode": "96185",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Syndactyly-telecanthus-anogenital and renal malformations syndrome",
+  "ORPHAcode": "140952",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "BNAR syndrome",
+  "ORPHAcode": "217266",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Sirenomelia",
+  "ORPHAcode": "3169",
+  "hch_id": "182",
+  "parents": [
+    "444941"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Caudal regression sequence",
+  "ORPHAcode": "3027",
+  "hch_id": "182",
+  "parents": [
+    "444941"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Familial caudal dysgenesis",
+  "ORPHAcode": "1768",
+  "hch_id": "182",
+  "parents": [
+    "444941"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Caudal regression-sirenomelia spectrum",
+  "ORPHAcode": "444941",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": [
+    "3169",
+    "3027",
+    "1768"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "FG syndrome type 1",
+  "ORPHAcode": "93932",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Down syndrome",
+  "ORPHAcode": "870",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Isolated Klippel-Feil syndrome",
+  "ORPHAcode": "2345",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "EVEN-plus syndrome",
+  "ORPHAcode": "496751",
+  "hch_id": "182",
+  "parents": [
+    "117573"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Syndromic anorectal malformation",
+  "ORPHAcode": "117573",
+  "hch_id": "182",
+  "parents": [
+    "96346"
+  ],
+  "childs": [
+    "567",
+    "857",
+    "195",
+    "3378",
+    "3380",
+    "884",
+    "887",
+    "2052",
+    "1552",
+    "1590",
+    "1225",
+    "1381",
+    "1436",
+    "1756",
+    "1834",
+    "672",
+    "2315",
+    "2322",
+    "2408",
+    "2556",
+    "2578",
+    "2973",
+    "3138",
+    "3242",
+    "3412",
+    "2745",
+    "782",
+    "66629",
+    "75857",
+    "83628",
+    "93271",
+    "93293",
+    "93929",
+    "94095",
+    "96168",
+    "96176",
+    "96185",
+    "140952",
+    "217266",
+    "444941",
+    "93932",
+    "870",
+    "2345",
+    "496751",
+    "93950",
+    "1305"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Rectal duplication",
+  "ORPHAcode": "171220",
+  "hch_id": "182",
+  "parents": [
+    "96346"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Anorectal malformation",
+  "ORPHAcode": "96346",
+  "hch_id": "182",
+  "parents": [
+    "98039"
+  ],
+  "childs": [
+    "557",
+    "117573",
+    "171220"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Duodenal atresia",
+  "ORPHAcode": "1203",
+  "hch_id": "182",
+  "parents": [
+    "108963",
+    "108967"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Congenital microgastria",
+  "ORPHAcode": "199293",
+  "hch_id": "182",
+  "parents": [
+    "108963"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Non-syndromic gastroduodenal malformation",
+  "ORPHAcode": "108963",
+  "hch_id": "182",
+  "parents": [
+    "97944"
+  ],
+  "childs": [
+    "1203",
+    "199293"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Microgastria-limb reduction defect syndrome",
+  "ORPHAcode": "2538",
+  "hch_id": "182",
+  "parents": [
+    "108965"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Syndromic gastroduodenal malformation",
+  "ORPHAcode": "108965",
+  "hch_id": "182",
+  "parents": [
+    "97944"
+  ],
+  "childs": [
+    "1305",
+    "2538"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Gastroduodenal malformation",
+  "ORPHAcode": "97944",
+  "hch_id": "182",
+  "parents": [
+    "98039"
+  ],
+  "childs": [
+    "108963",
+    "108965"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Multiple intestinal atresia",
+  "ORPHAcode": "2300",
+  "hch_id": "182",
+  "parents": [
+    "108967"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Atresia of small intestine",
+  "ORPHAcode": "1201",
+  "hch_id": "182",
+  "parents": [
+    "108967"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Colonic atresia",
+  "ORPHAcode": "1198",
+  "hch_id": "182",
+  "parents": [
+    "108967"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Digestive duplication",
+  "ORPHAcode": "238",
+  "hch_id": "182",
+  "parents": [
+    "108967"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Common mesentery",
+  "ORPHAcode": "620",
+  "hch_id": "182",
+  "parents": [
+    "108967"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Congenital short bowel syndrome",
+  "ORPHAcode": "2301",
+  "hch_id": "182",
+  "parents": [
+    "108967"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Familial intestinal malrotation",
+  "ORPHAcode": "508410",
+  "hch_id": "182",
+  "parents": [
+    "108967"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Non-syndromic intestinal malformation",
+  "ORPHAcode": "108967",
+  "hch_id": "182",
+  "parents": [
+    "97945"
+  ],
+  "childs": [
+    "2300",
+    "1201",
+    "1198",
+    "238",
+    "620",
+    "2301",
+    "508410",
+    "1203"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Hirschsprung disease-deafness-polydactyly syndrome",
+  "ORPHAcode": "2155",
+  "hch_id": "182",
+  "parents": [
+    "557866"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Bardet-Biedl syndrome",
+  "ORPHAcode": "110",
+  "hch_id": "182",
+  "parents": [
+    "557866"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Haddad syndrome",
+  "ORPHAcode": "99803",
+  "hch_id": "182",
+  "parents": [
+    "557866"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Peripheral demyelinating neuropathy-central dysmyelinating leukodystrophy-Waardenburg syndrome-Hirschsprung disease",
+  "ORPHAcode": "163746",
+  "hch_id": "182",
+  "parents": [
+    "557866"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Waardenburg-Shah syndrome",
+  "ORPHAcode": "897",
+  "hch_id": "182",
+  "parents": [
+    "557866"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Hirschsprung disease-type D brachydactyly syndrome",
+  "ORPHAcode": "2150",
+  "hch_id": "182",
+  "parents": [
+    "557866"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Mowat-Wilson syndrome due to monosomy 2q22",
+  "ORPHAcode": "261537",
+  "hch_id": "182",
+  "parents": [
+    "2152"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Mowat-Wilson syndrome due to a ZEB2 point mutation",
+  "ORPHAcode": "261552",
+  "hch_id": "182",
+  "parents": [
+    "2152"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Mowat-Wilson syndrome",
+  "ORPHAcode": "2152",
+  "hch_id": "182",
+  "parents": [
+    "557866"
+  ],
+  "childs": [
+    "261537",
+    "261552"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Hirschsprung disease-nail hypoplasia-dysmorphism syndrome",
+  "ORPHAcode": "2153",
+  "hch_id": "182",
+  "parents": [
+    "557866"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Rare disorder with Hirschsprung disease as a major feature",
+  "ORPHAcode": "557866",
+  "hch_id": "182",
+  "parents": [
+    "108969"
+  ],
+  "childs": [
+    "2155",
+    "110",
+    "66629",
+    "99803",
+    "163746",
+    "897",
+    "2150",
+    "2152",
+    "2153"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Marfanoid syndrome, De Silva type",
+  "ORPHAcode": "2464",
+  "hch_id": "182",
+  "parents": [
+    "108969"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Thoraco-abdominal enteric duplication",
+  "ORPHAcode": "1759",
+  "hch_id": "182",
+  "parents": [
+    "108969"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Umbilical cord ulceration-intestinal atresia syndrome",
+  "ORPHAcode": "3405",
+  "hch_id": "182",
+  "parents": [
+    "108969"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Hypoplastic pancreas-intestinal atresia-hypoplastic gallbladder syndrome",
+  "ORPHAcode": "293864",
+  "hch_id": "182",
+  "parents": [
+    "108969",
+    "108973"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Combined immunodeficiency-enteropathy spectrum",
+  "ORPHAcode": "436252",
+  "hch_id": "182",
+  "parents": [
+    "108969"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Diaphragmatic hernia-short bowel-asplenia syndrome",
+  "ORPHAcode": "527468",
+  "hch_id": "182",
+  "parents": [
+    "108969",
+    "108973",
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Stromme syndrome",
+  "ORPHAcode": "506307",
+  "hch_id": "182",
+  "parents": [
+    "108969"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Syndromic intestinal malformation",
+  "ORPHAcode": "108969",
+  "hch_id": "182",
+  "parents": [
+    "97945"
+  ],
+  "childs": [
+    "557866",
+    "2464",
+    "1759",
+    "3405",
+    "293864",
+    "436252",
+    "527468",
+    "506307"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Intestinal malformation",
+  "ORPHAcode": "97945",
+  "hch_id": "182",
+  "parents": [
+    "98039"
+  ],
+  "childs": [
+    "108967",
+    "108969"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Digestive tract malformation",
+  "ORPHAcode": "98039",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": [
+    "88993",
+    "96346",
+    "97944",
+    "97945"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Congenital respiratory-biliary fistula",
+  "ORPHAcode": "2040",
+  "hch_id": "182",
+  "parents": [
+    "108971"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Partial pancreatic agenesis",
+  "ORPHAcode": "2805",
+  "hch_id": "182",
+  "parents": [
+    "108971"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Annular pancreas",
+  "ORPHAcode": "675",
+  "hch_id": "182",
+  "parents": [
+    "108971"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Accessory pancreas",
+  "ORPHAcode": "674",
+  "hch_id": "182",
+  "parents": [
+    "108971"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Isolated biliary atresia",
+  "ORPHAcode": "30391",
+  "hch_id": "182",
+  "parents": [
+    "108971"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Caroli disease",
+  "ORPHAcode": "53035",
+  "hch_id": "182",
+  "parents": [
+    "108971"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Familial isolated congenital asplenia",
+  "ORPHAcode": "101351",
+  "hch_id": "182",
+  "parents": [
+    "108971"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Isolated splenogonadal fusion",
+  "ORPHAcode": "457083",
+  "hch_id": "182",
+  "parents": [
+    "108971"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Situs inversus totalis",
+  "ORPHAcode": "101063",
+  "hch_id": "182",
+  "parents": [
+    "108971"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Situs ambiguus",
+  "ORPHAcode": "157769",
+  "hch_id": "182",
+  "parents": [
+    "108971"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Non-syndromic visceral malformation",
+  "ORPHAcode": "108971",
+  "hch_id": "182",
+  "parents": [
+    "98041"
+  ],
+  "childs": [
+    "2040",
+    "2805",
+    "675",
+    "674",
+    "30391",
+    "53035",
+    "101351",
+    "457083",
+    "101063",
+    "157769"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Renal-hepatic-pancreatic dysplasia",
+  "ORPHAcode": "294415",
+  "hch_id": "182",
+  "parents": [
+    "108973"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Alagille syndrome due to 20p12 microdeletion",
+  "ORPHAcode": "261600",
+  "hch_id": "182",
+  "parents": [
+    "52"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Alagille syndrome due to a JAG1 point mutation",
+  "ORPHAcode": "261619",
+  "hch_id": "182",
+  "parents": [
+    "52"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Alagille syndrome due to a NOTCH2 point mutation",
+  "ORPHAcode": "261629",
+  "hch_id": "182",
+  "parents": [
+    "52"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Alagille syndrome",
+  "ORPHAcode": "52",
+  "hch_id": "182",
+  "parents": [
+    "108973"
+  ],
+  "childs": [
+    "261600",
+    "261619",
+    "261629"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Meckel syndrome",
+  "ORPHAcode": "564",
+  "hch_id": "182",
+  "parents": [
+    "108973"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Splenogonadal fusion-limb defects-micrognathia syndrome",
+  "ORPHAcode": "2063",
+  "hch_id": "182",
+  "parents": [
+    "108973"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Right sided atrial isomerism",
+  "ORPHAcode": "97548",
+  "hch_id": "182",
+  "parents": [
+    "108973"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Pancreatic agenesis-holoprosencephaly syndrome",
+  "ORPHAcode": "556955",
+  "hch_id": "182",
+  "parents": [
+    "108973"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Syndromic visceral malformation",
+  "ORPHAcode": "108973",
+  "hch_id": "182",
+  "parents": [
+    "98041"
+  ],
+  "childs": [
+    "294415",
+    "293864",
+    "52",
+    "564",
+    "2063",
+    "97548",
+    "556955",
+    "527468"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Visceral malformation of the liver, biliary tract, pancreas or spleen",
+  "ORPHAcode": "98041",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": [
+    "108971",
+    "108973"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Congenital diaphragmatic hernia",
+  "ORPHAcode": "2140",
+  "hch_id": "182",
+  "parents": [
+    "108977"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Omphalocele",
+  "ORPHAcode": "660",
+  "hch_id": "182",
+  "parents": [
+    "108977"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Isolated epispadias",
+  "ORPHAcode": "93928",
+  "hch_id": "182",
+  "parents": [
+    "322"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Bladder exstrophy",
+  "ORPHAcode": "93930",
+  "hch_id": "182",
+  "parents": [
+    "322"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Exstrophy-epispadias complex",
+  "ORPHAcode": "322",
+  "hch_id": "182",
+  "parents": [
+    "108977"
+  ],
+  "childs": [
+    "93928",
+    "93929",
+    "93930"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Gastroschisis",
+  "ORPHAcode": "2368",
+  "hch_id": "182",
+  "parents": [
+    "108977"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Omphalomesenteric cyst",
+  "ORPHAcode": "490",
+  "hch_id": "182",
+  "parents": [
+    "108977"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Non-syndromic diaphragmatic or abdominal wall malformation",
+  "ORPHAcode": "108977",
+  "hch_id": "182",
+  "parents": [
+    "98043"
+  ],
+  "childs": [
+    "2140",
+    "660",
+    "322",
+    "2368",
+    "490"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Omphalocele-diaphragmatic hernia-cardiovascular anomalies-radial ray defect syndrome",
+  "ORPHAcode": "496693",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Wolf-Hirschhorn syndrome",
+  "ORPHAcode": "280",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Cornelia de Lange syndrome",
+  "ORPHAcode": "199",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Classical Ehlers-Danlos syndrome",
+  "ORPHAcode": "287",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Simpson-Golabi-Behmel syndrome",
+  "ORPHAcode": "373",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Pentalogy of Cantrell",
+  "ORPHAcode": "1335",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Fryns syndrome",
+  "ORPHAcode": "2059",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Diaphragmatic defect-limb deficiency-skull defect syndrome",
+  "ORPHAcode": "2141",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Donnai-Barrow syndrome",
+  "ORPHAcode": "2143",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Limb body wall complex",
+  "ORPHAcode": "2369",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Matthew-Wood syndrome",
+  "ORPHAcode": "2470",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Lethal omphalocele-cleft palate syndrome",
+  "ORPHAcode": "2736",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Pericardial and diaphragmatic defect",
+  "ORPHAcode": "2847",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Omphalocele syndrome, Shprintzen-Goldberg type",
+  "ORPHAcode": "3164",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Geroderma osteodysplastica",
+  "ORPHAcode": "2078",
+  "hch_id": "182",
+  "parents": [
+    "209"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "ALDH18A1-related De Barsy syndrome",
+  "ORPHAcode": "35664",
+  "hch_id": "182",
+  "parents": [
+    "2962"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "PYCR1-related De Barsy syndrome",
+  "ORPHAcode": "293633",
+  "hch_id": "182",
+  "parents": [
+    "2962"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "De Barsy syndrome",
+  "ORPHAcode": "2962",
+  "hch_id": "182",
+  "parents": [
+    "209"
+  ],
+  "childs": [
+    "35664",
+    "293633"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "SCARF syndrome",
+  "ORPHAcode": "3134",
+  "hch_id": "182",
+  "parents": [
+    "209"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Arterial tortuosity syndrome",
+  "ORPHAcode": "3342",
+  "hch_id": "182",
+  "parents": [
+    "209"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Occipital horn syndrome",
+  "ORPHAcode": "198",
+  "hch_id": "182",
+  "parents": [
+    "209"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Autosomal dominant cutis laxa",
+  "ORPHAcode": "90348",
+  "hch_id": "182",
+  "parents": [
+    "209"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Autosomal recessive cutis laxa type 1",
+  "ORPHAcode": "90349",
+  "hch_id": "182",
+  "parents": [
+    "209"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Wrinkly skin syndrome",
+  "ORPHAcode": "2834",
+  "hch_id": "182",
+  "parents": [
+    "357058"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Autosomal recessive cutis laxa type 2, classic type",
+  "ORPHAcode": "357074",
+  "hch_id": "182",
+  "parents": [
+    "357058"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Autosomal recessive cutis laxa type 2A",
+  "ORPHAcode": "357058",
+  "hch_id": "182",
+  "parents": [
+    "90350"
+  ],
+  "childs": [
+    "2834",
+    "357074"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Autosomal recessive cutis laxa type 2B",
+  "ORPHAcode": "357064",
+  "hch_id": "182",
+  "parents": [
+    "90350"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Autosomal recessive cutis laxa type 2",
+  "ORPHAcode": "90350",
+  "hch_id": "182",
+  "parents": [
+    "209"
+  ],
+  "childs": [
+    "357058",
+    "357064"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "RIN2 syndrome",
+  "ORPHAcode": "217335",
+  "hch_id": "182",
+  "parents": [
+    "209"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Cutis laxa with severe pulmonary, gastrointestinal and urinary anomalies",
+  "ORPHAcode": "221145",
+  "hch_id": "182",
+  "parents": [
+    "209"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Lethal arteriopathy syndrome due to fibulin-4 deficiency",
+  "ORPHAcode": "314718",
+  "hch_id": "182",
+  "parents": [
+    "209"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Cutis laxa",
+  "ORPHAcode": "209",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": [
+    "2078",
+    "2962",
+    "3134",
+    "3342",
+    "198",
+    "90348",
+    "90349",
+    "90350",
+    "217335",
+    "221145",
+    "314718"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Emanuel syndrome",
+  "ORPHAcode": "96170",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Classical-like Ehlers-Danlos syndrome type 1",
+  "ORPHAcode": "230839",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Familial omphalocele syndrome with facial dysmorphism",
+  "ORPHAcode": "280403",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Spigelian hernia-cryptorchidism syndrome",
+  "ORPHAcode": "314432",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Lethal hydranencephaly-diaphragmatic hernia syndrome",
+  "ORPHAcode": "480528",
+  "hch_id": "182",
+  "parents": [
+    "108979"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Syndromic diaphragmatic or abdominal wall malformation",
+  "ORPHAcode": "108979",
+  "hch_id": "182",
+  "parents": [
+    "98043"
+  ],
+  "childs": [
+    "496693",
+    "280",
+    "199",
+    "3378",
+    "3380",
+    "884",
+    "287",
+    "373",
+    "1335",
+    "2059",
+    "2141",
+    "2143",
+    "2322",
+    "2369",
+    "2470",
+    "2736",
+    "2847",
+    "3164",
+    "209",
+    "96170",
+    "230839",
+    "280403",
+    "314432",
+    "480528",
+    "527468"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Diaphragmatic or abdominal wall malformation",
+  "ORPHAcode": "98043",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": [
+    "108977",
+    "108979"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Pseudomyxoma peritonei",
+  "ORPHAcode": "26790",
+  "hch_id": "182",
+  "parents": [
+    "168803"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Disseminated peritoneal leiomyomatosis",
+  "ORPHAcode": "71274",
+  "hch_id": "182",
+  "parents": [
+    "168803"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Desmoplastic small round cell tumor",
+  "ORPHAcode": "83469",
+  "hch_id": "182",
+  "parents": [
+    "168807"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Malignant peritoneal mesothelioma",
+  "ORPHAcode": "168811",
+  "hch_id": "182",
+  "parents": [
+    "168807"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Peritoneal cystic mesothelioma",
+  "ORPHAcode": "168816",
+  "hch_id": "182",
+  "parents": [
+    "168807"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Primary peritoneal carcinoma",
+  "ORPHAcode": "168829",
+  "hch_id": "182",
+  "parents": [
+    "168807"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Primary malignant peritoneal tumor",
+  "ORPHAcode": "168807",
+  "hch_id": "182",
+  "parents": [
+    "168803"
+  ],
+  "childs": [
+    "83469",
+    "168811",
+    "168816",
+    "168829"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Primary peritoneal tumor",
+  "ORPHAcode": "168803",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": [
+    "26790",
+    "71274",
+    "168807"
+  ]
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "IgG4-related mesenteritis",
+  "ORPHAcode": "238593",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Celiac artery compression syndrome",
+  "ORPHAcode": "293208",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Myospherulosis",
+  "ORPHAcode": "306553",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Optic nerve edema-splenomegaly syndrome",
+  "ORPHAcode": "313800",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "GCGR-related hyperglucagonemia",
+  "ORPHAcode": "438274",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "IgG4-related aortitis",
+  "ORPHAcode": "449400",
+  "hch_id": "182",
+  "parents": [
+    "165711"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_182"}}
+{
+  "name": "Rare abdominal surgical disease",
+  "ORPHAcode": "165711",
+  "hch_id": "182",
+  "parents": [],
+  "childs": [
+    "228113",
+    "1160",
+    "49041",
+    "71273",
+    "93292",
+    "98039",
+    "98041",
+    "98043",
+    "168803",
+    "238593",
+    "293208",
+    "306553",
+    "313800",
+    "438274",
+    "449400"
+  ]
+}

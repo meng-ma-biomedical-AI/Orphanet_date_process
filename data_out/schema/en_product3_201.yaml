@@ -1,0 +1,24 @@
+en_product3_201:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Rare disorder with obstructive azoospermia"
+    ORPHAcode:
+      type: string
+      example: "399824"
+    hch_id:
+      type: string
+      example: "201"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['98343']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['586', '731', '3389', '548', '2856', '3471', '730']"
+  required:
+    - ORPHAcode

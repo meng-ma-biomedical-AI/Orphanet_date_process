@@ -1,0 +1,24 @@
+en_product3_203:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Rare form of salmonellosis"
+    ORPHAcode:
+      type: string
+      example: "795"
+    hch_id:
+      type: string
+      example: "203"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['163582']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['99745', '324648', '443227']"
+  required:
+    - ORPHAcode

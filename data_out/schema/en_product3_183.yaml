@@ -1,0 +1,24 @@
+en_product3_183:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Rare vascular liver disease"
+    ORPHAcode:
+      type: string
+      example: "101938"
+    hch_id:
+      type: string
+      example: "183"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['57146']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['774', '480524', '95507', '48372', '480531', '131', '890', '854', '64743', '79124', '494348']"
+  required:
+    - ORPHAcode

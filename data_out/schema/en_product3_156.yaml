@@ -1,0 +1,24 @@
+en_product3_156:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Noonan syndrome and Noonan-related syndrome"
+    ORPHAcode:
+      type: string
+      example: "98733"
+    hch_id:
+      type: string
+      example: "156"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['536391', '156532', '183570']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['648', '3071', '500', '1340', '2701', '363972', '638']"
+  required:
+    - ORPHAcode

@@ -1,0 +1,24 @@
+en_product3_181:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Rare autonomic nervous system disorder"
+    ORPHAcode:
+      type: string
+      example: "423662"
+    hch_id:
+      type: string
+      example: "181"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['98006']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['661', '441', '396', '99803', '199282', '443084']"
+  required:
+    - ORPHAcode

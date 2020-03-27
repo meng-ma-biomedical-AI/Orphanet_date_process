@@ -1,0 +1,396 @@
+{"index": {"_index":"en_product3_203"}}
+{"name": "Brucellosis", "ORPHAcode": "1304", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Cholera", "ORPHAcode": "173", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Typhoid", "ORPHAcode": "99745", "hch_id": "203", "parents": ["795"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Invasive non-typhoidal salmonellosis", "ORPHAcode": "324648", "hch_id": "203", "parents": ["795"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Paratyphoid fever", "ORPHAcode": "443227", "hch_id": "203", "parents": ["795"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rare form of salmonellosis", "ORPHAcode": "795", "hch_id": "203", "parents": ["163582"], "childs": ["99745", "324648", "443227"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Leptospirosis", "ORPHAcode": "509", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Shigellosis", "ORPHAcode": "810", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Whipple disease", "ORPHAcode": "3452", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Pontiac fever", "ORPHAcode": "99748", "hch_id": "203", "parents": ["549"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Legionellosis", "ORPHAcode": "549", "hch_id": "203", "parents": ["163582"], "childs": ["99748"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Listeriosis", "ORPHAcode": "533", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Whooping cough", "ORPHAcode": "1489", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Foodborne botulism", "ORPHAcode": "228371", "hch_id": "203", "parents": ["1267"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Wound botulism", "ORPHAcode": "178475", "hch_id": "203", "parents": ["230800"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Infant botulism", "ORPHAcode": "178478", "hch_id": "203", "parents": ["178481"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Adult intestinal botulism", "ORPHAcode": "178487", "hch_id": "203", "parents": ["178481"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Intestinal botulism", "ORPHAcode": "178481", "hch_id": "203", "parents": ["230800"], "childs": ["178478", "178487"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Toxin-mediated infectious botulism", "ORPHAcode": "230800", "hch_id": "203", "parents": ["1267"], "childs": ["178475", "178481"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Inhalational botulism", "ORPHAcode": "254504", "hch_id": "203", "parents": ["1267"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Iatrogenic botulism", "ORPHAcode": "254509", "hch_id": "203", "parents": ["1267"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Botulism", "ORPHAcode": "1267", "hch_id": "203", "parents": ["163582"], "childs": ["228371", "230800", "254504", "254509"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Diphtheria", "ORPHAcode": "1679", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Tuberculosis", "ORPHAcode": "3389", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Tetanus", "ORPHAcode": "3299", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Leprosy", "ORPHAcode": "548", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Plague", "ORPHAcode": "707", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Noma", "ORPHAcode": "2700", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Mycetoma", "ORPHAcode": "2583", "hch_id": "203", "parents": ["163582", "163591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Tularemia", "ORPHAcode": "3392", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Q fever", "ORPHAcode": "781", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Pyomyositis", "ORPHAcode": "764", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Melioidosis", "ORPHAcode": "31202", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Nocardiosis", "ORPHAcode": "31204", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Spirillary rat-bite fever", "ORPHAcode": "99903", "hch_id": "203", "parents": ["31205"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Streptobacillary rat-bite fever", "ORPHAcode": "99905", "hch_id": "203", "parents": ["31205"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rat-bite fever", "ORPHAcode": "31205", "hch_id": "203", "parents": ["163582"], "childs": ["99903", "99905"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Streptococcal toxic-shock syndrome", "ORPHAcode": "99918", "hch_id": "203", "parents": ["36234"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Staphylococcal toxic-shock syndrome", "ORPHAcode": "99919", "hch_id": "203", "parents": ["36234", "300579"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Bacterial toxic-shock syndrome", "ORPHAcode": "36234", "hch_id": "203", "parents": ["163582"], "childs": ["99918", "99919"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Cat-scratch disease", "ORPHAcode": "50839", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Pneumococcal meningitis", "ORPHAcode": "55655", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Oroya fever", "ORPHAcode": "64692", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Trench fever", "ORPHAcode": "64694", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Scrub typhus", "ORPHAcode": "83317", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Lyme disease", "ORPHAcode": "91546", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Relapsing fever", "ORPHAcode": "91547", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Ehrlichiosis", "ORPHAcode": "1902", "hch_id": "203", "parents": ["102021"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rocky Mountain spotted fever", "ORPHAcode": "83311", "hch_id": "203", "parents": ["102022"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rickettsialpox", "ORPHAcode": "83312", "hch_id": "203", "parents": ["102022"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Boutonneuse fever", "ORPHAcode": "83313", "hch_id": "203", "parents": ["102022"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Pseudotyphus of California", "ORPHAcode": "83316", "hch_id": "203", "parents": ["102022"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "African tick typhus", "ORPHAcode": "101334", "hch_id": "203", "parents": ["102022"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Spotted fever rickettsiosis", "ORPHAcode": "102022", "hch_id": "203", "parents": ["102021"], "childs": ["83311", "83312", "83313", "83316", "101334"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Brill-Zinsser disease", "ORPHAcode": "99990", "hch_id": "203", "parents": ["83314"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Relapsing epidemic typhus", "ORPHAcode": "99991", "hch_id": "203", "parents": ["83314"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Epidemic typhus", "ORPHAcode": "83314", "hch_id": "203", "parents": ["102023"], "childs": ["99990", "99991"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Murine typhus", "ORPHAcode": "83315", "hch_id": "203", "parents": ["102023"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Typhus-group rickettsiosis", "ORPHAcode": "102023", "hch_id": "203", "parents": ["102021"], "childs": ["83314", "83315"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rickettsial disease", "ORPHAcode": "102021", "hch_id": "203", "parents": ["163582"], "childs": ["1902", "102022", "102023"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Lemierre syndrome", "ORPHAcode": "137839", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Inhalational anthrax", "ORPHAcode": "247257", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Staphylococcal scarlet fever", "ORPHAcode": "36235", "hch_id": "203", "parents": ["300579"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Staphylococcal scalded skin syndrome", "ORPHAcode": "36236", "hch_id": "203", "parents": ["300579"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Bullous impetigo", "ORPHAcode": "36237", "hch_id": "203", "parents": ["300579"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Staphylococcal necrotizing pneumonia", "ORPHAcode": "36238", "hch_id": "203", "parents": ["300579"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Staphylococcal toxemia", "ORPHAcode": "300579", "hch_id": "203", "parents": ["163582"], "childs": ["36235", "36236", "36237", "36238", "99919"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Mycobacterium xenopi infection", "ORPHAcode": "314946", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Pulmonary non-tuberculous mycobacterial infection", "ORPHAcode": "411703", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Necrotizing soft tissue infection", "ORPHAcode": "440368", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Invasive infections due to vancomycin-resistant enterococci", "ORPHAcode": "90078", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Tuberculous meningitis", "ORPHAcode": "499004", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Actinomycosis", "ORPHAcode": "457095", "hch_id": "203", "parents": ["163582"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rare bacterial infectious disease", "ORPHAcode": "163582", "hch_id": "203", "parents": ["68416"], "childs": ["1304", "173", "795", "509", "810", "3452", "549", "533", "1489", "1267", "1679", "3389", "3299", "548", "707", "2700", "2583", "3392", "781", "764", "31202", "31204", "31205", "36234", "50839", "55655", "64692", "64694", "83317", "91546", "91547", "102021", "137839", "247257", "300579", "314946", "411703", "440368", "90078", "499004", "457095"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Ramsay Hunt syndrome", "ORPHAcode": "3020", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Congenital herpes simplex virus infection", "ORPHAcode": "293", "hch_id": "203", "parents": ["163585", "232035"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rabies", "ORPHAcode": "770", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Hemorrhagic fever-renal syndrome", "ORPHAcode": "340", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Lassa fever", "ORPHAcode": "99824", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Marburg hemorrhagic fever", "ORPHAcode": "99826", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Crimean-Congo hemorrhagic fever", "ORPHAcode": "99827", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Lujo hemorrhagic fever", "ORPHAcode": "319213", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Ebola hemorrhagic fever", "ORPHAcode": "319218", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Argentine hemorrhagic fever", "ORPHAcode": "319223", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Bolivian hemorrhagic fever", "ORPHAcode": "319229", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Venezuelan hemorrhagic fever", "ORPHAcode": "319234", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Brazilian hemorrhagic fever", "ORPHAcode": "319239", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Chapare hemorrhagic fever", "ORPHAcode": "319244", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Hantavirus pulmonary syndrome", "ORPHAcode": "319247", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rift valley fever", "ORPHAcode": "319251", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Kyasanur forest disease", "ORPHAcode": "319254", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Omsk hemorrhagic fever", "ORPHAcode": "319266", "hch_id": "203", "parents": ["341"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Yellow fever", "ORPHAcode": "99829", "hch_id": "203", "parents": ["341", "344"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Viral hemorrhagic fever", "ORPHAcode": "341", "hch_id": "203", "parents": ["163585"], "childs": ["340", "99824", "99826", "99827", "319213", "319218", "319223", "319229", "319234", "319239", "319244", "319247", "319251", "319254", "319266", "99829"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Dengue fever", "ORPHAcode": "99828", "hch_id": "203", "parents": ["344"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Chikungunya", "ORPHAcode": "324625", "hch_id": "203", "parents": ["344"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Arbovirus fever", "ORPHAcode": "344", "hch_id": "203", "parents": ["163585"], "childs": ["99828", "99829", "324625"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Chronic Epstein-Barr virus infection syndrome", "ORPHAcode": "2566", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Idiopathic recurrent and disabling cutaneous herpes", "ORPHAcode": "35061", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Idiopathic disseminated cytomegalovirus infection", "ORPHAcode": "35062", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Congenital Epstein-Barr virus infection", "ORPHAcode": "70596", "hch_id": "203", "parents": ["163585", "232035"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Herpes simplex virus encephalitis", "ORPHAcode": "1930", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Tick-borne encephalitis", "ORPHAcode": "297", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Japanese encephalitis", "ORPHAcode": "79139", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "West-Nile encephalitis", "ORPHAcode": "83476", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Mycoplasma encephalitis", "ORPHAcode": "83482", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "La Crosse encephalitis", "ORPHAcode": "83483", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "St. Louis encephalitis", "ORPHAcode": "83484", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Western equine encephalitis", "ORPHAcode": "83593", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Eastern equine encephalitis", "ORPHAcode": "83594", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Colorado tick fever", "ORPHAcode": "83595", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rubella panencephalitis", "ORPHAcode": "83616", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Nipah virus disease", "ORPHAcode": "99825", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Klüver-Bucy syndrome", "ORPHAcode": "157823", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Progressive multifocal leukoencephalopathy", "ORPHAcode": "217260", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Acute necrotizing encephalopathy of childhood", "ORPHAcode": "263524", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Hendra virus infection", "ORPHAcode": "324632", "hch_id": "203", "parents": ["98252"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Infectious encephalitis", "ORPHAcode": "98252", "hch_id": "203", "parents": ["163585"], "childs": ["1930", "297", "79139", "83476", "83482", "83483", "83484", "83593", "83594", "83595", "83616", "99825", "157823", "217260", "263524", "324632"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Acute respiratory coronavirus infection", "ORPHAcode": "140896", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Virus-associated trichodysplasia spinulosa", "ORPHAcode": "228379", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Tropical spastic paraparesis", "ORPHAcode": "289326", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Infective dermatitis associated with HTLV-1", "ORPHAcode": "289347", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Human infection by orthopoxvirus", "ORPHAcode": "438279", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Hepatitis delta", "ORPHAcode": "402823", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Adenovirus infection in immunocompromised patients", "ORPHAcode": "91127", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Cytomegalovirus disease in patients with impaired cell mediated immunity deemed at risk", "ORPHAcode": "137698", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Zika virus disease", "ORPHAcode": "448237", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Avian influenza", "ORPHAcode": "454836", "hch_id": "203", "parents": ["163585"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rare viral disease", "ORPHAcode": "163585", "hch_id": "203", "parents": ["68416"], "childs": ["3020", "293", "770", "341", "344", "2566", "35061", "35062", "70596", "98252", "140896", "228379", "289326", "289347", "438279", "402823", "91127", "137698", "448237", "454836"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Balantidiasis", "ORPHAcode": "1223", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Malaria", "ORPHAcode": "673", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Schistosomiasis", "ORPHAcode": "1247", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Congenital toxoplasmosis", "ORPHAcode": "858", "hch_id": "203", "parents": ["163588", "232035"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Trichinellosis", "ORPHAcode": "863", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Cryptosporidiosis", "ORPHAcode": "1549", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Alveolar echinococcosis", "ORPHAcode": "284", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "American trypanosomiasis", "ORPHAcode": "3386", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Leishmaniasis", "ORPHAcode": "507", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Anisakiasis", "ORPHAcode": "1070", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Microsporidiosis", "ORPHAcode": "2552", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Cysticercosis", "ORPHAcode": "1560", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "African trypanosomiasis", "ORPHAcode": "3385", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Amoebiasis due to Entamoeba histolytica", "ORPHAcode": "67", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Cryptococcosis", "ORPHAcode": "1546", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Distomatosis", "ORPHAcode": "1685", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Onchocerciasis", "ORPHAcode": "2737", "hch_id": "203", "parents": ["2034"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Dracunculiasis", "ORPHAcode": "231", "hch_id": "203", "parents": ["2034"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Lymphatic filariasis", "ORPHAcode": "2035", "hch_id": "203", "parents": ["2034"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Loiasis", "ORPHAcode": "2404", "hch_id": "203", "parents": ["2034"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Mansonelliasis", "ORPHAcode": "2459", "hch_id": "203", "parents": ["2034"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Dirofilariasis", "ORPHAcode": "166291", "hch_id": "203", "parents": ["2034"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Filariasis", "ORPHAcode": "2034", "hch_id": "203", "parents": ["163588"], "childs": ["2737", "231", "2035", "2404", "2459", "166291"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Toxocariasis", "ORPHAcode": "3343", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Amoebiasis due to free-living amoebae", "ORPHAcode": "68", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Angiostrongyliasis", "ORPHAcode": "74", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Strongyloidiasis", "ORPHAcode": "76", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Ankylostomiasis", "ORPHAcode": "78", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Babesiosis", "ORPHAcode": "108", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Diphyllobothriasis", "ORPHAcode": "128", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Cyclosporosis", "ORPHAcode": "210", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Demodicidosis", "ORPHAcode": "283", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Cystic echinococcosis", "ORPHAcode": "400", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Hymenolepiasis", "ORPHAcode": "401", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Isosporiasis", "ORPHAcode": "472", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Tungiasis", "ORPHAcode": "879", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Sarcocystosis", "ORPHAcode": "54368", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Amoebic keratitis", "ORPHAcode": "67043", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Creeping myiasis", "ORPHAcode": "504", "hch_id": "203", "parents": ["99983"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Furuncular myiasis due to Cordylobia rodhaini", "ORPHAcode": "563690", "hch_id": "203", "parents": ["591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Furuncular myiasis due to Cordylobia anthropophaga", "ORPHAcode": "563687", "hch_id": "203", "parents": ["591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Furuncular myiasis due to Dermatobia hominis", "ORPHAcode": "563684", "hch_id": "203", "parents": ["591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Furuncular myiasis", "ORPHAcode": "591", "hch_id": "203", "parents": ["99983"], "childs": ["563690", "563687", "563684"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Wound myiasis", "ORPHAcode": "165955", "hch_id": "203", "parents": ["99983"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Cutaneous myiasis", "ORPHAcode": "99983", "hch_id": "203", "parents": ["75110"], "childs": ["504", "591", "165955"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Cavitary myiasis", "ORPHAcode": "165958", "hch_id": "203", "parents": ["75110"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Myiasis", "ORPHAcode": "75110", "hch_id": "203", "parents": ["163588"], "childs": ["99983", "165958"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Coccidioidomycosis", "ORPHAcode": "228123", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Cutaneous larva migrans", "ORPHAcode": "423717", "hch_id": "203", "parents": ["163588"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rare parasitic disease", "ORPHAcode": "163588", "hch_id": "203", "parents": ["68416"], "childs": ["1223", "673", "1247", "858", "863", "1549", "284", "3386", "507", "1070", "2552", "1560", "3385", "67", "1546", "1685", "2034", "3343", "68", "74", "76", "78", "108", "128", "210", "283", "400", "401", "472", "879", "54368", "67043", "75110", "228123", "423717"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Aspergillosis", "ORPHAcode": "1163", "hch_id": "203", "parents": ["163591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Chromomycosis", "ORPHAcode": "182", "hch_id": "203", "parents": ["163591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Histoplasmosis", "ORPHAcode": "390", "hch_id": "203", "parents": ["163591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Pneumocystosis", "ORPHAcode": "723", "hch_id": "203", "parents": ["163591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Sporotrichosis", "ORPHAcode": "826", "hch_id": "203", "parents": ["163591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Paracoccidioidomycosis", "ORPHAcode": "73260", "hch_id": "203", "parents": ["163591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Zygomycosis", "ORPHAcode": "73263", "hch_id": "203", "parents": ["163591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Fusariosis", "ORPHAcode": "228119", "hch_id": "203", "parents": ["163591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Deep dermatophytosis", "ORPHAcode": "397587", "hch_id": "203", "parents": ["163591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Scedosporiosis", "ORPHAcode": "449280", "hch_id": "203", "parents": ["163591"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rare mycosis", "ORPHAcode": "163591", "hch_id": "203", "parents": ["68416"], "childs": ["1163", "2583", "182", "390", "723", "826", "73260", "73263", "228119", "397587", "449280"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Fetal parvovirus syndrome", "ORPHAcode": "295", "hch_id": "203", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Congenital rubella syndrome", "ORPHAcode": "290", "hch_id": "203", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Congenital varicella syndrome", "ORPHAcode": "291", "hch_id": "203", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Fetal cytomegalovirus syndrome", "ORPHAcode": "294", "hch_id": "203", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Congenital enterovirus infection", "ORPHAcode": "292", "hch_id": "203", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Congenital syphilis", "ORPHAcode": "499009", "hch_id": "203", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Infectious embryofetopathy", "ORPHAcode": "232035", "hch_id": "203", "parents": ["68416"], "childs": ["295", "290", "858", "291", "293", "294", "292", "70596", "499009"]}
+{"index": {"_index":"en_product3_203"}}
+{"name": "Rare infectious disease", "ORPHAcode": "68416", "hch_id": "203", "parents": [], "childs": ["163582", "163585", "163588", "163591", "232035"]}

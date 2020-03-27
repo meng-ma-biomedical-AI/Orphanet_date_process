@@ -1,0 +1,76 @@
+{"index": {"_index":"en_product3_216"}}
+{"name": "Fetal parvovirus syndrome", "ORPHAcode": "295", "hch_id": "216", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Congenital rubella syndrome", "ORPHAcode": "290", "hch_id": "216", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Congenital toxoplasmosis", "ORPHAcode": "858", "hch_id": "216", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Congenital varicella syndrome", "ORPHAcode": "291", "hch_id": "216", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Congenital herpes simplex virus infection", "ORPHAcode": "293", "hch_id": "216", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Fetal cytomegalovirus syndrome", "ORPHAcode": "294", "hch_id": "216", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Congenital enterovirus infection", "ORPHAcode": "292", "hch_id": "216", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Congenital Epstein-Barr virus infection", "ORPHAcode": "70596", "hch_id": "216", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Congenital syphilis", "ORPHAcode": "499009", "hch_id": "216", "parents": ["232035"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Infectious embryofetopathy", "ORPHAcode": "232035", "hch_id": "216", "parents": ["52662"], "childs": ["295", "290", "858", "291", "293", "294", "292", "70596", "499009"]}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Propylthiouracil embryofetopathy", "ORPHAcode": "485358", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Fetal alcohol syndrome", "ORPHAcode": "1915", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Aminopterin/methotrexate embryofetopathy", "ORPHAcode": "1908", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Indomethacin embryofetopathy", "ORPHAcode": "1909", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Fetal iodine syndrome", "ORPHAcode": "1910", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Cocaine embryofetopathy", "ORPHAcode": "1911", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Fetal minoxidil syndrome", "ORPHAcode": "1918", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Vitamin K antagonist embryofetopathy", "ORPHAcode": "1914", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Diethylstilbestrol syndrome", "ORPHAcode": "1916", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Fetal methylmercury syndrome", "ORPHAcode": "1917", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Toluene embryopathy", "ORPHAcode": "1920", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Methimazole embryofetopathy", "ORPHAcode": "1923", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Isotretinoin syndrome", "ORPHAcode": "2305", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Thalidomide embryopathy", "ORPHAcode": "3312", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Acitretin/etretinate embryopathy", "ORPHAcode": "40366", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Mycophenolate mofetil embryopathy", "ORPHAcode": "268249", "hch_id": "216", "parents": ["251529"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Fetal valproate syndrome", "ORPHAcode": "1906", "hch_id": "216", "parents": ["370068"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Fetal hydantoin syndrome", "ORPHAcode": "1912", "hch_id": "216", "parents": ["370068"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Fetal trimethadione syndrome", "ORPHAcode": "1913", "hch_id": "216", "parents": ["370068"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Phenobarbital embryopathy", "ORPHAcode": "1919", "hch_id": "216", "parents": ["370068"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Fetal carbamazepine syndrome", "ORPHAcode": "370076", "hch_id": "216", "parents": ["370068"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Fetal anticonvulsant syndrome", "ORPHAcode": "370068", "hch_id": "216", "parents": ["251529"], "childs": ["1906", "1912", "1913", "1919", "370076"]}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Toxic or drug-related embryofetopathy", "ORPHAcode": "251529", "hch_id": "216", "parents": ["52662"], "childs": ["485358", "1915", "1908", "1909", "1910", "1911", "1918", "1914", "1916", "1917", "1920", "1923", "2305", "3312", "40366", "268249", "370068"]}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Diabetic embryopathy", "ORPHAcode": "1926", "hch_id": "216", "parents": ["251535"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Maternal phenylketonuria", "ORPHAcode": "2209", "hch_id": "216", "parents": ["251535"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Maternal hyperthermia-induced birth defects", "ORPHAcode": "2216", "hch_id": "216", "parents": ["251535"], "childs": []}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Maternal disease-related embryofetopathy", "ORPHAcode": "251535", "hch_id": "216", "parents": ["52662"], "childs": ["1926", "2209", "2216"]}
+{"index": {"_index":"en_product3_216"}}
+{"name": "Rare teratologic disease", "ORPHAcode": "52662", "hch_id": "216", "parents": [], "childs": ["232035", "251529", "251535"]}

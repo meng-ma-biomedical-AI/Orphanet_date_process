@@ -1,0 +1,24 @@
+en_product3_199:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Bone sarcoma"
+    ORPHAcode:
+      type: string
+      example: "223727"
+    hch_id:
+      type: string
+      example: "199"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['68411']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['2023', '2030', '668', '319', '55880', '363976', '370348']"
+  required:
+    - ORPHAcode

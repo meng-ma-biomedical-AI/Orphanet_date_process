@@ -1,0 +1,542 @@
+{"index": {"_index":"en_product3_152"}}
+{"name": "High-grade dysplasia in patients with Barrett esophagus", "ORPHAcode": "231080", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Idiopathic achalasia", "ORPHAcode": "930", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Ménétrier disease", "ORPHAcode": "2494", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Eosinophilic gastroenteritis", "ORPHAcode": "2070", "hch_id": "152", "parents": ["101936", "402029"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Palmoplantar keratoderma-esophageal carcinoma syndrome", "ORPHAcode": "2198", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Cystic fibrosis-gastritis-megaloblastic anemia syndrome", "ORPHAcode": "2575", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Plummer-Vinson syndrome", "ORPHAcode": "54028", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Sandifer syndrome", "ORPHAcode": "71272", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neuroendocrine tumor of stomach", "ORPHAcode": "100075", "hch_id": "152", "parents": ["63443"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Gastric linitis plastica", "ORPHAcode": "36273", "hch_id": "152", "parents": ["423771"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Epstein-Barr virus-associated gastric carcinoma", "ORPHAcode": "313920", "hch_id": "152", "parents": ["423771"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Squamous cell carcinoma of the stomach", "ORPHAcode": "418959", "hch_id": "152", "parents": ["423771"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hereditary diffuse gastric cancer", "ORPHAcode": "26106", "hch_id": "152", "parents": ["423776"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Gastric adenocarcinoma and proximal polyposis of the stomach", "ORPHAcode": "314022", "hch_id": "152", "parents": ["423776"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hereditary gastric cancer", "ORPHAcode": "423776", "hch_id": "152", "parents": ["423771"], "childs": ["26106", "314022"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Undifferentiated carcinoma of stomach", "ORPHAcode": "423786", "hch_id": "152", "parents": ["423771"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare carcinoma of stomach", "ORPHAcode": "423771", "hch_id": "152", "parents": ["63443"], "childs": ["36273", "313920", "418959", "423776", "423786"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Familial gastric type 1 neuroendocrine tumor", "ORPHAcode": "464756", "hch_id": "152", "parents": ["63443"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare epithelial tumor of stomach", "ORPHAcode": "63443", "hch_id": "152", "parents": ["180821"], "childs": ["100075", "423771", "464756"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Adenocarcinoma of the esophagus", "ORPHAcode": "99976", "hch_id": "152", "parents": ["70482"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Squamous cell carcinoma of the esophagus", "ORPHAcode": "99977", "hch_id": "152", "parents": ["70482"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Carcinoma of esophagus, salivary gland type", "ORPHAcode": "418945", "hch_id": "152", "parents": ["70482"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Undifferentiated carcinoma of esophagus", "ORPHAcode": "418951", "hch_id": "152", "parents": ["70482"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Carcinoma of esophagus", "ORPHAcode": "70482", "hch_id": "152", "parents": ["180821"], "childs": ["99976", "99977", "418945", "418951"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neuroendocrine neoplasm of esophagus", "ORPHAcode": "506136", "hch_id": "152", "parents": ["180821"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare gastroesophageal tumor", "ORPHAcode": "180821", "hch_id": "152", "parents": ["101936"], "childs": ["63443", "70482", "506136"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Non-hypoproteinemic hypertrophic gastropathy", "ORPHAcode": "329883", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Moyamoya disease with early-onset achalasia", "ORPHAcode": "401945", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Idiopathic gastroparesis", "ORPHAcode": "558411", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Gastrocutaneous syndrome", "ORPHAcode": "2069", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Pediatric collagenous gastritis", "ORPHAcode": "487809", "hch_id": "152", "parents": ["101936"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare gastroesophageal disease", "ORPHAcode": "101936", "hch_id": "152", "parents": ["97935"], "childs": ["231080", "930", "2494", "2070", "2198", "2575", "54028", "71272", "180821", "329883", "401945", "558411", "2069", "487809"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Cystic fibrosis", "ORPHAcode": "586", "hch_id": "152", "parents": ["101937"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hereditary chronic pancreatitis", "ORPHAcode": "676", "hch_id": "152", "parents": ["101937"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Shwachman-Diamond syndrome", "ORPHAcode": "811", "hch_id": "152", "parents": ["101937"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Recurrent acute pancreatitis", "ORPHAcode": "64740", "hch_id": "152", "parents": ["101937"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Tropical pancreatitis", "ORPHAcode": "103918", "hch_id": "152", "parents": ["101937"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Autoimmune pancreatitis type 1", "ORPHAcode": "280302", "hch_id": "152", "parents": ["103919"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Autoimmune pancreatitis type 2", "ORPHAcode": "280315", "hch_id": "152", "parents": ["103919"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Autoimmune pancreatitis", "ORPHAcode": "103919", "hch_id": "152", "parents": ["101937"], "childs": ["280302", "280315"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Pancreatoblastoma", "ORPHAcode": "677", "hch_id": "152", "parents": ["424033"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Zollinger-Ellison syndrome", "ORPHAcode": "913", "hch_id": "152", "parents": ["506060", "100076"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "GRFoma", "ORPHAcode": "97261", "hch_id": "152", "parents": ["506060"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "PPoma", "ORPHAcode": "97278", "hch_id": "152", "parents": ["506060"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Insulinoma", "ORPHAcode": "97279", "hch_id": "152", "parents": ["506060"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Glucagonoma", "ORPHAcode": "97280", "hch_id": "152", "parents": ["506060"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "VIPoma", "ORPHAcode": "97282", "hch_id": "152", "parents": ["506060"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Somatostatinoma", "ORPHAcode": "97283", "hch_id": "152", "parents": ["506060", "100076", "100077"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Cushing syndrome due to ectopic ACTH secretion", "ORPHAcode": "99889", "hch_id": "152", "parents": ["506060"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Serotonin-producing neuroendocrine tumor of pancreas", "ORPHAcode": "506090", "hch_id": "152", "parents": ["506060"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Functioning neuroendocrine tumor of pancreas", "ORPHAcode": "506060", "hch_id": "152", "parents": ["97253"], "childs": ["913", "97261", "97278", "97279", "97280", "97282", "97283", "99889", "506090"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Non-functioning neuroendocrine tumor of pancreas", "ORPHAcode": "506075", "hch_id": "152", "parents": ["97253"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neuroendocrine tumor of pancreas", "ORPHAcode": "97253", "hch_id": "152", "parents": ["506052"], "childs": ["506060", "506075"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neuroendocrine carcinoma of pancreas", "ORPHAcode": "506098", "hch_id": "152", "parents": ["506052"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Mixed neuroendocrine-nonneuroendocrine neoplasm of pancreas", "ORPHAcode": "506112", "hch_id": "152", "parents": ["506052"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neuroendocrine neoplasm of pancreas", "ORPHAcode": "506052", "hch_id": "152", "parents": ["424033"], "childs": ["97253", "506098", "506112"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Familial pancreatic carcinoma", "ORPHAcode": "1333", "hch_id": "152", "parents": ["217074"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Squamous cell carcinoma of pancreas", "ORPHAcode": "424039", "hch_id": "152", "parents": ["217074"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Acinar cell carcinoma of pancreas", "ORPHAcode": "424046", "hch_id": "152", "parents": ["217074"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Mucinous cystadenocarcinoma of the pancreas", "ORPHAcode": "424053", "hch_id": "152", "parents": ["217074"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Intraductal papillary mucinous carcinoma of pancreas", "ORPHAcode": "424058", "hch_id": "152", "parents": ["217074"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Solid pseudopapillary carcinoma of pancreas", "ORPHAcode": "424065", "hch_id": "152", "parents": ["217074"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Serous cystadenocarcinoma of pancreas", "ORPHAcode": "424073", "hch_id": "152", "parents": ["217074"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Osteoclastic giant cell tumor of pancreas", "ORPHAcode": "424080", "hch_id": "152", "parents": ["217074"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare carcinoma of pancreas", "ORPHAcode": "217074", "hch_id": "152", "parents": ["424033"], "childs": ["1333", "424039", "424046", "424053", "424058", "424065", "424073", "424080"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Adenoma of pancreas", "ORPHAcode": "93292", "hch_id": "152", "parents": ["424033"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare epithelial tumor of pancreas", "ORPHAcode": "424033", "hch_id": "152", "parents": ["180824"], "childs": ["677", "506052", "217074", "93292"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "GCGR-related hyperglucagonemia", "ORPHAcode": "438274", "hch_id": "152", "parents": ["180824"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare tumor of pancreas", "ORPHAcode": "180824", "hch_id": "152", "parents": ["101937"], "childs": ["424033", "438274"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Pancreatic insufficiency-anemia-hyperostosis syndrome", "ORPHAcode": "199337", "hch_id": "152", "parents": ["101937"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Follicular cholangitis and pancreatitis", "ORPHAcode": "300552", "hch_id": "152", "parents": ["101937"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Pancreatic triacylglycerol lipase deficiency", "ORPHAcode": "309031", "hch_id": "152", "parents": ["309028"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Pancreatic colipase deficiency", "ORPHAcode": "309108", "hch_id": "152", "parents": ["309028"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Combined pancreatic lipase-colipase deficiency", "ORPHAcode": "309111", "hch_id": "152", "parents": ["309028"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Disorder of lipid absorption and transport", "ORPHAcode": "309028", "hch_id": "152", "parents": ["101937"], "childs": ["309031", "309108", "309111"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital pancreatic cyst", "ORPHAcode": "313906", "hch_id": "152", "parents": ["101937"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Infantile multisystem neurologic-endocrine-pancreatic disease", "ORPHAcode": "456312", "hch_id": "152", "parents": ["101937"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare pancreatic disease", "ORPHAcode": "101937", "hch_id": "152", "parents": ["97935"], "childs": ["586", "676", "811", "64740", "103918", "103919", "180824", "199337", "300552", "309028", "313906", "456312"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Whipple disease", "ORPHAcode": "3452", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Aplasia cutis congenita-intestinal lymphangiectasia syndrome", "ORPHAcode": "1116", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Malakoplakia", "ORPHAcode": "556", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Primary intestinal lymphangiectasia", "ORPHAcode": "90362", "hch_id": "152", "parents": ["36204"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Secondary intestinal lymphangiectasia", "ORPHAcode": "90363", "hch_id": "152", "parents": ["36204"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Complement hyperactivation-angiopathic thrombosis-protein-losing enteropathy syndrome", "ORPHAcode": "566175", "hch_id": "152", "parents": ["36204", "104012"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Intestinal lymphangiectasia", "ORPHAcode": "36204", "hch_id": "152", "parents": ["117569"], "childs": ["90362", "90363", "566175"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Radiation proctitis", "ORPHAcode": "70475", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Microvillus inclusion disease", "ORPHAcode": "2290", "hch_id": "152", "parents": ["73014", "104007"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Chronic diarrhea with villous atrophy", "ORPHAcode": "1670", "hch_id": "152", "parents": ["73014"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Syndromic diarrhea", "ORPHAcode": "84064", "hch_id": "152", "parents": ["73014"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital tufting enteropathy", "ORPHAcode": "92050", "hch_id": "152", "parents": ["73014", "104007"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Intractable diarrhea-choanal atresia-eye anomalies syndrome", "ORPHAcode": "137622", "hch_id": "152", "parents": ["73014"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital chronic diarrhea with protein-losing enteropathy", "ORPHAcode": "329242", "hch_id": "152", "parents": ["73014"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Combined immunodeficiency due to LRBA deficiency", "ORPHAcode": "445018", "hch_id": "152", "parents": ["73014", "522043"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital sodium diarrhea", "ORPHAcode": "103908", "hch_id": "152", "parents": ["73014", "104003"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Syndromic congenital sodium diarrhea", "ORPHAcode": "563708", "hch_id": "152", "parents": ["73014", "104003"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Primary autoimmune enteropathy", "ORPHAcode": "522037", "hch_id": "152", "parents": ["73014", "94075"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome", "ORPHAcode": "37042", "hch_id": "152", "parents": ["522043"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Autoimmune lymphoproliferative syndrome due to CTLA4 haploinsuffiency", "ORPHAcode": "436159", "hch_id": "152", "parents": ["522043"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome", "ORPHAcode": "391487", "hch_id": "152", "parents": ["522043"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Immunodeficiency due to CD25 deficiency", "ORPHAcode": "169100", "hch_id": "152", "parents": ["522043"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "STAT3-related early-onset multisystem autoimmune disease", "ORPHAcode": "438159", "hch_id": "152", "parents": ["522043"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Laron syndrome with immunodeficiency", "ORPHAcode": "220465", "hch_id": "152", "parents": ["522043"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Syndromic multisystem autoimmune disease due to Itch deficiency", "ORPHAcode": "228426", "hch_id": "152", "parents": ["522043"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Autoimmune polyendocrinopathy type 1", "ORPHAcode": "3453", "hch_id": "152", "parents": ["522043"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Syndromic autoimmune enteropathy", "ORPHAcode": "522043", "hch_id": "152", "parents": ["73014", "94075"], "childs": ["37042", "436159", "391487", "169100", "438159", "220465", "228426", "3453", "445018"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Intractable diarrhea of infancy", "ORPHAcode": "73014", "hch_id": "152", "parents": ["117569"], "childs": ["2290", "1670", "84064", "92050", "137622", "329242", "445018", "103908", "563708", "522037", "522043"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Immunodeficiency by defective expression of MHC class II", "ORPHAcode": "572", "hch_id": "152", "parents": ["94075"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "TCR-alpha-beta-positive T-cell deficiency", "ORPHAcode": "397959", "hch_id": "152", "parents": ["94075"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Severe combined immunodeficiency due to LCK deficiency", "ORPHAcode": "280142", "hch_id": "152", "parents": ["94075"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Severe immune-mediated enteropathy", "ORPHAcode": "94075", "hch_id": "152", "parents": ["117569"], "childs": ["572", "397959", "280142", "522037", "522043"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hereditary fructose intolerance", "ORPHAcode": "469", "hch_id": "152", "parents": ["104003"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Glucose-galactose malabsorption", "ORPHAcode": "35710", "hch_id": "152", "parents": ["104003"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital chloride diarrhea", "ORPHAcode": "53689", "hch_id": "152", "parents": ["104003"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital intestinal transport defect", "ORPHAcode": "104003", "hch_id": "152", "parents": ["117569"], "childs": ["469", "35710", "53689", "103908", "563708"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Imerslund-Gräsbeck syndrome", "ORPHAcode": "35858", "hch_id": "152", "parents": ["104004"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hereditary folate malabsorption", "ORPHAcode": "90045", "hch_id": "152", "parents": ["104004"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Intestinal disease due to vitamin absorption anomaly", "ORPHAcode": "104004", "hch_id": "152", "parents": ["117569"], "childs": ["35858", "90045"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Abetalipoproteinemia", "ORPHAcode": "14", "hch_id": "152", "parents": ["104005"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Chylomicron retention disease", "ORPHAcode": "71", "hch_id": "152", "parents": ["104005"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Acrodermatitis enteropathica", "ORPHAcode": "37", "hch_id": "152", "parents": ["104005"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Idiopathic malabsorption due to bile acid synthesis defects", "ORPHAcode": "84065", "hch_id": "152", "parents": ["104005"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Intestinal disease due to fat malabsorption", "ORPHAcode": "104005", "hch_id": "152", "parents": ["117569"], "childs": ["14", "71", "37", "84065"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital sucrase-isomaltase deficiency with minimal starch tolerance", "ORPHAcode": "306446", "hch_id": "152", "parents": ["35122"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital sucrase-isomaltase deficiency without starch intolerance", "ORPHAcode": "306462", "hch_id": "152", "parents": ["35122"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital sucrase-isomaltase deficiency with starch intolerance", "ORPHAcode": "306436", "hch_id": "152", "parents": ["35122"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital sucrase-isomaltase deficiency without sucrose intolerance", "ORPHAcode": "306486", "hch_id": "152", "parents": ["35122"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital sucrase-isomaltase deficiency with starch and lactose intolerance", "ORPHAcode": "306474", "hch_id": "152", "parents": ["35122"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital sucrase-isomaltase deficiency", "ORPHAcode": "35122", "hch_id": "152", "parents": ["104006"], "childs": ["306446", "306462", "306436", "306486", "306474"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital lactase deficiency", "ORPHAcode": "53690", "hch_id": "152", "parents": ["104006"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Chronic diarrhea due to glucoamylase deficiency", "ORPHAcode": "103907", "hch_id": "152", "parents": ["104006"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Trehalase deficiency", "ORPHAcode": "103909", "hch_id": "152", "parents": ["104006"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital enteropathy due to enteropeptidase deficiency", "ORPHAcode": "168601", "hch_id": "152", "parents": ["104006"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital intestinal disease due to an enzymatic defect", "ORPHAcode": "104006", "hch_id": "152", "parents": ["117569"], "childs": ["35122", "53690", "103907", "103909", "168601"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Enteric anendocrinosis", "ORPHAcode": "83620", "hch_id": "152", "parents": ["104007"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital enterocyte heparan sulfate deficiency", "ORPHAcode": "103910", "hch_id": "152", "parents": ["104007"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital enteropathy involving intestinal mucosa development", "ORPHAcode": "104007", "hch_id": "152", "parents": ["117569"], "childs": ["2290", "83620", "92050", "103910"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Secondary short bowel syndrome", "ORPHAcode": "95427", "hch_id": "152", "parents": ["104008"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital short bowel syndrome", "ORPHAcode": "2301", "hch_id": "152", "parents": ["365563"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Atresia of small intestine", "ORPHAcode": "1201", "hch_id": "152", "parents": ["365563"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Gastroschisis", "ORPHAcode": "2368", "hch_id": "152", "parents": ["365563"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Primary short bowel syndrome", "ORPHAcode": "365563", "hch_id": "152", "parents": ["104008"], "childs": ["2301", "1201", "2368"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Short bowel syndrome", "ORPHAcode": "104008", "hch_id": "152", "parents": ["117569"], "childs": ["95427", "365563"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hirschsprung disease", "ORPHAcode": "388", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Waardenburg-Shah syndrome", "ORPHAcode": "897", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Oculogastrointestinal muscular dystrophy", "ORPHAcode": "1876", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Familial visceral myopathy", "ORPHAcode": "2604", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Megacystis-microcolon-intestinal hypoperistalsis syndrome", "ORPHAcode": "2241", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neuronal intestinal pseudoobstruction", "ORPHAcode": "99811", "hch_id": "152", "parents": ["2978"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Myopathic intestinal pseudoobstruction", "ORPHAcode": "104077", "hch_id": "152", "parents": ["2978"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Unclassified intestinal pseudoobstruction", "ORPHAcode": "104078", "hch_id": "152", "parents": ["2978"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Chronic intestinal pseudoobstruction", "ORPHAcode": "2978", "hch_id": "152", "parents": ["104009"], "childs": ["99811", "104077", "104078"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Peripheral demyelinating neuropathy-central dysmyelinating leukodystrophy-Waardenburg syndrome-Hirschsprung disease", "ORPHAcode": "163746", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Chronic infantile diarrhea due to guanylate cyclase 2C overactivity", "ORPHAcode": "314373", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Intestinal obstruction in the newborn due to guanylate cyclase 2C deficiency", "ORPHAcode": "314376", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Multisystemic smooth muscle dysfunction syndrome", "ORPHAcode": "404463", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hirschsprung disease-type D brachydactyly syndrome", "ORPHAcode": "2150", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hirschsprung disease-nail hypoplasia-dysmorphism syndrome", "ORPHAcode": "2153", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hirschsprung disease-deafness-polydactyly syndrome", "ORPHAcode": "2155", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hirschsprung disease-ganglioneuroblastoma syndrome", "ORPHAcode": "2151", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Bardet-Biedl syndrome", "ORPHAcode": "110", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Goldberg-Shprintzen megacolon syndrome", "ORPHAcode": "66629", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Haddad syndrome", "ORPHAcode": "99803", "hch_id": "152", "parents": ["104009"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare disease involving intestinal motility", "ORPHAcode": "104009", "hch_id": "152", "parents": ["117569"], "childs": ["388", "897", "1876", "2604", "2241", "2978", "163746", "314373", "314376", "404463", "2150", "2153", "2155", "2151", "110", "66629", "99803"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Enteropathy-associated T-cell lymphoma", "ORPHAcode": "86880", "hch_id": "152", "parents": ["423793"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Gastrointestinal stromal tumor", "ORPHAcode": "44890", "hch_id": "152", "parents": ["423798"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Leiomyosarcoma of small intestine", "ORPHAcode": "104076", "hch_id": "152", "parents": ["423798"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Mesenchymal tumor of small intestine", "ORPHAcode": "423798", "hch_id": "152", "parents": ["423793"], "childs": ["44890", "104076"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Adenocarcinoma of the small instestine", "ORPHAcode": "104075", "hch_id": "152", "parents": ["423957"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Squamous cell carcinoma of the small intestine", "ORPHAcode": "423968", "hch_id": "152", "parents": ["423957"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare carcinoma of small intestine", "ORPHAcode": "423957", "hch_id": "152", "parents": ["425368"], "childs": ["104075", "423968"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Duodenal neuroendocrine tumor", "ORPHAcode": "100076", "hch_id": "152", "parents": ["423975"], "childs": ["97283", "913"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Jejunal neuroendocrine tumor", "ORPHAcode": "100077", "hch_id": "152", "parents": ["423975"], "childs": ["97283"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Ileal neuroendocrine tumor", "ORPHAcode": "100078", "hch_id": "152", "parents": ["423975"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neuroendocrine tumor of the small intestine", "ORPHAcode": "423975", "hch_id": "152", "parents": ["425368"], "childs": ["100076", "100077", "100078"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare epithelial tumor of small intestine", "ORPHAcode": "425368", "hch_id": "152", "parents": ["423793"], "childs": ["423957", "423975"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare tumor of small intestine", "ORPHAcode": "423793", "hch_id": "152", "parents": ["104011"], "childs": ["86880", "423798", "425368"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Classic neuroendocrine tumor of appendix", "ORPHAcode": "329977", "hch_id": "152", "parents": ["100079"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Goblet cell carcinoma", "ORPHAcode": "329984", "hch_id": "152", "parents": ["100079"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neuroendocrine neoplasm of appendix", "ORPHAcode": "100079", "hch_id": "152", "parents": ["423982"], "childs": ["329977", "329984"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Mucinous adenocarcinoma of the appendix", "ORPHAcode": "391723", "hch_id": "152", "parents": ["423982"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Epithelial tumor of the appendix", "ORPHAcode": "423982", "hch_id": "152", "parents": ["104011"], "childs": ["100079", "391723"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neuroendocrine tumor of the colon", "ORPHAcode": "100080", "hch_id": "152", "parents": ["423991"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Squamous cell carcinoma of the colon", "ORPHAcode": "423994", "hch_id": "152", "parents": ["423991"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare epithelial tumor of colon", "ORPHAcode": "423991", "hch_id": "152", "parents": ["104011"], "childs": ["100080", "423994"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neuroendocrine tumor of the rectum", "ORPHAcode": "100081", "hch_id": "152", "parents": ["423998"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Squamous cell carcinoma of the rectum", "ORPHAcode": "424002", "hch_id": "152", "parents": ["423998"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare epithelial tumor of rectum", "ORPHAcode": "423998", "hch_id": "152", "parents": ["104011"], "childs": ["100081", "424002"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neuroendocrine tumor of anal canal", "ORPHAcode": "100082", "hch_id": "152", "parents": ["424010"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Adenocarcinoma of the anal canal", "ORPHAcode": "424016", "hch_id": "152", "parents": ["424013"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Squamous cell carcinoma of the anal canal", "ORPHAcode": "424019", "hch_id": "152", "parents": ["424013"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Carcinoma of the anal canal", "ORPHAcode": "424013", "hch_id": "152", "parents": ["424010"], "childs": ["424016", "424019"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Epithelial tumor of anal canal", "ORPHAcode": "424010", "hch_id": "152", "parents": ["104011"], "childs": ["100082", "424013"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare tumor of intestine", "ORPHAcode": "104011", "hch_id": "152", "parents": ["117569"], "childs": ["423793", "423982", "423991", "423998", "424010"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Chronic granulomatous disease", "ORPHAcode": "379", "hch_id": "152", "parents": ["104012"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Cutaneous photosensitivity-lethal colitis syndrome", "ORPHAcode": "2881", "hch_id": "152", "parents": ["104012"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Undetermined colitis", "ORPHAcode": "103920", "hch_id": "152", "parents": ["104012"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Cap polyposis", "ORPHAcode": "160148", "hch_id": "152", "parents": ["104012"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Neonatal inflammatory skin and bowel disease", "ORPHAcode": "294023", "hch_id": "152", "parents": ["104012"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Immune dysregulation-inflammatory bowel disease-arthritis-recurrent infections-lymphopenia syndrome", "ORPHAcode": "529977", "hch_id": "152", "parents": ["529974"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Inflammatory bowel disease-recurrent sinopulmonary infections syndrome", "ORPHAcode": "529980", "hch_id": "152", "parents": ["529974"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Immune dysregulation-inflammatory bowel disease-arthritis-recurrent infections syndrome", "ORPHAcode": "238569", "hch_id": "152", "parents": ["529974"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Immune dysregulation with inflammatory bowel disease", "ORPHAcode": "529974", "hch_id": "152", "parents": ["104012"], "childs": ["529977", "529980", "238569"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "IL21-related infantile inflammatory bowel disease", "ORPHAcode": "477661", "hch_id": "152", "parents": ["104012"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Necrotizing enterocolitis", "ORPHAcode": "391673", "hch_id": "152", "parents": ["104012"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare inflammatory bowel disease", "ORPHAcode": "104012", "hch_id": "152", "parents": ["117569"], "childs": ["566175", "379", "2881", "103920", "160148", "294023", "529974", "477661", "391673"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Pearson syndrome", "ORPHAcode": "699", "hch_id": "152", "parents": ["104013"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Mitochondrial neurogastrointestinal encephalomyopathy", "ORPHAcode": "298", "hch_id": "152", "parents": ["104013"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "MPI-CDG", "ORPHAcode": "79319", "hch_id": "152", "parents": ["371188"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "ALG6-CDG", "ORPHAcode": "79320", "hch_id": "152", "parents": ["371188"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "ALG8-CDG", "ORPHAcode": "79325", "hch_id": "152", "parents": ["371188"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Congenital disorder of glycosylation with intestinal involvement", "ORPHAcode": "371188", "hch_id": "152", "parents": ["104013"], "childs": ["79319", "79320", "79325"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Metabolic disease with intestinal involvement", "ORPHAcode": "104013", "hch_id": "152", "parents": ["117569"], "childs": ["699", "298", "371188"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Solitary rectal ulcer syndrome", "ORPHAcode": "209964", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Chronic intestinal failure", "ORPHAcode": "294422", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "PrP systemic amyloidosis", "ORPHAcode": "397606", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Refractory celiac disease", "ORPHAcode": "398063", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Chronic atrial and intestinal dysrhythmia syndrome", "ORPHAcode": "435988", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Periodic fever-infantile enterocolitis-autoinflammatory syndrome", "ORPHAcode": "436166", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Primary desmosis coli", "ORPHAcode": "565641", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Pouchitis", "ORPHAcode": "217067", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Anal fistula", "ORPHAcode": "228113", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Ileal pouch anal anastomosis related faecal incontinence", "ORPHAcode": "238621", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Cryptogenic multifocal ulcerous stenosing enteritis", "ORPHAcode": "468635", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Chronic enteropathy associated with SLCO2A1 gene", "ORPHAcode": "468641", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Cytosolic phospholipase-A2 alpha deficiency associated bleeding disorder", "ORPHAcode": "477787", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Satoyoshi syndrome", "ORPHAcode": "3130", "hch_id": "152", "parents": ["117569"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare intestinal disease", "ORPHAcode": "117569", "hch_id": "152", "parents": ["97935"], "childs": ["3452", "1116", "556", "36204", "70475", "73014", "94075", "104003", "104004", "104005", "104006", "104007", "104008", "104009", "104011", "104012", "104013", "209964", "294422", "397606", "398063", "435988", "436166", "565641", "217067", "228113", "238621", "468635", "468641", "477787", "3130"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "NK-cell enteropathy", "ORPHAcode": "263665", "hch_id": "152", "parents": ["97935"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Squamous cell carcinoma of salivary glands", "ORPHAcode": "500481", "hch_id": "152", "parents": ["276145"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Malignant epithelial tumor of salivary glands", "ORPHAcode": "276145", "hch_id": "152", "parents": ["276142"], "childs": ["500481"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Pleomorphic salivary gland adenoma", "ORPHAcode": "454821", "hch_id": "152", "parents": ["276148"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Benign epithelial tumor of salivary glands", "ORPHAcode": "276148", "hch_id": "152", "parents": ["276142"], "childs": ["454821"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare tumor of salivary glands", "ORPHAcode": "276142", "hch_id": "152", "parents": ["97935"], "childs": ["276145", "276148"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Carcinoma of the ampulla of Vater", "ORPHAcode": "300557", "hch_id": "152", "parents": ["97935"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Eosinophilic esophagitis", "ORPHAcode": "73247", "hch_id": "152", "parents": ["402029"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Eosinophilic colitis", "ORPHAcode": "402035", "hch_id": "152", "parents": ["402029"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Proton-pump inhibitor-responsive esophageal eosinophilia", "ORPHAcode": "411696", "hch_id": "152", "parents": ["402029"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Primary eosinophilic gastrointestinal disease", "ORPHAcode": "402029", "hch_id": "152", "parents": ["97935"], "childs": ["2070", "73247", "402035", "411696"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Multiple endocrine neoplasia type 1", "ORPHAcode": "652", "hch_id": "152", "parents": ["425003"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Familial medullary thyroid carcinoma", "ORPHAcode": "99361", "hch_id": "152", "parents": ["653"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Multiple endocrine neoplasia type 2A", "ORPHAcode": "247698", "hch_id": "152", "parents": ["653"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Multiple endocrine neoplasia type 2B", "ORPHAcode": "247709", "hch_id": "152", "parents": ["653"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Multiple endocrine neoplasia type 2", "ORPHAcode": "653", "hch_id": "152", "parents": ["425003"], "childs": ["99361", "247698", "247709"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Gardner syndrome", "ORPHAcode": "79665", "hch_id": "152", "parents": ["733"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Turcot syndrome with polyposis", "ORPHAcode": "99818", "hch_id": "152", "parents": ["733"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Familial adenomatous polyposis due to 5q22.2 microdeletion", "ORPHAcode": "261584", "hch_id": "152", "parents": ["733"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Familial adenomatous polyposis", "ORPHAcode": "733", "hch_id": "152", "parents": ["104010"], "childs": ["79665", "99818", "261584"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Peutz-Jeghers syndrome", "ORPHAcode": "2869", "hch_id": "152", "parents": ["104010"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Cowden syndrome", "ORPHAcode": "201", "hch_id": "152", "parents": ["104010"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Juvenile polyposis of infancy", "ORPHAcode": "79076", "hch_id": "152", "parents": ["2929"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Generalized juvenile polyposis/juvenile polyposis coli", "ORPHAcode": "329971", "hch_id": "152", "parents": ["2929"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Juvenile polyposis syndrome", "ORPHAcode": "2929", "hch_id": "152", "parents": ["104010"], "childs": ["79076", "329971"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Bannayan-Riley-Ruvalcaba syndrome", "ORPHAcode": "109", "hch_id": "152", "parents": ["104010"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Cronkhite-Canada syndrome", "ORPHAcode": "2930", "hch_id": "152", "parents": ["104010"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hereditary mixed polyposis syndrome", "ORPHAcode": "157794", "hch_id": "152", "parents": ["104010"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hyperplastic polyposis syndrome", "ORPHAcode": "157798", "hch_id": "152", "parents": ["104010"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "MUTYH-related attenuated familial adenomatous polyposis", "ORPHAcode": "247798", "hch_id": "152", "parents": ["220460"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "APC-related attenuated familial adenomatous polyposis", "ORPHAcode": "247806", "hch_id": "152", "parents": ["220460"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "AXIN2-related attenuated familial adenomatous polyposis", "ORPHAcode": "401911", "hch_id": "152", "parents": ["220460"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "MSH3-related attenuated familial adenomatous polyposis", "ORPHAcode": "480536", "hch_id": "152", "parents": ["220460"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Polymerase proofreading-related adenomatous polyposis", "ORPHAcode": "447877", "hch_id": "152", "parents": ["220460"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "NTHL1-related attenuated familial adenomatous polyposis", "ORPHAcode": "454840", "hch_id": "152", "parents": ["220460"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Attenuated familial adenomatous polyposis", "ORPHAcode": "220460", "hch_id": "152", "parents": ["104010"], "childs": ["247798", "247806", "401911", "480536", "447877", "454840"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Intestinal polyposis syndrome", "ORPHAcode": "104010", "hch_id": "152", "parents": ["425003"], "childs": ["733", "2869", "201", "2929", "109", "2930", "157794", "157798", "220460"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Muir-Torre syndrome", "ORPHAcode": "587", "hch_id": "152", "parents": ["443909"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Lynch syndrome", "ORPHAcode": "144", "hch_id": "152", "parents": ["443909"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Familial colorectal cancer Type X", "ORPHAcode": "440437", "hch_id": "152", "parents": ["443909"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hereditary nonpolyposis colon cancer", "ORPHAcode": "443909", "hch_id": "152", "parents": ["425003"], "childs": ["587", "144", "440437"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Hereditary neuroendocrine tumor of small intestine", "ORPHAcode": "456333", "hch_id": "152", "parents": ["425003"], "childs": []}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Inherited digestive cancer-predisposing syndrome", "ORPHAcode": "425003", "hch_id": "152", "parents": ["97935"], "childs": ["652", "653", "104010", "443909", "456333"]}
+{"index": {"_index":"en_product3_152"}}
+{"name": "Rare gastroenterologic disease", "ORPHAcode": "97935", "hch_id": "152", "parents": [], "childs": ["101936", "101937", "117569", "263665", "276142", "300557", "402029", "425003"]}

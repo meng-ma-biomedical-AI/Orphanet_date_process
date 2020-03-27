@@ -1,0 +1,24 @@
+en_product3_189:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Retinoblastoma"
+    ORPHAcode:
+      type: string
+      example: "790"
+    hch_id:
+      type: string
+      example: "189"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['101950']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['357027', '357034']"
+  required:
+    - ORPHAcode

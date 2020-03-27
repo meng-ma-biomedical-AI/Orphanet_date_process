@@ -1,0 +1,1309 @@
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Immunoglobulin A vasculitis",
+  "ORPHAcode": "761",
+  "hch_id": "231",
+  "parents": [
+    "280369"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Kawasaki disease",
+  "ORPHAcode": "2331",
+  "hch_id": "231",
+  "parents": [
+    "280369"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Takayasu arteritis",
+  "ORPHAcode": "3287",
+  "hch_id": "231",
+  "parents": [
+    "280369"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Cogan syndrome",
+  "ORPHAcode": "1467",
+  "hch_id": "231",
+  "parents": [
+    "280369"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Hypocomplementemic urticarial vasculitis",
+  "ORPHAcode": "36412",
+  "hch_id": "231",
+  "parents": [
+    "280369"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Type II mixed cryoglobulinemia",
+  "ORPHAcode": "93554",
+  "hch_id": "231",
+  "parents": [
+    "91138"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Mixed cryoglobulinemia type III",
+  "ORPHAcode": "93555",
+  "hch_id": "231",
+  "parents": [
+    "91138"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Cryoglobulinemic vasculitis",
+  "ORPHAcode": "91138",
+  "hch_id": "231",
+  "parents": [
+    "280369"
+  ],
+  "childs": [
+    "93554",
+    "93555"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Eosinophilic granulomatosis with polyangiitis",
+  "ORPHAcode": "183",
+  "hch_id": "231",
+  "parents": [
+    "156152"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Microscopic polyangiitis",
+  "ORPHAcode": "727",
+  "hch_id": "231",
+  "parents": [
+    "156152"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Granulomatosis with polyangiitis",
+  "ORPHAcode": "900",
+  "hch_id": "231",
+  "parents": [
+    "156152"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Anti-neutrophil cytoplasmic antibody-associated vasculitis",
+  "ORPHAcode": "156152",
+  "hch_id": "231",
+  "parents": [
+    "280369"
+  ],
+  "childs": [
+    "183",
+    "727",
+    "900"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Unclassified vasculitis",
+  "ORPHAcode": "251328",
+  "hch_id": "231",
+  "parents": [
+    "280369"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Postinfectious vasculitis",
+  "ORPHAcode": "48435",
+  "hch_id": "231",
+  "parents": [
+    "445197"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Drug-induced vasculitis",
+  "ORPHAcode": "251325",
+  "hch_id": "231",
+  "parents": [
+    "445197"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Secondary vasculitis",
+  "ORPHAcode": "445197",
+  "hch_id": "231",
+  "parents": [
+    "280369"
+  ],
+  "childs": [
+    "48435",
+    "251325"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Vasculitis due to ADA2 deficiency",
+  "ORPHAcode": "404553",
+  "hch_id": "231",
+  "parents": [
+    "280369",
+    "481671"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "STING-associated vasculopathy with onset in infancy",
+  "ORPHAcode": "425120",
+  "hch_id": "231",
+  "parents": [
+    "280369",
+    "324953",
+    "481671"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Rare pediatric vasculitis",
+  "ORPHAcode": "280369",
+  "hch_id": "231",
+  "parents": [
+    "280342"
+  ],
+  "childs": [
+    "761",
+    "2331",
+    "3287",
+    "1467",
+    "36412",
+    "91138",
+    "156152",
+    "251328",
+    "445197",
+    "404553",
+    "425120"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Limited cutaneous systemic sclerosis",
+  "ORPHAcode": "220402",
+  "hch_id": "231",
+  "parents": [
+    "90291"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Limited systemic sclerosis",
+  "ORPHAcode": "220407",
+  "hch_id": "231",
+  "parents": [
+    "90291"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Diffuse cutaneous systemic sclerosis",
+  "ORPHAcode": "220393",
+  "hch_id": "231",
+  "parents": [
+    "90291"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "CREST syndrome",
+  "ORPHAcode": "90290",
+  "hch_id": "231",
+  "parents": [
+    "90291"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Systemic sclerosis",
+  "ORPHAcode": "90291",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": [
+    "220402",
+    "220407",
+    "220393",
+    "90290"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Unexplained long-lasting fever/inflammatory syndrome",
+  "ORPHAcode": "251332",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Sarcoidosis",
+  "ORPHAcode": "797",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Eosinophilic fasciitis",
+  "ORPHAcode": "3165",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Pediatric systemic lupus erythematosus",
+  "ORPHAcode": "93552",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Juvenile polymyositis",
+  "ORPHAcode": "93568",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Juvenile dermatomyositis",
+  "ORPHAcode": "93672",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Mixed connective tissue disease",
+  "ORPHAcode": "809",
+  "hch_id": "231",
+  "parents": [
+    "251312"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Overlapping connective tissue disease",
+  "ORPHAcode": "251312",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": [
+    "809"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "PLCG2-associated antibody deficiency and immune dysregulation",
+  "ORPHAcode": "300359",
+  "hch_id": "231",
+  "parents": [
+    "280373",
+    "324933"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Transient neonatal myasthenia gravis",
+  "ORPHAcode": "391504",
+  "hch_id": "231",
+  "parents": [
+    "398091"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Neonatal antiphospholipid syndrome",
+  "ORPHAcode": "398097",
+  "hch_id": "231",
+  "parents": [
+    "398091"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Neonatal autoimmune hemolytic anemia",
+  "ORPHAcode": "398109",
+  "hch_id": "231",
+  "parents": [
+    "398091"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Neonatal dermatomyositis",
+  "ORPHAcode": "398117",
+  "hch_id": "231",
+  "parents": [
+    "398091"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Neonatal lupus erythematosus",
+  "ORPHAcode": "398124",
+  "hch_id": "231",
+  "parents": [
+    "398091"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Neonatal scleroderma",
+  "ORPHAcode": "398127",
+  "hch_id": "231",
+  "parents": [
+    "398091"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Secondary neonatal autoimmune disease",
+  "ORPHAcode": "398091",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": [
+    "391504",
+    "398097",
+    "398109",
+    "398117",
+    "398124",
+    "398127"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "STAT3-related early-onset multisystem autoimmune disease",
+  "ORPHAcode": "438159",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Autoimmune interstitial lung disease-arthritis syndrome",
+  "ORPHAcode": "444092",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Autoimmune hemolytic anemia-autoimmune thrombocytopenia-primary immunodeficiency syndrome",
+  "ORPHAcode": "444463",
+  "hch_id": "231",
+  "parents": [
+    "280373"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Rare pediatric systemic disease",
+  "ORPHAcode": "280373",
+  "hch_id": "231",
+  "parents": [
+    "280342"
+  ],
+  "childs": [
+    "90291",
+    "251332",
+    "797",
+    "3165",
+    "93552",
+    "93568",
+    "93672",
+    "251312",
+    "300359",
+    "398091",
+    "438159",
+    "444092",
+    "444463"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Oligoarticular juvenile idiopathic arthritis with anti-nuclear antibodies",
+  "ORPHAcode": "247839",
+  "hch_id": "231",
+  "parents": [
+    "85410"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Oligoarticular juvenile idiopathic arthritis without anti-nuclear antibodies",
+  "ORPHAcode": "247846",
+  "hch_id": "231",
+  "parents": [
+    "85410"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Oligoarticular juvenile idiopathic arthritis",
+  "ORPHAcode": "85410",
+  "hch_id": "231",
+  "parents": [
+    "92"
+  ],
+  "childs": [
+    "247839",
+    "247846"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Systemic-onset juvenile idiopathic arthritis",
+  "ORPHAcode": "85414",
+  "hch_id": "231",
+  "parents": [
+    "92"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Psoriasis-related juvenile idiopathic arthritis",
+  "ORPHAcode": "85436",
+  "hch_id": "231",
+  "parents": [
+    "92"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Enthesitis-related juvenile idiopathic arthritis",
+  "ORPHAcode": "85438",
+  "hch_id": "231",
+  "parents": [
+    "92"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Unspecified juvenile idiopathic arthritis",
+  "ORPHAcode": "91140",
+  "hch_id": "231",
+  "parents": [
+    "92"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Rheumatoid factor-negative juvenile idiopathic arthritis with anti-nuclear antibodies",
+  "ORPHAcode": "247854",
+  "hch_id": "231",
+  "parents": [
+    "85408"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Rheumatoid factor-negative juvenile idiopathic arthritis without anti-nuclear antibodies",
+  "ORPHAcode": "247861",
+  "hch_id": "231",
+  "parents": [
+    "85408"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Rheumatoid factor-negative juvenile idiopathic arthritis",
+  "ORPHAcode": "85408",
+  "hch_id": "231",
+  "parents": [
+    "404580"
+  ],
+  "childs": [
+    "247854",
+    "247861"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Rheumatoid factor-positive polyarticular juvenile idiopathic arthritis",
+  "ORPHAcode": "85435",
+  "hch_id": "231",
+  "parents": [
+    "404580"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Polyarticular juvenile idiopathic arthritis",
+  "ORPHAcode": "404580",
+  "hch_id": "231",
+  "parents": [
+    "92"
+  ],
+  "childs": [
+    "85408",
+    "85435"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Juvenile idiopathic arthritis",
+  "ORPHAcode": "92",
+  "hch_id": "231",
+  "parents": [
+    "486955"
+  ],
+  "childs": [
+    "85410",
+    "85414",
+    "85436",
+    "85438",
+    "91140",
+    "404580"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Acroosteolysis dominant type",
+  "ORPHAcode": "955",
+  "hch_id": "231",
+  "parents": [
+    "486955"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Sweet syndrome",
+  "ORPHAcode": "3243",
+  "hch_id": "231",
+  "parents": [
+    "486955"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Gorham-Stout disease",
+  "ORPHAcode": "73",
+  "hch_id": "231",
+  "parents": [
+    "486955"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Reactive arthritis",
+  "ORPHAcode": "29207",
+  "hch_id": "231",
+  "parents": [
+    "486955"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Idiopathic juvenile osteoporosis",
+  "ORPHAcode": "85193",
+  "hch_id": "231",
+  "parents": [
+    "486955"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Autoinflammation-PLCG2-associated antibody deficiency-immune dysregulation",
+  "ORPHAcode": "324530",
+  "hch_id": "231",
+  "parents": [
+    "324933"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Autoinflammatory syndrome with pyogenic bacterial infection and amylopectinosis",
+  "ORPHAcode": "329173",
+  "hch_id": "231",
+  "parents": [
+    "324933"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Mixed autoinflammatory and autoimmune syndrome",
+  "ORPHAcode": "324933",
+  "hch_id": "231",
+  "parents": [
+    "319719"
+  ],
+  "childs": [
+    "324530",
+    "329173",
+    "300359"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "CEBPE-associated autoinflammation-immunodeficiency-neutrophil dysfunction syndrome",
+  "ORPHAcode": "566067",
+  "hch_id": "231",
+  "parents": [
+    "324924"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Infantile-onset periodic fever-panniculitis-dermatosis syndrome",
+  "ORPHAcode": "500062",
+  "hch_id": "231",
+  "parents": [
+    "324924"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Familial Mediterranean fever",
+  "ORPHAcode": "342",
+  "hch_id": "231",
+  "parents": [
+    "324924"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Tumor necrosis factor receptor 1 associated periodic syndrome",
+  "ORPHAcode": "32960",
+  "hch_id": "231",
+  "parents": [
+    "324924"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Muckle-Wells syndrome",
+  "ORPHAcode": "575",
+  "hch_id": "231",
+  "parents": [
+    "208650"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "CINCA syndrome",
+  "ORPHAcode": "1451",
+  "hch_id": "231",
+  "parents": [
+    "208650"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Familial cold urticaria",
+  "ORPHAcode": "47045",
+  "hch_id": "231",
+  "parents": [
+    "208650"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Cryopyrin-associated periodic syndrome",
+  "ORPHAcode": "208650",
+  "hch_id": "231",
+  "parents": [
+    "324924"
+  ],
+  "childs": [
+    "575",
+    "1451",
+    "47045"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "NLRP12-associated hereditary periodic fever syndrome",
+  "ORPHAcode": "247868",
+  "hch_id": "231",
+  "parents": [
+    "324924"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Mevalonic aciduria",
+  "ORPHAcode": "29",
+  "hch_id": "231",
+  "parents": [
+    "309025"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Hyperimmunoglobulinemia D with periodic fever",
+  "ORPHAcode": "343",
+  "hch_id": "231",
+  "parents": [
+    "309025"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Mevalonate kinase deficiency",
+  "ORPHAcode": "309025",
+  "hch_id": "231",
+  "parents": [
+    "324924"
+  ],
+  "childs": [
+    "29",
+    "343"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Periodic fever-infantile enterocolitis-autoinflammatory syndrome",
+  "ORPHAcode": "436166",
+  "hch_id": "231",
+  "parents": [
+    "324924"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Hereditary periodic fever syndrome",
+  "ORPHAcode": "324924",
+  "hch_id": "231",
+  "parents": [
+    "324939"
+  ],
+  "childs": [
+    "566067",
+    "500062",
+    "342",
+    "32960",
+    "208650",
+    "247868",
+    "309025",
+    "436166"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "PFAPA syndrome",
+  "ORPHAcode": "42642",
+  "hch_id": "231",
+  "parents": [
+    "324960"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Unexplained periodic fever syndrome of childhood",
+  "ORPHAcode": "324960",
+  "hch_id": "231",
+  "parents": [
+    "324939"
+  ],
+  "childs": [
+    "42642"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Periodic fever syndrome of childhood",
+  "ORPHAcode": "324939",
+  "hch_id": "231",
+  "parents": [
+    "319719"
+  ],
+  "childs": [
+    "324924",
+    "324960"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Chronic nonbacterial osteomyelitis/Chronic recurrent multifocal osteomyelitis",
+  "ORPHAcode": "324964",
+  "hch_id": "231",
+  "parents": [
+    "324942"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Pyogenic arthritis-pyoderma gangrenosum-acne syndrome",
+  "ORPHAcode": "69126",
+  "hch_id": "231",
+  "parents": [
+    "324942"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Majeed syndrome",
+  "ORPHAcode": "77297",
+  "hch_id": "231",
+  "parents": [
+    "324942"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Sterile multifocal osteomyelitis with periostitis and pustulosis",
+  "ORPHAcode": "210115",
+  "hch_id": "231",
+  "parents": [
+    "324942"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Neonatal inflammatory skin and bowel disease",
+  "ORPHAcode": "294023",
+  "hch_id": "231",
+  "parents": [
+    "324942"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "DITRA",
+  "ORPHAcode": "404546",
+  "hch_id": "231",
+  "parents": [
+    "324942"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Hyperzincemia and hypercalprotectinemia",
+  "ORPHAcode": "251523",
+  "hch_id": "231",
+  "parents": [
+    "324942"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Pyogenic autoinflammatory syndrome of childhood",
+  "ORPHAcode": "324942",
+  "hch_id": "231",
+  "parents": [
+    "319719"
+  ],
+  "childs": [
+    "324964",
+    "69126",
+    "77297",
+    "210115",
+    "294023",
+    "404546",
+    "251523"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Blau syndrome",
+  "ORPHAcode": "90340",
+  "hch_id": "231",
+  "parents": [
+    "324950"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Infantile onset panniculitis with uveitis and systemic granulomatosis",
+  "ORPHAcode": "251304",
+  "hch_id": "231",
+  "parents": [
+    "324950"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Granulomatous autoinflammatory syndrome of childhood",
+  "ORPHAcode": "324950",
+  "hch_id": "231",
+  "parents": [
+    "319719"
+  ],
+  "childs": [
+    "90340",
+    "251304"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Behçet disease",
+  "ORPHAcode": "117",
+  "hch_id": "231",
+  "parents": [
+    "324953"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Idiopathic recurrent pericarditis",
+  "ORPHAcode": "251307",
+  "hch_id": "231",
+  "parents": [
+    "324953"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Nakajo-Nishimura syndrome",
+  "ORPHAcode": "2615",
+  "hch_id": "231",
+  "parents": [
+    "324977"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "JMP syndrome",
+  "ORPHAcode": "324999",
+  "hch_id": "231",
+  "parents": [
+    "324977"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "CANDLE syndrome",
+  "ORPHAcode": "325004",
+  "hch_id": "231",
+  "parents": [
+    "324977"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Proteasome disability syndrome",
+  "ORPHAcode": "324977",
+  "hch_id": "231",
+  "parents": [
+    "324953",
+    "481671"
+  ],
+  "childs": [
+    "2615",
+    "324999",
+    "325004"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Hereditary pediatric Behçet-like disease",
+  "ORPHAcode": "476102",
+  "hch_id": "231",
+  "parents": [
+    "324953"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Cherubism",
+  "ORPHAcode": "184",
+  "hch_id": "231",
+  "parents": [
+    "324953"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Unclassified autoinflammatory syndrome of childhood",
+  "ORPHAcode": "324953",
+  "hch_id": "231",
+  "parents": [
+    "319719"
+  ],
+  "childs": [
+    "117",
+    "251307",
+    "324977",
+    "476102",
+    "184",
+    "425120"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Aicardi-Goutières syndrome",
+  "ORPHAcode": "51",
+  "hch_id": "231",
+  "parents": [
+    "481671"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Familial Chilblain lupus",
+  "ORPHAcode": "481662",
+  "hch_id": "231",
+  "parents": [
+    "481671"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Spondyloenchondrodysplasia",
+  "ORPHAcode": "1855",
+  "hch_id": "231",
+  "parents": [
+    "481671"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Autosomal systemic lupus erythematosus",
+  "ORPHAcode": "300345",
+  "hch_id": "231",
+  "parents": [
+    "481671"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Singleton-Merten dysplasia",
+  "ORPHAcode": "85191",
+  "hch_id": "231",
+  "parents": [
+    "481671"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Mendelian susceptibility to mycobacterial diseases due to complete ISG15 deficiency",
+  "ORPHAcode": "319563",
+  "hch_id": "231",
+  "parents": [
+    "481671"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Syndromic diarrhea",
+  "ORPHAcode": "84064",
+  "hch_id": "231",
+  "parents": [
+    "481671"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "X-linked reticulate pigmentary disorder",
+  "ORPHAcode": "85453",
+  "hch_id": "231",
+  "parents": [
+    "481671"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "USP18 deficiency",
+  "ORPHAcode": "481665",
+  "hch_id": "231",
+  "parents": [
+    "481671"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Type 1 interferonopathy of childhood",
+  "ORPHAcode": "481671",
+  "hch_id": "231",
+  "parents": [
+    "319719"
+  ],
+  "childs": [
+    "51",
+    "481662",
+    "1855",
+    "300345",
+    "324977",
+    "85191",
+    "319563",
+    "84064",
+    "425120",
+    "85453",
+    "404553",
+    "481665"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Autoinflammatory syndrome of childhood",
+  "ORPHAcode": "319719",
+  "hch_id": "231",
+  "parents": [
+    "486955"
+  ],
+  "childs": [
+    "324933",
+    "324939",
+    "324942",
+    "324950",
+    "324953",
+    "481671"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Intermittent hydrarthrosis",
+  "ORPHAcode": "329967",
+  "hch_id": "231",
+  "parents": [
+    "486955"
+  ],
+  "childs": []
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Rare pediatric rheumatologic disease",
+  "ORPHAcode": "486955",
+  "hch_id": "231",
+  "parents": [
+    "280342"
+  ],
+  "childs": [
+    "92",
+    "955",
+    "3243",
+    "73",
+    "29207",
+    "85193",
+    "319719",
+    "329967"
+  ]
+}
+{"index": {"_index":"en_product3_231"}}
+{
+  "name": "Rare systemic or rheumatological disease of childhood",
+  "ORPHAcode": "280342",
+  "hch_id": "231",
+  "parents": [],
+  "childs": [
+    "280369",
+    "280373",
+    "486955"
+  ]
+}

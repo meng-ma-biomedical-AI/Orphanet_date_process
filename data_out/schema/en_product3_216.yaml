@@ -1,0 +1,24 @@
+en_product3_216:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Infectious embryofetopathy"
+    ORPHAcode:
+      type: string
+      example: "232035"
+    hch_id:
+      type: string
+      example: "216"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['52662']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['295', '290', '858', '291', '293', '294', '292', '70596', '499009']"
+  required:
+    - ORPHAcode

@@ -1,0 +1,24 @@
+en_product3_187:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Generalized peeling skin syndrome"
+    ORPHAcode:
+      type: string
+      example: "263543"
+    hch_id:
+      type: string
+      example: "187"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['817']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['263548', '263553', '263558']"
+  required:
+    - ORPHAcode

@@ -1,0 +1,24 @@
+en_product3_195:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Graft versus host disease"
+    ORPHAcode:
+      type: string
+      example: "39812"
+    hch_id:
+      type: string
+      example: "195"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['98004']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['99920', '99921']"
+  required:
+    - ORPHAcode

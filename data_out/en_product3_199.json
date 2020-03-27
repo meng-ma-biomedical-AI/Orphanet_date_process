@@ -1,0 +1,1992 @@
+{"index": {"_index":"en_product3_199"}}
+{"name": "Chordoma", "ORPHAcode": "178", "hch_id": "199", "parents": ["68411"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Aneurysmal bone cyst", "ORPHAcode": "480553", "hch_id": "199", "parents": ["68411"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ollier disease", "ORPHAcode": "296", "hch_id": "199", "parents": ["68411", "93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "OSLAM syndrome", "ORPHAcode": "2760", "hch_id": "199", "parents": ["68411", "93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple osteochondromas", "ORPHAcode": "321", "hch_id": "199", "parents": ["68411", "93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Adamantinoma", "ORPHAcode": "55881", "hch_id": "199", "parents": ["68411"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteoblastoma", "ORPHAcode": "58040", "hch_id": "199", "parents": ["68411"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Solitary bone cyst", "ORPHAcode": "83468", "hch_id": "199", "parents": ["68411"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Diaphyseal medullary stenosis-bone malignancy syndrome", "ORPHAcode": "85182", "hch_id": "199", "parents": ["68411", "93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Maffucci syndrome", "ORPHAcode": "163634", "hch_id": "199", "parents": ["68411", "93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Undifferentiated pleomorphic sarcoma", "ORPHAcode": "2023", "hch_id": "199", "parents": ["223727"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Fibrosarcoma", "ORPHAcode": "2030", "hch_id": "199", "parents": ["223727"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteosarcoma", "ORPHAcode": "668", "hch_id": "199", "parents": ["223727"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ewing sarcoma", "ORPHAcode": "319", "hch_id": "199", "parents": ["223727"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Chondrosarcoma", "ORPHAcode": "55880", "hch_id": "199", "parents": ["223727"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Giant cell tumor of bone", "ORPHAcode": "363976", "hch_id": "199", "parents": ["223727"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Peripheral primitive neuroectodermal tumor", "ORPHAcode": "370348", "hch_id": "199", "parents": ["223727"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Bone sarcoma", "ORPHAcode": "223727", "hch_id": "199", "parents": ["68411"], "childs": ["2023", "2030", "668", "319", "55880", "363976", "370348"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Chondromyxoid fibroma", "ORPHAcode": "404507", "hch_id": "199", "parents": ["68411"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial ossifying fibroma", "ORPHAcode": "435329", "hch_id": "199", "parents": ["68411"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rare bone tumor", "ORPHAcode": "68411", "hch_id": "199", "parents": ["93419"], "childs": ["178", "480553", "296", "2760", "321", "55881", "58040", "83468", "85182", "163634", "223727", "404507", "435329"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Alpha-mannosidosis, adult form", "ORPHAcode": "309288", "hch_id": "199", "parents": ["61"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Alpha-mannosidosis, infantile form", "ORPHAcode": "309282", "hch_id": "199", "parents": ["61"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Alpha-mannosidosis", "ORPHAcode": "61", "hch_id": "199", "parents": ["93448"], "childs": ["309288", "309282"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Aspartylglucosaminuria", "ORPHAcode": "93", "hch_id": "199", "parents": ["93448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple sulfatase deficiency", "ORPHAcode": "585", "hch_id": "199", "parents": ["93448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Beta-mannosidosis", "ORPHAcode": "118", "hch_id": "199", "parents": ["93448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Fucosidosis", "ORPHAcode": "349", "hch_id": "199", "parents": ["93448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 6, rapidly progressing", "ORPHAcode": "276212", "hch_id": "199", "parents": ["583"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 6, slowly progressing", "ORPHAcode": "276223", "hch_id": "199", "parents": ["583"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 6", "ORPHAcode": "583", "hch_id": "199", "parents": ["93448"], "childs": ["276212", "276223"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucolipidosis type II", "ORPHAcode": "576", "hch_id": "199", "parents": ["93448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucolipidosis type III alpha/beta", "ORPHAcode": "423461", "hch_id": "199", "parents": ["577"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucolipidosis type III gamma", "ORPHAcode": "423470", "hch_id": "199", "parents": ["577"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucolipidosis type III", "ORPHAcode": "577", "hch_id": "199", "parents": ["93448"], "childs": ["423461", "423470"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 7", "ORPHAcode": "584", "hch_id": "199", "parents": ["93448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 2, severe form", "ORPHAcode": "217085", "hch_id": "199", "parents": ["580"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 2, attenuated form", "ORPHAcode": "217093", "hch_id": "199", "parents": ["580"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 2", "ORPHAcode": "580", "hch_id": "199", "parents": ["93448"], "childs": ["217085", "217093"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hurler syndrome", "ORPHAcode": "93473", "hch_id": "199", "parents": ["579"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Scheie syndrome", "ORPHAcode": "93474", "hch_id": "199", "parents": ["579"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hurler-Scheie syndrome", "ORPHAcode": "93476", "hch_id": "199", "parents": ["579"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 1", "ORPHAcode": "579", "hch_id": "199", "parents": ["93448"], "childs": ["93473", "93474", "93476"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Galactosialidosis", "ORPHAcode": "351", "hch_id": "199", "parents": ["93448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Free sialic acid storage disease, infantile form", "ORPHAcode": "309324", "hch_id": "199", "parents": ["93448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "GM1 gangliosidosis type 1", "ORPHAcode": "79255", "hch_id": "199", "parents": ["354"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "GM1 gangliosidosis type 2", "ORPHAcode": "79256", "hch_id": "199", "parents": ["354"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "GM1 gangliosidosis type 3", "ORPHAcode": "79257", "hch_id": "199", "parents": ["354"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "GM1 gangliosidosis", "ORPHAcode": "354", "hch_id": "199", "parents": ["93448"], "childs": ["79255", "79256", "79257"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sanfilippo syndrome type A", "ORPHAcode": "79269", "hch_id": "199", "parents": ["581"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sanfilippo syndrome type B", "ORPHAcode": "79270", "hch_id": "199", "parents": ["581"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sanfilippo syndrome type C", "ORPHAcode": "79271", "hch_id": "199", "parents": ["581"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sanfilippo syndrome type D", "ORPHAcode": "79272", "hch_id": "199", "parents": ["581"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 3", "ORPHAcode": "581", "hch_id": "199", "parents": ["93448"], "childs": ["79269", "79270", "79271", "79272"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 4B", "ORPHAcode": "309310", "hch_id": "199", "parents": ["582"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 4A", "ORPHAcode": "309297", "hch_id": "199", "parents": ["582"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis type 4", "ORPHAcode": "582", "hch_id": "199", "parents": ["93448"], "childs": ["309310", "309297"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hyaluronidase deficiency", "ORPHAcode": "67041", "hch_id": "199", "parents": ["93448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Juvenile sialidosis type 2", "ORPHAcode": "93399", "hch_id": "199", "parents": ["87876"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital sialidosis type 2", "ORPHAcode": "93400", "hch_id": "199", "parents": ["87876"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sialidosis type 2", "ORPHAcode": "87876", "hch_id": "199", "parents": ["93448"], "childs": ["93399", "93400"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lysosomal storage disease with skeletal involvement", "ORPHAcode": "93448", "hch_id": "199", "parents": ["93419"], "childs": ["61", "93", "585", "118", "349", "583", "576", "577", "584", "580", "579", "351", "309324", "354", "581", "582", "67041", "87876"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Parkes Weber syndrome", "ORPHAcode": "90307", "hch_id": "199", "parents": ["2346"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Klippel-Trénaunay syndrome", "ORPHAcode": "90308", "hch_id": "199", "parents": ["2346"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Angioosteohypertrophic syndrome", "ORPHAcode": "2346", "hch_id": "199", "parents": ["235832"], "childs": ["90307", "90308"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Gorham-Stout disease", "ORPHAcode": "73", "hch_id": "199", "parents": ["235832", "93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Angioosteohypotrophic syndrome", "ORPHAcode": "75508", "hch_id": "199", "parents": ["235832"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary intraosseous venous malformation", "ORPHAcode": "140436", "hch_id": "199", "parents": ["235832"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Inverse Klippel-Trénaunay syndrome", "ORPHAcode": "329324", "hch_id": "199", "parents": ["235832"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital vascular bone syndrome", "ORPHAcode": "235832", "hch_id": "199", "parents": ["93419"], "childs": ["2346", "73", "75508", "140436", "329324"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sagliker syndrome", "ORPHAcode": "300493", "hch_id": "199", "parents": ["93419"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Oncogenic osteomalacia", "ORPHAcode": "352540", "hch_id": "199", "parents": ["93419"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteofibrous dysplasia", "ORPHAcode": "488265", "hch_id": "199", "parents": ["364526"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Progressive pseudorheumatoid arthropathy of childhood", "ORPHAcode": "1159", "hch_id": "199", "parents": ["498445", "253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Juvenile hyaline fibromatosis", "ORPHAcode": "2028", "hch_id": "199", "parents": ["498474"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Infantile systemic hyalinosis", "ORPHAcode": "2176", "hch_id": "199", "parents": ["498474"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hyaline fibromatosis syndrome", "ORPHAcode": "498474", "hch_id": "199", "parents": ["498445", "93449"], "childs": ["2028", "2176"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "CINCA syndrome", "ORPHAcode": "1451", "hch_id": "199", "parents": ["498445"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sterile multifocal osteomyelitis with periostitis and pustulosis", "ORPHAcode": "210115", "hch_id": "199", "parents": ["498445"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Majeed syndrome", "ORPHAcode": "77297", "hch_id": "199", "parents": ["498445"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial normophosphatemic tumoral calcinosis", "ORPHAcode": "306658", "hch_id": "199", "parents": ["53715"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial hyperphosphatemic tumoral calcinosis/Hyperphosphatemic hyperostosis syndrome", "ORPHAcode": "306661", "hch_id": "199", "parents": ["53715"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial tumoral calcinosis", "ORPHAcode": "53715", "hch_id": "199", "parents": ["498445"], "childs": ["306658", "306661"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Genetic inflammatory or rheumatoid-like osteoarthropathy", "ORPHAcode": "498445", "hch_id": "199", "parents": ["364526"], "childs": ["1159", "498474", "1451", "210115", "77297", "53715"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Marfan syndrome type 1", "ORPHAcode": "284963", "hch_id": "199", "parents": ["558"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Marfan syndrome type 2", "ORPHAcode": "284973", "hch_id": "199", "parents": ["558"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Marfan syndrome", "ORPHAcode": "558", "hch_id": "199", "parents": ["498448"], "childs": ["284963", "284973"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Weaver syndrome", "ORPHAcode": "3447", "hch_id": "199", "parents": ["498448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sotos syndrome", "ORPHAcode": "821", "hch_id": "199", "parents": ["498448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Marshall-Smith syndrome", "ORPHAcode": "561", "hch_id": "199", "parents": ["498448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Proteus syndrome", "ORPHAcode": "744", "hch_id": "199", "parents": ["498448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "CLOVES syndrome", "ORPHAcode": "140944", "hch_id": "199", "parents": ["498448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital contractural arachnodactyly", "ORPHAcode": "115", "hch_id": "199", "parents": ["498448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Loeys-Dietz syndrome", "ORPHAcode": "60030", "hch_id": "199", "parents": ["498448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Overgrowth syndrome with 2q37 translocation", "ORPHAcode": "498488", "hch_id": "199", "parents": ["498448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Tall stature-scoliosis-macrodactyly of the great toes syndrome", "ORPHAcode": "329191", "hch_id": "199", "parents": ["498448", "93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Overgrowth-metaphyseal undermodeling-spondylar dysplasia syndrome", "ORPHAcode": "498485", "hch_id": "199", "parents": ["498448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Skeletal overgrowth-craniofacial dysmorphism-hyperelastic skin-white matter lesions syndrome", "ORPHAcode": "477831", "hch_id": "199", "parents": ["498448"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Overgrowth or tall stature syndrome with skeletal involvement", "ORPHAcode": "498448", "hch_id": "199", "parents": ["364526"], "childs": ["558", "3447", "821", "561", "744", "140944", "115", "60030", "498488", "329191", "498485", "477831"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Achondroplasia", "ORPHAcode": "15", "hch_id": "199", "parents": ["364536"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hypochondroplasia", "ORPHAcode": "429", "hch_id": "199", "parents": ["364536"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Diastrophic dwarfism", "ORPHAcode": "628", "hch_id": "199", "parents": ["364536"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thanatophoric dysplasia type 1", "ORPHAcode": "1860", "hch_id": "199", "parents": ["2655"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thanatophoric dysplasia type 2", "ORPHAcode": "93274", "hch_id": "199", "parents": ["2655"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thanatophoric dysplasia", "ORPHAcode": "2655", "hch_id": "199", "parents": ["364536"], "childs": ["1860", "93274"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Chondrodysplasia-disorder of sex development syndrome", "ORPHAcode": "1422", "hch_id": "199", "parents": ["364536"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Severe achondroplasia-developmental delay-acanthosis nigricans syndrome", "ORPHAcode": "85165", "hch_id": "199", "parents": ["364536"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary bone dysplasia with micromelia", "ORPHAcode": "364536", "hch_id": "199", "parents": ["364526"], "childs": ["15", "429", "628", "2655", "1422", "85165"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Otopalatodigital syndrome type 2", "ORPHAcode": "90652", "hch_id": "199", "parents": ["364541"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Frontometaphyseal dysplasia", "ORPHAcode": "1826", "hch_id": "199", "parents": ["364541"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Melnick-Needles syndrome", "ORPHAcode": "2484", "hch_id": "199", "parents": ["364541"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Otopalatodigital syndrome type 1", "ORPHAcode": "90650", "hch_id": "199", "parents": ["364541"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Frank-Ter Haar syndrome", "ORPHAcode": "137834", "hch_id": "199", "parents": ["364541"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Otopalatodigital syndrome spectrum disorder", "ORPHAcode": "364541", "hch_id": "199", "parents": ["364526"], "childs": ["90652", "1826", "2484", "90650", "137834"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Short stature-advanced bone age-early-onset osteoarthritis syndrome", "ORPHAcode": "435804", "hch_id": "199", "parents": ["364526"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "CODAS syndrome", "ORPHAcode": "1458", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Schwartz-Jampel syndrome", "ORPHAcode": "800", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dyggve-Melchior-Clausen disease", "ORPHAcode": "239", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Marshall syndrome", "ORPHAcode": "560", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metatropic dysplasia", "ORPHAcode": "2635", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Stickler syndrome type 1", "ORPHAcode": "90653", "hch_id": "199", "parents": ["828"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Stickler syndrome type 2", "ORPHAcode": "90654", "hch_id": "199", "parents": ["828"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive Stickler syndrome", "ORPHAcode": "250984", "hch_id": "199", "parents": ["828", "93429"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Stickler syndrome", "ORPHAcode": "828", "hch_id": "199", "parents": ["253"], "childs": ["90653", "90654", "250984"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Otospondylomegaepiphyseal dysplasia", "ORPHAcode": "1427", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Wolcott-Rallison syndrome", "ORPHAcode": "1667", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Schimke immuno-osseous dysplasia", "ORPHAcode": "1830", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dyssegmental dysplasia, Silverman-Handmaker type", "ORPHAcode": "1865", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Kniest dysplasia", "ORPHAcode": "485", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Richieri Costa-da Silva syndrome", "ORPHAcode": "3101", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloperipheral dysplasia-short ulna syndrome", "ORPHAcode": "1856", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactylous dwarfism, Mseleni type", "ORPHAcode": "2619", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mild spondyloepiphyseal dysplasia due to COL2A1 mutation with early-onset osteoarthritis", "ORPHAcode": "93279", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia, PAPSS2 type", "ORPHAcode": "93282", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepiphyseal dysplasia, Kimberley type", "ORPHAcode": "93283", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepiphyseal dysplasia tarda", "ORPHAcode": "93284", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia congenita, Strudwick type", "ORPHAcode": "93346", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Anauxetic dysplasia", "ORPHAcode": "93347", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "X-linked spondyloepimetaphyseal dysplasia", "ORPHAcode": "93349", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia, Irapa type", "ORPHAcode": "93351", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia, Shohat type", "ORPHAcode": "93352", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia, Missouri type", "ORPHAcode": "93356", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "SPONASTRIME dysplasia", "ORPHAcode": "93357", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia-short limb-abnormal calcification syndrome", "ORPHAcode": "93358", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia with joint laxity", "ORPHAcode": "93359", "hch_id": "199", "parents": ["253", "93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia with multiple dislocations", "ORPHAcode": "93360", "hch_id": "199", "parents": ["253", "93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepiphyseal dysplasia congenita", "ORPHAcode": "94068", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia, Handigodu type", "ORPHAcode": "99642", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Czech dysplasia, metatarsal type", "ORPHAcode": "137678", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia, matrilin-3 type", "ORPHAcode": "156728", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dyssegmental dysplasia, Rolland-Desbuquois type", "ORPHAcode": "156731", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "SLC39A13-related spondylodysplastic Ehlers-Danlos syndrome", "ORPHAcode": "157965", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepiphyseal dysplasia, Nishimura type", "ORPHAcode": "163649", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepiphyseal dysplasia, Cantu type", "ORPHAcode": "163654", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepiphyseal dysplasia, Reardon type", "ORPHAcode": "163662", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepiphyseal dysplasia tarda, Kohn type", "ORPHAcode": "163665", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepiphyseal dysplasia, MacDermot type", "ORPHAcode": "163668", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal dominant otospondylomegaepiphyseal dysplasia", "ORPHAcode": "166100", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia-hypotrichosis syndrome", "ORPHAcode": "168443", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia-abnormal dentition syndrome", "ORPHAcode": "168451", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia, Geneviève type", "ORPHAcode": "168454", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia, aggrecan type", "ORPHAcode": "171866", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Smith-McCort dysplasia", "ORPHAcode": "178355", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylo-megaepiphyseal-metaphyseal dysplasia", "ORPHAcode": "228387", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepiphyseal dysplasia, Maroteaux type", "ORPHAcode": "263482", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Roifman syndrome", "ORPHAcode": "353298", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepimetaphyseal dysplasia, Isidor type", "ORPHAcode": "370015", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cono-spondylar dysplasia", "ORPHAcode": "420794", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cataract-growth hormone deficiency-sensory neuropathy-sensorineural hearing loss-skeletal dysplasia syndrome", "ORPHAcode": "436174", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "EVEN-plus syndrome", "ORPHAcode": "496751", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Progressive spondyloepimetaphyseal dysplasia-short stature-short fourth metatarsals-intellectual disability syndrome", "ORPHAcode": "457395", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "X-linked intellectual disability-cerebellar hypoplasia-spondylo-epiphyseal dysplasia syndrome", "ORPHAcode": "459070", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepiphyseal dysplasia, Stanescu type", "ORPHAcode": "459051", "hch_id": "199", "parents": ["253"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloepiphyseal dysplasia and spondyloepimetaphyseal dysplasia", "ORPHAcode": "253", "hch_id": "199", "parents": ["364526"], "childs": ["1458", "800", "239", "560", "2635", "828", "1159", "1427", "1667", "1830", "1865", "485", "3101", "1856", "2619", "93279", "93282", "93283", "93284", "93346", "93347", "93349", "93351", "93352", "93356", "93357", "93358", "93359", "93360", "94068", "99642", "137678", "156728", "156731", "157965", "163649", "163654", "163662", "163665", "163668", "166100", "168443", "168451", "168454", "171866", "178355", "228387", "263482", "353298", "370015", "420794", "436174", "496751", "457395", "459070", "459051"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylometaphyseal dysplasia, A4 type", "ORPHAcode": "168555", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylometaphyseal dysplasia, Czarny-Ratajczak type", "ORPHAcode": "370019", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Regressive spondylometaphyseal dysplasia", "ORPHAcode": "448267", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondyloenchondrodysplasia", "ORPHAcode": "1855", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylometaphyseal dysplasia-cone-rod dystrophy syndrome", "ORPHAcode": "85167", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylometaphyseal dysplasia, Kozlowski type", "ORPHAcode": "93314", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylometaphyseal dysplasia, 'corner fracture' type", "ORPHAcode": "93315", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylometaphyseal dysplasia, Schmidt type", "ORPHAcode": "93316", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Odontochondrodysplasia", "ORPHAcode": "166272", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylometaphyseal dysplasia, Golden type", "ORPHAcode": "168544", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Axial spondylometaphyseal dysplasia", "ORPHAcode": "168549", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylometaphyseal dysplasia-bowed forearms-facial dysmorphism syndrome", "ORPHAcode": "168552", "hch_id": "199", "parents": ["254"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylometaphyseal dysplasia", "ORPHAcode": "254", "hch_id": "199", "parents": ["364526"], "childs": ["168555", "370019", "448267", "1855", "85167", "93314", "93315", "93316", "166272", "168544", "168549", "168552"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Short rib-polydactyly syndrome type 5", "ORPHAcode": "498497", "hch_id": "199", "parents": ["1505"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Jeune syndrome", "ORPHAcode": "474", "hch_id": "199", "parents": ["1505"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ellis Van Creveld syndrome", "ORPHAcode": "289", "hch_id": "199", "parents": ["1505"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cranioectodermal dysplasia", "ORPHAcode": "1515", "hch_id": "199", "parents": ["1505", "139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Short rib-polydactyly syndrome, Beemer-Langer type", "ORPHAcode": "93268", "hch_id": "199", "parents": ["1505"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Short rib-polydactyly syndrome, Majewski type", "ORPHAcode": "93269", "hch_id": "199", "parents": ["1505"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Short rib-polydactyly syndrome, Saldino-Noonan type", "ORPHAcode": "93270", "hch_id": "199", "parents": ["1505"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Short rib-polydactyly syndrome, Verma-Naumoff type", "ORPHAcode": "93271", "hch_id": "199", "parents": ["1505"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Joubert syndrome with Jeune asphyxiating thoracic dystrophy", "ORPHAcode": "397715", "hch_id": "199", "parents": ["1505"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Short rib-polydactyly syndrome", "ORPHAcode": "1505", "hch_id": "199", "parents": ["93426"], "childs": ["498497", "474", "289", "1515", "93268", "93269", "93270", "93271", "397715"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thoracomelic dysplasia", "ORPHAcode": "1803", "hch_id": "199", "parents": ["93426"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 4", "ORPHAcode": "2753", "hch_id": "199", "parents": ["93426", "140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thoracolaryngopelvic dysplasia", "ORPHAcode": "3317", "hch_id": "199", "parents": ["93426"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Saldino-Mainzer syndrome", "ORPHAcode": "140969", "hch_id": "199", "parents": ["93426"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "NEK9-related lethal skeletal dysplasia", "ORPHAcode": "464366", "hch_id": "199", "parents": ["93426"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thoracic dysplasia-hydrocephalus syndrome", "ORPHAcode": "1861", "hch_id": "199", "parents": ["93426"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ciliopathies with major skeletal involvement", "ORPHAcode": "93426", "hch_id": "199", "parents": ["364526"], "childs": ["1505", "1803", "2753", "3317", "140969", "464366", "1861"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple epiphyseal dysplasia type 4", "ORPHAcode": "93307", "hch_id": "199", "parents": ["251"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple epiphyseal dysplasia type 1", "ORPHAcode": "93308", "hch_id": "199", "parents": ["251"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple epiphyseal dysplasia type 5", "ORPHAcode": "93311", "hch_id": "199", "parents": ["251"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple epiphyseal dysplasia due to collagen 9 anomaly", "ORPHAcode": "166002", "hch_id": "199", "parents": ["251"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple epiphyseal dysplasia, Beighton type", "ORPHAcode": "166011", "hch_id": "199", "parents": ["251"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple epiphyseal dysplasia, Lowry type", "ORPHAcode": "166016", "hch_id": "199", "parents": ["251"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple epiphyseal dysplasia, Al-Gazali type", "ORPHAcode": "166024", "hch_id": "199", "parents": ["251"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple epiphyseal dysplasia, with severe proximal femoral dysplasia", "ORPHAcode": "166029", "hch_id": "199", "parents": ["251"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple epiphyseal dysplasia, with miniepiphyses", "ORPHAcode": "166032", "hch_id": "199", "parents": ["251"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple epiphyseal dysplasia", "ORPHAcode": "251", "hch_id": "199", "parents": ["93429"], "childs": ["93307", "93308", "93311", "166002", "166011", "166016", "166024", "166029", "166032"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lowry-Wood syndrome", "ORPHAcode": "1824", "hch_id": "199", "parents": ["93429"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hip dysplasia, Beukes type", "ORPHAcode": "2114", "hch_id": "199", "parents": ["93429"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pseudoachondroplasia", "ORPHAcode": "750", "hch_id": "199", "parents": ["93429"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysplasia of head of femur, Meyer type", "ORPHAcode": "168621", "hch_id": "199", "parents": ["93429"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple epiphyseal dysplasia and pseudoachondroplasia", "ORPHAcode": "93429", "hch_id": "199", "parents": ["364526"], "childs": ["251", "1824", "2114", "750", "168621", "250984"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metaphyseal anadysplasia", "ORPHAcode": "1040", "hch_id": "199", "parents": ["93430"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Eiken syndrome", "ORPHAcode": "79106", "hch_id": "199", "parents": ["93430", "93447"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metaphyseal acroscyphodysplasia", "ORPHAcode": "1240", "hch_id": "199", "parents": ["93430"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metaphyseal chondrodysplasia, Schmid type", "ORPHAcode": "174", "hch_id": "199", "parents": ["93430"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ulna metaphyseal dysplasia syndrome", "ORPHAcode": "1837", "hch_id": "199", "parents": ["93430"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metaphyseal chondrodysplasia, Spahr type", "ORPHAcode": "2501", "hch_id": "199", "parents": ["93430"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metaphyseal dysostosis-intellectual disability-conductive deafness syndrome", "ORPHAcode": "2502", "hch_id": "199", "parents": ["93430"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome", "ORPHAcode": "2504", "hch_id": "199", "parents": ["93430"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cartilage-hair hypoplasia", "ORPHAcode": "175", "hch_id": "199", "parents": ["93430"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Shwachman-Diamond syndrome", "ORPHAcode": "811", "hch_id": "199", "parents": ["93430"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metaphyseal chondrodysplasia, Jansen type", "ORPHAcode": "33067", "hch_id": "199", "parents": ["93430"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metaphyseal chondrodysplasia, Kaitila type", "ORPHAcode": "166038", "hch_id": "199", "parents": ["93430"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple metaphyseal dysplasia", "ORPHAcode": "93430", "hch_id": "199", "parents": ["364526"], "childs": ["1040", "79106", "1240", "174", "1837", "2501", "2502", "2504", "175", "811", "33067", "166038"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Opsismodysplasia", "ORPHAcode": "2746", "hch_id": "199", "parents": ["93434"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Achondrogenesis type 2", "ORPHAcode": "93296", "hch_id": "199", "parents": ["932"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hypochondrogenesis", "ORPHAcode": "93297", "hch_id": "199", "parents": ["932"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Achondrogenesis type 1B", "ORPHAcode": "93298", "hch_id": "199", "parents": ["932"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Achondrogenesis type 1A", "ORPHAcode": "93299", "hch_id": "199", "parents": ["932"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Achondrogenesis", "ORPHAcode": "932", "hch_id": "199", "parents": ["93434"], "childs": ["93296", "93297", "93298", "93299"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive brachyolmia", "ORPHAcode": "448242", "hch_id": "199", "parents": ["1293"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachyolmia-amelogenesis imperfecta syndrome", "ORPHAcode": "2899", "hch_id": "199", "parents": ["1293"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachyolmia, Maroteaux type", "ORPHAcode": "93302", "hch_id": "199", "parents": ["1293"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal dominant brachyolmia", "ORPHAcode": "93304", "hch_id": "199", "parents": ["1293"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachyolmia", "ORPHAcode": "1293", "hch_id": "199", "parents": ["93434"], "childs": ["448242", "2899", "93302", "93304"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "X-linked skeletal dysplasia-intellectual disability syndrome", "ORPHAcode": "1436", "hch_id": "199", "parents": ["93434"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Schneckenbecken dysplasia", "ORPHAcode": "3144", "hch_id": "199", "parents": ["93434"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylocamptodactyly syndrome", "ORPHAcode": "3180", "hch_id": "199", "parents": ["93434"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylocarpotarsal synostosis", "ORPHAcode": "3275", "hch_id": "199", "parents": ["93434"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Diaphanospondylodysostosis", "ORPHAcode": "66637", "hch_id": "199", "parents": ["93434", "93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Platyspondylic dysplasia, Torrance type", "ORPHAcode": "85166", "hch_id": "199", "parents": ["93434"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylometaphyseal dysplasia, Sedaghatian type", "ORPHAcode": "93317", "hch_id": "199", "parents": ["93434"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive spondylometaphyseal dysplasia, Mégarbané type", "ORPHAcode": "401979", "hch_id": "199", "parents": ["93434"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Skeletal dysplasia-T-cell immunodeficiency-developmental delay syndrome", "ORPHAcode": "508533", "hch_id": "199", "parents": ["93434"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylodysplastic dysplasia", "ORPHAcode": "93434", "hch_id": "199", "parents": ["364526"], "childs": ["2746", "932", "1293", "1436", "3144", "3180", "3275", "66637", "85166", "93317", "401979", "508533"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Short stature-brachydactyly-obesity-global developmental delay syndrome", "ORPHAcode": "464288", "hch_id": "199", "parents": ["93436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Weill-Marchesani syndrome", "ORPHAcode": "3449", "hch_id": "199", "parents": ["93436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrodysostosis", "ORPHAcode": "950", "hch_id": "199", "parents": ["93436", "155899"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Peripheral dysostosis", "ORPHAcode": "1795", "hch_id": "199", "parents": ["93436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acromicric dysplasia", "ORPHAcode": "969", "hch_id": "199", "parents": ["93436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Geleophysic dysplasia", "ORPHAcode": "2623", "hch_id": "199", "parents": ["93436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Intellectual disability-balding-patella luxation-acromicria syndrome", "ORPHAcode": "3041", "hch_id": "199", "parents": ["93436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Angel-shaped phalango-epiphyseal dysplasia", "ORPHAcode": "63442", "hch_id": "199", "parents": ["93436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrocapitofemoral dysplasia", "ORPHAcode": "63446", "hch_id": "199", "parents": ["93436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniofacial conodysplasia", "ORPHAcode": "85168", "hch_id": "199", "parents": ["93436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Terminal osseous dysplasia-pigmentary defects syndrome", "ORPHAcode": "88630", "hch_id": "199", "parents": ["93436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Trichorhinophalangeal syndrome type 2", "ORPHAcode": "502", "hch_id": "199", "parents": ["324764"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Trichorhinophalangeal syndrome type 1 and 3", "ORPHAcode": "77258", "hch_id": "199", "parents": ["324764"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Trichorhinophalangeal syndrome", "ORPHAcode": "324764", "hch_id": "199", "parents": ["93436"], "childs": ["502", "77258"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Myhre syndrome", "ORPHAcode": "2588", "hch_id": "199", "parents": ["93436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pseudohypoparathyroidism type 1A", "ORPHAcode": "79443", "hch_id": "199", "parents": ["457059"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pseudohypoparathyroidism type 1C", "ORPHAcode": "79444", "hch_id": "199", "parents": ["457059"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pseudopseudohypoparathyroidism", "ORPHAcode": "79445", "hch_id": "199", "parents": ["457059"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pseudohypoparathyroidism with Albright hereditary osteodystrophy", "ORPHAcode": "457059", "hch_id": "199", "parents": ["93436"], "childs": ["79443", "79444", "79445"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acromelic dysplasia", "ORPHAcode": "93436", "hch_id": "199", "parents": ["364526"], "childs": ["464288", "3449", "950", "1795", "969", "2623", "3041", "63442", "63446", "85168", "88630", "324764", "2588", "457059"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acromesomelic dysplasia, Hunter-Thompson type", "ORPHAcode": "968", "hch_id": "199", "parents": ["93437"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acromesomelic dysplasia, Maroteaux type", "ORPHAcode": "40", "hch_id": "199", "parents": ["93437"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acromesomelic dysplasia, Grebe type", "ORPHAcode": "2098", "hch_id": "199", "parents": ["93437"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mesomelia-synostoses syndrome", "ORPHAcode": "2496", "hch_id": "199", "parents": ["93437"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Fibular aplasia-complex brachydactyly syndrome", "ORPHAcode": "2639", "hch_id": "199", "parents": ["93437", "294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly type A6", "ORPHAcode": "93382", "hch_id": "199", "parents": ["93437", "498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acromesomelic dysplasia", "ORPHAcode": "93437", "hch_id": "199", "parents": ["364526"], "childs": ["968", "40", "2098", "2496", "2639", "93382"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Léri-Weill dyschondrosteosis", "ORPHAcode": "240", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cleidorhizomelic syndrome", "ORPHAcode": "1453", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dyschondrosteosis-nephritis syndrome", "ORPHAcode": "1765", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mesomelic dysplasia, Kantaputra type", "ORPHAcode": "1836", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Fibrochondrogenesis", "ORPHAcode": "2021", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Upper limb mesomelic dysplasia", "ORPHAcode": "2497", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mesomelic dwarfism-cleft palate-camptodactyly syndrome", "ORPHAcode": "2631", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Langer mesomelic dysplasia", "ORPHAcode": "2632", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mesomelic dysplasia, Nievergelt type", "ORPHAcode": "2633", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mesomelic dwarfism, Reinhardt-Pfeiffer type", "ORPHAcode": "2634", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal dominant omodysplasia", "ORPHAcode": "93328", "hch_id": "199", "parents": ["2733"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive omodysplasia", "ORPHAcode": "93329", "hch_id": "199", "parents": ["2733"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Omodysplasia", "ORPHAcode": "2733", "hch_id": "199", "parents": ["93438"], "childs": ["93328", "93329"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rhizomelic syndrome, Urbach type", "ORPHAcode": "3098", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rhizomelic dysplasia, Patterson-Lowry type", "ORPHAcode": "2831", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Madelung deformity, unilateral", "ORPHAcode": "295221", "hch_id": "199", "parents": ["35688"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Madelung deformity, bilateral", "ORPHAcode": "295223", "hch_id": "199", "parents": ["35688"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Madelung deformity", "ORPHAcode": "35688", "hch_id": "199", "parents": ["93438", "294949"], "childs": ["295221", "295223"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Atelosteogenesis type II", "ORPHAcode": "56304", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mesomelic dysplasia, Savarirayan type", "ORPHAcode": "85170", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive Robinow syndrome", "ORPHAcode": "1507", "hch_id": "199", "parents": ["97360"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal dominant Robinow syndrome", "ORPHAcode": "3107", "hch_id": "199", "parents": ["97360"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Robinow syndrome", "ORPHAcode": "97360", "hch_id": "199", "parents": ["93438"], "childs": ["1507", "3107"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "SHOX-related short stature", "ORPHAcode": "314795", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Short stature-auditory canal atresia-mandibular hypoplasia-skeletal anomalies syndrome", "ORPHAcode": "397623", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Colobomatous microphthalmia-rhizomelic dysplasia syndrome", "ORPHAcode": "424099", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal dominant myopia-midfacial retrusion-sensorineural hearing loss-rhizomelic dysplasia syndrome", "ORPHAcode": "440354", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "X-linked dominant chondrodysplasia, Chassaing-Lacombe type", "ORPHAcode": "163966", "hch_id": "199", "parents": ["93438"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mesomelic and rhizo-mesomelic dysplasia", "ORPHAcode": "93438", "hch_id": "199", "parents": ["364526"], "childs": ["240", "1453", "1765", "1836", "2021", "2497", "2631", "2632", "2633", "2634", "2733", "3098", "2831", "35688", "56304", "85170", "97360", "314795", "397623", "424099", "440354", "163966"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Campomelic dysplasia", "ORPHAcode": "140", "hch_id": "199", "parents": ["93439"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Campomelia, Cumming type", "ORPHAcode": "1318", "hch_id": "199", "parents": ["93439"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Kyphomelic dysplasia", "ORPHAcode": "1801", "hch_id": "199", "parents": ["93439"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital bowing of long bones", "ORPHAcode": "2292", "hch_id": "199", "parents": ["93439"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Parastremmatic dwarfism", "ORPHAcode": "2646", "hch_id": "199", "parents": ["93439"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Blount disease", "ORPHAcode": "2768", "hch_id": "199", "parents": ["93439"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Weismann-Netter syndrome", "ORPHAcode": "3344", "hch_id": "199", "parents": ["93439"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Stüve-Wiedemann syndrome", "ORPHAcode": "3206", "hch_id": "199", "parents": ["93439"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "FGFR2-related bent bone dysplasia", "ORPHAcode": "313855", "hch_id": "199", "parents": ["93439", "139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Severe lateral tibial bowing with short stature", "ORPHAcode": "324307", "hch_id": "199", "parents": ["93439"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Campomelic dysplasia and related disorders", "ORPHAcode": "93439", "hch_id": "199", "parents": ["364526"], "childs": ["140", "1318", "1801", "2292", "2646", "2768", "3344", "3206", "313855", "324307"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive Kenny-Caffey syndrome", "ORPHAcode": "93324", "hch_id": "199", "parents": ["2333"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal dominant Kenny-Caffey syndrome", "ORPHAcode": "93325", "hch_id": "199", "parents": ["2333"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Kenny-Caffey syndrome", "ORPHAcode": "2333", "hch_id": "199", "parents": ["93440"], "childs": ["93324", "93325"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "3M syndrome", "ORPHAcode": "2616", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteocraniostenosis", "ORPHAcode": "2763", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "IMAGe syndrome", "ORPHAcode": "85173", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Short stature-onychodysplasia-facial dysmorphism-hypotrichosis syndrome", "ORPHAcode": "314394", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Intellectual disability-seizures-hypophosphatasia-ophthalmic-skeletal anomalies syndrome", "ORPHAcode": "369837", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thin ribs-tubular bones-dysmorphism syndrome", "ORPHAcode": "1506", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hallermann-Streiff syndrome", "ORPHAcode": "2108", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Seckel syndrome", "ORPHAcode": "808", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ear-patella-short stature syndrome", "ORPHAcode": "2554", "hch_id": "199", "parents": ["93440", "93455"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Microcephalic osteodysplastic primordial dwarfism type II", "ORPHAcode": "2637", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lipodystrophy-intellectual disability-deafness syndrome", "ORPHAcode": "50811", "hch_id": "199", "parents": ["93440", "93447"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Microcephalic primordial dwarfism, Toriello type", "ORPHAcode": "2643", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Microcephalic osteodysplastic primordial dwarfism types I and III", "ORPHAcode": "2636", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Microcephalic osteodysplastic dysplasia, Saul-Wilson type", "ORPHAcode": "85172", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hallermann-Streiff-like syndrome", "ORPHAcode": "2109", "hch_id": "199", "parents": ["93440"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Slender bone dysplasia", "ORPHAcode": "93440", "hch_id": "199", "parents": ["364526"], "childs": ["2333", "2616", "2763", "85173", "314394", "369837", "1506", "2108", "808", "2554", "2637", "50811", "2643", "2636", "85172", "2109"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Larsen-like osseous dysplasia-short stature syndrome", "ORPHAcode": "2370", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Atelosteogenesis type I", "ORPHAcode": "1190", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Auriculoosteodysplasia", "ORPHAcode": "114", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Boomerang dysplasia", "ORPHAcode": "1263", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Desbuquois syndrome", "ORPHAcode": "1425", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Coxoauricular syndrome", "ORPHAcode": "1508", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lethal Larsen-like syndrome", "ORPHAcode": "2371", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Larsen syndrome", "ORPHAcode": "503", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Atelosteogenesis type III", "ORPHAcode": "56305", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pseudodiastrophic dysplasia", "ORPHAcode": "85174", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "CHST3-related skeletal dysplasia", "ORPHAcode": "263463", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Chondrodysplasia with joint dislocations, gPAPP type", "ORPHAcode": "280586", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Larsen-like syndrome, B3GAT3 type", "ORPHAcode": "284139", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Reunion Island Larsen-like syndrome", "ORPHAcode": "294049", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Steel syndrome", "ORPHAcode": "438117", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Severe myopia-generalized joint laxity-short stature syndrome", "ORPHAcode": "527450", "hch_id": "199", "parents": ["93441"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary bone dysplasia with multiple joint dislocations", "ORPHAcode": "93441", "hch_id": "199", "parents": ["364526"], "childs": ["93360", "2370", "1190", "114", "1263", "1425", "1508", "2371", "503", "56305", "85174", "263463", "280586", "284139", "294049", "93359", "438117", "527450"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Greenberg dysplasia", "ORPHAcode": "1426", "hch_id": "199", "parents": ["93442"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "CHILD syndrome", "ORPHAcode": "139", "hch_id": "199", "parents": ["93442"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rhizomelic chondrodysplasia punctata type 3", "ORPHAcode": "309803", "hch_id": "199", "parents": ["177"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rhizomelic chondrodysplasia punctata type 1", "ORPHAcode": "309789", "hch_id": "199", "parents": ["177"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rhizomelic chondrodysplasia punctata type 2", "ORPHAcode": "309796", "hch_id": "199", "parents": ["177"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rhizomelic chondrodysplasia punctata type 5", "ORPHAcode": "468717", "hch_id": "199", "parents": ["177"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rhizomelic chondrodysplasia punctata", "ORPHAcode": "177", "hch_id": "199", "parents": ["93442"], "childs": ["309803", "309789", "309796", "468717"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "X-linked dominant chondrodysplasia punctata", "ORPHAcode": "35173", "hch_id": "199", "parents": ["176"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachytelephalangic chondrodysplasia punctata", "ORPHAcode": "79345", "hch_id": "199", "parents": ["176"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Chondrodysplasia punctata, tibial-metacarpal type", "ORPHAcode": "79346", "hch_id": "199", "parents": ["176"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Chondrodysplasia punctata, Toriello type", "ORPHAcode": "79347", "hch_id": "199", "parents": ["176"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Non-rhizomelic chondrodysplasia punctata", "ORPHAcode": "176", "hch_id": "199", "parents": ["93442"], "childs": ["35173", "79345", "79346", "79347"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Astley-Kendall dysplasia", "ORPHAcode": "85175", "hch_id": "199", "parents": ["93442"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Keutel syndrome", "ORPHAcode": "85202", "hch_id": "199", "parents": ["93442"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Chondrodysplasia punctata", "ORPHAcode": "93442", "hch_id": "199", "parents": ["364526"], "childs": ["1426", "139", "177", "176", "85175", "85202"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Inclusion body myopathy with Paget disease of bone and frontotemporal dementia", "ORPHAcode": "52430", "hch_id": "199", "parents": ["93444", "93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Juvenile Paget disease", "ORPHAcode": "2801", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Camurati-Engelmann disease", "ORPHAcode": "1328", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniodiaphyseal dysplasia", "ORPHAcode": "1513", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniometaphyseal dysplasia", "ORPHAcode": "1522", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dacryocystitis-osteopoikilosis syndrome", "ORPHAcode": "1562", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysostosis, Stanescu type", "ORPHAcode": "1798", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ghosal hematodiaphyseal dysplasia", "ORPHAcode": "1802", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lenz-Majewski hyperostotic dwarfism", "ORPHAcode": "2658", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Oculodentodigital dysplasia", "ORPHAcode": "2710", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteopathia striata-pigmentary dermopathy-white forelock syndrome", "ORPHAcode": "2779", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Endosteal hyperostosis, Worth type", "ORPHAcode": "2790", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pyle disease", "ORPHAcode": "3005", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sclerosteosis", "ORPHAcode": "3152", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Tricho-dento-osseous syndrome", "ORPHAcode": "3352", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hyperostosis corticalis generalisata", "ORPHAcode": "3416", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysplastic cortical hyperostosis", "ORPHAcode": "2204", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "12q14 microdeletion syndrome", "ORPHAcode": "94063", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Isolated osteopoikilosis", "ORPHAcode": "166119", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteopetrosis-hypogammaglobulinemia syndrome", "ORPHAcode": "178389", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Intermediate osteopetrosis", "ORPHAcode": "210110", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Albers-Schönberg osteopetrosis", "ORPHAcode": "53", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteopetrosis with renal tubular acidosis", "ORPHAcode": "2785", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pycnodysostosis", "ORPHAcode": "763", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysosteosclerosis", "ORPHAcode": "1782", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Melorheostosis with osteopoikilosis", "ORPHAcode": "1879", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Melorheostosis", "ORPHAcode": "2485", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteomesopyknosis", "ORPHAcode": "2777", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteopathia striata-cranial sclerosis syndrome", "ORPHAcode": "2780", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive malignant osteopetrosis", "ORPHAcode": "667", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal dominant osteopetrosis type 1", "ORPHAcode": "2783", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Buschke-Ollendorff syndrome", "ORPHAcode": "1306", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Anhidrotic ectodermal dysplasia-immunodeficiency-osteopetrosis-lymphedema syndrome", "ORPHAcode": "69088", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Infantile osteopetrosis with neuroaxonal dysplasia", "ORPHAcode": "85179", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Leukocyte adhesion deficiency type III", "ORPHAcode": "99844", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteosclerotic metaphyseal dysplasia", "ORPHAcode": "500548", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Early-onset calcifying leukoencephalopathy-skeletal dysplasia", "ORPHAcode": "556985", "hch_id": "199", "parents": ["2781"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteopetrosis and related disorders", "ORPHAcode": "2781", "hch_id": "199", "parents": ["93444"], "childs": ["94063", "166119", "178389", "210110", "53", "2785", "763", "1782", "1879", "2485", "2777", "2780", "667", "2783", "1306", "69088", "85179", "99844", "500548", "556985"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteosclerosis-ichthyosis-premature ovarian failure syndrome", "ORPHAcode": "75325", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniometadiaphyseal dysplasia, wormian bone type", "ORPHAcode": "85184", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Endosteal sclerosis-cerebellar hypoplasia syndrome", "ORPHAcode": "85186", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metaphyseal dysplasia, Braun-Tinschert type", "ORPHAcode": "85188", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Caffey disease", "ORPHAcode": "1310", "hch_id": "199", "parents": ["93443"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lethal osteosclerotic bone dysplasia", "ORPHAcode": "1832", "hch_id": "199", "parents": ["93443"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Desmosterolosis", "ORPHAcode": "35107", "hch_id": "199", "parents": ["93443"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Blomstrand lethal chondrodysplasia", "ORPHAcode": "50945", "hch_id": "199", "parents": ["93443"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Neonatal osteosclerotic dysplasia", "ORPHAcode": "93443", "hch_id": "199", "parents": ["93444"], "childs": ["1310", "1832", "35107", "50945"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cranio-osteoarthropathy", "ORPHAcode": "1525", "hch_id": "199", "parents": ["248095"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pachydermoperiostosis", "ORPHAcode": "2796", "hch_id": "199", "parents": ["248095"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary hypertrophic osteoarthropathy", "ORPHAcode": "248095", "hch_id": "199", "parents": ["93444"], "childs": ["1525", "2796"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "High bone mass osteogenesis imperfecta", "ORPHAcode": "314029", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mixed sclerosing bone dystrophy with extra-skeletal manifestations", "ORPHAcode": "324364", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "X-linked calvarial hyperostosis", "ORPHAcode": "391327", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hyperostosis cranialis interna", "ORPHAcode": "443098", "hch_id": "199", "parents": ["93444"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spastic paraplegia-Paget disease of bone syndrome", "ORPHAcode": "329475", "hch_id": "199", "parents": ["93444", "93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary bone dysplasia with increased bone density", "ORPHAcode": "93444", "hch_id": "199", "parents": ["364526"], "childs": ["52430", "2801", "1328", "1513", "1522", "1562", "1798", "1802", "2658", "2710", "2779", "2790", "3005", "3152", "3352", "3416", "2204", "2781", "75325", "85182", "85184", "85186", "85188", "93443", "248095", "314029", "324364", "391327", "443098", "329475"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Bruck syndrome", "ORPHAcode": "2771", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital osteogenesis imperfecta-microcephaly-cataracts syndrome", "ORPHAcode": "2772", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteogenesis imperfecta-retinopathy-seizures-intellectual disability syndrome", "ORPHAcode": "2773", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteogenesis imperfecta type 1", "ORPHAcode": "216796", "hch_id": "199", "parents": ["666"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteogenesis imperfecta type 2", "ORPHAcode": "216804", "hch_id": "199", "parents": ["666"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteogenesis imperfecta type 3", "ORPHAcode": "216812", "hch_id": "199", "parents": ["666"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteogenesis imperfecta type 4", "ORPHAcode": "216820", "hch_id": "199", "parents": ["666"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteogenesis imperfecta type 5", "ORPHAcode": "216828", "hch_id": "199", "parents": ["666"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteogenesis imperfecta", "ORPHAcode": "666", "hch_id": "199", "parents": ["93446"], "childs": ["216796", "216804", "216812", "216820", "216828"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cole-Carpenter syndrome", "ORPHAcode": "2050", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Geroderma osteodysplastica", "ORPHAcode": "2078", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Grant syndrome", "ORPHAcode": "2097", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteopenia-intellectual disability-sparse hair syndrome", "ORPHAcode": "2324", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteoporosis-oculocutaneous hypopigmentation syndrome", "ORPHAcode": "2786", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteoporosis-macrocephaly-blindness-joint hyperlaxity syndrome", "ORPHAcode": "2787", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteoporosis-pseudoglioma syndrome", "ORPHAcode": "2788", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Complex lethal osteochondrodysplasia", "ORPHAcode": "457378", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Gnathodiaphyseal dysplasia", "ORPHAcode": "53697", "hch_id": "199", "parents": ["93446", "93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Singleton-Merten dysplasia", "ORPHAcode": "85191", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Calvarial doughnut lesions-bone fragility syndrome", "ORPHAcode": "85192", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Idiopathic juvenile osteoporosis", "ORPHAcode": "85193", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylo-ocular syndrome", "ORPHAcode": "85194", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Wrinkly skin syndrome", "ORPHAcode": "2834", "hch_id": "199", "parents": ["357058"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive cutis laxa type 2, classic type", "ORPHAcode": "357074", "hch_id": "199", "parents": ["357058"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive cutis laxa type 2A", "ORPHAcode": "357058", "hch_id": "199", "parents": ["90350"], "childs": ["2834", "357074"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive cutis laxa type 2B", "ORPHAcode": "357064", "hch_id": "199", "parents": ["90350"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive cutis laxa type 2", "ORPHAcode": "90350", "hch_id": "199", "parents": ["93446"], "childs": ["357058", "357064"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Wormian bone-multiple fractures-dentinogenesis imperfecta-skeletal dysplasia", "ORPHAcode": "166277", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ehlers-Danlos/osteogenesis imperfecta syndrome", "ORPHAcode": "230857", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "TMEM165-CDG", "ORPHAcode": "314667", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Chondroectodermal dysplasia with night blindness", "ORPHAcode": "319195", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "X-linked osteoporosis with fractures", "ORPHAcode": "391330", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "LRP5-related primary osteoporosis", "ORPHAcode": "498481", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "B3GALT6-related spondylodysplastic Ehlers-Danlos syndrome", "ORPHAcode": "536467", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Classical-like Ehlers-Danlos syndrome type 2", "ORPHAcode": "536532", "hch_id": "199", "parents": ["93446"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary bone dysplasia with decreased bone density", "ORPHAcode": "93446", "hch_id": "199", "parents": ["364526"], "childs": ["2771", "2772", "2773", "666", "2050", "2078", "2097", "2324", "2786", "2787", "2788", "457378", "53697", "85191", "85192", "85193", "85194", "90350", "166277", "230857", "314667", "319195", "391330", "498481", "536467", "536532"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial calcium pyrophosphate deposition", "ORPHAcode": "1416", "hch_id": "199", "parents": ["93447"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Oculocerebrodental syndrome", "ORPHAcode": "557003", "hch_id": "199", "parents": ["93447"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Perinatal lethal hypophosphatasia", "ORPHAcode": "247623", "hch_id": "199", "parents": ["436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Prenatal benign hypophosphatasia", "ORPHAcode": "247638", "hch_id": "199", "parents": ["436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Infantile hypophosphatasia", "ORPHAcode": "247651", "hch_id": "199", "parents": ["436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Childhood-onset hypophosphatasia", "ORPHAcode": "247667", "hch_id": "199", "parents": ["436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Adult hypophosphatasia", "ORPHAcode": "247676", "hch_id": "199", "parents": ["436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Odontohypophosphatasia", "ORPHAcode": "247685", "hch_id": "199", "parents": ["436"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hypophosphatasia", "ORPHAcode": "436", "hch_id": "199", "parents": ["93447"], "childs": ["247623", "247638", "247651", "247667", "247676", "247685"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Neonatal severe primary hyperparathyroidism", "ORPHAcode": "417", "hch_id": "199", "parents": ["93447"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial hypocalciuric hypercalcemia type 1", "ORPHAcode": "93372", "hch_id": "199", "parents": ["405"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial hypocalciuric hypercalcemia type 2", "ORPHAcode": "101049", "hch_id": "199", "parents": ["405"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial hypocalciuric hypercalcemia type 3", "ORPHAcode": "101050", "hch_id": "199", "parents": ["405"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial hypocalciuric hypercalcemia", "ORPHAcode": "405", "hch_id": "199", "parents": ["93447"], "childs": ["93372", "101049", "101050"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ossification anomalies-psychomotor developmental delay syndrome", "ORPHAcode": "73230", "hch_id": "199", "parents": ["93447"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dominant hypophosphatemia with nephrolithiasis or osteoporosis", "ORPHAcode": "244305", "hch_id": "199", "parents": ["93447"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dent disease type 2", "ORPHAcode": "93623", "hch_id": "199", "parents": ["1652"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dent disease type 1", "ORPHAcode": "93622", "hch_id": "199", "parents": ["1652"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dent disease", "ORPHAcode": "1652", "hch_id": "199", "parents": ["437"], "childs": ["93623", "93622"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "X-linked hypophosphatemia", "ORPHAcode": "89936", "hch_id": "199", "parents": ["437"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal dominant hypophosphatemic rickets", "ORPHAcode": "89937", "hch_id": "199", "parents": ["437"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hereditary hypophosphatemic rickets with hypercalciuria", "ORPHAcode": "157215", "hch_id": "199", "parents": ["437"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive hypophosphatemic rickets", "ORPHAcode": "289176", "hch_id": "199", "parents": ["437"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hypophosphatemic rickets", "ORPHAcode": "437", "hch_id": "199", "parents": ["289098"], "childs": ["1652", "89936", "89937", "157215", "289176"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hypocalcemic vitamin D-resistant rickets", "ORPHAcode": "93160", "hch_id": "199", "parents": ["289103"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hypocalcemic vitamin D-dependent rickets", "ORPHAcode": "289157", "hch_id": "199", "parents": ["289103"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hypocalcemic rickets", "ORPHAcode": "289103", "hch_id": "199", "parents": ["289098"], "childs": ["93160", "289157"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Disorders of vitamin D metabolism", "ORPHAcode": "289098", "hch_id": "199", "parents": ["93447"], "childs": ["437", "289103"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary bone dysplasia with defective bone mineralization", "ORPHAcode": "93447", "hch_id": "199", "parents": ["364526"], "childs": ["1416", "557003", "436", "417", "405", "50811", "73230", "79106", "244305", "289098"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acroosteolysis dominant type", "ORPHAcode": "955", "hch_id": "199", "parents": ["93449"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pacman dysplasia", "ORPHAcode": "1952", "hch_id": "199", "parents": ["93449"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mandibuloacral dysplasia with type A lipodystrophy", "ORPHAcode": "90153", "hch_id": "199", "parents": ["2457"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mandibuloacral dysplasia with type B lipodystrophy", "ORPHAcode": "90154", "hch_id": "199", "parents": ["2457"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mandibuloacral dysplasia", "ORPHAcode": "2457", "hch_id": "199", "parents": ["93449"], "childs": ["90153", "90154"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multicentric carpo-tarsal osteolysis with or without nephropathy", "ORPHAcode": "2774", "hch_id": "199", "parents": ["93449"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive distal osteolysis syndrome", "ORPHAcode": "2776", "hch_id": "199", "parents": ["93449"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hutchinson-Gilford progeria syndrome", "ORPHAcode": "740", "hch_id": "199", "parents": ["93449"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Talo-patello-scaphoid osteolysis", "ORPHAcode": "50809", "hch_id": "199", "parents": ["93449"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial expansile osteolysis", "ORPHAcode": "85195", "hch_id": "199", "parents": ["93449"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Nestor-Guillermo progeria syndrome", "ORPHAcode": "280576", "hch_id": "199", "parents": ["93449"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Phalangeal microgeodic syndrome", "ORPHAcode": "352636", "hch_id": "199", "parents": ["93449"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multicentric osteolysis-nodulosis-arthropathy spectrum", "ORPHAcode": "371428", "hch_id": "199", "parents": ["93449"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary osteolysis", "ORPHAcode": "93449", "hch_id": "199", "parents": ["364526"], "childs": ["498474", "955", "1952", "2457", "2774", "2776", "740", "50809", "85195", "280576", "352636", "371428"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "17q11 microdeletion syndrome", "ORPHAcode": "97685", "hch_id": "199", "parents": ["636"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Neurofibromatosis type 1 due to NF1 mutation or intragenic deletion", "ORPHAcode": "363700", "hch_id": "199", "parents": ["636"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Neurofibromatosis type 1", "ORPHAcode": "636", "hch_id": "199", "parents": ["93450"], "childs": ["97685", "363700"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Fibrodysplasia ossificans progressiva", "ORPHAcode": "337", "hch_id": "199", "parents": ["93450", "364531"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "McCune-Albright syndrome", "ORPHAcode": "562", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Polyostotic fibrous dysplasia", "ORPHAcode": "93276", "hch_id": "199", "parents": ["249"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Monostotic fibrous dysplasia", "ORPHAcode": "93277", "hch_id": "199", "parents": ["249"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Fibrous dysplasia of bone", "ORPHAcode": "249", "hch_id": "199", "parents": ["93450"], "childs": ["93276", "93277"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cherubism", "ORPHAcode": "184", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysplasia epiphysealis hemimelica", "ORPHAcode": "1822", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Exostoses-anetodermia-brachydactyly type E syndrome", "ORPHAcode": "1962", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Nasu-Hakola disease", "ORPHAcode": "2770", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Progressive osseous heteroplasia", "ORPHAcode": "2762", "hch_id": "199", "parents": ["93450", "364531"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metachondromatosis", "ORPHAcode": "2499", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteoglosphonic dysplasia", "ORPHAcode": "2645", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Carpotarsal osteochondromatosis", "ORPHAcode": "2767", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Short stature, Brussels type", "ORPHAcode": "2867", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ramon syndrome", "ORPHAcode": "3019", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Upington disease", "ORPHAcode": "3408", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mazabraud syndrome", "ORPHAcode": "57782", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Genochondromatosis type 1", "ORPHAcode": "85197", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysspondyloenchondromatosis", "ORPHAcode": "85198", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Genochondromatosis type 2", "ORPHAcode": "93398", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metaphyseal chondromatosis with D-2-hydroxyglutaric aciduria", "ORPHAcode": "99646", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cheirospondyloenchondromatosis", "ORPHAcode": "99647", "hch_id": "199", "parents": ["93450"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary bone dysplasia with disorganized development of skeletal components", "ORPHAcode": "93450", "hch_id": "199", "parents": ["364526"], "childs": ["73", "636", "337", "562", "249", "184", "1822", "1962", "2770", "2762", "296", "2499", "2645", "2767", "2867", "3019", "3408", "321", "52430", "53697", "57782", "85197", "85198", "93398", "99646", "99647", "163634", "329475"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Parietal foramina with clavicular hypoplasia", "ORPHAcode": "251290", "hch_id": "199", "parents": ["93451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cleidocranial dysplasia", "ORPHAcode": "1452", "hch_id": "199", "parents": ["93451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Delayed membranous cranial ossification", "ORPHAcode": "3034", "hch_id": "199", "parents": ["93451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Yunis-Varon syndrome", "ORPHAcode": "3472", "hch_id": "199", "parents": ["93451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Enlarged parietal foramina", "ORPHAcode": "60015", "hch_id": "199", "parents": ["93451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniosynostosis-anal anomalies-porokeratosis syndrome", "ORPHAcode": "85199", "hch_id": "199", "parents": ["93451", "139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pancreatic insufficiency-anemia-hyperostosis syndrome", "ORPHAcode": "199337", "hch_id": "199", "parents": ["93451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cleidocranial dysplasia and isolated cranial ossification defect", "ORPHAcode": "93451", "hch_id": "199", "parents": ["364526"], "childs": ["251290", "1452", "3034", "3472", "60015", "85199", "199337"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Bone dysplasia, lethal Holmgren type", "ORPHAcode": "1842", "hch_id": "199", "parents": ["93465"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lethal Kniest-like dysplasia", "ORPHAcode": "2347", "hch_id": "199", "parents": ["93465"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pyknoachondrogenesis", "ORPHAcode": "3003", "hch_id": "199", "parents": ["93465"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lethal recessive chondrodysplasia", "ORPHAcode": "1423", "hch_id": "199", "parents": ["93465"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lethal chondrodysplasia", "ORPHAcode": "93465", "hch_id": "199", "parents": ["364526"], "childs": ["1842", "2347", "3003", "1423"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary bone dysplasia with progressive ossification of skin, skeletal muscle, fascia, tendons and ligaments", "ORPHAcode": "364531", "hch_id": "199", "parents": ["364526"], "childs": ["337", "2762"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary bone dysplasia", "ORPHAcode": "364526", "hch_id": "199", "parents": ["93419"], "childs": ["488265", "498445", "498448", "364536", "364541", "435804", "253", "254", "93426", "93429", "93430", "93434", "93436", "93437", "93438", "93439", "93440", "93441", "93442", "93444", "93446", "93447", "93449", "93450", "93451", "93465", "364531"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Isolated cloverleaf skull syndrome", "ORPHAcode": "2343", "hch_id": "199", "parents": ["139390"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial lambdoid synostosis", "ORPHAcode": "3267", "hch_id": "199", "parents": ["139390"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Isolated trigonocephaly", "ORPHAcode": "3366", "hch_id": "199", "parents": ["139390"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Isolated scaphocephaly", "ORPHAcode": "35093", "hch_id": "199", "parents": ["139390"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Isolated plagiocephaly", "ORPHAcode": "35098", "hch_id": "199", "parents": ["139390"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Isolated brachycephaly", "ORPHAcode": "35099", "hch_id": "199", "parents": ["139390"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Isolated oxycephaly", "ORPHAcode": "63440", "hch_id": "199", "parents": ["139390"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Isolated craniosynostosis", "ORPHAcode": "139390", "hch_id": "199", "parents": ["1531"], "childs": ["2343", "3267", "3366", "35093", "35098", "35099", "63440"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Crouzon disease", "ORPHAcode": "207", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "C syndrome", "ORPHAcode": "1308", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pfeiffer syndrome type 1", "ORPHAcode": "93258", "hch_id": "199", "parents": ["710"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pfeiffer syndrome type 2", "ORPHAcode": "93259", "hch_id": "199", "parents": ["710"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pfeiffer syndrome type 3", "ORPHAcode": "93260", "hch_id": "199", "parents": ["710"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pfeiffer syndrome", "ORPHAcode": "710", "hch_id": "199", "parents": ["946"], "childs": ["93258", "93259", "93260"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Saethre-Chotzen syndrome", "ORPHAcode": "794", "hch_id": "199", "parents": ["946"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Apert syndrome", "ORPHAcode": "87", "hch_id": "199", "parents": ["946"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Jackson-Weiss syndrome", "ORPHAcode": "1540", "hch_id": "199", "parents": ["946"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Carpenter syndrome", "ORPHAcode": "65759", "hch_id": "199", "parents": ["946"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Goodman syndrome", "ORPHAcode": "65798", "hch_id": "199", "parents": ["946"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Summitt syndrome", "ORPHAcode": "3210", "hch_id": "199", "parents": ["946"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrocephalosyndactyly", "ORPHAcode": "946", "hch_id": "199", "parents": ["139393", "93459"], "childs": ["710", "794", "87", "1540", "65759", "65798", "3210"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Antley-Bixler syndrome", "ORPHAcode": "83", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Baller-Gerold syndrome", "ORPHAcode": "1225", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniosynostosis, Philadelphia type", "ORPHAcode": "1527", "hch_id": "199", "parents": ["139393", "294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniotelencephalic dysplasia", "ORPHAcode": "1528", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniosynostosis-fibular aplasia syndrome", "ORPHAcode": "1533", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Curry-Jones syndrome", "ORPHAcode": "1553", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cutis gyrata-acanthosis nigricans-craniosynostosis syndrome", "ORPHAcode": "1555", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniosynostosis, Herrmann-Opitz type", "ORPHAcode": "2145", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Holoprosencephaly-craniosynostosis syndrome", "ORPHAcode": "2163", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lowry-MacLean syndrome", "ORPHAcode": "2409", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Shprintzen-Goldberg syndrome", "ORPHAcode": "2462", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cardiocranial syndrome, Pfeiffer type", "ORPHAcode": "2872", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "SCARF syndrome", "ORPHAcode": "3134", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Trigonocephaly-broad thumbs syndrome", "ORPHAcode": "3365", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Trigonocephaly-short stature-developmental delay syndrome", "ORPHAcode": "3369", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "X-linked intellectual disability-plagiocephaly syndrome", "ORPHAcode": "2898", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniosynostosis, Boston type", "ORPHAcode": "1541", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniomicromelic syndrome", "ORPHAcode": "1524", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniosynostosis-intracranial calcifications syndrome", "ORPHAcode": "52054", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Muenke syndrome", "ORPHAcode": "53271", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Crouzon syndrome-acanthosis nigricans syndrome", "ORPHAcode": "93262", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cloverleaf skull-multiple congenital anomalies syndrome", "ORPHAcode": "93267", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hunter-McAlpine craniosynostosis", "ORPHAcode": "97340", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cloverleaf skull-asphyxiating thoracic dysplasia syndrome", "ORPHAcode": "100978", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniosynostosis-Dandy-Walker malformation-hydrocephalus syndrome", "ORPHAcode": "1538", "hch_id": "199", "parents": ["169163"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial scaphocephaly syndrome, McGillivray type", "ORPHAcode": "168624", "hch_id": "199", "parents": ["169163"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial scaphocephaly syndrome", "ORPHAcode": "169163", "hch_id": "199", "parents": ["139393"], "childs": ["1538", "168624"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniosynostosis-hydrocephalus-Arnold-Chiari malformation type I-radioulnar synostosis syndrome", "ORPHAcode": "171839", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteosclerosis-developmental delay-craniosynostosis syndrome", "ORPHAcode": "178377", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrocephalopolydactyly", "ORPHAcode": "221054", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pseudoaminopterin syndrome", "ORPHAcode": "221120", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniosynostosis-dental anomalies", "ORPHAcode": "284149", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lethal occipital encephalocele-skeletal dysplasia syndrome", "ORPHAcode": "293925", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Metopic ridging-ptosis-facial dysmorphism syndrome", "ORPHAcode": "502430", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniofacial dyssynostosis", "ORPHAcode": "1516", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome", "ORPHAcode": "457193", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniosynostosis-microretrognathia-several intellectual disability syndrome", "ORPHAcode": "565858", "hch_id": "199", "parents": ["139393"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndromic craniosynostosis", "ORPHAcode": "139393", "hch_id": "199", "parents": ["1531"], "childs": ["207", "1308", "946", "83", "1225", "1515", "1527", "1528", "1533", "1553", "1555", "2145", "2163", "2409", "2462", "2872", "3134", "3365", "3369", "2898", "1541", "1524", "52054", "53271", "85199", "93262", "93267", "97340", "100978", "169163", "171839", "178377", "221054", "221120", "284149", "293925", "502430", "313855", "1516", "457193", "565858"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniosynostosis", "ORPHAcode": "1531", "hch_id": "199", "parents": ["364559"], "childs": ["139390", "139393"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital pseudoarthrosis of the clavicle", "ORPHAcode": "66630", "hch_id": "199", "parents": ["364559"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hypertrichotic osteochondrodysplasia, Cantu type", "ORPHAcode": "1517", "hch_id": "199", "parents": ["93453"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Oculomaxillofacial dysostosis", "ORPHAcode": "1794", "hch_id": "199", "parents": ["93453"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hypertelorism, Teebi type", "ORPHAcode": "1519", "hch_id": "199", "parents": ["250"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniofrontonasal dysplasia", "ORPHAcode": "1520", "hch_id": "199", "parents": ["250", "364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniofrontonasal dysplasia-Poland anomaly syndrome", "ORPHAcode": "1521", "hch_id": "199", "parents": ["250"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pai syndrome", "ORPHAcode": "1993", "hch_id": "199", "parents": ["250"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Frontofacionasal dysplasia", "ORPHAcode": "1791", "hch_id": "199", "parents": ["250"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acromelic frontonasal dysplasia", "ORPHAcode": "1827", "hch_id": "199", "parents": ["250", "364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Frontonasal dysplasia-alopecia-genital anomalies syndrome", "ORPHAcode": "228390", "hch_id": "199", "parents": ["250"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Frontonasal dysplasia-severe microphthalmia-severe facial clefting syndrome", "ORPHAcode": "306542", "hch_id": "199", "parents": ["250"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Frontorhiny", "ORPHAcode": "391474", "hch_id": "199", "parents": ["250"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Oculoauriculofrontonasal syndrome", "ORPHAcode": "398156", "hch_id": "199", "parents": ["250"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "SIX2-related frontonasal dysplasia", "ORPHAcode": "488437", "hch_id": "199", "parents": ["250"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Frontonasal dysplasia-bifid nose-upper limb anomalies syndrome", "ORPHAcode": "521308", "hch_id": "199", "parents": ["250"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniorhiny", "ORPHAcode": "157832", "hch_id": "199", "parents": ["250"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Frontonasal dysplasia", "ORPHAcode": "250", "hch_id": "199", "parents": ["93453"], "childs": ["1519", "1520", "1521", "1993", "1791", "1827", "228390", "306542", "391474", "398156", "488437", "521308", "157832"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Oculoauriculovertebral spectrum with radial defects", "ORPHAcode": "2549", "hch_id": "199", "parents": ["93453"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial osteodysplasia, Anderson type", "ORPHAcode": "2769", "hch_id": "199", "parents": ["93453"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniofaciofrontodigital syndrome", "ORPHAcode": "363705", "hch_id": "199", "parents": ["93453"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Teebi-Shaltout syndrome", "ORPHAcode": "3291", "hch_id": "199", "parents": ["93453"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 1", "ORPHAcode": "2750", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 2", "ORPHAcode": "2751", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 3", "ORPHAcode": "2752", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 6", "ORPHAcode": "2754", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 8", "ORPHAcode": "2755", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 5", "ORPHAcode": "2919", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 10", "ORPHAcode": "2756", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 11", "ORPHAcode": "141000", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 9", "ORPHAcode": "141007", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 12", "ORPHAcode": "141327", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 13", "ORPHAcode": "141330", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome type 14", "ORPHAcode": "434179", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Oral-facial-digital syndrome with short stature and brachymesophalangy", "ORPHAcode": "508501", "hch_id": "199", "parents": ["140997"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Orofaciodigital syndrome", "ORPHAcode": "140997", "hch_id": "199", "parents": ["93453", "294959"], "childs": ["2750", "2751", "2752", "2753", "2754", "2755", "2919", "2756", "141000", "141007", "141327", "141330", "434179", "508501"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Craniofacial dysplasia-short stature-ectodermal anomalies-intellectual disability syndrome", "ORPHAcode": "459061", "hch_id": "199", "parents": ["93453"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Goldenhar syndrome", "ORPHAcode": "374", "hch_id": "199", "parents": ["141132"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Auriculocondylar syndrome", "ORPHAcode": "137888", "hch_id": "199", "parents": ["141132"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Otomandibular syndrome", "ORPHAcode": "141136", "hch_id": "199", "parents": ["141132"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Oculo-auriculo-vertebral spectrum", "ORPHAcode": "141132", "hch_id": "199", "parents": ["155896"], "childs": ["374", "137888", "141136"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Treacher-Collins syndrome", "ORPHAcode": "861", "hch_id": "199", "parents": ["155899"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mandibulofacial dysostosis-macroblepharon-macrostomia syndrome", "ORPHAcode": "357158", "hch_id": "199", "parents": ["155899"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrodysostosis with multiple hormone resistance", "ORPHAcode": "280651", "hch_id": "199", "parents": ["155899", "364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mandibulofacial dysostosis with alopecia", "ORPHAcode": "443995", "hch_id": "199", "parents": ["155899"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mandibulofacial dysostosis", "ORPHAcode": "155899", "hch_id": "199", "parents": ["155896"], "childs": ["861", "950", "357158", "280651", "443995"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Otomandibular dysplasia", "ORPHAcode": "155896", "hch_id": "199", "parents": ["93453"], "childs": ["141132", "155899"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dobrow syndrome", "ORPHAcode": "3262", "hch_id": "199", "parents": ["93453"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysostosis with predominant craniofacial involvement", "ORPHAcode": "93453", "hch_id": "199", "parents": ["364559"], "childs": ["1517", "1794", "250", "2549", "2769", "363705", "3291", "140997", "459061", "155896", "3262"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive spondylocostal dysostosis", "ORPHAcode": "2311", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Currarino syndrome", "ORPHAcode": "1552", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cerebrocostomandibular syndrome", "ORPHAcode": "1393", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cerebrofaciothoracic dysplasia", "ORPHAcode": "1394", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ankylosing vertebral hyperostosis with tylosis", "ORPHAcode": "2206", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Melhem-Fahl syndrome", "ORPHAcode": "2482", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Imperforate oropharynx-costovertebral anomalies syndrome", "ORPHAcode": "2759", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pelvic dysplasia-arthrogryposis of lower limbs syndrome", "ORPHAcode": "2840", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal dominant spondylocostal dysostosis", "ORPHAcode": "1797", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Wildervanck syndrome", "ORPHAcode": "3456", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Progressive non-infectious anterior vertebral fusion", "ORPHAcode": "2062", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Isolated Klippel-Feil syndrome", "ORPHAcode": "2345", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Camptodactyly-tall stature-scoliosis-hearing loss syndrome", "ORPHAcode": "85164", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ischiovertebral syndrome", "ORPHAcode": "85200", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylocostal dysostosis-anal atresia-genitourinary malformation syndrome", "ORPHAcode": "94095", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "COG1-CDG", "ORPHAcode": "263508", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Spondylocostal dysostosis-hypospadias-intellectual disability syndrome", "ORPHAcode": "329252", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Duane anomaly-myopathy-scoliosis syndrome", "ORPHAcode": "50817", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Klippel-Feil anomaly-myopathy-facial dysmorphism syndrome", "ORPHAcode": "447974", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mucopolysaccharidosis-like syndrome with congenital heart defects and hematopoietic disorders", "ORPHAcode": "505248", "hch_id": "199", "parents": ["93454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Neurodevelopmental disorder-craniofacial dysmorphism-cardiac defect-skeletal anomalies syndrome due to 9q21.3 microdeletion", "ORPHAcode": "352665", "hch_id": "199", "parents": ["453499"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Neurodevelopmental disorder-craniofacial dysmorphism-cardiac defect-skeletal anomalies syndrome due to a point mutation", "ORPHAcode": "453504", "hch_id": "199", "parents": ["453499"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Neurodevelopmental disorder-craniofacial dysmorphism-cardiac defect-skeletal anomalies syndrome", "ORPHAcode": "453499", "hch_id": "199", "parents": ["93454"], "childs": ["352665", "453504"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysostosis with predominant vertebral and costal involvement", "ORPHAcode": "93454", "hch_id": "199", "parents": ["364559"], "childs": ["2311", "1552", "1393", "1394", "2206", "2482", "2759", "2840", "1797", "3456", "2062", "2345", "66637", "85164", "85200", "94095", "263508", "329191", "329252", "50817", "447974", "505248", "453499"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Nail-patella syndrome", "ORPHAcode": "2614", "hch_id": "199", "parents": ["93455"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial chondromalacia patellae", "ORPHAcode": "1428", "hch_id": "199", "parents": ["93455"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Coxopodopatellar syndrome", "ORPHAcode": "1509", "hch_id": "199", "parents": ["93455"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Genitopatellar syndrome", "ORPHAcode": "85201", "hch_id": "199", "parents": ["93455"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Patella aplasia/hypoplasia", "ORPHAcode": "86789", "hch_id": "199", "parents": ["93455"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial clubfoot due to PITX1 point mutation", "ORPHAcode": "293150", "hch_id": "199", "parents": ["93455", "199315"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "9q33.3q34.11 microdeletion syndrome", "ORPHAcode": "495818", "hch_id": "199", "parents": ["93455"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Patellar dysostosis", "ORPHAcode": "93455", "hch_id": "199", "parents": ["364559"], "childs": ["2614", "1428", "1509", "2554", "85201", "86789", "293150", "495818"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "X-linked keloid scarring-reduced joint mobility-increased optic cup-to-disc ratio syndrome", "ORPHAcode": "482606", "hch_id": "199", "parents": ["364568"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Camptodactyly syndrome, Guadalajara type 3", "ORPHAcode": "488434", "hch_id": "199", "parents": ["364568"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "EEC syndrome", "ORPHAcode": "1896", "hch_id": "199", "parents": ["498477"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "EEM syndrome", "ORPHAcode": "1897", "hch_id": "199", "parents": ["498477"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Limb-mammary syndrome", "ORPHAcode": "69085", "hch_id": "199", "parents": ["498477"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "ADULT syndrome", "ORPHAcode": "978", "hch_id": "199", "parents": ["498477", "294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Tibial aplasia-ectrodactyly syndrome", "ORPHAcode": "3329", "hch_id": "199", "parents": ["498477", "294955", "294957"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Fibular aplasia-ectrodactyly syndrome", "ORPHAcode": "1118", "hch_id": "199", "parents": ["498477", "294957"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ectrodactyly-polydactyly syndrome", "ORPHAcode": "1892", "hch_id": "199", "parents": ["498477", "294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Charlie M syndrome", "ORPHAcode": "1406", "hch_id": "199", "parents": ["498477", "2749"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Gollop-Wolfgang complex", "ORPHAcode": "1986", "hch_id": "199", "parents": ["498477", "294955", "294957", "294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hartsfield syndrome", "ORPHAcode": "2117", "hch_id": "199", "parents": ["498477"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Patterson-Stevenson-Fontaine syndrome", "ORPHAcode": "2439", "hch_id": "199", "parents": ["498477", "364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Phocomelia-ectrodactyly-deafness-sinus arrhythmia syndrome", "ORPHAcode": "2878", "hch_id": "199", "parents": ["498477", "294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Isolated split hand-split foot malformation", "ORPHAcode": "2440", "hch_id": "199", "parents": ["498477"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ectrodactyly with and without other manifestations", "ORPHAcode": "498477", "hch_id": "199", "parents": ["364568"], "childs": ["1896", "1897", "69085", "978", "3329", "1118", "1892", "1406", "1986", "2117", "2439", "2878", "2440"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Symbrachydactyly of hands and feet", "ORPHAcode": "1570", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly type A1", "ORPHAcode": "93388", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly type A2", "ORPHAcode": "93396", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly type A4", "ORPHAcode": "93394", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly type A7", "ORPHAcode": "93397", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sugarman brachydactyly", "ORPHAcode": "498602", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cooks syndrome", "ORPHAcode": "1487", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mononen-Karnes-Senac syndrome", "ORPHAcode": "2565", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial digital arthropathy-brachydactyly", "ORPHAcode": "85169", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly type B2", "ORPHAcode": "140908", "hch_id": "199", "parents": ["93383"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly type B1", "ORPHAcode": "572385", "hch_id": "199", "parents": ["93383"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly type B", "ORPHAcode": "93383", "hch_id": "199", "parents": ["498451"], "childs": ["140908", "572385"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly type C", "ORPHAcode": "93384", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly type E", "ORPHAcode": "93387", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly-elbow wrist dysplasia syndrome", "ORPHAcode": "1275", "hch_id": "199", "parents": ["498451", "93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Camptobrachydactyly", "ORPHAcode": "1319", "hch_id": "199", "parents": ["498451"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysostosis with brachydactyly without extraskeletal manifestations", "ORPHAcode": "498451", "hch_id": "199", "parents": ["69028"], "childs": ["1570", "93388", "93396", "93394", "93397", "498602", "1487", "2565", "85169", "93382", "93383", "93384", "93387", "1275", "1319"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly-short stature-retinitis pigmentosa syndrome", "ORPHAcode": "166035", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Intellectual disability-brachydactyly-Pierre Robin syndrome", "ORPHAcode": "364577", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cognitive impairment-coarse facies-heart defects-obesity-pulmonary involvement-short stature-skeletal dysplasia syndrome", "ORPHAcode": "444077", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Retinitis pigmentosa-hearing loss-premature aging-short stature-facial dysmorphism syndrome", "ORPHAcode": "494439", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "2q37 microdeletion syndrome", "ORPHAcode": "1001", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hyperphosphatasia-intellectual disability syndrome", "ORPHAcode": "247262", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly-arterial hypertension syndrome", "ORPHAcode": "1276", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Feingold syndrome type 2", "ORPHAcode": "391646", "hch_id": "199", "parents": ["1305"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Feingold syndrome type 1", "ORPHAcode": "391641", "hch_id": "199", "parents": ["1305"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Feingold syndrome", "ORPHAcode": "1305", "hch_id": "199", "parents": ["498454"], "childs": ["391646", "391641"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hand-foot-genital syndrome", "ORPHAcode": "2438", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rubinstein-Taybi syndrome due to CREBBP mutations", "ORPHAcode": "353277", "hch_id": "199", "parents": ["783"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rubinstein-Taybi syndrome due to 16p13.3 microdeletion", "ORPHAcode": "353281", "hch_id": "199", "parents": ["783"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rubinstein-Taybi syndrome due to EP300 haploinsufficiency", "ORPHAcode": "353284", "hch_id": "199", "parents": ["783"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rubinstein-Taybi syndrome", "ORPHAcode": "783", "hch_id": "199", "parents": ["498454"], "childs": ["353277", "353281", "353284"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Temtamy preaxial brachydactyly syndrome", "ORPHAcode": "363417", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly-preaxial hallux varus syndrome", "ORPHAcode": "1278", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Coffin-Siris syndrome", "ORPHAcode": "1465", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Adams-Oliver syndrome", "ORPHAcode": "974", "hch_id": "199", "parents": ["498454", "294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thumb stiffness-brachydactyly-intellectual disability syndrome", "ORPHAcode": "1078", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachymorphism-onychodysplasia-dysphalangism syndrome", "ORPHAcode": "1292", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachytelephalangy-dysmorphism-Kallmann syndrome", "ORPHAcode": "1295", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Poland syndrome", "ORPHAcode": "2911", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Skeletal dysplasia-epilepsy-short stature syndrome", "ORPHAcode": "1858", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly-long thumb syndrome", "ORPHAcode": "2946", "hch_id": "199", "parents": ["498454", "228184"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrodysplasia scoliosis", "ORPHAcode": "2956", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Microcephaly-brachydactyly-kyphoscoliosis syndrome", "ORPHAcode": "3433", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ulnar/fibula ray defect-brachydactyly syndrome", "ORPHAcode": "52056", "hch_id": "199", "parents": ["498454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysostosis with brachydactyly with extraskeletal manifestations", "ORPHAcode": "498454", "hch_id": "199", "parents": ["69028"], "childs": ["166035", "364577", "444077", "494439", "1001", "247262", "1276", "1305", "2438", "783", "363417", "1278", "1465", "974", "1078", "1292", "1295", "2911", "1858", "2946", "2956", "3433", "52056"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysostosis with brachydactyly", "ORPHAcode": "69028", "hch_id": "199", "parents": ["364568"], "childs": ["498451", "498454"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ulnar hemimelia", "ORPHAcode": "93320", "hch_id": "199", "parents": ["2130"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Radial hemimelia", "ORPHAcode": "93321", "hch_id": "199", "parents": ["2130"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Tibial hemimelia", "ORPHAcode": "93322", "hch_id": "199", "parents": ["2130"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Fibular hemimelia", "ORPHAcode": "93323", "hch_id": "199", "parents": ["2130"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hemimelia", "ORPHAcode": "2130", "hch_id": "199", "parents": ["498457"], "childs": ["93320", "93321", "93322", "93323"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital hypoplasia of thumb", "ORPHAcode": "294988", "hch_id": "199", "parents": ["498457"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Longitudinal limb defect", "ORPHAcode": "498457", "hch_id": "199", "parents": ["93457"], "childs": ["2130", "294988"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acheiropodia", "ORPHAcode": "931", "hch_id": "199", "parents": ["498461"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital absence/hypoplasia of fingers excluding thumb, unilateral", "ORPHAcode": "973", "hch_id": "199", "parents": ["498461"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Amelia of upper limb", "ORPHAcode": "294967", "hch_id": "199", "parents": ["294925"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Amelia of lower limb", "ORPHAcode": "294969", "hch_id": "199", "parents": ["294925"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Tetra-amelia", "ORPHAcode": "294971", "hch_id": "199", "parents": ["294925"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Amelia", "ORPHAcode": "294925", "hch_id": "199", "parents": ["498461"], "childs": ["294967", "294969", "294971"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Constriction rings syndrome", "ORPHAcode": "295000", "hch_id": "199", "parents": ["498461"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital absence of both forearm and hand", "ORPHAcode": "294979", "hch_id": "199", "parents": ["498491"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital absence of both lower leg and foot", "ORPHAcode": "294981", "hch_id": "199", "parents": ["498491"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Complete hemimelia", "ORPHAcode": "498491", "hch_id": "199", "parents": ["498461"], "childs": ["294979", "294981"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acheiria", "ORPHAcode": "294983", "hch_id": "199", "parents": ["498461"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Apodia", "ORPHAcode": "294986", "hch_id": "199", "parents": ["498461"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Terminal transverse limb defect", "ORPHAcode": "498461", "hch_id": "199", "parents": ["93457"], "childs": ["931", "973", "294925", "295000", "498491", "294983", "294986"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital absence of upper arm and forearm with hand present", "ORPHAcode": "294975", "hch_id": "199", "parents": ["294927"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital absence of thigh and lower leg with foot present", "ORPHAcode": "294977", "hch_id": "199", "parents": ["294927"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Femoral agenesis/hypoplasia", "ORPHAcode": "1987", "hch_id": "199", "parents": ["294927"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Humeral agenesis/hypoplasia", "ORPHAcode": "294973", "hch_id": "199", "parents": ["294927"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Intercalary limb defects", "ORPHAcode": "294927", "hch_id": "199", "parents": ["93457"], "childs": ["294975", "294977", "1987", "294973"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Non-syndromic limb reduction defect", "ORPHAcode": "93457", "hch_id": "199", "parents": ["364568"], "childs": ["498457", "498461", "294927"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Polydactyly of a triphalangeal thumb", "ORPHAcode": "93336", "hch_id": "199", "parents": ["498464"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Polydactyly of an index finger", "ORPHAcode": "93337", "hch_id": "199", "parents": ["498464"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Polysyndactyly", "ORPHAcode": "93338", "hch_id": "199", "parents": ["498464"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Polydactyly of a biphalangeal thumb", "ORPHAcode": "93339", "hch_id": "199", "parents": ["498464"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Non-syndromic preaxial polydactyly", "ORPHAcode": "498464", "hch_id": "199", "parents": ["2913"], "childs": ["93336", "93337", "93338", "93339"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Postaxial polydactyly type A", "ORPHAcode": "93334", "hch_id": "199", "parents": ["498467"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Postaxial polydactyly type B", "ORPHAcode": "93335", "hch_id": "199", "parents": ["498467"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Non-syndromic postaxial polydactyly", "ORPHAcode": "498467", "hch_id": "199", "parents": ["2913"], "childs": ["93334", "93335"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Central polydactyly", "ORPHAcode": "295004", "hch_id": "199", "parents": ["498470"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mirror-image polydactyly", "ORPHAcode": "498494", "hch_id": "199", "parents": ["498470"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Non-syndromic complex polydactyly", "ORPHAcode": "498470", "hch_id": "199", "parents": ["2913"], "childs": ["295004", "498494"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Non-syndromic polydactyly", "ORPHAcode": "2913", "hch_id": "199", "parents": ["93458"], "childs": ["498464", "498467", "498470"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndactyly type 8", "ORPHAcode": "2498", "hch_id": "199", "parents": ["90025"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Zygodactyly type 1", "ORPHAcode": "295187", "hch_id": "199", "parents": ["93402"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Zygodactyly type 2", "ORPHAcode": "295189", "hch_id": "199", "parents": ["93402"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Zygodactyly type 3", "ORPHAcode": "295191", "hch_id": "199", "parents": ["93402"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Zygodactyly type 4", "ORPHAcode": "295193", "hch_id": "199", "parents": ["93402"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndactyly type 1", "ORPHAcode": "93402", "hch_id": "199", "parents": ["90025"], "childs": ["295187", "295189", "295191", "295193"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Synpolydactyly type 1", "ORPHAcode": "295195", "hch_id": "199", "parents": ["93403"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Synpolydactyly type 2", "ORPHAcode": "295197", "hch_id": "199", "parents": ["93403"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Synpolydactyly type 3", "ORPHAcode": "295199", "hch_id": "199", "parents": ["93403"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndactyly type 2", "ORPHAcode": "93403", "hch_id": "199", "parents": ["90025"], "childs": ["295195", "295197", "295199"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndactyly type 3", "ORPHAcode": "93404", "hch_id": "199", "parents": ["90025"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndactyly type 4", "ORPHAcode": "93405", "hch_id": "199", "parents": ["90025"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndactyly type 5", "ORPHAcode": "93406", "hch_id": "199", "parents": ["90025"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mesoaxial synostotic syndactyly with phalangeal reduction", "ORPHAcode": "157801", "hch_id": "199", "parents": ["90025"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndactyly type 6", "ORPHAcode": "295012", "hch_id": "199", "parents": ["90025"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Non-syndromic syndactyly", "ORPHAcode": "90025", "hch_id": "199", "parents": ["93458"], "childs": ["2498", "93402", "93403", "93404", "93405", "93406", "157801", "295012"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hyperphalangy", "ORPHAcode": "295002", "hch_id": "199", "parents": ["93458"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Non-syndromic polydactyly, syndactyly and/or hyperphalangy", "ORPHAcode": "93458", "hch_id": "199", "parents": ["364568"], "childs": ["2913", "90025", "295002"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "B4GALT7-related spondylodysplastic Ehlers-Danlos syndrome", "ORPHAcode": "75496", "hch_id": "199", "parents": ["93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Banki syndrome", "ORPHAcode": "1228", "hch_id": "199", "parents": ["93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Tarsal-carpal coalition syndrome", "ORPHAcode": "1412", "hch_id": "199", "parents": ["93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Leri pleonosteosis", "ORPHAcode": "2900", "hch_id": "199", "parents": ["93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Multiple synostoses syndrome", "ORPHAcode": "3237", "hch_id": "199", "parents": ["93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Symphalangism with multiple anomalies of hands and feet", "ORPHAcode": "3246", "hch_id": "199", "parents": ["93459", "294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Proximal symphalangism", "ORPHAcode": "3250", "hch_id": "199", "parents": ["93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Radioulnar synostosis-microcephaly-scoliosis syndrome", "ORPHAcode": "3268", "hch_id": "199", "parents": ["93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Radioulnar synostosis-developmental delay-hypotonia syndrome", "ORPHAcode": "3270", "hch_id": "199", "parents": ["93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Radio-ulnar synostosis-amegakaryocytic thrombocytopenia syndrome", "ORPHAcode": "71289", "hch_id": "199", "parents": ["93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Eye defects-arachnodactyly-cardiopathy syndrome", "ORPHAcode": "2725", "hch_id": "199", "parents": ["93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "WT limb-blood syndrome", "ORPHAcode": "3466", "hch_id": "199", "parents": ["93459"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndrome with synostosis or other joint formation defect", "ORPHAcode": "93459", "hch_id": "199", "parents": ["364568"], "childs": ["75496", "1275", "946", "1228", "1412", "2760", "2900", "3237", "3246", "3250", "3268", "3270", "71289", "2725", "3466"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital pseudoarthrosis of the tibia", "ORPHAcode": "295018", "hch_id": "199", "parents": ["157808"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital pseudoarthrosis of the femur", "ORPHAcode": "295020", "hch_id": "199", "parents": ["157808"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital pseudoarthrosis of the fibula", "ORPHAcode": "295022", "hch_id": "199", "parents": ["157808"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital pseudoarthrosis of the radius", "ORPHAcode": "295024", "hch_id": "199", "parents": ["157808"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital pseudoarthrosis of the ulna", "ORPHAcode": "295026", "hch_id": "199", "parents": ["157808"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital pseudoarthrosis of the limbs", "ORPHAcode": "157808", "hch_id": "199", "parents": ["364568"], "childs": ["295018", "295020", "295022", "295024", "295026"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial clubfoot due to 17q23.1q23.2 microduplication", "ORPHAcode": "238578", "hch_id": "199", "parents": ["199315"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial clubfoot due to 5q31 microdeletion", "ORPHAcode": "293144", "hch_id": "199", "parents": ["199315"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial clubfoot with or without associated lower limb anomalies", "ORPHAcode": "199315", "hch_id": "199", "parents": ["364568"], "childs": ["238578", "293144", "293150"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Holt-Oram syndrome", "ORPHAcode": "392", "hch_id": "199", "parents": ["228184", "294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Heart-hand syndrome type 3", "ORPHAcode": "1342", "hch_id": "199", "parents": ["228184"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Heart-hand syndrome type 2", "ORPHAcode": "1350", "hch_id": "199", "parents": ["228184"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Heart-hand syndrome, Slovenian type", "ORPHAcode": "168796", "hch_id": "199", "parents": ["228184"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Patent ductus arteriosus-bicuspid aortic valve-hand anomalies syndrome", "ORPHAcode": "228190", "hch_id": "199", "parents": ["228184"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Carney complex-trismus-pseudocamptodactyly syndrome", "ORPHAcode": "319340", "hch_id": "199", "parents": ["228184"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Heart-hand syndrome", "ORPHAcode": "228184", "hch_id": "199", "parents": ["364568"], "childs": ["392", "1342", "1350", "2946", "168796", "228190", "319340"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Distal symphalangism", "ORPHAcode": "3248", "hch_id": "199", "parents": ["294949"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Humero-radial synostosis", "ORPHAcode": "3265", "hch_id": "199", "parents": ["294949"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Humero-radio-ulnar synostosis", "ORPHAcode": "3266", "hch_id": "199", "parents": ["294949"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Radio-ulnar synostosis, unilateral", "ORPHAcode": "295217", "hch_id": "199", "parents": ["3269"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Radio-ulnar synostosis, bilateral", "ORPHAcode": "295219", "hch_id": "199", "parents": ["3269"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital radioulnar synostosis", "ORPHAcode": "3269", "hch_id": "199", "parents": ["294949"], "childs": ["295217", "295219"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Humero-ulnar synostosis, unilateral", "ORPHAcode": "295213", "hch_id": "199", "parents": ["94056"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Humero-ulnar synostosis, bilateral", "ORPHAcode": "295215", "hch_id": "199", "parents": ["94056"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Humero-ulnar synostosis", "ORPHAcode": "94056", "hch_id": "199", "parents": ["294949"], "childs": ["295213", "295215"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Isolated congenital digital clubbing", "ORPHAcode": "217059", "hch_id": "199", "parents": ["294949"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Tibio-fibular synostosis", "ORPHAcode": "295028", "hch_id": "199", "parents": ["294949"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Joint formation defects", "ORPHAcode": "294949", "hch_id": "199", "parents": ["364568"], "childs": ["3248", "3265", "3266", "3269", "35688", "94056", "217059", "295028"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Split-foot malformation-mesoaxial polydactyly syndrome", "ORPHAcode": "488232", "hch_id": "199", "parents": ["294955", "294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Omphalocele-diaphragmatic hernia-cardiovascular anomalies-radial ray defect syndrome", "ORPHAcode": "496693", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thrombocytopenia-absent radius syndrome", "ORPHAcode": "3320", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Fanconi anemia", "ORPHAcode": "84", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Roberts syndrome", "ORPHAcode": "3103", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Tibial hemimelia-polysyndactyly-triphalangeal thumb syndrome", "ORPHAcode": "988", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hypoglossia-hypodactyly syndrome", "ORPHAcode": "989", "hch_id": "199", "parents": ["294955", "2749"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ankyloblepharon filiforme adnatum-imperforate anus syndrome", "ORPHAcode": "1074", "hch_id": "199", "parents": ["1071"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ankyloblepharon filiforme adnatum-cleft palate syndrome", "ORPHAcode": "1072", "hch_id": "199", "parents": ["1071"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ankyloblepharon-ectodermal defects-cleft lip/palate syndrome", "ORPHAcode": "1071", "hch_id": "199", "parents": ["294955"], "childs": ["1074", "1072"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Aphalangy-hemivertebrae-urogenital-intestinal dysgenesis syndrome", "ORPHAcode": "1112", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Aphalangy-syndactyly-microcephaly syndrome", "ORPHAcode": "1113", "hch_id": "199", "parents": ["294955", "294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lethal faciocardiomelic dysplasia", "ORPHAcode": "1972", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Femoral-facial syndrome", "ORPHAcode": "1988", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Splenogonadal fusion-limb defects-micrognathia syndrome", "ORPHAcode": "2063", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ulna hypoplasia-intellectual disability syndrome", "ORPHAcode": "2249", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "IVIC syndrome", "ORPHAcode": "2307", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Absence deformity of leg-cataract syndrome", "ORPHAcode": "2310", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Karsch-Neugebauer syndrome", "ORPHAcode": "2329", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Tetramelic monodactyly", "ORPHAcode": "2564", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Postaxial tetramelic oligodactyly", "ORPHAcode": "2730", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pelvis-shoulder dysplasia", "ORPHAcode": "2839", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Fuhrmann syndrome", "ORPHAcode": "2854", "hch_id": "199", "parents": ["294955", "294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Phocomelia, Schinzel type", "ORPHAcode": "2879", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Radio-renal syndrome", "ORPHAcode": "3015", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Absent radius-anogenital anomalies syndrome", "ORPHAcode": "3016", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "RAPADILINO syndrome", "ORPHAcode": "3021", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ulnar-mammary syndrome", "ORPHAcode": "3138", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Tetraamelia-multiple malformations syndrome", "ORPHAcode": "3301", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thalidomide embryopathy", "ORPHAcode": "3312", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Absent tibia-polydactyly-arachnoid cyst syndrome", "ORPHAcode": "3328", "hch_id": "199", "parents": ["294955", "294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Humerus trochlea aplasia", "ORPHAcode": "3383", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Split hand-split foot-deafness syndrome", "ORPHAcode": "71271", "hch_id": "199", "parents": ["294955", "294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Okihiro syndrome due to 20q13 microdeletion", "ORPHAcode": "261638", "hch_id": "199", "parents": ["93293"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Okihiro syndrome due to a point mutation", "ORPHAcode": "261647", "hch_id": "199", "parents": ["93293"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Okihiro syndrome", "ORPHAcode": "93293", "hch_id": "199", "parents": ["294955"], "childs": ["261638", "261647"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pelviscapular dysplasia", "ORPHAcode": "93333", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mammary-digital-nail syndrome", "ORPHAcode": "238744", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thrombocythemia with distal limb defects", "ORPHAcode": "329319", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cornelia de Lange syndrome", "ORPHAcode": "199", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Intellectual disability-spasticity-ectrodactyly syndrome", "ORPHAcode": "1891", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "FATCO syndrome", "ORPHAcode": "2492", "hch_id": "199", "parents": ["294955", "294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Congenital progressive bone marrow failure-B-cell immunodeficiency-skeletal dysplasia syndrome", "ORPHAcode": "508542", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Combined immunodeficiency with faciooculoskeletal anomalies", "ORPHAcode": "221139", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hypoplastic tibiae-postaxial polydactyly syndrome", "ORPHAcode": "3332", "hch_id": "199", "parents": ["294955", "294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Camptodactyly syndrome, Guadalajara type 2", "ORPHAcode": "1326", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Heart defects-limb shortening syndrome", "ORPHAcode": "1354", "hch_id": "199", "parents": ["294955"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndrome with limb reduction defects", "ORPHAcode": "294955", "hch_id": "199", "parents": ["364568"], "childs": ["488232", "496693", "3320", "84", "3103", "974", "978", "988", "989", "1071", "1112", "1113", "1972", "1986", "1988", "2063", "2249", "2307", "2310", "2329", "2564", "2639", "2730", "2839", "2854", "2878", "2879", "3015", "3016", "3021", "3138", "3301", "3312", "3328", "3329", "3383", "71271", "93293", "93333", "238744", "329319", "392", "199", "1891", "2492", "508542", "221139", "3332", "1326", "1354"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal recessive amelia", "ORPHAcode": "1027", "hch_id": "199", "parents": ["294957"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Radial deficiency-tibial hypoplasia syndrome", "ORPHAcode": "1121", "hch_id": "199", "parents": ["294957"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Ulnar hypoplasia-split foot syndrome", "ORPHAcode": "1122", "hch_id": "199", "parents": ["294957"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Femur-fibula-ulna complex", "ORPHAcode": "2019", "hch_id": "199", "parents": ["294957"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysostosis with combined reduction defects of upper and lower limbs", "ORPHAcode": "294957", "hch_id": "199", "parents": ["364568"], "childs": ["1027", "1118", "1121", "1122", "1986", "2019", "3329"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "B-cell immunodeficiency-limb anomaly-urogenital malformation syndrome", "ORPHAcode": "567502", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acropectoral syndrome", "ORPHAcode": "85203", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Brachydactyly-syndactyly, Zhao type", "ORPHAcode": "93409", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndactyly-telecanthus-anogenital and renal malformations syndrome", "ORPHAcode": "140952", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndactyly-camptodactyly and clinodactyly of fifth fingers-bifid toes syndrome", "ORPHAcode": "357332", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Finger hyperphalangy-toe anomalies-severe pectus excavatum syndrome", "ORPHAcode": "369979", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Postaxial polydactyly-anterior pituitary anomalies-facial dysmorphism syndrome", "ORPHAcode": "420584", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Townes-Brocks syndrome", "ORPHAcode": "857", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Meckel syndrome", "ORPHAcode": "564", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrocallosal syndrome", "ORPHAcode": "36", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acropectorovertebral dysplasia", "ORPHAcode": "957", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Scalp defects-postaxial polydactyly syndrome", "ORPHAcode": "1003", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Catel-Manzke syndrome", "ORPHAcode": "1388", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dandy-Walker malformation-postaxial polydactyly syndrome", "ORPHAcode": "1566", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Fibular dimelia-diplopodia syndrome", "ORPHAcode": "1757", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Greig cephalopolysyndactyly syndrome", "ORPHAcode": "380", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hallux varus-preaxial polysyndactyly syndrome", "ORPHAcode": "2110", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Pallister-Hall syndrome", "ORPHAcode": "672", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Lacrimoauriculodentodigital syndrome", "ORPHAcode": "2363", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Laurin-Sandrow syndrome", "ORPHAcode": "2378", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Polydactyly-myopia syndrome", "ORPHAcode": "2917", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Oliver syndrome", "ORPHAcode": "2920", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Crossed polysyndactyly", "ORPHAcode": "2935", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Triphalangeal thumbs-brachyectrodactyly syndrome", "ORPHAcode": "2947", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Triphalangeal thumb-polysyndactyly syndrome", "ORPHAcode": "2950", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Guttmacher syndrome", "ORPHAcode": "2957", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mirror polydactyly-vertebral segmentation-limbs defects syndrome", "ORPHAcode": "3004", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Say-Field-Coldwell syndrome", "ORPHAcode": "3133", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sillence syndrome", "ORPHAcode": "3168", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Eyebrow duplication-syndactyly syndrome", "ORPHAcode": "3172", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Filippi syndrome", "ORPHAcode": "3255", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Cenani-Lenz syndrome", "ORPHAcode": "3258", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndactyly-polydactyly-ear lobe syndrome", "ORPHAcode": "3259", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Smith-Lemli-Opitz syndrome", "ORPHAcode": "818", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Autosomal dominant preaxial polydactyly-upperback hypertrichosis syndrome", "ORPHAcode": "476119", "hch_id": "199", "parents": ["294959"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Syndrome with limb duplication, polydactyly, syndactyly, and/or hyperphalangy", "ORPHAcode": "294959", "hch_id": "199", "parents": ["364568"], "childs": ["3332", "567502", "85203", "93409", "140952", "140997", "357332", "369979", "420584", "857", "564", "36", "957", "1003", "1113", "1388", "1527", "1566", "1757", "1892", "1986", "380", "2110", "672", "2363", "2378", "2854", "2917", "2920", "2935", "2947", "2950", "2957", "3004", "3133", "3168", "3172", "3246", "3255", "3258", "3328", "3259", "818", "71271", "2492", "476119", "488232"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Bipartite talus", "ORPHAcode": "364198", "hch_id": "199", "parents": ["364568"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Glossopalatine ankylosis", "ORPHAcode": "141163", "hch_id": "199", "parents": ["2749"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Oromandibular-limb hypogenesis syndrome", "ORPHAcode": "2749", "hch_id": "199", "parents": ["364571"], "childs": ["1406", "989", "141163"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Endocrine-cerebro-osteodysplasia syndrome", "ORPHAcode": "199332", "hch_id": "199", "parents": ["364571"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Nager syndrome", "ORPHAcode": "245", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Postaxial acrofacial dysostosis", "ORPHAcode": "246", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrocraniofacial dysostosis", "ORPHAcode": "949", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrofacial dysostosis, Weyers type", "ORPHAcode": "952", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "X-linked mandibulofacial dysostosis", "ORPHAcode": "1131", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrofrontofacionasal dysostosis", "ORPHAcode": "1784", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrofacial dysostosis, Catania type", "ORPHAcode": "1786", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrofacial dysostosis, Rodríguez type", "ORPHAcode": "1788", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrofacial dysostosis, Palagonia type", "ORPHAcode": "1787", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrofacial dysostosis, Kennedy-Teebi type", "ORPHAcode": "64542", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mandibulofacial dysostosis-microcephaly syndrome", "ORPHAcode": "79113", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Richieri Costa-Pereira syndrome", "ORPHAcode": "3102", "hch_id": "199", "parents": ["364574"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Acrofacial dysostosis", "ORPHAcode": "364574", "hch_id": "199", "parents": ["364571"], "childs": ["245", "246", "949", "952", "1131", "1520", "1784", "1786", "1788", "2439", "1827", "1787", "64542", "79113", "280651", "3102"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysostosis with limb and face anomalies as a major feature", "ORPHAcode": "364571", "hch_id": "199", "parents": ["364568"], "childs": ["2749", "199332", "364574"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Otoonychoperoneal syndrome", "ORPHAcode": "2793", "hch_id": "199", "parents": ["364568"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "External auditory canal atresia-vertical talus-hypertelorism syndrome", "ORPHAcode": "3023", "hch_id": "199", "parents": ["364568"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Camptodactyly-fibrous tissue hyperplasia-skeletal dysplasia syndrome", "ORPHAcode": "1321", "hch_id": "199", "parents": ["364568"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Camptodactyly-joint contractures-facial skeletal defects syndrome", "ORPHAcode": "1323", "hch_id": "199", "parents": ["364568"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysostosis with limb anomaly as a major feature", "ORPHAcode": "364568", "hch_id": "199", "parents": ["364559"], "childs": ["482606", "488434", "498477", "69028", "93457", "93458", "93459", "157808", "199315", "228184", "294949", "294955", "294957", "294959", "364198", "364571", "2793", "3023", "1321", "1323"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Dysostosis", "ORPHAcode": "364559", "hch_id": "199", "parents": ["93419"], "childs": ["1531", "66630", "93453", "93454", "93455", "364568"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Mueller-Weiss syndrome", "ORPHAcode": "566943", "hch_id": "199", "parents": ["399158"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial Scheuermann disease", "ORPHAcode": "3135", "hch_id": "199", "parents": ["399319"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Legg-Calvé-Perthes disease", "ORPHAcode": "2380", "hch_id": "199", "parents": ["399319"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Thiemann disease, familial form", "ORPHAcode": "3314", "hch_id": "199", "parents": ["399319"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Medial condensing osteitis of the clavicle", "ORPHAcode": "57196", "hch_id": "199", "parents": ["399319"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Kienbock disease", "ORPHAcode": "97332", "hch_id": "199", "parents": ["399319"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osgood-Schlatter disease", "ORPHAcode": "97335", "hch_id": "199", "parents": ["399319"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Panner disease", "ORPHAcode": "97336", "hch_id": "199", "parents": ["399319"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sinding-Larsen-Johansson disease", "ORPHAcode": "97337", "hch_id": "199", "parents": ["399319"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteochondrosis of the metatarsal bone", "ORPHAcode": "564003", "hch_id": "199", "parents": ["399319"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteochondrosis of the tarsal bone", "ORPHAcode": "563991", "hch_id": "199", "parents": ["399319"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteochondrosis", "ORPHAcode": "399319", "hch_id": "199", "parents": ["399158"], "childs": ["3135", "2380", "3314", "57196", "97332", "97335", "97336", "97337", "564003", "563991"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Epiphysiolysis of the hip", "ORPHAcode": "399329", "hch_id": "199", "parents": ["399158"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Idiopathic phalangeal acro-osteolysis", "ORPHAcode": "444316", "hch_id": "199", "parents": ["399158"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteochondritis dissecans", "ORPHAcode": "2764", "hch_id": "199", "parents": ["399158"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial osteochondritis dissecans", "ORPHAcode": "251262", "hch_id": "199", "parents": ["399158"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Traumatic avascular necrosis", "ORPHAcode": "399175", "hch_id": "199", "parents": ["399169"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Secondary non-traumatic avascular necrosis", "ORPHAcode": "399180", "hch_id": "199", "parents": ["399169"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Sickle cell anemia", "ORPHAcode": "232", "hch_id": "199", "parents": ["399185"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Gaucher disease type 1", "ORPHAcode": "77259", "hch_id": "199", "parents": ["399185"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Gaucher disease type 3", "ORPHAcode": "77261", "hch_id": "199", "parents": ["399185"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Severe hereditary thrombophilia due to congenital protein S deficiency", "ORPHAcode": "743", "hch_id": "199", "parents": ["217454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Severe hereditary thrombophilia due to congenital protein C deficiency", "ORPHAcode": "745", "hch_id": "199", "parents": ["217454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hereditary thrombophilia due to congenital antithrombin deficiency", "ORPHAcode": "82", "hch_id": "199", "parents": ["217454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Hereditary thrombophilia due to congenital histidine-rich (poly-L) glycoprotein deficiency", "ORPHAcode": "217467", "hch_id": "199", "parents": ["217454"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rare hereditary thrombophilia", "ORPHAcode": "217454", "hch_id": "199", "parents": ["399185"], "childs": ["743", "745", "82", "217467"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rare hereditary disease with avascular necrosis", "ORPHAcode": "399185", "hch_id": "199", "parents": ["399169"], "childs": ["232", "77259", "77261", "217454"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteonecrosis of the jaw", "ORPHAcode": "399293", "hch_id": "199", "parents": ["399169"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Secondary avascular necrosis", "ORPHAcode": "399169", "hch_id": "199", "parents": ["399164"], "childs": ["399175", "399180", "399185", "399293"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Familial avascular necrosis of femoral head", "ORPHAcode": "86820", "hch_id": "199", "parents": ["399302"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Idiopathic avascular necrosis", "ORPHAcode": "399307", "hch_id": "199", "parents": ["399302"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Primary avascular necrosis", "ORPHAcode": "399302", "hch_id": "199", "parents": ["399164"], "childs": ["86820", "399307"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Avascular necrosis", "ORPHAcode": "399164", "hch_id": "199", "parents": ["399158"], "childs": ["399169", "399302"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteoradionecrosis of the mandible", "ORPHAcode": "521127", "hch_id": "199", "parents": ["399158"], "childs": []}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Osteonecrosis", "ORPHAcode": "399158", "hch_id": "199", "parents": ["93419"], "childs": ["566943", "399319", "399329", "444316", "2764", "251262", "399164", "521127"]}
+{"index": {"_index":"en_product3_199"}}
+{"name": "Rare bone disease", "ORPHAcode": "93419", "hch_id": "199", "parents": [], "childs": ["68411", "93448", "235832", "300493", "352540", "364526", "364559", "399158"]}

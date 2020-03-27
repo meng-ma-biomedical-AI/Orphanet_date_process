@@ -1,0 +1,598 @@
+{"index": {"_index":"en_product3_195"}}
+{"name": "Anti-HLA hyperimmunization", "ORPHAcode": "2194", "hch_id": "195", "parents": ["98004"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Acute graft versus host disease", "ORPHAcode": "99920", "hch_id": "195", "parents": ["39812"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Chronic graft versus host disease", "ORPHAcode": "99921", "hch_id": "195", "parents": ["39812"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Graft versus host disease", "ORPHAcode": "39812", "hch_id": "195", "parents": ["98004"], "childs": ["99920", "99921"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Twin to twin transfusion syndrome", "ORPHAcode": "95431", "hch_id": "195", "parents": ["98004"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Cyclic neutropenia", "ORPHAcode": "2686", "hch_id": "195", "parents": ["101987"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal dominant severe congenital neutropenia", "ORPHAcode": "486", "hch_id": "195", "parents": ["42738"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked severe congenital neutropenia", "ORPHAcode": "86788", "hch_id": "195", "parents": ["42738"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Kostmann syndrome", "ORPHAcode": "99749", "hch_id": "195", "parents": ["439849"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal recessive severe congenital neutropenia due to G6PC3 deficiency", "ORPHAcode": "331176", "hch_id": "195", "parents": ["439849"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal recessive severe congenital neutropenia due to CXCR2 deficiency", "ORPHAcode": "420699", "hch_id": "195", "parents": ["439849"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal recessive severe congenital neutropenia due to CSF3R deficiency", "ORPHAcode": "420702", "hch_id": "195", "parents": ["439849"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal recessive severe congenital neutropenia due to JAGN1 deficiency", "ORPHAcode": "423384", "hch_id": "195", "parents": ["439849"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal recessive severe congenital neutropenia", "ORPHAcode": "439849", "hch_id": "195", "parents": ["42738"], "childs": ["99749", "331176", "420699", "420702", "423384"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe congenital neutropenia", "ORPHAcode": "42738", "hch_id": "195", "parents": ["101987"], "childs": ["486", "86788", "439849"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Pearson syndrome", "ORPHAcode": "699", "hch_id": "195", "parents": ["331184"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Cohen syndrome", "ORPHAcode": "193", "hch_id": "195", "parents": ["331184"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Barth syndrome", "ORPHAcode": "111", "hch_id": "195", "parents": ["331184"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Lichtenstein syndrome", "ORPHAcode": "2390", "hch_id": "195", "parents": ["331184"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Neutropenia-monocytopenia-deafness syndrome", "ORPHAcode": "2690", "hch_id": "195", "parents": ["331184"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "WHIM syndrome", "ORPHAcode": "51636", "hch_id": "195", "parents": ["331184", "331193"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Glycogen storage disease due to glucose-6-phosphatase deficiency type Ib", "ORPHAcode": "79259", "hch_id": "195", "parents": ["331184"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Griscelli syndrome type 2", "ORPHAcode": "79477", "hch_id": "195", "parents": ["331184", "331249"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Primary immunodeficiency syndrome due to LAMTOR2 deficiency", "ORPHAcode": "90023", "hch_id": "195", "parents": ["331184"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hermansky-Pudlak syndrome with neutropenia", "ORPHAcode": "183678", "hch_id": "195", "parents": ["331184", "331249"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Poikiloderma with neutropenia", "ORPHAcode": "221046", "hch_id": "195", "parents": ["331184"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Congenital neutropenia-myelofibrosis-nephromegaly syndrome", "ORPHAcode": "369852", "hch_id": "195", "parents": ["331184"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Constitutional neutropenia with extra-hematopoietic manifestations", "ORPHAcode": "331184", "hch_id": "195", "parents": ["101987"], "childs": ["699", "193", "111", "2390", "2690", "51636", "79259", "79477", "90023", "183678", "221046", "369852"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Constitutional neutropenia", "ORPHAcode": "101987", "hch_id": "195", "parents": ["101985"], "childs": ["2686", "42738", "331184"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Chronic granulomatous disease", "ORPHAcode": "379", "hch_id": "195", "parents": ["183681"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Myeloperoxidase deficiency", "ORPHAcode": "2587", "hch_id": "195", "parents": ["183681"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Papillon-Lefèvre syndrome", "ORPHAcode": "678", "hch_id": "195", "parents": ["183681"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Leukocyte adhesion deficiency type I", "ORPHAcode": "99842", "hch_id": "195", "parents": ["2968"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Leukocyte adhesion deficiency type II", "ORPHAcode": "99843", "hch_id": "195", "parents": ["2968"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Leukocyte adhesion deficiency type III", "ORPHAcode": "99844", "hch_id": "195", "parents": ["2968"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Leukocyte adhesion deficiency", "ORPHAcode": "2968", "hch_id": "195", "parents": ["183681"], "childs": ["99842", "99843", "99844"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Shwachman-Diamond syndrome", "ORPHAcode": "811", "hch_id": "195", "parents": ["183681"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Recurrent infection due to specific granule deficiency", "ORPHAcode": "169142", "hch_id": "195", "parents": ["183681"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Neutrophil immunodeficiency syndrome", "ORPHAcode": "183707", "hch_id": "195", "parents": ["183681"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Susceptibility to localized juvenile periodontitis", "ORPHAcode": "447740", "hch_id": "195", "parents": ["183681"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Chédiak-Higashi syndrome", "ORPHAcode": "167", "hch_id": "195", "parents": ["183681", "331249"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Functional neutrophil defect", "ORPHAcode": "183681", "hch_id": "195", "parents": ["101985"], "childs": ["379", "2587", "678", "2968", "811", "169142", "183707", "447740", "167"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Monocytopenia with susceptibility to infections", "ORPHAcode": "228423", "hch_id": "195", "parents": ["101985"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hereditary pulmonary alveolar proteinosis", "ORPHAcode": "264675", "hch_id": "195", "parents": ["101985"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Quantitative and/or qualitative congenital phagocyte defect", "ORPHAcode": "101985", "hch_id": "195", "parents": ["101988"], "childs": ["101987", "183681", "228423", "264675"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency due to a late component of complement deficiency", "ORPHAcode": "169150", "hch_id": "195", "parents": ["459345"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency due to MASP-2 deficiency", "ORPHAcode": "331187", "hch_id": "195", "parents": ["459345"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency due to ficolin3 deficiency", "ORPHAcode": "331190", "hch_id": "195", "parents": ["459345"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency due to a classical component pathway complement deficiency", "ORPHAcode": "169147", "hch_id": "195", "parents": ["459345"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Complement component 3 deficiency", "ORPHAcode": "280133", "hch_id": "195", "parents": ["459345"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency due to a complement cascade component deficiency", "ORPHAcode": "459345", "hch_id": "195", "parents": ["101992"], "childs": ["169150", "331187", "331190", "169147", "280133"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Properdin deficiency", "ORPHAcode": "2966", "hch_id": "195", "parents": ["459348"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Recurrent Neisseria infections due to factor D deficiency", "ORPHAcode": "169467", "hch_id": "195", "parents": ["459348"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency with factor I anomaly", "ORPHAcode": "200418", "hch_id": "195", "parents": ["459348"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency with factor H anomaly", "ORPHAcode": "200421", "hch_id": "195", "parents": ["459348"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Primary CD59 deficiency", "ORPHAcode": "169464", "hch_id": "195", "parents": ["459348"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "C1 inhibitor deficiency", "ORPHAcode": "459353", "hch_id": "195", "parents": ["459348"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency due to a complement regulatory deficiency", "ORPHAcode": "459348", "hch_id": "195", "parents": ["101992"], "childs": ["2966", "169467", "200418", "200421", "169464", "459353"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency due to a complement cascade protein anomaly", "ORPHAcode": "101992", "hch_id": "195", "parents": ["101988"], "childs": ["459345", "459348"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Chronic mucocutaneous candidiasis", "ORPHAcode": "1334", "hch_id": "195", "parents": ["183710"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Herpes simplex virus encephalitis", "ORPHAcode": "1930", "hch_id": "195", "parents": ["183710"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Mendelian susceptibility to mycobacterial diseases due to complete IFNgammaR1 deficiency", "ORPHAcode": "99898", "hch_id": "195", "parents": ["319535"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Mendelian susceptibility to mycobacterial diseases due to complete IFNgammaR2 deficiency", "ORPHAcode": "319547", "hch_id": "195", "parents": ["319535"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Mendelian susceptibility to mycobacterial diseases due to complete IL12RB1 deficiency", "ORPHAcode": "319552", "hch_id": "195", "parents": ["319535"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Mendelian susceptibility to mycobacterial diseases due to complete IL12B deficiency", "ORPHAcode": "319558", "hch_id": "195", "parents": ["319535"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Mendelian susceptibility to mycobacterial diseases due to complete ISG15 deficiency", "ORPHAcode": "319563", "hch_id": "195", "parents": ["319535"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal recessive mendelian susceptibility to mycobacterial diseases due to complete RORgamma receptor deficiency", "ORPHAcode": "477857", "hch_id": "195", "parents": ["319535"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal recessive mendelian susceptibility to mycobacterial diseases due to a complete deficiency", "ORPHAcode": "319535", "hch_id": "195", "parents": ["748"], "childs": ["99898", "319547", "319552", "319558", "319563", "477857"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal recessive mendelian susceptibility to mycobacterial diseases due to partial IFNgammaR1 deficiency", "ORPHAcode": "319569", "hch_id": "195", "parents": ["319539"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal recessive mendelian susceptibility to mycobacterial diseases due to partial IFNgammaR2 deficiency", "ORPHAcode": "319574", "hch_id": "195", "parents": ["319539"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Susceptibility to infection due to TYK2 deficiency", "ORPHAcode": "331226", "hch_id": "195", "parents": ["319539"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal recessive mendelian susceptibility to mycobacterial diseases due to a partial deficiency", "ORPHAcode": "319539", "hch_id": "195", "parents": ["748"], "childs": ["319569", "319574", "331226"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal dominant mendelian susceptibility to mycobacterial diseases due to partial IFNgammaR1 deficiency", "ORPHAcode": "319581", "hch_id": "195", "parents": ["319543"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal dominant mendelian susceptibility to mycobacterial diseases due to partial IFNgammaR2 deficiency", "ORPHAcode": "319589", "hch_id": "195", "parents": ["319543"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Mendelian susceptibility to mycobacterial diseases due to partial STAT1 deficiency", "ORPHAcode": "319595", "hch_id": "195", "parents": ["319543"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency", "ORPHAcode": "319600", "hch_id": "195", "parents": ["319543"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal dominant mendelian susceptibility to mycobacterial diseases due to a partial deficiency", "ORPHAcode": "319543", "hch_id": "195", "parents": ["748"], "childs": ["319581", "319589", "319595", "319600"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked mendelian susceptibility to mycobacterial diseases due to IKBKG deficiency", "ORPHAcode": "319612", "hch_id": "195", "parents": ["319605"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked mendelian susceptibility to mycobacterial diseases due to CYBB deficiency", "ORPHAcode": "319623", "hch_id": "195", "parents": ["319605"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked mendelian susceptibility to mycobacterial diseases", "ORPHAcode": "319605", "hch_id": "195", "parents": ["748"], "childs": ["319612", "319623"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Mendelian susceptibility to mycobacterial diseases", "ORPHAcode": "748", "hch_id": "195", "parents": ["183710"], "childs": ["319535", "319539", "319543", "319605"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency due to interleukin-1 receptor-associated kinase-4 deficiency", "ORPHAcode": "70592", "hch_id": "195", "parents": ["183710"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Bacterial susceptibility due to TLR signaling pathway deficiency", "ORPHAcode": "183713", "hch_id": "195", "parents": ["183710"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Susceptibility to viral and mycobacterial infections", "ORPHAcode": "391311", "hch_id": "195", "parents": ["183710"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Predisposition to invasive fungal disease due to CARD9 deficiency", "ORPHAcode": "457088", "hch_id": "195", "parents": ["183710"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome", "ORPHAcode": "391487", "hch_id": "195", "parents": ["183710", "169355"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Genetic susceptibility to infections due to particular pathogens", "ORPHAcode": "183710", "hch_id": "195", "parents": ["101988"], "childs": ["1334", "1930", "748", "70592", "183713", "391311", "457088", "391487"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Familial Mediterranean fever", "ORPHAcode": "342", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Cherubism", "ORPHAcode": "184", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hyperimmunoglobulinemia D with periodic fever", "ORPHAcode": "343", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Tumor necrosis factor receptor 1 associated periodic syndrome", "ORPHAcode": "32960", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Pyogenic arthritis-pyoderma gangrenosum-acne syndrome", "ORPHAcode": "69126", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Majeed syndrome", "ORPHAcode": "77297", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Blau syndrome", "ORPHAcode": "90340", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Muckle-Wells syndrome", "ORPHAcode": "575", "hch_id": "195", "parents": ["208650"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "CINCA syndrome", "ORPHAcode": "1451", "hch_id": "195", "parents": ["208650"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Familial cold urticaria", "ORPHAcode": "47045", "hch_id": "195", "parents": ["208650"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Cryopyrin-associated periodic syndrome", "ORPHAcode": "208650", "hch_id": "195", "parents": ["290839"], "childs": ["575", "1451", "47045"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Sterile multifocal osteomyelitis with periostitis and pustulosis", "ORPHAcode": "210115", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Neonatal inflammatory skin and bowel disease", "ORPHAcode": "294023", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "PLCG2-associated antibody deficiency and immune dysregulation", "ORPHAcode": "300359", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "CANDLE syndrome", "ORPHAcode": "325004", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "DITRA", "ORPHAcode": "404546", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "CEBPE-associated autoinflammation-immunodeficiency-neutrophil dysfunction syndrome", "ORPHAcode": "566067", "hch_id": "195", "parents": ["290839"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autoinflammatory syndrome with immune deficiency", "ORPHAcode": "290839", "hch_id": "195", "parents": ["101988"], "childs": ["342", "184", "343", "32960", "69126", "77297", "90340", "208650", "210115", "294023", "300359", "325004", "404546", "566067"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Epidermodysplasia verruciformis", "ORPHAcode": "302", "hch_id": "195", "parents": ["331193"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Familial isolated congenital asplenia", "ORPHAcode": "101351", "hch_id": "195", "parents": ["331193"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "T-cell immunodeficiency with epidermodysplasia verruciformis", "ORPHAcode": "324294", "hch_id": "195", "parents": ["331193"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Other immunodeficiency syndromes due to defects in innate immunity", "ORPHAcode": "331193", "hch_id": "195", "parents": ["101988"], "childs": ["302", "51636", "101351", "324294"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Primary immunodeficiency with post-measles-mumps-rubella vaccine viral infection", "ORPHAcode": "431166", "hch_id": "195", "parents": ["431156"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal recessive primary immunodeficiency with defective spontaneous natural killer cell cytotoxicity", "ORPHAcode": "437552", "hch_id": "195", "parents": ["431156"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Primary immunodeficiency with predisposition to severe viral infection", "ORPHAcode": "431156", "hch_id": "195", "parents": ["101988"], "childs": ["431166", "437552"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Primary immunodeficiency due to a defect in innate immunity", "ORPHAcode": "101988", "hch_id": "195", "parents": ["101997"], "childs": ["101985", "101992", "183710", "290839", "331193", "431156"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to LAT deficiency", "ORPHAcode": "504523", "hch_id": "195", "parents": ["317416"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "T-B+ severe combined immunodeficiency due to gamma chain deficiency", "ORPHAcode": "276", "hch_id": "195", "parents": ["317416"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "T-B+ severe combined immunodeficiency due to JAK3 deficiency", "ORPHAcode": "35078", "hch_id": "195", "parents": ["317416"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Lung fibrosis-immunodeficiency-46,XX gonadal dysgenesis syndrome", "ORPHAcode": "137631", "hch_id": "195", "parents": ["317416"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "T-B+ severe combined immunodeficiency due to IL-7Ralpha deficiency", "ORPHAcode": "169154", "hch_id": "195", "parents": ["317416"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "T-B+ severe combined immunodeficiency due to CD45 deficiency", "ORPHAcode": "169157", "hch_id": "195", "parents": ["317416"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "T-B+ severe combined immunodeficiency due to CD3delta/CD3epsilon/CD3zeta", "ORPHAcode": "169160", "hch_id": "195", "parents": ["317416"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to CORO1A deficiency", "ORPHAcode": "228003", "hch_id": "195", "parents": ["317416"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "T-B+ severe combined immunodeficiency", "ORPHAcode": "317416", "hch_id": "195", "parents": ["183660"], "childs": ["504523", "276", "35078", "137631", "169154", "169157", "169160", "228003"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to DCLRE1C deficiency", "ORPHAcode": "275", "hch_id": "195", "parents": ["317419"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Short-limb skeletal dysplasia with severe combined immunodeficiency", "ORPHAcode": "935", "hch_id": "195", "parents": ["317419"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to adenosine deaminase deficiency", "ORPHAcode": "277", "hch_id": "195", "parents": ["317419"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Reticular dysgenesis", "ORPHAcode": "33355", "hch_id": "195", "parents": ["317419"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to LCK deficiency", "ORPHAcode": "280142", "hch_id": "195", "parents": ["317419"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to DNA-PKcs deficiency", "ORPHAcode": "317425", "hch_id": "195", "parents": ["317419"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to complete RAG1/2 deficiency", "ORPHAcode": "331206", "hch_id": "195", "parents": ["317419"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "T-B- severe combined immunodeficiency", "ORPHAcode": "317419", "hch_id": "195", "parents": ["183660"], "childs": ["275", "935", "277", "33355", "280142", "317425", "331206"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to CARD11 deficiency", "ORPHAcode": "357237", "hch_id": "195", "parents": ["397802"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to IKK2 deficiency", "ORPHAcode": "397787", "hch_id": "195", "parents": ["397802"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to CTPS1 deficiency", "ORPHAcode": "420573", "hch_id": "195", "parents": ["397802"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "T+ B+ severe combined immunodeficiency", "ORPHAcode": "397802", "hch_id": "195", "parents": ["183660"], "childs": ["357237", "397787", "420573"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency", "ORPHAcode": "183660", "hch_id": "195", "parents": ["101972"], "childs": ["317416", "317419", "397802"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "NIK deficiency", "ORPHAcode": "447731", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Purine nucleoside phosphorylase deficiency", "ORPHAcode": "760", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency by defective expression of MHC class II", "ORPHAcode": "572", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to ZAP70 deficiency", "ORPHAcode": "911", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency by defective expression of MHC class I", "ORPHAcode": "34592", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Omenn syndrome", "ORPHAcode": "39041", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "LIG4 syndrome", "ORPHAcode": "99812", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency with granulomatosis", "ORPHAcode": "157949", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Cernunnos-XLF deficiency", "ORPHAcode": "169079", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to CD3gamma deficiency", "ORPHAcode": "169082", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Susceptibility to respiratory infections associated with CD8alpha chain mutation", "ORPHAcode": "169085", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked hyper-IgM syndrome", "ORPHAcode": "101088", "hch_id": "195", "parents": ["183663"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hyper-IgM syndrome type 3", "ORPHAcode": "101090", "hch_id": "195", "parents": ["183663"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hyper-IgM syndrome with susceptibility to opportunistic infections", "ORPHAcode": "183663", "hch_id": "195", "parents": ["480549"], "childs": ["101088", "101090"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to DOCK8 deficiency", "ORPHAcode": "217390", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Idiopathic CD4 lymphocytopenia", "ORPHAcode": "228000", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to partial RAG1 deficiency", "ORPHAcode": "231154", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to CD27 deficiency", "ORPHAcode": "238505", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to STK4 deficiency", "ORPHAcode": "314689", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked immunodeficiency with magnesium defect, Epstein-Barr virus infection and neoplasia", "ORPHAcode": "317476", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to IL21R deficiency", "ORPHAcode": "357329", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "TCR-alpha-beta-positive T-cell deficiency", "ORPHAcode": "397959", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "BENTA disease", "ORPHAcode": "464336", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to TFRC deficiency", "ORPHAcode": "476113", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "IL21-related infantile inflammatory bowel disease", "ORPHAcode": "477661", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "DOCK2 deficiency", "ORPHAcode": "447737", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to MALT1 deficiency", "ORPHAcode": "397964", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to OX40 deficiency", "ORPHAcode": "431149", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to Moesin deficiency", "ORPHAcode": "504530", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to ITK deficiency", "ORPHAcode": "538963", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to LRBA deficiency", "ORPHAcode": "445018", "hch_id": "195", "parents": ["480549"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Non-severe combined immunodeficiency", "ORPHAcode": "480549", "hch_id": "195", "parents": ["101972"], "childs": ["447731", "760", "572", "911", "34592", "39041", "99812", "157949", "169079", "169082", "169085", "183663", "217390", "228000", "231154", "238505", "314689", "317476", "357329", "397959", "464336", "476113", "477661", "447737", "397964", "431149", "504530", "538963", "445018"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined T and B cell immunodeficiency", "ORPHAcode": "101972", "hch_id": "195", "parents": ["179006"], "childs": ["183660", "480549"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Common variable immunodeficiency", "ORPHAcode": "1572", "hch_id": "195", "parents": ["101977"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Transient hypogammaglobulinemia of infancy", "ORPHAcode": "169139", "hch_id": "195", "parents": ["101977"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency due to selective anti-polysaccharide antibody deficiency", "ORPHAcode": "70593", "hch_id": "195", "parents": ["169443"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Specific antibody deficiency with normal immunoglobulin concentrations and normal numbers of B cells", "ORPHAcode": "169443", "hch_id": "195", "parents": ["101977"], "childs": ["70593"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked agammaglobulinemia", "ORPHAcode": "47", "hch_id": "195", "parents": ["229717"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal agammaglobulinemia", "ORPHAcode": "33110", "hch_id": "195", "parents": ["229717"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Isolated agammaglobulinemia", "ORPHAcode": "229717", "hch_id": "195", "parents": ["183669"], "childs": ["47", "33110"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Short stature due to isolated growth hormone deficiency with X-linked hypogammaglobulinemia", "ORPHAcode": "632", "hch_id": "195", "parents": ["229720"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Agammaglobulinemia-microcephaly-craniosynostosis-severe dermatitis syndrome", "ORPHAcode": "83617", "hch_id": "195", "parents": ["229720"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "B-cell immunodeficiency-limb anomaly-urogenital malformation syndrome", "ORPHAcode": "567502", "hch_id": "195", "parents": ["229720"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Syndromic agammaglobulinemia", "ORPHAcode": "229720", "hch_id": "195", "parents": ["183669"], "childs": ["632", "83617", "567502"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Activated PI3K-delta syndrome", "ORPHAcode": "397596", "hch_id": "195", "parents": ["183669"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Agammaglobulinemia", "ORPHAcode": "183669", "hch_id": "195", "parents": ["101977"], "childs": ["229717", "229720", "397596"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked immunoneurologic disorder", "ORPHAcode": "2571", "hch_id": "195", "parents": ["331232"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunoglobulin heavy chain deficiency", "ORPHAcode": "169110", "hch_id": "195", "parents": ["331232"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Recurrent infections associated with rare immunoglobulin isotypes deficiency", "ORPHAcode": "183675", "hch_id": "195", "parents": ["331232"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Selective IgM deficiency", "ORPHAcode": "331235", "hch_id": "195", "parents": ["331232"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency with isotype or light chain deficiencies with normal number of B-cells", "ORPHAcode": "331232", "hch_id": "195", "parents": ["101977"], "childs": ["2571", "169110", "183675", "331235"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hyper-IgM syndrome type 2", "ORPHAcode": "101089", "hch_id": "195", "parents": ["183666"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hyper-IgM syndrome type 4", "ORPHAcode": "101091", "hch_id": "195", "parents": ["183666"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hyper-IgM syndrome type 5", "ORPHAcode": "101092", "hch_id": "195", "parents": ["183666"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hyper-IgM syndrome without susceptibility to opportunistic infections", "ORPHAcode": "183666", "hch_id": "195", "parents": ["331240"], "childs": ["101089", "101091", "101092"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Constitutional mismatch repair deficiency syndrome", "ORPHAcode": "252202", "hch_id": "195", "parents": ["331240"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency with severe reduction in serum IgG and IgA with normal/elevated IgM and normal number of B-cells", "ORPHAcode": "331240", "hch_id": "195", "parents": ["101977"], "childs": ["183666", "252202"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Alopecia antibody deficiency", "ORPHAcode": "1006", "hch_id": "195", "parents": ["331244"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Say-Barber-Miller syndrome", "ORPHAcode": "3132", "hch_id": "195", "parents": ["331244"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Osteopetrosis-hypogammaglobulinemia syndrome", "ORPHAcode": "178389", "hch_id": "195", "parents": ["331244"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Deficiency in anterior pituitary function-variable immunodeficiency syndrome", "ORPHAcode": "293978", "hch_id": "195", "parents": ["331244"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Congenital sideroblastic anemia-B-cell immunodeficiency-periodic fever-developmental delay syndrome", "ORPHAcode": "369861", "hch_id": "195", "parents": ["331244"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Other immunodeficiency syndrome with predominantly antibody defects", "ORPHAcode": "331244", "hch_id": "195", "parents": ["101977"], "childs": ["1006", "3132", "178389", "293978", "369861"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency predominantly affecting antibody production", "ORPHAcode": "101977", "hch_id": "195", "parents": ["179006"], "childs": ["1572", "169139", "169443", "183669", "331232", "331240", "331244"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked lymphoproliferative disease due to SH2D1A deficiency", "ORPHAcode": "538931", "hch_id": "195", "parents": ["2442"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked lymphoproliferative disease due to XIAP deficiency", "ORPHAcode": "538934", "hch_id": "195", "parents": ["2442"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked lymphoproliferative disease", "ORPHAcode": "2442", "hch_id": "195", "parents": ["158038", "238510"], "childs": ["538931", "538934"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Familial hemophagocytic lymphohistiocytosis", "ORPHAcode": "540", "hch_id": "195", "parents": ["158038"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hermansky-Pudlak syndrome type 9", "ORPHAcode": "280663", "hch_id": "195", "parents": ["331249"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency syndrome with hypopigmentation", "ORPHAcode": "331249", "hch_id": "195", "parents": ["158038"], "childs": ["167", "79477", "183678", "280663"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Primary hemophagocytic lymphohistiocytosis", "ORPHAcode": "158038", "hch_id": "195", "parents": ["169361", "158032"], "childs": ["2442", "540", "331249"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Spondyloenchondrodysplasia", "ORPHAcode": "1855", "hch_id": "195", "parents": ["169355"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autoimmune polyendocrinopathy type 1", "ORPHAcode": "3453", "hch_id": "195", "parents": ["169355"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autoimmune lymphoproliferative syndrome", "ORPHAcode": "3261", "hch_id": "195", "parents": ["169355", "238510"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome", "ORPHAcode": "37042", "hch_id": "195", "parents": ["169355"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency due to CD25 deficiency", "ORPHAcode": "169100", "hch_id": "195", "parents": ["169355"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Syndromic multisystem autoimmune disease due to Itch deficiency", "ORPHAcode": "228426", "hch_id": "195", "parents": ["169355"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "RAS-associated autoimmune leukoproliferative disease", "ORPHAcode": "268114", "hch_id": "195", "parents": ["169355"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autoimmune lymphoproliferative syndrome with recurrent viral infections", "ORPHAcode": "275517", "hch_id": "195", "parents": ["169355", "238510"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "FADD-related immunodeficiency", "ORPHAcode": "306550", "hch_id": "195", "parents": ["169355"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autoimmune hemolytic anemia-autoimmune thrombocytopenia-primary immunodeficiency syndrome", "ORPHAcode": "444463", "hch_id": "195", "parents": ["169355"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency syndrome with autoimmunity", "ORPHAcode": "169355", "hch_id": "195", "parents": ["169361"], "childs": ["1855", "3453", "3261", "37042", "169100", "228426", "268114", "275517", "306550", "391487", "444463"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Dianzani autoimmune lymphoproliferative disease", "ORPHAcode": "275523", "hch_id": "195", "parents": ["238510"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autoimmune lymphoproliferative syndrome due to CTLA4 haploinsuffiency", "ORPHAcode": "436159", "hch_id": "195", "parents": ["238510"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "STAT3-related early-onset multisystem autoimmune disease", "ORPHAcode": "438159", "hch_id": "195", "parents": ["238510"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to CD70 deficiency", "ORPHAcode": "538958", "hch_id": "195", "parents": ["238510"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to CARMIL2 deficiency", "ORPHAcode": "542301", "hch_id": "195", "parents": ["238510"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Lymphoproliferative syndrome", "ORPHAcode": "238510", "hch_id": "195", "parents": ["169361"], "childs": ["2442", "3261", "275517", "275523", "436159", "438159", "538958", "542301"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immune dysregulation-inflammatory bowel disease-arthritis-recurrent infections syndrome", "ORPHAcode": "238569", "hch_id": "195", "parents": ["529974"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immune dysregulation-inflammatory bowel disease-arthritis-recurrent infections-lymphopenia syndrome", "ORPHAcode": "529977", "hch_id": "195", "parents": ["529974"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Inflammatory bowel disease-recurrent sinopulmonary infections syndrome", "ORPHAcode": "529980", "hch_id": "195", "parents": ["529974"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immune dysregulation with inflammatory bowel disease", "ORPHAcode": "529974", "hch_id": "195", "parents": ["169361"], "childs": ["238569", "529977", "529980"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Aicardi-Goutières syndrome", "ORPHAcode": "51", "hch_id": "195", "parents": ["169361"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "STING-associated vasculopathy with onset in infancy", "ORPHAcode": "425120", "hch_id": "195", "parents": ["169361"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Singleton-Merten dysplasia", "ORPHAcode": "85191", "hch_id": "195", "parents": ["169361"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Syndromic diarrhea", "ORPHAcode": "84064", "hch_id": "195", "parents": ["169361"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "X-linked reticulate pigmentary disorder", "ORPHAcode": "85453", "hch_id": "195", "parents": ["169361"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Vasculitis due to ADA2 deficiency", "ORPHAcode": "404553", "hch_id": "195", "parents": ["169361"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immune dysregulation disease with immunodeficiency", "ORPHAcode": "169361", "hch_id": "195", "parents": ["179006"], "childs": ["158038", "169355", "238510", "529974", "51", "425120", "85191", "84064", "85453", "404553"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Wiskott-Aldrich syndrome", "ORPHAcode": "906", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Dyskeratosis congenita", "ORPHAcode": "1775", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Multiple intestinal atresia", "ORPHAcode": "2300", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Vici syndrome", "ORPHAcode": "1493", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Transcobalamin deficiency", "ORPHAcode": "859", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hennekam syndrome", "ORPHAcode": "2136", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Absent thumb-short stature-immunodeficiency syndrome", "ORPHAcode": "2951", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hoyeraal-Hreidarsson syndrome", "ORPHAcode": "3322", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Anhidrotic ectodermal dysplasia-immunodeficiency-osteopetrosis-lymphedema syndrome", "ORPHAcode": "69088", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hepatic veno-occlusive disease-immunodeficiency syndrome", "ORPHAcode": "79124", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hereditary folate malabsorption", "ORPHAcode": "90045", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hypohidrotic ectodermal dysplasia with immunodeficiency", "ORPHAcode": "98813", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to ORAI1 deficiency", "ORPHAcode": "317428", "hch_id": "195", "parents": ["169090"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to STIM1 deficiency", "ORPHAcode": "317430", "hch_id": "195", "parents": ["169090"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to CRAC channel dysfunction", "ORPHAcode": "169090", "hch_id": "195", "parents": ["331217"], "childs": ["317428", "317430"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe combined immunodeficiency due to FOXN1 deficiency", "ORPHAcode": "169095", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency due to GINS1 deficiency", "ORPHAcode": "505227", "hch_id": "195", "parents": ["169346"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Ataxia-telangiectasia", "ORPHAcode": "100", "hch_id": "195", "parents": ["169346"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Bloom syndrome", "ORPHAcode": "125", "hch_id": "195", "parents": ["169346"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "ICF syndrome", "ORPHAcode": "2268", "hch_id": "195", "parents": ["169346"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Nijmegen breakage syndrome", "ORPHAcode": "647", "hch_id": "195", "parents": ["169346"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Nijmegen breakage syndrome-like disorder", "ORPHAcode": "240760", "hch_id": "195", "parents": ["169346"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "RIDDLE syndrome", "ORPHAcode": "420741", "hch_id": "195", "parents": ["169346"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Primary immunodeficiency with natural-killer cell deficiency and adrenal insufficiency", "ORPHAcode": "75391", "hch_id": "195", "parents": ["169346"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "DNA repair defect other than combined T-cell and B-cell immunodeficiencies", "ORPHAcode": "169346", "hch_id": "195", "parents": ["331217"], "childs": ["505227", "100", "125", "2268", "647", "240760", "420741", "75391"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency with faciooculoskeletal anomalies", "ORPHAcode": "221139", "hch_id": "195", "parents": ["169349"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Schimke immuno-osseous dysplasia", "ORPHAcode": "1830", "hch_id": "195", "parents": ["169349"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Cartilage-hair hypoplasia", "ORPHAcode": "175", "hch_id": "195", "parents": ["169349"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Skeletal dysplasia-T-cell immunodeficiency-developmental delay syndrome", "ORPHAcode": "508533", "hch_id": "195", "parents": ["169349"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Congenital progressive bone marrow failure-B-cell immunodeficiency-skeletal dysplasia syndrome", "ORPHAcode": "508542", "hch_id": "195", "parents": ["169349"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Roifman syndrome", "ORPHAcode": "353298", "hch_id": "195", "parents": ["169349"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immuno-osseous dysplasia", "ORPHAcode": "169349", "hch_id": "195", "parents": ["331217"], "childs": ["221139", "1830", "175", "508533", "508542", "353298"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Laron syndrome with immunodeficiency", "ORPHAcode": "220465", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Pancytopenia due to IKZF1 mutations", "ORPHAcode": "317473", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autoinflammatory syndrome with pyogenic bacterial infection and amylopectinosis", "ORPHAcode": "329173", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "CHARGE syndrome", "ORPHAcode": "138", "hch_id": "195", "parents": ["331220"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "22q11.2 deletion syndrome", "ORPHAcode": "567", "hch_id": "195", "parents": ["331220"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Thymic aplasia", "ORPHAcode": "83471", "hch_id": "195", "parents": ["331220"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Immunodeficiency due to absence of thymus", "ORPHAcode": "331220", "hch_id": "195", "parents": ["331217"], "childs": ["138", "567", "83471"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Autosomal dominant hyper-IgE syndrome", "ORPHAcode": "2314", "hch_id": "195", "parents": ["331223"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Netherton syndrome", "ORPHAcode": "634", "hch_id": "195", "parents": ["331223"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Severe dermatitis-multiple allergies-metabolic wasting syndrome", "ORPHAcode": "369992", "hch_id": "195", "parents": ["331223"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "PGM3-CDG", "ORPHAcode": "443811", "hch_id": "195", "parents": ["331223"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hyper-IgE syndrome", "ORPHAcode": "331223", "hch_id": "195", "parents": ["331217"], "childs": ["2314", "634", "369992", "443811"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Facial dysmorphism-immunodeficiency-livedo-short stature syndrome", "ORPHAcode": "352712", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Combined immunodeficiency-enteropathy spectrum", "ORPHAcode": "436252", "hch_id": "195", "parents": ["331217"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Syndrome with combined immunodeficiency", "ORPHAcode": "331217", "hch_id": "195", "parents": ["179006"], "childs": ["906", "1775", "2300", "1493", "859", "2136", "2951", "3322", "69088", "79124", "90045", "98813", "169090", "169095", "169346", "169349", "220465", "317473", "329173", "331220", "331223", "352712", "436252"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Primary immunodeficiency due to a defect in adaptive immunity", "ORPHAcode": "179006", "hch_id": "195", "parents": ["101997"], "childs": ["101972", "101977", "169361", "331217"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Primary immunodeficiency", "ORPHAcode": "101997", "hch_id": "195", "parents": ["98004"], "childs": ["101988", "179006"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hemophagocytic syndrome associated with an infection", "ORPHAcode": "158048", "hch_id": "195", "parents": ["158041"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Acquired hemophagocytic lymphohistiocytosis associated with malignant disease", "ORPHAcode": "158057", "hch_id": "195", "parents": ["158041"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Macrophage activation syndrome", "ORPHAcode": "158061", "hch_id": "195", "parents": ["158041"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Secondary hemophagocytic lymphohistiocytosis", "ORPHAcode": "158041", "hch_id": "195", "parents": ["158032"], "childs": ["158048", "158057", "158061"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hemophagocytic syndrome", "ORPHAcode": "158032", "hch_id": "195", "parents": ["98004"], "childs": ["158038", "158041"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Hereditary neutrophilia", "ORPHAcode": "279943", "hch_id": "195", "parents": ["98004"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "AIDS wasting syndrome", "ORPHAcode": "90081", "hch_id": "195", "parents": ["310050"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Good syndrome", "ORPHAcode": "169105", "hch_id": "195", "parents": ["310050"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Neonatal alloimmune neutropenia", "ORPHAcode": "464370", "hch_id": "195", "parents": ["178996"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Adult idiopathic neutropenia", "ORPHAcode": "2688", "hch_id": "195", "parents": ["178996"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Felty syndrome", "ORPHAcode": "47612", "hch_id": "195", "parents": ["178996"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "T-cell large granular lymphocyte leukemia", "ORPHAcode": "86872", "hch_id": "195", "parents": ["178996"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Acquired neutropenia", "ORPHAcode": "178996", "hch_id": "195", "parents": ["310050"], "childs": ["464370", "2688", "47612", "86872"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Adult-onset immunodeficiency with anti-interferon-gamma autoantibodies", "ORPHAcode": "306431", "hch_id": "195", "parents": ["310050"], "childs": []}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Acquired immunodeficiency", "ORPHAcode": "310050", "hch_id": "195", "parents": ["98004"], "childs": ["90081", "169105", "178996", "306431"]}
+{"index": {"_index":"en_product3_195"}}
+{"name": "Rare immune disease", "ORPHAcode": "98004", "hch_id": "195", "parents": [], "childs": ["2194", "39812", "95431", "101997", "158032", "279943", "310050"]}

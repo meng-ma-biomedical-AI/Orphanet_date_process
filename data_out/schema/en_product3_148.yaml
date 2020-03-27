@@ -1,0 +1,24 @@
+en_product3_148:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Congenital pericardium anomaly"
+    ORPHAcode:
+      type: string
+      example: "2846"
+    hch_id:
+      type: string
+      example: "148"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['88991']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['99129', '99130', '99131']"
+  required:
+    - ORPHAcode

@@ -1,0 +1,24 @@
+en_product3_193:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Functioning neuroendocrine tumor of pancreas"
+    ORPHAcode:
+      type: string
+      example: "506060"
+    hch_id:
+      type: string
+      example: "193"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['97253']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['913', '97261', '97278', '97279', '97280', '97282', '97283', '99889', '506090']"
+  required:
+    - ORPHAcode

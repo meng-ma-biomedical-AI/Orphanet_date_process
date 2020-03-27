@@ -1,0 +1,132 @@
+{"index": {"_index":"en_product3_186"}}
+{"name": "Neurogenic thoracic outlet syndrome", "ORPHAcode": "100073", "hch_id": "186", "parents": ["97330"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Arterial thoracic outlet syndrome", "ORPHAcode": "357107", "hch_id": "186", "parents": ["97330"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Venous thoracic outlet syndrome", "ORPHAcode": "357131", "hch_id": "186", "parents": ["97330"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Thoracic outlet syndrome", "ORPHAcode": "97330", "hch_id": "186", "parents": ["97962"], "childs": ["100073", "357107", "357131"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Tracheal agenesis", "ORPHAcode": "3346", "hch_id": "186", "parents": ["108993"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Congenital lobar emphysema", "ORPHAcode": "1928", "hch_id": "186", "parents": ["108993"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Laryngotracheoesophageal cleft type 1", "ORPHAcode": "93938", "hch_id": "186", "parents": ["2004"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Laryngotracheoesophageal cleft type 2", "ORPHAcode": "93939", "hch_id": "186", "parents": ["2004"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Laryngotracheoesophageal cleft type 3", "ORPHAcode": "93940", "hch_id": "186", "parents": ["2004"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Laryngotracheoesophageal cleft type 4", "ORPHAcode": "93941", "hch_id": "186", "parents": ["2004"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Laryngotracheoesophageal cleft type 0", "ORPHAcode": "280205", "hch_id": "186", "parents": ["2004"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Laryngotracheoesophageal cleft", "ORPHAcode": "2004", "hch_id": "186", "parents": ["108993"], "childs": ["93938", "93939", "93940", "93941", "280205"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Isolated tracheoesophageal fistula", "ORPHAcode": "454750", "hch_id": "186", "parents": ["108993"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Non-syndromic respiratory or mediastinal malformation", "ORPHAcode": "108993", "hch_id": "186", "parents": ["97962"], "childs": ["3346", "1928", "2004", "454750"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Matthew-Wood syndrome", "ORPHAcode": "2470", "hch_id": "186", "parents": ["108995", "180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Syndromic respiratory or mediastinal malformation", "ORPHAcode": "108995", "hch_id": "186", "parents": ["97962"], "childs": ["2470"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Congenital diaphragmatic hernia", "ORPHAcode": "2140", "hch_id": "186", "parents": ["180776"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Sternal cleft", "ORPHAcode": "2017", "hch_id": "186", "parents": ["180776"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Non-syndromic diaphragmatic or thoracic malformation", "ORPHAcode": "180776", "hch_id": "186", "parents": ["97962"], "childs": ["2140", "2017"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Omphalocele-diaphragmatic hernia-cardiovascular anomalies-radial ray defect syndrome", "ORPHAcode": "496693", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Lethal hydranencephaly-diaphragmatic hernia syndrome", "ORPHAcode": "480528", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Wolf-Hirschhorn syndrome", "ORPHAcode": "280", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Cornelia de Lange syndrome", "ORPHAcode": "199", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Tetrasomy 12p", "ORPHAcode": "884", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Classical Ehlers-Danlos syndrome", "ORPHAcode": "287", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Simpson-Golabi-Behmel syndrome", "ORPHAcode": "373", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "PAGOD syndrome", "ORPHAcode": "991", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Pentalogy of Cantrell", "ORPHAcode": "1335", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Diaphragmatic defect-limb deficiency-skull defect syndrome", "ORPHAcode": "2141", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Donnai-Barrow syndrome", "ORPHAcode": "2143", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Kabuki syndrome", "ORPHAcode": "2322", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Geroderma osteodysplastica", "ORPHAcode": "2078", "hch_id": "186", "parents": ["209"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "ALDH18A1-related De Barsy syndrome", "ORPHAcode": "35664", "hch_id": "186", "parents": ["2962"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "PYCR1-related De Barsy syndrome", "ORPHAcode": "293633", "hch_id": "186", "parents": ["2962"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "De Barsy syndrome", "ORPHAcode": "2962", "hch_id": "186", "parents": ["209"], "childs": ["35664", "293633"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "SCARF syndrome", "ORPHAcode": "3134", "hch_id": "186", "parents": ["209"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Arterial tortuosity syndrome", "ORPHAcode": "3342", "hch_id": "186", "parents": ["209", "285014"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Occipital horn syndrome", "ORPHAcode": "198", "hch_id": "186", "parents": ["209"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Autosomal dominant cutis laxa", "ORPHAcode": "90348", "hch_id": "186", "parents": ["209"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Autosomal recessive cutis laxa type 1", "ORPHAcode": "90349", "hch_id": "186", "parents": ["209"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Wrinkly skin syndrome", "ORPHAcode": "2834", "hch_id": "186", "parents": ["357058"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Autosomal recessive cutis laxa type 2, classic type", "ORPHAcode": "357074", "hch_id": "186", "parents": ["357058"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Autosomal recessive cutis laxa type 2A", "ORPHAcode": "357058", "hch_id": "186", "parents": ["90350"], "childs": ["2834", "357074"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Autosomal recessive cutis laxa type 2B", "ORPHAcode": "357064", "hch_id": "186", "parents": ["90350"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Autosomal recessive cutis laxa type 2", "ORPHAcode": "90350", "hch_id": "186", "parents": ["209"], "childs": ["357058", "357064"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "RIN2 syndrome", "ORPHAcode": "217335", "hch_id": "186", "parents": ["209"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Cutis laxa with severe pulmonary, gastrointestinal and urinary anomalies", "ORPHAcode": "221145", "hch_id": "186", "parents": ["209"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Lethal arteriopathy syndrome due to fibulin-4 deficiency", "ORPHAcode": "314718", "hch_id": "186", "parents": ["209"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Cutis laxa", "ORPHAcode": "209", "hch_id": "186", "parents": ["180779"], "childs": ["2078", "2962", "3134", "3342", "198", "90348", "90349", "90350", "217335", "221145", "314718"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Emanuel syndrome", "ORPHAcode": "96170", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Classical-like Ehlers-Danlos syndrome type 1", "ORPHAcode": "230839", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Diaphragmatic hernia-short bowel-asplenia syndrome", "ORPHAcode": "527468", "hch_id": "186", "parents": ["180779"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Syndromic diaphragmatic or thoracic malformation", "ORPHAcode": "180779", "hch_id": "186", "parents": ["97962"], "childs": ["496693", "480528", "280", "199", "884", "287", "373", "991", "1335", "2141", "2143", "2322", "2470", "209", "96170", "230839", "527468"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Marfan syndrome type 1", "ORPHAcode": "284963", "hch_id": "186", "parents": ["558"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Marfan syndrome type 2", "ORPHAcode": "284973", "hch_id": "186", "parents": ["558"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Marfan syndrome", "ORPHAcode": "558", "hch_id": "186", "parents": ["285014"], "childs": ["284963", "284973"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Vascular Ehlers-Danlos syndrome", "ORPHAcode": "286", "hch_id": "186", "parents": ["285014"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Loeys-Dietz syndrome", "ORPHAcode": "60030", "hch_id": "186", "parents": ["285014"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Familial thoracic aortic aneurysm and aortic dissection", "ORPHAcode": "91387", "hch_id": "186", "parents": ["285014"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Neonatal Marfan syndrome", "ORPHAcode": "284979", "hch_id": "186", "parents": ["285014"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Aneurysm-osteoarthritis syndrome", "ORPHAcode": "284984", "hch_id": "186", "parents": ["285014"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Familial bicuspid aortic valve", "ORPHAcode": "402075", "hch_id": "186", "parents": ["285014"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Familial aortic dissection", "ORPHAcode": "229", "hch_id": "186", "parents": ["285014"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Multisystemic smooth muscle dysfunction syndrome", "ORPHAcode": "404463", "hch_id": "186", "parents": ["285014"], "childs": []}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Rare disease with thoracic aortic aneurysm and aortic dissection", "ORPHAcode": "285014", "hch_id": "186", "parents": ["97962"], "childs": ["558", "3342", "286", "60030", "91387", "284979", "284984", "402075", "229", "404463"]}
+{"index": {"_index":"en_product3_186"}}
+{"name": "Rare surgical thoracic disease", "ORPHAcode": "97962", "hch_id": "186", "parents": [], "childs": ["97330", "108993", "108995", "180776", "180779", "285014"]}

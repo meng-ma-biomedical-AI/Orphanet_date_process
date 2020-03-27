@@ -1,0 +1,14 @@
+en_product3_211:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Rare neurologic disease with psychiatric involvement"
+    ORPHAcode:
+      type: string
+      example: "98033"
+    hch_id:
+      type: string
+      example: "211"
+  required:
+    - ORPHAcode

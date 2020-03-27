@@ -1,0 +1,24 @@
+en_product3_204:
+  type: object
+  properties:
+    name:
+      type: string
+      example: "Radiation-induced disorder"
+    ORPHAcode:
+      type: string
+      example: "521132"
+    hch_id:
+      type: string
+      example: "204"
+    parents:
+      type: array
+      items:
+        type: string
+        example: "['108999']"
+    childs:
+      type: array
+      items:
+        type: string
+        example: "['521127', '521123', '454831', '90021', '70475', '164726']"
+  required:
+    - ORPHAcode

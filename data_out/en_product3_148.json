@@ -1,0 +1,484 @@
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital Gerbode defect", "ORPHAcode": "99095", "hch_id": "148", "parents": ["88991"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital complete agenesis of pericardium", "ORPHAcode": "99129", "hch_id": "148", "parents": ["2846"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital partial agenesis of pericardium", "ORPHAcode": "99130", "hch_id": "148", "parents": ["2846"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Pleuro-pericardial cyst", "ORPHAcode": "99131", "hch_id": "148", "parents": ["2846"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital pericardium anomaly", "ORPHAcode": "2846", "hch_id": "148", "parents": ["88991"], "childs": ["99129", "99130", "99131"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Coronary arterial fistula", "ORPHAcode": "2041", "hch_id": "148", "parents": ["1081"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital coronary artery aneurysm", "ORPHAcode": "95491", "hch_id": "148", "parents": ["1081"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Anomalous aortic origin of the left coronary artery", "ORPHAcode": "541443", "hch_id": "148", "parents": ["541478"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Anomalous aortic origin of the right coronary artery", "ORPHAcode": "541454", "hch_id": "148", "parents": ["541478"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Anomalous aortic origin of coronary artery", "ORPHAcode": "541478", "hch_id": "148", "parents": ["1081"], "childs": ["541443", "541454"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Anomalous origin of coronary artery from the pulmonary artery", "ORPHAcode": "541507", "hch_id": "148", "parents": ["1081"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Coronary ostial stenosis or atresia", "ORPHAcode": "99087", "hch_id": "148", "parents": ["542822"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Abnormal number of coronary ostia", "ORPHAcode": "99089", "hch_id": "148", "parents": ["542822"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Malposition of a coronary ostium", "ORPHAcode": "99090", "hch_id": "148", "parents": ["542822"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Anomaly of the coronary ostia", "ORPHAcode": "542822", "hch_id": "148", "parents": ["1081"], "childs": ["99087", "99089", "99090"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Coronary artery congenital malformation", "ORPHAcode": "1081", "hch_id": "148", "parents": ["88991"], "childs": ["2041", "95491", "541478", "541507", "542822"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Cardiac diverticulum", "ORPHAcode": "1686", "hch_id": "148", "parents": ["88991"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Criss-cross heart", "ORPHAcode": "1461", "hch_id": "148", "parents": ["88991"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Hypoplastic left heart syndrome", "ORPHAcode": "2248", "hch_id": "148", "parents": ["95483"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Univentricular heart with single atrio-ventricular valve", "ORPHAcode": "99069", "hch_id": "148", "parents": ["1464"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Univentricular heart", "ORPHAcode": "1464", "hch_id": "148", "parents": ["95483"], "childs": ["99069"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Pulmonary atresia-intact ventricular septum syndrome", "ORPHAcode": "1208", "hch_id": "148", "parents": ["98723", "98719"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Isolated right ventricular hypoplasia", "ORPHAcode": "439", "hch_id": "148", "parents": ["98723"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Hypoplastic right heart syndrome", "ORPHAcode": "98723", "hch_id": "148", "parents": ["95483"], "childs": ["1208", "439"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Univentricular cardiopathy", "ORPHAcode": "95483", "hch_id": "148", "parents": ["88991"], "childs": ["2248", "1464", "98723"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Dextrocardia", "ORPHAcode": "1666", "hch_id": "148", "parents": ["450"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Levocardia", "ORPHAcode": "95854", "hch_id": "148", "parents": ["450"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Right sided atrial isomerism", "ORPHAcode": "97548", "hch_id": "148", "parents": ["450"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Situs inversus totalis", "ORPHAcode": "101063", "hch_id": "148", "parents": ["450"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Situs ambiguus", "ORPHAcode": "157769", "hch_id": "148", "parents": ["450"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Left sided atrial isomerism", "ORPHAcode": "566862", "hch_id": "148", "parents": ["450"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Heterotaxia", "ORPHAcode": "450", "hch_id": "148", "parents": ["98716"], "childs": ["1666", "95854", "97548", "101063", "157769", "566862"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Mesocardia", "ORPHAcode": "95443", "hch_id": "148", "parents": ["98716"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Heart position anomaly", "ORPHAcode": "98716", "hch_id": "148", "parents": ["88991"], "childs": ["450", "95443"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Tetralogy of Fallot", "ORPHAcode": "3303", "hch_id": "148", "parents": ["2445"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Truncus arteriosus", "ORPHAcode": "3384", "hch_id": "148", "parents": ["2445"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Pulmonary valve agenesis-intact ventricular septum-persistent ductus arteriosus syndrome", "ORPHAcode": "99048", "hch_id": "148", "parents": ["982"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Pulmonary valve agenesis-tetralogy of Fallot-absence of ductus arteriosus syndrome", "ORPHAcode": "101206", "hch_id": "148", "parents": ["982"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Pulmonary valve agenesis", "ORPHAcode": "982", "hch_id": "148", "parents": ["2445", "98719"], "childs": ["99048", "101206"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Pulmonary artery coming from patent ductus arteriosus", "ORPHAcode": "99049", "hch_id": "148", "parents": ["1138"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Abnormal origin of right or left pulmonary artery from the aorta", "ORPHAcode": "99050", "hch_id": "148", "parents": ["1138"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Abnormal origin of the pulmonary artery", "ORPHAcode": "1138", "hch_id": "148", "parents": ["2445"], "childs": ["99049", "99050"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Pulmonary atresia with ventricular septal defect", "ORPHAcode": "1207", "hch_id": "148", "parents": ["2445"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital aortopulmonary window", "ORPHAcode": "2037", "hch_id": "148", "parents": ["2445"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Double outlet right ventricle with subaortic or doubly committed ventricular septal defect with pulmonary stenosis", "ORPHAcode": "99043", "hch_id": "148", "parents": ["3426"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Double outlet right ventricle with subpulmonary ventricular septal defect", "ORPHAcode": "99045", "hch_id": "148", "parents": ["3426"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Double outlet right ventricle with non-committed subpulmonary ventricular septal defect", "ORPHAcode": "99046", "hch_id": "148", "parents": ["3426"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Double outlet right ventricle with subaortic or doubly committed ventricular septal defect", "ORPHAcode": "423693", "hch_id": "148", "parents": ["3426"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Double outlet right ventricle with atrioventricular septal defect, pulmonary stenosis, heterotaxy", "ORPHAcode": "423712", "hch_id": "148", "parents": ["3426"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Double outlet right ventricle", "ORPHAcode": "3426", "hch_id": "148", "parents": ["2445"], "childs": ["99043", "99045", "99046", "423693", "423712"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Double outlet left ventricle", "ORPHAcode": "3427", "hch_id": "148", "parents": ["2445"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Conotruncal heart malformations", "ORPHAcode": "2445", "hch_id": "148", "parents": ["98717"], "childs": ["3303", "3384", "982", "1138", "1207", "2037", "3426", "3427"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Supravalvular aortic stenosis", "ORPHAcode": "3193", "hch_id": "148", "parents": ["98718"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Autosomal dominant coarctation of aorta", "ORPHAcode": "1455", "hch_id": "148", "parents": ["1457"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Atypical coarctation of aorta", "ORPHAcode": "1456", "hch_id": "148", "parents": ["1457"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Aorta coarctation", "ORPHAcode": "1457", "hch_id": "148", "parents": ["98718"], "childs": ["1455", "1456"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Aortic arch interruption", "ORPHAcode": "2299", "hch_id": "148", "parents": ["98718"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Discrete fixed membranous subaortic stenosis", "ORPHAcode": "99051", "hch_id": "148", "parents": ["3092"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Discrete fibromuscular subaortic stenosis", "ORPHAcode": "99052", "hch_id": "148", "parents": ["3092"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Tunnel subaortic stenosis", "ORPHAcode": "99053", "hch_id": "148", "parents": ["3092"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Fixed subaortic stenosis", "ORPHAcode": "3092", "hch_id": "148", "parents": ["98718"], "childs": ["99051", "99052", "99053"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital aortic valve atresia", "ORPHAcode": "95448", "hch_id": "148", "parents": ["3093"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital aortic valve dysplasia", "ORPHAcode": "101043", "hch_id": "148", "parents": ["3093"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital aortic valve stenosis", "ORPHAcode": "3093", "hch_id": "148", "parents": ["98718", "98725"], "childs": ["95448", "101043"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Familial bicuspid aortic valve", "ORPHAcode": "402075", "hch_id": "148", "parents": ["98718"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Quadricuspid aortic valve", "ORPHAcode": "542568", "hch_id": "148", "parents": ["98718"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Aortic malformation", "ORPHAcode": "98718", "hch_id": "148", "parents": ["98717", "98724"], "childs": ["3193", "1457", "2299", "3092", "3093", "402075", "542568"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Absence of the pulmonary artery", "ORPHAcode": "980", "hch_id": "148", "parents": ["98719"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Subpulmonary stenosis", "ORPHAcode": "3190", "hch_id": "148", "parents": ["3189"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Supravalvular pulmonary stenosis", "ORPHAcode": "3192", "hch_id": "148", "parents": ["3189"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Valvular pulmonary stenosis", "ORPHAcode": "99054", "hch_id": "148", "parents": ["3189"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital pulmonary valve stenosis", "ORPHAcode": "3189", "hch_id": "148", "parents": ["98719"], "childs": ["3190", "3192", "99054"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Idiopathic pulmonary artery dilatation", "ORPHAcode": "1676", "hch_id": "148", "parents": ["98719"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Pulmonary artery hypoplasia", "ORPHAcode": "99083", "hch_id": "148", "parents": ["98719"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Peripheral pulmonary stenosis", "ORPHAcode": "99084", "hch_id": "148", "parents": ["98719"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Pulmonary artery or pulmonary branch anomaly", "ORPHAcode": "98719", "hch_id": "148", "parents": ["98717", "98724"], "childs": ["1208", "982", "980", "3189", "1676", "99083", "99084"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenitally uncorrected transposition of the great arteries with coarctation", "ORPHAcode": "99042", "hch_id": "148", "parents": ["860"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Isolated congenitally uncorrected transposition of the great arteries", "ORPHAcode": "216718", "hch_id": "148", "parents": ["860"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenitally uncorrected transposition of the great arteries with cardiac malformation", "ORPHAcode": "216729", "hch_id": "148", "parents": ["860"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenitally uncorrected transposition of the great arteries", "ORPHAcode": "860", "hch_id": "148", "parents": ["216675"], "childs": ["99042", "216718", "216729"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenitally corrected transposition of the great arteries", "ORPHAcode": "216694", "hch_id": "148", "parents": ["216675"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Transposition of the great arteries", "ORPHAcode": "216675", "hch_id": "148", "parents": ["98717"], "childs": ["860", "216694"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Transposition of the great arteries and conotruncal cardiac anomaly", "ORPHAcode": "98717", "hch_id": "148", "parents": ["88991"], "childs": ["2445", "98718", "98719", "216675"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Familial mitral valve prolapse", "ORPHAcode": "741", "hch_id": "148", "parents": ["95464"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Mitral atresia", "ORPHAcode": "1205", "hch_id": "148", "parents": ["95464"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital mitral stenosis", "ORPHAcode": "99057", "hch_id": "148", "parents": ["95464"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Hypoplasia of the mitral valve annulus", "ORPHAcode": "99058", "hch_id": "148", "parents": ["95464"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital supravalvular mitral ring", "ORPHAcode": "99059", "hch_id": "148", "parents": ["95464"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital unguarded mitral orifice", "ORPHAcode": "99060", "hch_id": "148", "parents": ["95464"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Accessory mitral valve tissue", "ORPHAcode": "99061", "hch_id": "148", "parents": ["95464"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Mitral valve agenesis", "ORPHAcode": "99062", "hch_id": "148", "parents": ["95464"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Shone complex", "ORPHAcode": "99063", "hch_id": "148", "parents": ["95464"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Anomaly of the mitral subvalvular apparatus", "ORPHAcode": "101932", "hch_id": "148", "parents": ["95464"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital mitral valve insufficiency and/or stenosis", "ORPHAcode": "95464", "hch_id": "148", "parents": ["2447"], "childs": ["741", "1205", "99057", "99058", "99059", "99060", "99061", "99062", "99063", "101932"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Double-orifice mitral valve", "ORPHAcode": "95474", "hch_id": "148", "parents": ["95465"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Straddling and/or overriding mitral valve", "ORPHAcode": "99064", "hch_id": "148", "parents": ["95465"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Cleft mitral valve", "ORPHAcode": "95465", "hch_id": "148", "parents": ["2447"], "childs": ["95474", "99064"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital mitral malformation", "ORPHAcode": "2447", "hch_id": "148", "parents": ["98720"], "childs": ["95464", "95465"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital tricuspid stenosis", "ORPHAcode": "95459", "hch_id": "148", "parents": ["98721"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Straddling or overriding tricuspid valve", "ORPHAcode": "95461", "hch_id": "148", "parents": ["98721"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Accessory tricuspid valve tissue", "ORPHAcode": "95462", "hch_id": "148", "parents": ["98721"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital anomaly of the tricuspid valve chordae", "ORPHAcode": "99055", "hch_id": "148", "parents": ["95463"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Parachute tricuspid valve", "ORPHAcode": "99056", "hch_id": "148", "parents": ["95463"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Anomaly of the tricuspid subvalvular apparatus", "ORPHAcode": "95463", "hch_id": "148", "parents": ["98721"], "childs": ["99055", "99056"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital tricuspid valve dysplasia", "ORPHAcode": "555874", "hch_id": "148", "parents": ["98721"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Ebstein malformation", "ORPHAcode": "1880", "hch_id": "148", "parents": ["98721"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Tricuspid atresia", "ORPHAcode": "1209", "hch_id": "148", "parents": ["98721"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Tricuspid valve agenesis", "ORPHAcode": "95457", "hch_id": "148", "parents": ["98721"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital tricuspid malformation", "ORPHAcode": "98721", "hch_id": "148", "parents": ["98720"], "childs": ["95459", "95461", "95462", "95463", "555874", "1880", "1209", "95457"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Complete atrioventricular canal-left heart obstruction syndrome", "ORPHAcode": "99066", "hch_id": "148", "parents": ["1329"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Complete atrioventricular canal-ventricle hypoplasia syndrome", "ORPHAcode": "99067", "hch_id": "148", "parents": ["1329"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Complete atrioventricular canal-tetralogy of Fallot syndrome", "ORPHAcode": "99068", "hch_id": "148", "parents": ["1329"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Complete atrioventricular canal", "ORPHAcode": "1329", "hch_id": "148", "parents": ["98722"], "childs": ["99066", "99067", "99068"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Partial atrioventricular canal", "ORPHAcode": "1330", "hch_id": "148", "parents": ["98722"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Atrioventricular canal defect", "ORPHAcode": "98722", "hch_id": "148", "parents": ["98720"], "childs": ["1329", "1330"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "FLNA-related X-linked myxomatous valvular dysplasia", "ORPHAcode": "555877", "hch_id": "148", "parents": ["98720"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Atrioventricular valve anomaly", "ORPHAcode": "98720", "hch_id": "148", "parents": ["88991"], "childs": ["2447", "98721", "98722", "555877"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Encircling double aortic arch", "ORPHAcode": "99075", "hch_id": "148", "parents": ["1132"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Persistent fifth aortic arch", "ORPHAcode": "99076", "hch_id": "148", "parents": ["1132"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Kommerell diverticulum", "ORPHAcode": "99077", "hch_id": "148", "parents": ["1132"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Neuhauser anomaly", "ORPHAcode": "99078", "hch_id": "148", "parents": ["1132"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Cervical aortic arch", "ORPHAcode": "99079", "hch_id": "148", "parents": ["1132"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Right aortic arch", "ORPHAcode": "99081", "hch_id": "148", "parents": ["1132"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Dysphagia lusoria", "ORPHAcode": "99082", "hch_id": "148", "parents": ["1132"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Aortic arch defects", "ORPHAcode": "1132", "hch_id": "148", "parents": ["98724"], "childs": ["99075", "99076", "99077", "99078", "99079", "99081", "99082"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital pulmonary veins atresia or stenosis", "ORPHAcode": "3188", "hch_id": "148", "parents": ["98724"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Scimitar syndrome", "ORPHAcode": "185", "hch_id": "148", "parents": ["98724", "98729"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Premature closure of the arterial duct", "ORPHAcode": "95486", "hch_id": "148", "parents": ["95485"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital patent ductus arteriosus aneurysm", "ORPHAcode": "99072", "hch_id": "148", "parents": ["95485"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Familial patent arterial duct", "ORPHAcode": "466729", "hch_id": "148", "parents": ["95485"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Arterial duct anomaly", "ORPHAcode": "95485", "hch_id": "148", "parents": ["98724"], "childs": ["95486", "99072", "466729"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Aneurysm of sinus of Valsalva", "ORPHAcode": "1054", "hch_id": "148", "parents": ["98725"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Aorto-right ventricular tunnel", "ORPHAcode": "99070", "hch_id": "148", "parents": ["3400"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Aorto-left ventricular tunnel", "ORPHAcode": "99071", "hch_id": "148", "parents": ["3400"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Aorto-ventricular tunnel", "ORPHAcode": "3400", "hch_id": "148", "parents": ["98725"], "childs": ["99070", "99071"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Aneurysm or dilatation of ascending aorta", "ORPHAcode": "95484", "hch_id": "148", "parents": ["98725"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Ascending aorta anomaly", "ORPHAcode": "98725", "hch_id": "148", "parents": ["98724"], "childs": ["1054", "3093", "3400", "95484"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital anomaly of the great arteries", "ORPHAcode": "98724", "hch_id": "148", "parents": ["88991"], "childs": ["1132", "3188", "185", "95485", "98718", "98719", "98725"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Atrial septal defect, ostium secundum type", "ORPHAcode": "99103", "hch_id": "148", "parents": ["1478"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Atrial septal defect, coronary sinus type", "ORPHAcode": "99104", "hch_id": "148", "parents": ["1478"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Atrial septal defect, sinus venosus type", "ORPHAcode": "99105", "hch_id": "148", "parents": ["1478"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Atrial septal defect, ostium primum type", "ORPHAcode": "99106", "hch_id": "148", "parents": ["1478"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Interatrial communication", "ORPHAcode": "1478", "hch_id": "148", "parents": ["98727"], "childs": ["99103", "99104", "99105", "99106"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Cor triatriatum dexter", "ORPHAcode": "99098", "hch_id": "148", "parents": ["1463"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Cor triatriatum sinister", "ORPHAcode": "99099", "hch_id": "148", "parents": ["1463"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Triatrial heart", "ORPHAcode": "1463", "hch_id": "148", "parents": ["98727"], "childs": ["99098", "99099"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Familial idiopathic dilatation of the right atrium", "ORPHAcode": "1677", "hch_id": "148", "parents": ["98727"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Juxtaposition of the atrial appendages", "ORPHAcode": "99100", "hch_id": "148", "parents": ["95510"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Ectasia of the right atrial appendage", "ORPHAcode": "99101", "hch_id": "148", "parents": ["95510"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Ectasia of the left atrial appendage", "ORPHAcode": "99102", "hch_id": "148", "parents": ["95510"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Atrial appendage anomaly", "ORPHAcode": "95510", "hch_id": "148", "parents": ["98727"], "childs": ["99100", "99101", "99102"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Atrial septal aneurysm", "ORPHAcode": "99107", "hch_id": "148", "parents": ["98727"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Rare atrial defect and interatrial communication", "ORPHAcode": "98727", "hch_id": "148", "parents": ["88991"], "childs": ["1478", "1463", "1677", "95510", "99107"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Persistent left superior vena cava connecting through coronary sinus to left-sided atrium", "ORPHAcode": "99109", "hch_id": "148", "parents": ["95498"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Right superior vena cava connecting to left-sided atrium", "ORPHAcode": "99110", "hch_id": "148", "parents": ["95498"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Persistent left superior vena cava connecting to the roof of left-sided atrium", "ORPHAcode": "99111", "hch_id": "148", "parents": ["95498"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Absence of innominate vein", "ORPHAcode": "99112", "hch_id": "148", "parents": ["95498"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Subaortic course of innominate vein", "ORPHAcode": "99113", "hch_id": "148", "parents": ["95498"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Agenesis of the superior vena cava", "ORPHAcode": "99114", "hch_id": "148", "parents": ["95498"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital anomaly of superior vena cava", "ORPHAcode": "95498", "hch_id": "148", "parents": ["3091"], "childs": ["99109", "99110", "99111", "99112", "99113", "99114"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Right inferior vena cava connecting to left-sided atrium", "ORPHAcode": "99119", "hch_id": "148", "parents": ["95499"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Persistent eustachian valve", "ORPHAcode": "99120", "hch_id": "148", "parents": ["95499"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Azygos continuation of the inferior vena cava", "ORPHAcode": "99121", "hch_id": "148", "parents": ["95499"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital stenosis of the inferior vena cava", "ORPHAcode": "99122", "hch_id": "148", "parents": ["95499"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Inferior vena cava interruption without azygos continuation", "ORPHAcode": "99123", "hch_id": "148", "parents": ["95499"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital anomaly of the inferior vena cava", "ORPHAcode": "95499", "hch_id": "148", "parents": ["3091"], "childs": ["99119", "99120", "99121", "99122", "99123"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Coronary sinus stenosis", "ORPHAcode": "99117", "hch_id": "148", "parents": ["95500"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Coronary sinus atresia", "ORPHAcode": "99118", "hch_id": "148", "parents": ["95500"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital anomaly of the coronary sinus", "ORPHAcode": "95500", "hch_id": "148", "parents": ["3091"], "childs": ["99117", "99118"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital anomaly of hepatic vein", "ORPHAcode": "95507", "hch_id": "148", "parents": ["3091"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital portosystemic shunt", "ORPHAcode": "480531", "hch_id": "148", "parents": ["3091"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital systemic veins anomaly", "ORPHAcode": "3091", "hch_id": "148", "parents": ["363189"], "childs": ["95498", "95499", "95500", "95507", "480531"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital partial pulmonary venous return anomaly", "ORPHAcode": "99124", "hch_id": "148", "parents": ["3090"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital total pulmonary venous return anomaly", "ORPHAcode": "99125", "hch_id": "148", "parents": ["3090"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital pulmonary venous return anomaly", "ORPHAcode": "3090", "hch_id": "148", "parents": ["98729"], "childs": ["99124", "99125"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital pulmonary veins anomaly", "ORPHAcode": "98729", "hch_id": "148", "parents": ["363189"], "childs": ["3090", "185"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital anomaly of the great veins", "ORPHAcode": "363189", "hch_id": "148", "parents": ["88991"], "childs": ["3091", "98729"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Ectopia cordis", "ORPHAcode": "448270", "hch_id": "148", "parents": ["88991"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Laubry-Pezzi syndrome", "ORPHAcode": "99094", "hch_id": "148", "parents": ["474347"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Interventricular septum aneurysm", "ORPHAcode": "99092", "hch_id": "148", "parents": ["474347"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Rare congenital anomaly of ventricular septum", "ORPHAcode": "474347", "hch_id": "148", "parents": ["88991"], "childs": ["99094", "99092"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Rare congenital non-syndromic heart malformation", "ORPHAcode": "88991", "hch_id": "148", "parents": ["97965"], "childs": ["99095", "2846", "1081", "1686", "1461", "95483", "98716", "98717", "98720", "98724", "98727", "363189", "448270", "474347"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Transketolase deficiency", "ORPHAcode": "488618", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Severe hypotonia-psychomotor developmental delay-strabismus-cardiac septal defect syndrome", "ORPHAcode": "467176", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "CHARGE syndrome", "ORPHAcode": "138", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "22q11.2 deletion syndrome", "ORPHAcode": "567", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Williams syndrome", "ORPHAcode": "904", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Alagille syndrome due to 20p12 microdeletion", "ORPHAcode": "261600", "hch_id": "148", "parents": ["52"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Alagille syndrome due to a JAG1 point mutation", "ORPHAcode": "261619", "hch_id": "148", "parents": ["52"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Alagille syndrome due to a NOTCH2 point mutation", "ORPHAcode": "261629", "hch_id": "148", "parents": ["52"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Alagille syndrome", "ORPHAcode": "52", "hch_id": "148", "parents": ["156532"], "childs": ["261600", "261619", "261629"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Ellis Van Creveld syndrome", "ORPHAcode": "289", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Holt-Oram syndrome", "ORPHAcode": "392", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Atrioventricular defect-blepharophimosis-radial and anal defect syndrome", "ORPHAcode": "1352", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Microcephaly-cardiac defect-lung malsegmentation syndrome", "ORPHAcode": "2516", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "TARP syndrome", "ORPHAcode": "2886", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Atrial septal defect-atrioventricular conduction defects syndrome", "ORPHAcode": "1479", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Thomas syndrome", "ORPHAcode": "3316", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "PHACE syndrome", "ORPHAcode": "42775", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Bosley-Salih-Alorainy syndrome", "ORPHAcode": "69737", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Brain malformation-congenital heart disease-postaxial polydactyly syndrome", "ORPHAcode": "75389", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Cardiac anomalies-heterotaxy syndrome", "ORPHAcode": "137628", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Microcephaly-facio-cardio-skeletal syndrome, Hadziselimovic type", "ORPHAcode": "217026", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Patent ductus arteriosus-bicuspid aortic valve-hand anomalies syndrome", "ORPHAcode": "228190", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Polyvalvular heart disease syndrome", "ORPHAcode": "228410", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Cardiac-valvular Ehlers-Danlos syndrome", "ORPHAcode": "230851", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Familial retinal arterial macroaneurysm", "ORPHAcode": "284247", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Developmental delay-facial dysmorphism syndrome due to MED13L deficiency", "ORPHAcode": "369891", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Peters plus syndrome", "ORPHAcode": "709", "hch_id": "148", "parents": ["371183"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Musculocontractural Ehlers-Danlos syndrome", "ORPHAcode": "2953", "hch_id": "148", "parents": ["371183"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "CHIME syndrome", "ORPHAcode": "3474", "hch_id": "148", "parents": ["371183"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "MGAT2-CDG", "ORPHAcode": "79329", "hch_id": "148", "parents": ["371183"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "COG7-CDG", "ORPHAcode": "79333", "hch_id": "148", "parents": ["371183"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "COG1-CDG", "ORPHAcode": "263508", "hch_id": "148", "parents": ["371183"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Larsen-like syndrome, B3GAT3 type", "ORPHAcode": "284139", "hch_id": "148", "parents": ["371183"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital disorder of glycosylation with cardiac malformation as a major feature", "ORPHAcode": "371183", "hch_id": "148", "parents": ["156532"], "childs": ["709", "2953", "3474", "79329", "79333", "263508", "284139"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Cognitive impairment-coarse facies-heart defects-obesity-pulmonary involvement-short stature-skeletal dysplasia syndrome", "ORPHAcode": "444077", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "White forelock with malformations", "ORPHAcode": "2475", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Noonan syndrome", "ORPHAcode": "648", "hch_id": "148", "parents": ["98733"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Costello syndrome", "ORPHAcode": "3071", "hch_id": "148", "parents": ["98733"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Noonan syndrome with multiple lentigines", "ORPHAcode": "500", "hch_id": "148", "parents": ["98733"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Cardiofaciocutaneous syndrome", "ORPHAcode": "1340", "hch_id": "148", "parents": ["98733"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Noonan syndrome-like disorder with loose anagen hair", "ORPHAcode": "2701", "hch_id": "148", "parents": ["98733"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Noonan syndrome-like disorder with juvenile myelomonocytic leukemia", "ORPHAcode": "363972", "hch_id": "148", "parents": ["98733"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Neurofibromatosis-Noonan syndrome", "ORPHAcode": "638", "hch_id": "148", "parents": ["98733"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Noonan syndrome and Noonan-related syndrome", "ORPHAcode": "98733", "hch_id": "148", "parents": ["156532"], "childs": ["648", "3071", "500", "1340", "2701", "363972", "638"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Neurodevelopmental disorder-craniofacial dysmorphism-cardiac defect-skeletal anomalies syndrome due to 9q21.3 microdeletion", "ORPHAcode": "352665", "hch_id": "148", "parents": ["453499"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Neurodevelopmental disorder-craniofacial dysmorphism-cardiac defect-skeletal anomalies syndrome due to a point mutation", "ORPHAcode": "453504", "hch_id": "148", "parents": ["453499"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Neurodevelopmental disorder-craniofacial dysmorphism-cardiac defect-skeletal anomalies syndrome", "ORPHAcode": "453499", "hch_id": "148", "parents": ["156532"], "childs": ["352665", "453504"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Subaortic stenosis-short stature syndrome", "ORPHAcode": "3191", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome", "ORPHAcode": "457193", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "TMEM94-associated congenital heart defect-facial dysmorphism-developmental delay syndrome", "ORPHAcode": "562569", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Down syndrome", "ORPHAcode": "870", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Microcephaly-seizures-intellectual disability-heart disease syndrome", "ORPHAcode": "2519", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Congenital vertebral-cardiac-renal anomalies syndrome", "ORPHAcode": "521438", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Omphalocele-diaphragmatic hernia-cardiovascular anomalies-radial ray defect syndrome", "ORPHAcode": "496693", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Cleft lip and palate-craniofacial dysmorphism-congenital heart defect-hearing loss syndrome", "ORPHAcode": "508476", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "8q24.3 microdeletion syndrome", "ORPHAcode": "508488", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Intellectual disability-cardiac anomalies-short stature-joint laxity syndrome", "ORPHAcode": "508498", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Heart defects-limb shortening syndrome", "ORPHAcode": "1354", "hch_id": "148", "parents": ["156532"], "childs": []}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Rare syndrome with cardiac malformations", "ORPHAcode": "156532", "hch_id": "148", "parents": ["97965"], "childs": ["488618", "467176", "138", "567", "904", "52", "289", "392", "1352", "2516", "2886", "1479", "3316", "42775", "69737", "75389", "137628", "217026", "228190", "228410", "230851", "284247", "369891", "371183", "444077", "2475", "98733", "453499", "3191", "457193", "562569", "870", "2519", "521438", "496693", "508476", "508488", "508498", "1354"]}
+{"index": {"_index":"en_product3_148"}}
+{"name": "Rare surgical cardiac disease", "ORPHAcode": "97965", "hch_id": "148", "parents": [], "childs": ["88991", "156532"]}
