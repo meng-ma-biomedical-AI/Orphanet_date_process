@@ -24,11 +24,13 @@ def parse_file(in_file_path, input_encoding):
     start = time.time()
 
     if input_encoding.lower() == "auto":
-        with open(in_file_path, "r") as ini:
+        with open(in_file_path, "rb") as ini:
             xml_declaration = ini.readline()
-            pattern = re.compile("encoding=\"(.*)\"[ ?]")
-            encoding = pattern.search(xml_declaration).group(1)
-            print(encoding)
+
+        xml_declaration = xml_declaration.decode()
+        pattern = re.compile("encoding=\"(.*)\"[ ?]")
+        encoding = pattern.search(xml_declaration).group(1)
+        print(encoding)
 
         with open(in_file_path, "r", encoding=encoding) as ini:
             file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
@@ -174,6 +176,14 @@ def recursive_template(elem):
 
 
 def recursive_unwanted_orphacode(elem):
+    """
+    Remove the ORPHAcode past the one defined at the disorder's root level
+    ! NO quality check !
+    Useless since new Orphadata generation
+
+    :param elem: disorder object or property
+    :return: disorder object or property without ORPHAcode key
+    """
     if isinstance(elem, dict):
         if "ORPHAcode" in elem.keys():
             elem.pop("ORPHAcode")
@@ -186,6 +196,14 @@ def recursive_unwanted_orphacode(elem):
 
 
 def remove_unwanted_orphacode(node_list):
+    """
+    Remove the ORPHAcode past the one defined at the disorder's root level
+    ! NO quality check !
+    Useless since new Orphadata generation
+
+    :param node_list: list of disorder
+    :return: list of disorder without ORPHAcode key past the main one
+    """
     # print(node_list)
     for disorder in node_list:
         # elem is an attribute of the disorder
@@ -449,8 +467,9 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     # Output this simplified dictionnary for debug purpose
     output_simplified_dictionary(out_file_path, index, node_list, indent_output, output_encoding)
 
+    # Useless since new Orphadata generation
     # Remove orphacode past the main one (/!\ NO QUALITY CHECK)
-    node_list = remove_unwanted_orphacode(node_list)
+    # node_list = remove_unwanted_orphacode(node_list)
 
     # Regroup textual_info for product1
     if "product1" in file_stem:
@@ -506,6 +525,17 @@ def output_process(out_file_path, index, node_list, elastic, indent_output, outp
 if __name__ == "__main__":
     start = time.time()
 
+    # Some config check
+    if indent_output:
+        if upload:
+            print("ERROR: Bad configuration, should be mutually exclusive:\n"
+                  "\tindent_output:", indent_output, "\n\tupload:", upload)
+        if make_schema:
+            print("ERROR: Bad configuration, should be mutually exclusive:\n"
+                  "\tindent_output:", indent_output, "\n\tmake_schema:", make_schema)
+        if upload or make_schema:
+            exit(1)
+
     if upload:
         elastic = Elasticsearch(hosts=["localhost"])
     else:
@@ -533,7 +563,6 @@ if __name__ == "__main__":
                                                              indent_output, output_encoding)
         else:
             process(file, out_folder, elastic, input_encoding, indent_output, output_encoding)
-
 
     # print("Example query for 1 disorder in 1 classification")
     # print("http://localhost:9200/classification_orphanet/_search?q=ORPHAcode:558%20AND%20hch_id:147")

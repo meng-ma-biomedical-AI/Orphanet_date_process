@@ -127,6 +127,9 @@ def yaml_schema(out_folder, in_file_path, output_encoding):
     # print(data)
     schema = format_schema(data, in_file_path)
 
+    schema_dir = pathlib.Path(out_folder / "schema")
+    if not schema_dir.exists():
+        schema_dir.mkdir()
     out_file_path = pathlib.Path(str(out_folder) + "\\schema\\" +
                                  str(in_file_path.stem) + ".yaml")
 
@@ -143,20 +146,19 @@ if __name__ == "__main__":
     start = time.time()
 
     folders = list()
-    parse_folder = False
+    parse_folder = True
 
     # single JSON
-    in_file_path = pathlib.Path("data_out\\produit3_classification\\en_product3_146.json")
+    in_file_path = pathlib.Path("data_out\\product3\\en_product3_146.json")
 
     # List of folder of JSON
-    folders.append(pathlib.Path("data_out\\produit1"))
-    folders.append(pathlib.Path("data_out\\produit3_classification"))
-    folders.append(pathlib.Path("data_out\\produit4_HPO"))
-    folders.append(pathlib.Path("data_out\\produit6_gene"))
-    folders.append(pathlib.Path("data_out\\produit9_age"))
-    folders.append(pathlib.Path("data_out\\produit9_epidemio"))
+    # folders.append(pathlib.Path("data_out\\product1"))
+    # folders.append(pathlib.Path("data_out\\product3"))
+    # folders.append(pathlib.Path("data_out\\product4"))
+    # folders.append(pathlib.Path("data_out\\product6"))
+    # folders.append(pathlib.Path("data_out\\product9"))
 
-    # folders.append(pathlib.Path("data_out\\"))
+    folders.append(pathlib.Path("data_out\\"))
 
     # Out folder
     out_folder = pathlib.Path("data_out")
@@ -167,7 +169,7 @@ if __name__ == "__main__":
         # Process files in designated folders
         for folder in folders:
             for file in folder.iterdir():
-                # print(file)
+                print(file)
                 if file.stem.startswith("en") or file.stem.startswith("new"):
                     text.append(yaml_schema(out_folder, file, output_encoding))
 
