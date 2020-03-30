@@ -515,8 +515,12 @@ def output_process(out_file_path, index, node_list, elastic, indent_output, outp
         print()
 
     if make_schema:
-        if out_file_path.stem.startswith("en") or "product6" in out_file_path.stem:
-            yaml_schema_descriptor.yaml_schema(out_folder, out_file_path, output_encoding)
+        if out_file_path.stem.startswith("en"):
+            if "product3" in out_file_path.stem:
+                if out_file_path.stem.endswith("146"):
+                    yaml_schema_descriptor.yaml_schema(out_folder, out_file_path, output_encoding)
+            else:
+                yaml_schema_descriptor.yaml_schema(out_folder, out_file_path, output_encoding)
             print()
 
 ########################################################################################################################

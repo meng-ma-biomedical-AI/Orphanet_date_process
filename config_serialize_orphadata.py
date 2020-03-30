@@ -39,7 +39,7 @@ input_encoding = "auto"
 indent_output = False
 
 # Upload to elasticsearch node
-upload = False
+upload = True
 
 # Make the yaml schema description
 make_schema = True
