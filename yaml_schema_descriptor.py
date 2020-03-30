@@ -96,14 +96,23 @@ def format_schema(data, in_file_path):
     main_indent = " " * 4
 
     name = in_file_path.stem
+    text = ""
 
-    text = '{}:\n' \
-           '  type: object\n' \
-           '  properties:\n'.format(name)
+    if "product3" in name:
+        text = "{}product3_classification_list:\n".format(main_indent) + \
+               "{}  type: array\n".format(main_indent) + \
+               "{}  items:\n".format(main_indent) + \
+               "{}    $ref: \"#/components/schemas/product3_classification\"".format(main_indent)
 
-    var_text = recursive_format_schema(data, main_indent)
+    text += '{}{}:\n'.format(main_indent, name) + \
+            '{}  type: object\n'.format(main_indent) + \
+            '{}  properties:\n'.format(main_indent)
 
-    required = '  required:\n    - ORPHAcode'
+    indent = main_indent * 2
+
+    var_text = recursive_format_schema(data, indent)
+    required = '{}  required:\n'.format(main_indent) + \
+               '{}  - ORPHAcode'.format(main_indent)
 
     schema = text + var_text + required
     return schema
@@ -149,12 +158,12 @@ if __name__ == "__main__":
     parse_folder = True
 
     # single JSON
-    in_file_path = pathlib.Path("data_out\\product3\\en_product3_146.json")
+    # in_file_path = pathlib.Path("data_out\\product3\\en_product3_146.json")
 
     # List of folder of JSON
     # folders.append(pathlib.Path("data_out\\product1"))
     # folders.append(pathlib.Path("data_out\\product3"))
-    # folders.append(pathlib.Path("data_out\\product4"))
+    folders.append(pathlib.Path("data_out\\product4"))
     # folders.append(pathlib.Path("data_out\\product6"))
     # folders.append(pathlib.Path("data_out\\product9"))
 
@@ -169,8 +178,9 @@ if __name__ == "__main__":
         # Process files in designated folders
         for folder in folders:
             for file in folder.iterdir():
-                print(file)
+                # print(file)
                 if file.stem.startswith("en") or file.stem.startswith("new"):
+                    print(file)
                     text.append(yaml_schema(out_folder, file, output_encoding))
 
     else:
