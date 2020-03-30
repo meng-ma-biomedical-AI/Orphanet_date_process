@@ -102,7 +102,7 @@ def format_schema(data, in_file_path):
         text = "{}product3_classification_list:\n".format(main_indent) + \
                "{}  type: array\n".format(main_indent) + \
                "{}  items:\n".format(main_indent) + \
-               "{}    $ref: \"#/components/schemas/product3_classification\"".format(main_indent)
+               "{}    $ref: \"#/components/schemas/product3_classification\"\n".format(main_indent)
 
     text += '{}{}:\n'.format(main_indent, name) + \
             '{}  type: object\n'.format(main_indent) + \
