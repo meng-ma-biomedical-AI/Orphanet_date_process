@@ -2,7 +2,7 @@ import pathlib
 import json
 import time
 
-from config_serialize_orphadata import *
+from config_orphadata_elastic import *
 
 
 def recursive_non_empty(elem):

@@ -6,7 +6,7 @@ import pathlib
 import time
 
 
-import serialize_orphadata
+import orphadata_elastic
 
 
 class Node(dict):
@@ -199,7 +199,7 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     hch_id = file_stem.split("_")[2]
 
     # Parse source xml file
-    xml_dict = serialize_orphadata.parse_file(in_file_path, input_encoding)
+    xml_dict = orphadata_elastic.parse_file(in_file_path, input_encoding)
 
     start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber
@@ -211,4 +211,4 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     print("convert:", time.time() - start, "s")
 
     # Output/upload function
-    serialize_orphadata.output_process(out_file_path, index, node_list, elastic, indent_output, output_encoding)
+    orphadata_elastic.output_process(out_file_path, index, node_list, elastic, indent_output, output_encoding)

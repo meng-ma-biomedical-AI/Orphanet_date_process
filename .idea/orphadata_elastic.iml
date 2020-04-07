@@ -6,7 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/data_in2" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (Serialize_Orphapackets)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (orphadata_elastic)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

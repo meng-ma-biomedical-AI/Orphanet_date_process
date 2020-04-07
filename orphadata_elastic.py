@@ -6,13 +6,11 @@ import json
 import pathlib
 import time
 
-from elasticsearch import Elasticsearch
+import elasticsearch
 
-# from xml.dom import minidom
-
-import Orphadata_classifications
+import orphadata_classifications
 import yaml_schema_descriptor
-from config_serialize_orphadata import *
+from config_orphadata_elastic import *
 
 
 def parse_file(in_file_path, input_encoding):
@@ -433,7 +431,11 @@ def upload_es(elastic, processed_json_file):
     """
     start = time.time()
     full_file = processed_json_file.read_text(encoding="UTF-8")
-    elastic.bulk(body=full_file)
+    try:
+        elastic.bulk(body=full_file)
+    except elasticsearch.exceptions.ConnectionError:
+        print("ERROR: elasticsearch node unavailable")
+        exit(1)
     print("upload ES:", time.time() - start, "s")
 
 
@@ -541,7 +543,7 @@ if __name__ == "__main__":
             exit(1)
 
     if upload:
-        elastic = Elasticsearch(hosts=["localhost"])
+        elastic = elasticsearch.Elasticsearch(hosts=["localhost"])
     else:
         elastic = False
     print()
@@ -554,7 +556,7 @@ if __name__ == "__main__":
                 # this line will be deprecated in future Orphadata generation
                 if not str(file.stem).endswith("_status"):
                     if "product3" in file.stem:
-                        Orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
+                        orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
                                                                          indent_output, output_encoding)
                     else:
                         process(file, out_folder, elastic, input_encoding, indent_output, output_encoding)
@@ -563,7 +565,7 @@ if __name__ == "__main__":
         # Process single file
         file = in_file_path
         if "product3" in file.stem:
-            Orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
+            orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
                                                              indent_output, output_encoding)
         else:
             process(file, out_folder, elastic, input_encoding, indent_output, output_encoding)

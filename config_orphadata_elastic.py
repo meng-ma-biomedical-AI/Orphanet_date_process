@@ -8,10 +8,10 @@ in_file_path = pathlib.Path("data_in\\data_xml\\Orphanet classifications\\en_pro
 folders = list()
 
 # Product 1 cross-reference
-folders.append(pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures"))
+# folders.append(pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures"))
 
 # Product 3 Classifications
-folders.append(pathlib.Path("data_in\\data_xml\\Orphanet classifications"))
+# folders.append(pathlib.Path("data_in\\data_xml\\Orphanet classifications"))
 
 # Product 4 HPO, phenotype
 folders.append(pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders"))
@@ -39,7 +39,7 @@ input_encoding = "auto"
 indent_output = False
 
 # Upload to elasticsearch node
-upload = True
+upload = False
 
 # Make the yaml schema description
 make_schema = True
