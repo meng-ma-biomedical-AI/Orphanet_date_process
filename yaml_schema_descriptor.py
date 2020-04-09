@@ -92,17 +92,16 @@ def recursive_format_schema(data, main_indent):
     return prop_list
 
 
-def format_schema(data, in_file_path):
+def format_schema(data, name):
     main_indent = " " * 4
 
-    name = in_file_path.stem
     text = ""
 
     if "product3" in name:
         text = "{}product3_classification_list:\n".format(main_indent) + \
                "{}  type: array\n".format(main_indent) + \
                "{}  items:\n".format(main_indent) + \
-               "{}    $ref: \"#/components/schemas/product3_classification\"\n".format(main_indent)
+               "{}    $ref: \"#/components/schemas/product3\"\n".format(main_indent)
 
     text += '{}{}:\n'.format(main_indent, name) + \
             '{}  type: object\n'.format(main_indent) + \
@@ -134,16 +133,23 @@ def yaml_schema(out_folder, in_file_path, output_encoding):
 
     data = input_type(in_file_path, output_encoding)
     # print(data)
-    schema = format_schema(data, in_file_path)
+
+    name = in_file_path.stem
+    if name.startswith("en_"):
+        name = name[3:]
+        if "product3" in name:
+            name = "product3"
+
+    schema = format_schema(data, name)
 
     schema_dir = pathlib.Path(out_folder / "schema")
     if not schema_dir.exists():
         schema_dir.mkdir()
     out_file_path = pathlib.Path(str(out_folder) + "\\schema\\" +
-                                 str(in_file_path.stem) + ".yaml")
+                                 str(name) + ".yaml")
 
-    ref_text = "  {}:\n".format(in_file_path.stem)
-    ref_text += "    $ref: \"schema/{}.yaml#/{}\"".format(in_file_path.stem, in_file_path.stem)
+    ref_text = "  {}:\n".format(name)
+    ref_text += "    $ref: \"schema/{}.yaml#/{}\"".format(name, name)
 
     output_schema(out_file_path, schema)
     print("yaml_schema", time.time() - start, "s")
@@ -188,7 +194,7 @@ if __name__ == "__main__":
         file = in_file_path
         text.append(yaml_schema(out_folder, file, output_encoding))
 
-    [print(elem) for elem in text if elem is not None]
+    # [print(elem) for elem in text if elem is not None]
 
     print()
     print(time.time() - start, "s total")
