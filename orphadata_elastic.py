@@ -556,8 +556,9 @@ if __name__ == "__main__":
                 # this line will be deprecated in future Orphadata generation
                 if not str(file.stem).endswith("_status"):
                     if "product3" in file.stem:
+                        hch_dict = orphadata_classifications.parse_plator(pat_hch_path)
                         orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
-                                                                         indent_output, output_encoding)
+                                                                         indent_output, output_encoding, hch_dict)
                     else:
                         process(file, out_folder, elastic, input_encoding, indent_output, output_encoding)
 
@@ -565,8 +566,9 @@ if __name__ == "__main__":
         # Process single file
         file = in_file_path
         if "product3" in file.stem:
+            hch_dict = orphadata_classifications.parse_plator(pat_hch_path)
             orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
-                                                             indent_output, output_encoding)
+                                                             indent_output, output_encoding, hch_dict)
         else:
             process(file, out_folder, elastic, input_encoding, indent_output, output_encoding)
 

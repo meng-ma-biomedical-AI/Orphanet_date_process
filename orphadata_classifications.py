@@ -19,6 +19,27 @@ class Node(dict):
         self["childs"] = []
 
 
+def parse_plator(pat_hch_path):
+    """
+    Parse PatHch.Txt (plator extract) to create a dictionary to convert hch_id to hch_tag
+
+    :param pat_hch_path:
+    :return: hch_dict: dictionary to convert hch_id to hch_tag
+    """
+    hch_dict = {}
+    with open(pat_hch_path,"r") as ini:
+        header = ini.readline()[:-1].split("\t")
+        hch_id_index = header.index("HchId")
+        hch_tag_index = header.index("HchTag (english label)")
+        lng_index = header.index("Lng")
+        for line in ini:
+            data = line[:-1].split("\t")
+            if data[lng_index] == "en":
+                hch_dict[data[hch_id_index]] = data[hch_tag_index]
+    # print(hch_dict)
+    return hch_dict
+
+
 def simplify_node_list(xml_dict):
     """
     Recursively simplify the xml structure for homogeneity
@@ -169,13 +190,32 @@ def convert(hch_id, xml_dict, rename_orpha):
         node_list = json.loads(node_list)
 
     # print(node_list)
-    print(len(node_list))
+    print(len(node_list), "disorder concepts")
 
     print(time.time() - start, "s")
     return node_list
 
 
-def process_classification(in_file_path, out_folder, elastic, input_encoding, indent_output, output_encoding):
+def append_hch_tag(node_list, hch_dict):
+    """
+    Append HchTag to each node of the classification
+
+    :param node_list: list of disorder object
+    :param hch_dict: dictionary to convert hch_id to hch_tag
+    :return: node_list with hch_tag
+    """
+    try:
+        hch_tag = hch_dict[node_list[0]["hch_id"]]
+    except KeyError:
+        hch_tag = ""
+
+    for node in node_list:
+        node["hch_tag"] = hch_tag
+
+    return node_list
+
+
+def process_classification(in_file_path, out_folder, elastic, input_encoding, indent_output, output_encoding, hch_dict):
     """
     Complete Orphadata XML to Elasticsearch JSON process
 
@@ -185,10 +225,9 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     :param input_encoding:
     :param indent_output: indent output file (True for visual data control, MUST be False for elasticsearch upload)
     :param output_encoding:
+    :param hch_dict: dictionary to convert hch_id to hch_tag
     :return: None (Write file (mandatory) / upload to elastic cluster)
     """
-
-    start = time.time()
 
     file_stem = in_file_path.stem
     index = file_stem
@@ -207,6 +246,8 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
 
     # Output this simplified dictionnary for debug purpose
     node_list = convert(hch_id, xml_dict, rename_orpha)
+
+    node_list = append_hch_tag(node_list, hch_dict)
 
     print("convert:", time.time() - start, "s")
 

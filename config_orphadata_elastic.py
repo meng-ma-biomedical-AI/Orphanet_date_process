@@ -8,20 +8,21 @@ in_file_path = pathlib.Path("data_in\\data_xml\\Orphanet classifications\\en_pro
 folders = list()
 
 # Product 1 cross-reference
-folders.append(pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures"))
+# folders.append(pathlib.Path("data_in\\data_xml\\Disorders cross referenced with other nomenclatures"))
 
 # Product 3 Classifications
+pat_hch_path = pathlib.Path("data_in\\PatHch.Txt")
 folders.append(pathlib.Path("data_in\\data_xml\\Orphanet classifications"))
 
 # Product 4 HPO, phenotype
-folders.append(pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders"))
+# folders.append(pathlib.Path("data_in\\data_xml\\Phenotypes associated with rare disorders"))
 
 # Product 6 Disorder => Gene, (output also Gene => Disorder)
-folders.append(pathlib.Path("data_in\\data_xml\\Disorders with their associated genes"))
+# folders.append(pathlib.Path("data_in\\data_xml\\Disorders with their associated genes"))
 
 # Product 9
-folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology"))
-folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history"))
+# folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology"))
+# folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history"))
 
 out_folder = pathlib.Path("data_out")
 
