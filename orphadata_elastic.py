@@ -51,7 +51,7 @@ def parse_file(in_file_path, input_encoding):
     xml_dict = file_dict["JDBOR"][key]
     # print(xml_dict)
     # DumpS then loadS: convert ordered dict to dict
-    xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
+    # xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
     print("parsing:", time.time() - start)
     return xml_dict
 
