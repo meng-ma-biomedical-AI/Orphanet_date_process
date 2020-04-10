@@ -50,8 +50,8 @@ def parse_file(in_file_path, input_encoding):
 
     xml_dict = file_dict["JDBOR"][key]
     # print(xml_dict)
-    # DumpS then loadS: BAD WAY to convert ordered dict to dict: need fix some day
-    # xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
+    # DumpS then loadS: convert ordered dict to dict
+    xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
     print("parsing:", time.time() - start)
     return xml_dict
 
@@ -556,9 +556,8 @@ if __name__ == "__main__":
                 # this line will be deprecated in future Orphadata generation
                 if not str(file.stem).endswith("_status"):
                     if "product3" in file.stem:
-                        hch_dict = orphadata_classifications.parse_plator(pat_hch_path)
                         orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
-                                                                         indent_output, output_encoding, hch_dict)
+                                                                         indent_output, output_encoding)
                     else:
                         process(file, out_folder, elastic, input_encoding, indent_output, output_encoding)
 
@@ -566,9 +565,8 @@ if __name__ == "__main__":
         # Process single file
         file = in_file_path
         if "product3" in file.stem:
-            hch_dict = orphadata_classifications.parse_plator(pat_hch_path)
             orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
-                                                             indent_output, output_encoding, hch_dict)
+                                                             indent_output, output_encoding)
         else:
             process(file, out_folder, elastic, input_encoding, indent_output, output_encoding)
 

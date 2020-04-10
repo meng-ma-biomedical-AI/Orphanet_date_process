@@ -1,8 +1,7 @@
 # orphadata_elastic
 
 Download manually the Orphadata xml or use some scripts
-from download_new_orpha.bat
-AND download PatHch.Txt from plator for the classification tag
+from download_new_orpha.bat (only working from copy/paste command line)
 
 Settings: [config_orphadata_elastic.py](./config_orphadata_elastic.py)
 
