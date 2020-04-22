@@ -39,7 +39,8 @@ def parse_file(in_file_path, input_encoding):
             file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
 
     key = list(file_dict["JDBOR"].keys())
-    key.pop(key.index("Availability"))
+    if "Availability" in key:
+        key.pop(key.index("Availability"))
     # print(key)
     if len(key) == 1:
         key = key[0]
@@ -554,12 +555,14 @@ if __name__ == "__main__":
             for file in folder.iterdir():
                 # Test to remove "product4_HPO_status" from process
                 # this line will be deprecated in future Orphadata generation
-                if not str(file.stem).endswith("_status"):
-                    if "product3" in file.stem:
-                        orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
-                                                                         indent_output, output_encoding)
-                    else:
-                        process(file, out_folder, elastic, input_encoding, indent_output, output_encoding)
+                if not file.is_dir():
+                    if file.suffix == ".xml":
+                        if not str(file.stem).endswith("_status"):
+                            if "product3" in file.stem:
+                                orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
+                                                                                 indent_output, output_encoding)
+                            else:
+                                process(file, out_folder, elastic, input_encoding, indent_output, output_encoding)
 
     else:
         # Process single file
