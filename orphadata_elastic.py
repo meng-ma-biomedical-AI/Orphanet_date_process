@@ -21,10 +21,11 @@ def parse_file(in_file_path, input_encoding):
     """
     start = time.time()
 
-    if input_encoding.lower() == "auto":
-        with open(in_file_path, "rb") as ini:
-            xml_declaration = ini.readline()
+    with open(in_file_path, "rb") as ini:
+        xml_declaration = ini.readline()
+        date = ini.readline()
 
+    if input_encoding.lower() == "auto":
         xml_declaration = xml_declaration.decode()
         pattern = re.compile("encoding=\"(.*)\"[ ?]")
         encoding = pattern.search(xml_declaration).group(1)
@@ -38,6 +39,9 @@ def parse_file(in_file_path, input_encoding):
             print(input_encoding, "(from config file)")
             file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
 
+    date_regex = re.compile("date=\"(.*)\" version")
+    date = date_regex.search(date.decode()).group(1)
+    print("JDBOR extract", date)
     key = list(file_dict["JDBOR"].keys())
     if "Availability" in key:
         key.pop(key.index("Availability"))
@@ -54,7 +58,7 @@ def parse_file(in_file_path, input_encoding):
     # DumpS then loadS: convert ordered dict to dict
     # xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
     print("parsing:", time.time() - start)
-    return xml_dict
+    return xml_dict, date
 
 
 def simplify_xml_list(xml_dict):
@@ -212,7 +216,7 @@ def remove_unwanted_orphacode(node_list):
     return node_list
 
 
-def clean_textual_info(node_list):
+def clean_textual_info(node_list, file_stem):
     """
     For product 1 (cross references)
 
@@ -234,7 +238,10 @@ def clean_textual_info(node_list):
                 for text in disorder["TextualInformation"]:
                     if text["TextSection"] is not None:
                         temp = {}
-                        key = text["TextSection"][0]["TextSectionType"]["Name"]
+                        if "orphanomenclature" in file_stem:
+                            key = "Definition"
+                        else:
+                            key = text["TextSection"][0]["TextSectionType"]["Name"]
                         temp[key] = text["TextSection"][0]["Contents"]
                         textual_information_list.append(temp)
             if textual_information_list:
@@ -440,6 +447,19 @@ def upload_es(elastic, processed_json_file):
     print("upload ES:", time.time() - start, "s")
 
 
+def insert_date(node_list, extract_date):
+    """
+    Append the JDBOR extract date to each disorder entry
+
+    :param node_list: list of disorder objects
+    :param extract_date: JDBOR extract date
+    :return: node_list with extract date
+    """
+    for node in node_list:
+        node["date"] = extract_date
+    return node_list
+
+
 def process(in_file_path, out_folder, elastic, input_encoding, indent_output, output_encoding):
     """
     Complete Orphadata XML to Elasticsearch JSON process
@@ -460,7 +480,7 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     out_file_path = out_folder / out_file_name
 
     # Parse source xml file
-    xml_dict = parse_file(in_file_path, input_encoding)
+    xml_dict, extract_date = parse_file(in_file_path, input_encoding)
 
     start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber
@@ -475,8 +495,8 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     # node_list = remove_unwanted_orphacode(node_list)
 
     # Regroup textual_info for product1
-    if "product1" in file_stem:
-        node_list = clean_textual_info(node_list)
+    if "product1" in file_stem or "orphanomenclature" in file_stem:
+        node_list = clean_textual_info(node_list, file_stem)
 
     # Remap object with single "Name" to string
     node_list = clean_single_name_object(node_list)
@@ -489,6 +509,10 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
         index_gene = out_file_path_gene.stem
         # Output/upload function
         output_process(out_file_path_gene, index_gene, node_list_gene, elastic, indent_output, output_encoding)
+
+    # For RDcode API, insert date
+    if "orphanomenclature" in file_stem or "orpha_icd10_" in file_stem:
+        node_list = insert_date(node_list, extract_date)
 
     print("convert:", time.time() - start, "s")
 
