@@ -24,6 +24,7 @@ folders = list()
 # folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology"))
 # folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history"))
 
+# RDcode
 folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN"))
 
 out_folder = pathlib.Path("data_out")
@@ -39,10 +40,10 @@ input_encoding = "auto"
 
 
 # Indent output file (True for visual data control, need to be False for elasticsearch upload)
-indent_output = True
+indent_output = False
 
 # Upload to elasticsearch node
-upload = False
+upload = True
 
 # Make the yaml schema description
 make_schema = False

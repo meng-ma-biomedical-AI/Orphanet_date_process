@@ -221,6 +221,7 @@ def clean_textual_info(node_list, file_stem):
     For product 1 (cross references)
 
     :param node_list: list of disorder
+    :param file_stem: name of file without extension
     :return: list of disorder with reworked textual info
     """
     # for each disorder object in the file
@@ -245,7 +246,11 @@ def clean_textual_info(node_list, file_stem):
                         temp[key] = text["TextSection"][0]["Contents"]
                         textual_information_list.append(temp)
             if textual_information_list:
-                disorder["TextualInformation"] = textual_information_list
+                if "orphanomenclature" in file_stem:
+                    disorder["Definition"] = textual_information_list[0]["Definition"]
+                    disorder.pop("TextualInformation")
+                else:
+                    disorder["TextualInformation"] = textual_information_list
             else:
                 disorder["TextualInformation"] = None
         else:
@@ -456,7 +461,30 @@ def insert_date(node_list, extract_date):
     :return: node_list with extract date
     """
     for node in node_list:
-        node["date"] = extract_date
+        node["Date"] = extract_date
+    return node_list
+
+
+def rename_terms(node_list, file_stem):
+    """
+    Rename some terms for RDcode
+
+    :param node_list: list of disorder objects
+    :param file_stem: file name without extension
+    :return: node_list with renamed terms
+    """
+    node_list = json.dumps(node_list)
+
+    patterns = {"\"Totalstatus\":": "\"Status\":",
+                "\"Name\":": "\"Preferred term\":",
+                "\"PreferredTerm\":": "\"Preferred term\":",
+                }
+
+    for key, value in patterns.items():
+        pattern = re.compile(key)
+        node_list = pattern.sub(value, node_list)
+
+    node_list = json.loads(node_list)
     return node_list
 
 
@@ -513,6 +541,7 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     # For RDcode API, insert date
     if "orphanomenclature" in file_stem or "orpha_icd10_" in file_stem:
         node_list = insert_date(node_list, extract_date)
+        node_list = rename_terms(node_list, file_stem)
 
     print("convert:", time.time() - start, "s")
 
