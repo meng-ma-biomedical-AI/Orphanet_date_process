@@ -159,7 +159,7 @@ def simplify(xml_dict, rename_orpha):
     pattern = re.compile("List\":")
     node_list = pattern.sub("\":", node_list)
     if rename_orpha:
-        pattern = re.compile("OrphaNumber")
+        pattern = re.compile("OrphaNumber", re.IGNORECASE)
         node_list = pattern.sub("ORPHAcode", node_list)
     node_list = json.loads(node_list)
 
@@ -478,6 +478,9 @@ def rename_terms(node_list, file_stem):
     patterns = {"\"Totalstatus\":": "\"Status\":",
                 "\"Name\":": "\"Preferred term\":",
                 "\"PreferredTerm\":": "\"Preferred term\":",
+                "\"GroupOfType\":": "\"GroupType\":",
+                "\"ExpertLink\":": "\"OrphanetURL\":",
+                "\"DisorderType\":": "\"Type\":",
                 }
 
     for key, value in patterns.items():
