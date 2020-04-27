@@ -481,6 +481,8 @@ def rename_terms(node_list, file_stem):
                 "\"GroupOfType\":": "\"GroupType\":",
                 "\"ExpertLink\":": "\"OrphanetURL\":",
                 "\"DisorderType\":": "\"Type\":",
+                "\"ExternalReference\":": "\"Code ICD\":",
+                "\"Reference\":": "\"Code ICD10\":",
                 }
 
     for key, value in patterns.items():
@@ -488,6 +490,20 @@ def rename_terms(node_list, file_stem):
         node_list = pattern.sub(value, node_list)
 
     node_list = json.loads(node_list)
+    return node_list
+
+
+def rework_ICD(node_list):
+    """
+    remove "source" from ICD external reference
+
+    :param node_list:
+    :return: node_list with reworked ICD reference
+    """
+    for node in node_list:
+        if node["Code ICD"]:
+            for index, ref in enumerate(node["Code ICD"]):
+                node["Code ICD"][index].pop("Source")
     return node_list
 
 
@@ -545,6 +561,8 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     if "orphanomenclature" in file_stem or "orpha_icd10_" in file_stem:
         node_list = insert_date(node_list, extract_date)
         node_list = rename_terms(node_list, file_stem)
+    if "orpha_icd10_" in file_stem:
+        node_list = rework_ICD(node_list)
 
     print("convert:", time.time() - start, "s")
 
