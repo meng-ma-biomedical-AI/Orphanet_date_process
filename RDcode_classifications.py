@@ -111,11 +111,12 @@ def convert(hch_id, xml_dict):
     ]
     """
     start = time.time()
+    disorder = {'ORPHAcode': xml_dict["ORPHAcode"], 'ExpertLink': xml_dict["ExpertLink"], 'Name': xml_dict["Name"]}
+    ClassificationNodeChild = xml_dict["ClassificationNode"][0]["ClassificationNodeChild"]
 
-    hch_tag = xml_dict["Name"]
+    xml_dict = {"Disorder": disorder, "ClassificationNodeChild": ClassificationNodeChild}
 
-    xml_dict = xml_dict["ClassificationNodeRoot"][0]
-
+    hch_tag = xml_dict["Disorder"]["Name"]
     parent = xml_dict["Disorder"]["ORPHAcode"]
 
     node_dict = {}
@@ -163,6 +164,12 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     """
 
     file_stem = in_file_path.stem.lower()
+    file_stem_split = file_stem.split("_")
+    # remove classification name from input path
+    # orphaclassification_146_rare_cardiac_disease_en
+    # TO
+    # orphaclassification_146_en
+    file_stem = "{}_{}_{}".format(file_stem_split[0], file_stem_split[1], file_stem_split[-1])
     index = config.index_prefix
     if index:
         index = "{}_{}".format(index, file_stem)
@@ -172,7 +179,7 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     out_file_name = index + ".json"
     out_file_path = out_folder / out_file_name
 
-    hch_id = file_stem.split("_")[2]
+    hch_id = file_stem.split("_")[1]
 
     # Parse source xml file
     xml_dict, extract_date = orphadata_elastic.parse_file(in_file_path, input_encoding)

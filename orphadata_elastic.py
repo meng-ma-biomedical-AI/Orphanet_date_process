@@ -9,6 +9,7 @@ import time
 import elasticsearch
 
 import data_RDcode
+import RDcode_classifications
 import orphadata_classifications
 import yaml_schema_descriptor
 import config_orphadata_elastic as config
@@ -439,7 +440,11 @@ def upload_es(elastic, processed_json_file):
     start = time.time()
     full_file = processed_json_file.read_text(encoding="UTF-8")
     try:
-        elastic.bulk(body=full_file)
+        ES_response = elastic.bulk(body=full_file)
+        if ES_response["errors"]:
+            print("ES upload ERROR")
+            print(ES_response["items"][0]["index"]["error"])
+            exit(1)
     except elasticsearch.exceptions.ConnectionError:
         print("ERROR: elasticsearch node unavailable")
         exit(1)
@@ -466,7 +471,7 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
         index = file_stem
     print("####################")
     print(file_stem)
-    out_file_name = file_stem + ".json"
+    out_file_name = index + ".json"
     out_file_path = out_folder / out_file_name
 
     # Parse source xml file
@@ -584,6 +589,13 @@ if __name__ == "__main__":
                                                                                  config.input_encoding,
                                                                                  config.indent_output,
                                                                                  config.output_encoding)
+                            elif "ORPHAclassification" in file.stem:
+                                RDcode_classifications.process_classification(file,
+                                                                              config.out_folder,
+                                                                              elastic,
+                                                                              config.input_encoding,
+                                                                              config.indent_output,
+                                                                              config.output_encoding)
                             else:
                                 process(file, config.out_folder, elastic,
                                         config.input_encoding, config.indent_output, config.output_encoding)
@@ -594,6 +606,9 @@ if __name__ == "__main__":
         if "product3" in file.stem:
             orphadata_classifications.process_classification(file, config.out_folder, elastic, config.input_encoding,
                                                              config.indent_output, config.output_encoding)
+        elif "ORPHAclassification" in file.stem:
+            RDcode_classifications.process_classification(file, config.out_folder, elastic, config.input_encoding,
+                                                          config.indent_output, config.output_encoding)
         else:
             process(file, config.out_folder, elastic,
                     config.input_encoding, config.indent_output, config.output_encoding)
