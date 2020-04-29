@@ -26,6 +26,7 @@ folders = list()
 
 # RDcode
 folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN"))
+folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN"))
 
 out_folder = pathlib.Path("data_out")
 
@@ -38,6 +39,9 @@ input_encoding = "auto"
 
 ######################################################## OUTPUT ########################################################
 
+# The prefix MUST be 'RDcode' for RDcode API
+# Empty string or False otherwise
+index_prefix = "RDcode"
 
 # Indent output file (True for visual data control, need to be False for elasticsearch upload)
 indent_output = False

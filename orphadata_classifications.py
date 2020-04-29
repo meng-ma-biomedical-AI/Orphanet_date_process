@@ -171,7 +171,7 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     hch_id = file_stem.split("_")[2]
 
     # Parse source xml file
-    xml_dict = orphadata_elastic.parse_file(in_file_path, input_encoding)
+    xml_dict, extract_date = orphadata_elastic.parse_file(in_file_path, input_encoding)
 
     start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber

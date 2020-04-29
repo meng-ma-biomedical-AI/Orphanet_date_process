@@ -11,7 +11,7 @@ import elasticsearch
 import data_RDcode
 import orphadata_classifications
 import yaml_schema_descriptor
-from config_orphadata_elastic import *
+import config_orphadata_elastic as config
 
 
 def parse_file(in_file_path, input_encoding):
@@ -425,7 +425,7 @@ def output_elasticsearch_file(out_file_path, index, node_list, indent_output, ou
         for val in node_list:
             out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
             out.write(json.dumps(val, indent=indent, ensure_ascii=False) + "\n")
-    print("writing:", time.time() - start)
+    print("writing:", time.time() - start, "s")
 
 
 def upload_es(elastic, processed_json_file):
@@ -459,7 +459,11 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     :return: None (Write file (mandatory) / upload to elastic cluster)
     """
     file_stem = in_file_path.stem.lower()
-    index = file_stem
+    index = config.index_prefix
+    if index:
+        index = "{}_{}".format(index, file_stem)
+    else:
+        index = file_stem
     print("####################")
     print(file_stem)
     out_file_name = file_stem + ".json"
@@ -532,13 +536,13 @@ def output_process(out_file_path, index, node_list, elastic, indent_output, outp
         upload_es(elastic, out_file_path)
         print()
 
-    if make_schema:
+    if config.make_schema:
         if out_file_path.stem.startswith("en"):
             if "product3" in out_file_path.stem:
                 if out_file_path.stem.endswith("146"):
-                    yaml_schema_descriptor.yaml_schema(out_folder, out_file_path, output_encoding)
+                    yaml_schema_descriptor.yaml_schema(config.out_folder, out_file_path, output_encoding)
             else:
-                yaml_schema_descriptor.yaml_schema(out_folder, out_file_path, output_encoding)
+                yaml_schema_descriptor.yaml_schema(config.out_folder, out_file_path, output_encoding)
             print()
 
 ########################################################################################################################
@@ -548,25 +552,25 @@ if __name__ == "__main__":
     start = time.time()
 
     # Some config check
-    if indent_output:
-        if upload:
+    if config.indent_output:
+        if config.upload:
             print("ERROR: Bad configuration, should be mutually exclusive:\n"
-                  "\tindent_output:", indent_output, "\n\tupload:", upload)
-        if make_schema:
+                  "\tindent_output:", config.indent_output, "\n\tupload:", config.upload)
+        if config.make_schema:
             print("ERROR: Bad configuration, should be mutually exclusive:\n"
-                  "\tindent_output:", indent_output, "\n\tmake_schema:", make_schema)
-        if upload or make_schema:
+                  "\tindent_output:", config.indent_output, "\n\tmake_schema:", config.make_schema)
+        if config.upload or config.make_schema:
             exit(1)
 
-    if upload:
+    if config.upload:
         elastic = elasticsearch.Elasticsearch(hosts=["localhost"])
     else:
         elastic = False
     print()
 
-    if parse_folder:
+    if config.parse_folder:
         # Process files in designated folders
-        for folder in folders:
+        for folder in config.folders:
             for file in folder.iterdir():
                 # Test to remove "product4_HPO_status" from process
                 # this line will be deprecated in future Orphadata generation
@@ -574,19 +578,25 @@ if __name__ == "__main__":
                     if file.suffix == ".xml":
                         if not str(file.stem).endswith("_status"):
                             if "product3" in file.stem:
-                                orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
-                                                                                 indent_output, output_encoding)
+                                orphadata_classifications.process_classification(file,
+                                                                                 config.out_folder,
+                                                                                 elastic,
+                                                                                 config.input_encoding,
+                                                                                 config.indent_output,
+                                                                                 config.output_encoding)
                             else:
-                                process(file, out_folder, elastic, input_encoding, indent_output, output_encoding)
+                                process(file, config.out_folder, elastic,
+                                        config.input_encoding, config.indent_output, config.output_encoding)
 
     else:
         # Process single file
-        file = in_file_path
+        file = config.in_file_path
         if "product3" in file.stem:
-            orphadata_classifications.process_classification(file, out_folder, elastic, input_encoding,
-                                                             indent_output, output_encoding)
+            orphadata_classifications.process_classification(file, config.out_folder, elastic, config.input_encoding,
+                                                             config.indent_output, config.output_encoding)
         else:
-            process(file, out_folder, elastic, input_encoding, indent_output, output_encoding)
+            process(file, config.out_folder, elastic,
+                    config.input_encoding, config.indent_output, config.output_encoding)
 
     # print("Example query for 1 disorder in 1 classification")
     # print("http://localhost:9200/classification_orphanet/_search?q=ORPHAcode:558%20AND%20hch_id:147")
