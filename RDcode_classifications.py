@@ -5,6 +5,7 @@ import json
 import pathlib
 import time
 
+import data_RDcode
 import orphadata_elastic
 import config_orphadata_elastic as config
 
@@ -190,6 +191,8 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     xml_dict = orphadata_elastic.simplify(xml_dict, rename_orpha)
 
     node_list = convert(hch_id, xml_dict)
+
+    node_list = data_RDcode.insert_date(node_list, extract_date)
 
     print("convert:", time.time() - start, "s")
 

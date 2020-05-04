@@ -507,7 +507,7 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
         # Output/upload function
         output_process(out_file_path_gene, index_gene, node_list_gene, elastic, indent_output, output_encoding)
 
-    # For RDcode API, insert date
+    # For RDcode API, insert date /!\ RDcode classification got its own process module
     if "orphanomenclature" in file_stem or "orpha_icd10_" in file_stem:
         node_list = data_RDcode.insert_date(node_list, extract_date)
         node_list = data_RDcode.rename_terms(node_list, file_stem)
