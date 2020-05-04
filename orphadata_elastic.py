@@ -15,10 +15,11 @@ import yaml_schema_descriptor
 import config_orphadata_elastic as config
 
 
-def parse_file(in_file_path, input_encoding):
+def parse_file(in_file_path, input_encoding, xml_attribs):
     """
     :param in_file_path: path, source xml file
     :param input_encoding:
+    :param xml_attribs: Boolean, read the xml attribute such as "id" in <Disorder id="12948"> ?
     :return: xml_dict: xml source file parsed as a dictionary
     """
     start = time.time()
@@ -34,12 +35,12 @@ def parse_file(in_file_path, input_encoding):
         print(encoding)
 
         with open(in_file_path, "r", encoding=encoding) as ini:
-            file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
+            file_dict = xmltodict.parse(ini.read(), xml_attribs=xml_attribs)
 
     else:
         with open(in_file_path, "r", encoding=input_encoding) as ini:
             print(input_encoding, "(from config file)")
-            file_dict = xmltodict.parse(ini.read(), xml_attribs=False)
+            file_dict = xmltodict.parse(ini.read(), xml_attribs=xml_attribs)
 
     date_regex = re.compile("date=\"(.*)\" version")
     date = date_regex.search(date.decode()).group(1)
@@ -47,15 +48,20 @@ def parse_file(in_file_path, input_encoding):
     key = list(file_dict["JDBOR"].keys())
     if "Availability" in key:
         key.pop(key.index("Availability"))
+
+    new_key = []
+    for item in key:
+        if "@" not in item:
+            new_key.append(item)
     # print(key)
-    if len(key) == 1:
-        key = key[0]
+    if len(new_key) == 1:
+        new_key = new_key[0]
     else:
         print("ERROR: Multiple root XML key:")
-        print(key)
+        print(new_key)
         exit(1)
 
-    xml_dict = file_dict["JDBOR"][key]
+    xml_dict = file_dict["JDBOR"][new_key]
     # print(xml_dict)
     # DumpS then loadS: convert ordered dict to dict
     # xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
@@ -148,6 +154,7 @@ def simplify(xml_dict, rename_orpha):
 
     key = list(xml_dict.keys())
     # print(key)
+
     if len(key) == 1:
         key = key[0]
     else:
@@ -475,7 +482,7 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     out_file_path = out_folder / out_file_name
 
     # Parse source xml file
-    xml_dict, extract_date = parse_file(in_file_path, input_encoding)
+    xml_dict, extract_date = parse_file(in_file_path, input_encoding, False)
 
     start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber

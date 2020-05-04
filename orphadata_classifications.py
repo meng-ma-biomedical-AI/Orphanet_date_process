@@ -130,25 +130,6 @@ def convert(hch_id, xml_dict):
     return node_list
 
 
-def append_hch(node_list, hch_dict):
-    """
-    Append HchTag to each node of the classification
-
-    :param node_list: list of disorder object
-    :param hch_dict: dictionary to convert hch_id to hch_tag
-    :return: node_list with hch_tag
-    """
-    try:
-        hch_tag = hch_dict[node_list[0]["hch_id"]]
-    except KeyError:
-        hch_tag = ""
-
-    for node in node_list:
-        node["hch_tag"] = hch_tag
-
-    return node_list
-
-
 def process_classification(in_file_path, out_folder, elastic, input_encoding, indent_output, output_encoding):
     """
     Complete Orphadata XML to Elasticsearch JSON process
@@ -175,7 +156,7 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     hch_id = file_stem.split("_")[2]
 
     # Parse source xml file
-    xml_dict, extract_date = orphadata_elastic.parse_file(in_file_path, input_encoding)
+    xml_dict, extract_date = orphadata_elastic.parse_file(in_file_path, input_encoding, False)
 
     start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber
