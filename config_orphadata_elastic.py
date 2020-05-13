@@ -24,9 +24,15 @@ folders = list()
 # folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology"))
 # folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Natural history"))
 
+####### RDcode ########
 # RDcode /!\ remember to change index_prefix
-folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN"))
-folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN\\en"))
+# folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN"))
+# folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN\\en"))
+
+# for lang in ["CZ", "DE", "EN", "ES", "FR", "IT", "NL", "PL", "PT"]:
+    # folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_{}".format(lang)))
+    # folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_{}\\{}".format(lang, lang.lower())))
+#########################
 
 out_folder = pathlib.Path("data_out")
 

@@ -16,7 +16,6 @@ class Node(dict):
         self["name"] = ""
         self["ORPHAcode"] = ""
         self["classification"] = {}
-        self["classification"]["hch_id"] = ""
         self["classification"]["ID of the classification"] = ""
         self["classification"]["ORPHAcode"] = ""
         self["classification"]["Name of the classification"] = ""
@@ -47,7 +46,7 @@ def parse_plator(pat_hch_path):
     return hch_dict
 
 
-def make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent, classification_orpha, classification_id):
+def make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent, classification_orpha):
     """
     Recursively parse xml_dict to output a collection of Disorder with all their children
 
@@ -65,15 +64,15 @@ def make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent, classification_
     :param hch_tag: String, Orphanet classification tag
     :param xml_dict: xml source file parsed as a dictionary
     :param parent: Orpha_ID of parent Disorder
+    :param classification_orpha: Orpha_ID of classification
     :return: node_dict
     """
     # print(xml_dict)
     node = Node()
     node["ORPHAcode"] = xml_dict["Disorder"]["ORPHAcode"]
     node["name"] = xml_dict["Disorder"]["Name"]
-    node["classification"]["hch_id"] = hch_id
     node["classification"]["ORPHAcode"] = classification_orpha
-    node["classification"]["ID of the classification"] = classification_id
+    node["classification"]["ID of the classification"] = hch_id
     node["classification"]["Name of the classification"] = hch_tag
     node["classification"]["Preferred term"] = hch_tag
     node["parents"] = [parent]
@@ -81,7 +80,7 @@ def make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent, classification_
     if xml_dict["ClassificationNodeChild"] is not None:
         for child in xml_dict["ClassificationNodeChild"]:
             node["childs"].append(child["Disorder"]["ORPHAcode"])
-            node_dict = make_node_dict(node_dict, child, hch_id, hch_tag, node["ORPHAcode"], classification_orpha, classification_id)
+            node_dict = make_node_dict(node_dict, child, hch_id, hch_tag, node["ORPHAcode"], classification_orpha)
     if node["ORPHAcode"] in node_dict:
         node_dict[node["ORPHAcode"]]["childs"] = merge_unique(node_dict[node["ORPHAcode"]]["childs"], node["childs"])
         node_dict[node["ORPHAcode"]]["parents"] = merge_unique(node_dict[node["ORPHAcode"]]["parents"], node["parents"])
@@ -101,11 +100,11 @@ def merge_unique(list1, list2):
     return list1
 
 
-def convert(hch_id, xml_dict, classification_orpha, classification_id):
+def convert(hch_id, xml_dict, classification_orpha):
     """
     :param hch_id: String, Orphanet classification number
     :param xml_dict: xml source file parsed as a dictionary
-    :param rename_orpha: boolean, change label OrphaNumber to ORPHAcode
+    :param classification_orpha: Orpha_ID of classification
     :return: node_list: List collection of Disorder
     i.e.:
     [
@@ -128,7 +127,7 @@ def convert(hch_id, xml_dict, classification_orpha, classification_id):
     parent = xml_dict["Disorder"]["ORPHAcode"]
 
     node_dict = {}
-    node_dict = make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent, classification_orpha, classification_id)
+    node_dict = make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent, classification_orpha)
 
     node_list = list(node_dict.values())
 
@@ -171,19 +170,20 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     hch_id = file_stem.split("_")[1]
 
     # Parse source xml file with xml attributes
-    xml_dict, extract_date = orphadata_elastic.parse_file(in_file_path, input_encoding, True)
-    classification_id = xml_dict["Disorder"]["@id"]
-    classification_orpha = xml_dict["Disorder"]["OrphaNumber"]
+    # xml_dict, extract_date = orphadata_elastic.parse_file(in_file_path, input_encoding, True)
+    # classification_id = xml_dict["Disorder"]["@id"]
+    # classification_orpha = xml_dict["Disorder"]["OrphaNumber"]
 
     # Parse source xml file
     xml_dict, extract_date = orphadata_elastic.parse_file(in_file_path, input_encoding, False)
+    classification_orpha = xml_dict["Disorder"]["OrphaNumber"]
 
     start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber
     rename_orpha = True  # OrphaNumber to ORPHAcode
     xml_dict = orphadata_elastic.simplify(xml_dict, rename_orpha)
 
-    node_list = convert(hch_id, xml_dict, classification_orpha, classification_id)
+    node_list = convert(hch_id, xml_dict, classification_orpha)
 
     node_list = data_RDcode.insert_date(node_list, extract_date)
 
