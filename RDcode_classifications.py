@@ -13,7 +13,7 @@ import config_orphadata_elastic as config
 class Node(dict):
     def __init__(self):
         super().__init__()
-        self["name"] = ""
+        self["Preferred term"] = ""
         self["ORPHAcode"] = ""
         self["classification"] = {}
         self["classification"]["ID of the classification"] = ""
@@ -52,7 +52,7 @@ def make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent, classification_
 
     :param node_dict: Dictionary of Disorders i.e.
     {2846: {
-        "name": "Congenital pericardium anomaly",
+        "Preferred term": "Congenital pericardium anomaly",
         "OrphaNumber": "2846",
         "hch_id": "148",
         "parents": ["97965"],
@@ -70,7 +70,7 @@ def make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent, classification_
     # print(xml_dict)
     node = Node()
     node["ORPHAcode"] = xml_dict["Disorder"]["ORPHAcode"]
-    node["name"] = xml_dict["Disorder"]["Name"]
+    node["Preferred term"] = xml_dict["Disorder"]["Name"]
     node["classification"]["ORPHAcode"] = classification_orpha
     node["classification"]["ID of the classification"] = hch_id
     node["classification"]["Name of the classification"] = hch_tag
@@ -108,7 +108,7 @@ def convert(hch_id, xml_dict, classification_orpha):
     :return: node_list: List collection of Disorder
     i.e.:
     [
-    {"name": "Congenital pericardium anomaly",
+    {"Preferred term": "Congenital pericardium anomaly",
     "OrphaNumber": "2846",
     "hch_id": "148",
     "parents": ["97965"],

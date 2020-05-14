@@ -30,8 +30,8 @@ folders = list()
 # folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN\\en"))
 
 # for lang in ["CZ", "DE", "EN", "ES", "FR", "IT", "NL", "PL", "PT"]:
-    # folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_{}".format(lang)))
-    # folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_{}\\{}".format(lang, lang.lower())))
+#     folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_{}".format(lang)))
+#     folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_{}\\{}".format(lang, lang.lower())))
 #########################
 
 out_folder = pathlib.Path("data_out")
