@@ -15,13 +15,13 @@ class Node(dict):
         super().__init__()
         self["Preferred term"] = ""
         self["ORPHAcode"] = ""
-        self["classification"] = {}
-        self["classification"]["ID of the classification"] = ""
-        self["classification"]["ORPHAcode"] = ""
-        self["classification"]["Name of the classification"] = ""
-        self["classification"]["Preferred term"] = ""
-        self["parents"] = []
-        self["childs"] = []
+        self["Classification"] = {}
+        self["Classification"]["ID of the classification"] = ""
+        self["Classification"]["ORPHAcode"] = ""
+        self["Classification"]["Name of the classification"] = ""
+        self["Classification"]["Preferred term"] = ""
+        self["Parent"] = []
+        self["Child"] = []
 
 
 def parse_plator(pat_hch_path):
@@ -55,8 +55,8 @@ def make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent, classification_
         "Preferred term": "Congenital pericardium anomaly",
         "OrphaNumber": "2846",
         "hch_id": "148",
-        "parents": ["97965"],
-        "childs": ["99129", "99130", "99131"]
+        "Parent": ["97965"],
+        "Child": ["99129", "99130", "99131"]
         },
     2847: {...}
     }
@@ -71,20 +71,20 @@ def make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent, classification_
     node = Node()
     node["ORPHAcode"] = xml_dict["Disorder"]["ORPHAcode"]
     node["Preferred term"] = xml_dict["Disorder"]["Name"]
-    node["classification"]["ORPHAcode"] = classification_orpha
-    node["classification"]["ID of the classification"] = hch_id
-    node["classification"]["Name of the classification"] = hch_tag
-    node["classification"]["Preferred term"] = hch_tag
-    node["parents"] = [parent]
+    node["Classification"]["ORPHAcode"] = classification_orpha
+    node["Classification"]["ID of the classification"] = hch_id
+    node["Classification"]["Name of the classification"] = hch_tag
+    node["Classification"]["Preferred term"] = hch_tag
+    node["Parent"] = [parent]
     # print(node)
     if xml_dict["ClassificationNodeChild"] is not None:
         for child in xml_dict["ClassificationNodeChild"]:
-            node["childs"].append(child["Disorder"]["ORPHAcode"])
+            node["Child"].append(child["Disorder"]["ORPHAcode"])
             node_dict = make_node_dict(node_dict, child, hch_id, hch_tag, node["ORPHAcode"], classification_orpha)
     if node["ORPHAcode"] in node_dict:
-        node_dict[node["ORPHAcode"]]["childs"] = merge_unique(node_dict[node["ORPHAcode"]]["childs"], node["childs"])
-        node_dict[node["ORPHAcode"]]["parents"] = merge_unique(node_dict[node["ORPHAcode"]]["parents"], node["parents"])
-        # print(node_dict[node.OrphaNumber].childs)
+        node_dict[node["ORPHAcode"]]["Child"] = merge_unique(node_dict[node["ORPHAcode"]]["Child"], node["Child"])
+        node_dict[node["ORPHAcode"]]["Parent"] = merge_unique(node_dict[node["ORPHAcode"]]["Parent"], node["Parent"])
+        # print(node_dict[node.OrphaNumber].Child)
     else:
         node_dict[node["ORPHAcode"]] = node
     return node_dict
@@ -111,8 +111,8 @@ def convert(hch_id, xml_dict, classification_orpha):
     {"Preferred term": "Congenital pericardium anomaly",
     "OrphaNumber": "2846",
     "hch_id": "148",
-    "parents": ["97965"],
-    "childs": ["99129", "99130", "99131"]
+    "Parent": ["97965"],
+    "Child": ["99129", "99130", "99131"]
     },
     {...}
     ]
