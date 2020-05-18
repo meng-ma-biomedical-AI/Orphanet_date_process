@@ -26,8 +26,8 @@ folders = list()
 
 ####### RDcode ########
 # RDcode /!\ remember to change index_prefix
-# folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN"))
-# folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN\\en"))
+folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_CZ"))
+folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_CZ\\cz"))
 
 # for lang in ["CZ", "DE", "EN", "ES", "FR", "IT", "NL", "PL", "PT"]:
 #     folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_{}".format(lang)))

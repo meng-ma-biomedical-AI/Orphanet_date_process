@@ -152,6 +152,10 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     """
 
     file_stem = in_file_path.stem.lower()
+    if "CZ" in file_stem:
+        file_stem = file_stem.replace("CZ", "CS")
+    if "cz" in file_stem:
+        file_stem = file_stem.replace("cz", "cs")
     file_stem_split = file_stem.split("_")
     # remove classification name from input path
     # orphaclassification_146_rare_cardiac_disease_en

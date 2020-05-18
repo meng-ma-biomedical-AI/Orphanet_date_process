@@ -471,6 +471,11 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     :return: None (Write file (mandatory) / upload to elastic cluster)
     """
     file_stem = in_file_path.stem.lower()
+    if "CZ" in file_stem:
+        file_stem = file_stem.replace("CZ", "CS")
+    if "cz" in file_stem:
+        file_stem = file_stem.replace("cz", "cs")
+
     index = config.index_prefix
     if index:
         index = "{}_{}".format(index, file_stem)
