@@ -458,6 +458,21 @@ def upload_es(elastic, processed_json_file):
     print("upload ES:", time.time() - start, "s")
 
 
+def remap_integer(node_list):
+    node_list = json.dumps(node_list)
+
+    def hexrepl(match):
+        """ Replace function for the capture group """
+        value = match.group()[1:-1]
+        return value
+
+    pattern = re.compile("\"\d+\"")
+    node_list = pattern.sub(hexrepl, node_list)
+
+    node_list = json.loads(node_list)
+    return node_list
+
+
 def process(in_file_path, out_folder, elastic, input_encoding, indent_output, output_encoding):
     """
     Complete Orphadata XML to Elasticsearch JSON process
@@ -525,6 +540,9 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
         node_list = data_RDcode.rename_terms(node_list, file_stem)
     if "orpha_icd10_" in file_stem:
         node_list = data_RDcode.rework_ICD(node_list)
+
+    if config.cast_as_integer:
+        node_list = remap_integer(node_list)
 
     print("convert:", time.time() - start, "s")
 

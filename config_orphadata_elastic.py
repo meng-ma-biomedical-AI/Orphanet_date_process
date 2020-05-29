@@ -49,6 +49,9 @@ input_encoding = "auto"
 # Empty string or False otherwise
 index_prefix = "rdcode"
 
+# Remap number as integer
+cast_as_integer = True
+
 # Indent output file (True for visual data control, need to be False for elasticsearch upload)
 indent_output = False
 

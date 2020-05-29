@@ -170,6 +170,9 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
 
     node_list = convert(hch_id, xml_dict)
 
+    if config.cast_as_integer:
+        node_list = orphadata_elastic.remap_integer(node_list)
+
     print("convert:", time.time() - start, "s")
 
     # Output/upload function
