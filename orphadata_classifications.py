@@ -160,8 +160,9 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
 
     hch_id = file_stem.split("_")[2]
 
-    # Parse source xml file
+    # Parse source xml file and return the date also reroot the xml to skip the trivial JDBOR/*List/
     xml_dict, extract_date = orphadata_elastic.parse_file(in_file_path, input_encoding, False)
+    xml_dict = orphadata_elastic.subset_xml_dict(xml_dict)
 
     start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber

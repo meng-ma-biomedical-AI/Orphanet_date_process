@@ -178,8 +178,9 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     # classification_id = xml_dict["Disorder"]["@id"]
     # classification_orpha = xml_dict["Disorder"]["OrphaNumber"]
 
-    # Parse source xml file
+    # Parse source xml file and return the date also reroot the xml to skip the trivial JDBOR/*List/
     xml_dict, extract_date = orphadata_elastic.parse_file(in_file_path, input_encoding, False)
+    xml_dict = orphadata_elastic.subset_xml_dict(xml_dict)
     classification_orpha = xml_dict["Disorder"]["OrphaNumber"]
 
     start = time.time()

@@ -17,13 +17,23 @@ import config_orphadata_elastic as config
 
 def parse_file(in_file_path, input_encoding, xml_attribs):
     """
+    Parse an xml file with "xmltodict" external module and return the file as a dictionary and the extraction date.
+    Can read the encoding of the file in the xml header if input_encoding=="auto" OR decode the file with
+    the specified encoding.
+    Can read the JDBOR extraction date in the xml attribute of the JDBOR node but the rest of the code is meant to
+    work without the xml attributes to read them call with xml_attribs=True.
+
     :param in_file_path: path, source xml file
-    :param input_encoding:
+    :param input_encoding: valid encoding OR "auto"
     :param xml_attribs: Boolean, read the xml attribute such as "id" in <Disorder id="12948"> ?
-    :return: xml_dict: xml source file parsed as a dictionary
+    :return: tuple(xml_dict, extraction date)
+        WHERE
+        xml_dict: xml source file parsed as a dictionary
+        extraction date: str, date of JDBOR extraction
     """
     start = time.time()
 
+    # Encoding detection
     with open(in_file_path, "rb") as ini:
         xml_declaration = ini.readline()
         date = ini.readline()
@@ -35,22 +45,40 @@ def parse_file(in_file_path, input_encoding, xml_attribs):
         print(encoding)
 
         with open(in_file_path, "r", encoding=encoding) as ini:
-            file_dict = xmltodict.parse(ini.read(), xml_attribs=xml_attribs)
+            xml_dict = xmltodict.parse(ini.read(), xml_attribs=xml_attribs)
 
     else:
         with open(in_file_path, "r", encoding=input_encoding) as ini:
             print(input_encoding, "(from config file)")
-            file_dict = xmltodict.parse(ini.read(), xml_attribs=xml_attribs)
+            xml_dict = xmltodict.parse(ini.read(), xml_attribs=xml_attribs)
 
+    # Get JDBOR extraction date
     date_regex = re.compile("date=\"(.*)\" version")
     date = date_regex.search(date.decode()).group(1)
     print("JDBOR extract", date)
-    key = list(file_dict["JDBOR"].keys())
+
+    # print(xml_dict)
+    # DumpS then loadS: convert ordered dict to dict
+    # xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
+    print("parsing:", time.time() - start)
+    return xml_dict, date
+
+
+def subset_xml_dict(xml_dict):
+    """
+    Reroot the xml to skip the trivial JDBOR/*List/ for homogeneity (ClassificationList vs DisorderList)
+
+    :param xml_dict: xml source file parsed as a dictionary
+    :return: xml source file parsed as a dictionary rerooted to the first *List
+    """
+    # Return the first meaningful node for homogeneity
+    key = list(xml_dict["JDBOR"].keys())
     if "Availability" in key:
         key.pop(key.index("Availability"))
 
     new_key = []
     for item in key:
+        # the xml attribute are prefixed with @ and can be discarded for application
         if "@" not in item:
             new_key.append(item)
     # print(key)
@@ -61,12 +89,8 @@ def parse_file(in_file_path, input_encoding, xml_attribs):
         print(new_key)
         exit(1)
 
-    xml_dict = file_dict["JDBOR"][new_key]
-    # print(xml_dict)
-    # DumpS then loadS: convert ordered dict to dict
-    # xml_dict = json.loads(json.dumps(xml_dict, ensure_ascii=False))
-    print("parsing:", time.time() - start)
-    return xml_dict, date
+    xml_dict = xml_dict["JDBOR"][new_key]
+    return xml_dict
 
 
 def simplify_xml_list(xml_dict):
@@ -501,8 +525,9 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     out_file_name = index + ".json"
     out_file_path = out_folder / out_file_name
 
-    # Parse source xml file
+    # Parse source xml file and return the date also reroot the xml to skip the trivial JDBOR/*List/
     xml_dict, extract_date = parse_file(in_file_path, input_encoding, False)
+    xml_dict = subset_xml_dict(xml_dict)
 
     start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber
