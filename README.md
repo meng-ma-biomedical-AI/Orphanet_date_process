@@ -26,7 +26,7 @@ Can also produce the corresponding yaml scheme for API contract definition.
 ## Usage
 
 Download manually the Orphadata xml or use some scripts
-from download_new_orpha.bat (only working from copy/paste command line)
+from [download_new_orpha.bat](./download_new_orpha.bat) (only working from copy/paste command line)
 
 Settings: [config_orphadata_elastic.py](./config_orphadata_elastic.py)
 
