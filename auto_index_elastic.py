@@ -2,7 +2,6 @@
 
 import json
 from elasticsearch import Elasticsearch
-# or: elastic = Elasticsearch(hosts=["localhost"])
 
 # mapping dictionary that contains the settings and
 # _mapping schema for a new Elasticsearch index:
@@ -29,7 +28,9 @@ demo_mapping = {
     }
 }
 
-# make some API call to the Elasticsearch cluster
+"""
+Demo module to create and get an elasticsearch mapping with the external elasticsearch module
+"""
 
 
 def clear_test_mapping(elastic):

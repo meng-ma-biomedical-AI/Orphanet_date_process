@@ -1,13 +1,20 @@
 import json
 import re
 
+"""
+Provide specialized functions to treat RDcode data
+"""
 
-def clean_textual_info_RDcode(node_list, file_stem):
+
+def clean_textual_info_RDcode(node_list):
     """
-    For product 1 (cross references)
+    For RDcode definition
+
+    "TextualInformation" in xml
+    output:
+    "Definition": "definition text" OR None
 
     :param node_list: list of disorder
-    :param file_stem: name of file without extension
     :return: list of disorder with reworked textual info
     """
     # for each disorder object in the file
@@ -51,12 +58,11 @@ def insert_date(node_list, extract_date):
     return node_list
 
 
-def rename_terms(node_list, file_stem):
+def rename_terms(node_list):
     """
     Rename some terms for RDcode
 
     :param node_list: list of disorder objects
-    :param file_stem: file name without extension
     :return: node_list with renamed terms
     """
     node_list = json.dumps(node_list)

@@ -2,7 +2,9 @@ import pathlib
 
 
 # Single file input
-in_file_path = pathlib.Path("data_in\\data_xml\\Orphanet classifications\\en_product3_146.xml")
+import elasticsearch
+
+in_file_path = pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN\\en\\ORPHAclassification_146_Rare_cardiac_disease_en.xml")
 
 # List of path to folder containing data
 folders = list()
@@ -37,7 +39,7 @@ folders = list()
 out_folder = pathlib.Path("data_out")
 
 # Process all input folders or single input file ?
-parse_folder = True
+parse_folder = False
 
 # input encoding: "auto" or valid encoding ("UTF-8" or "iso-8859-1")
 input_encoding = "auto"
@@ -56,7 +58,8 @@ cast_as_integer = True
 indent_output = False
 
 # Upload to elasticsearch node
-upload = True
+upload = False
+elastic_node = elasticsearch.Elasticsearch(hosts=["localhost"])
 
 # Make the yaml schema description
 make_schema = False

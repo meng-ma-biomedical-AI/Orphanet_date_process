@@ -8,6 +8,10 @@ import time
 import orphadata_elastic
 import config_orphadata_elastic as config
 
+"""
+Alternative process to treat Orphadata classification
+"""
+
 
 class Node(dict):
     def __init__(self):

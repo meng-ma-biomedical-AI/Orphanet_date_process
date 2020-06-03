@@ -14,6 +14,10 @@ import orphadata_classifications
 import yaml_schema_descriptor
 import config_orphadata_elastic as config
 
+"""
+Main module to convert xml from JDBOR to elasticsearch json
+"""
+
 
 def parse_file(in_file_path, input_encoding, xml_attribs):
     """
@@ -101,7 +105,7 @@ def simplify_xml_list(xml_dict):
         <ClassificationNode>
             <ClassificationNodeChildList count="XX">
     To produce
-    ClassificationNode: [{..., ClassificationNodeChild: {}}, ...]
+    ClassificationNode: [{*current node information*, ClassificationNodeChild: {}}, ...]
 
     :param xml_dict: xml source file parsed as a dictionary
     :return: simplified xml_dict
@@ -109,9 +113,7 @@ def simplify_xml_list(xml_dict):
     if isinstance(xml_dict, dict):
         for key, elem in xml_dict.items():
             if key.endswith("List"):
-                # print(xml_dict)
                 xml_dict = simplify_list(xml_dict, key)
-                # print()
             simplify_xml_list(elem)
     elif isinstance(xml_dict, list):
         for elem_list in xml_dict:
@@ -128,15 +130,11 @@ def simplify_list(parent, key):
     :param key: Dictionary key containing the term "*List"
     :return: simplified dictionary
     """
-    # child_value = parent.pop(key)
     child_value = parent[key]
     if child_value is not None and child_value != "0":
-        # print(child_value)
         child_value = [child_value[child] for child in child_value if child][0]
-        # print(child_value)
         if isinstance(child_value, dict) or isinstance(child_value, str):
             child_value = [child_value]
-            # print(child_value)
         parent[key] = child_value
     else:
         parent[key] = None
@@ -168,7 +166,7 @@ def simplify(xml_dict, rename_orpha):
     {...}
     ]
     """
-    start = time.time()
+    # start = time.time()
 
     # Simplify the xml structure for homogeneity
     xml_dict = simplify_xml_list(xml_dict)
@@ -249,12 +247,16 @@ def remove_unwanted_orphacode(node_list):
     return node_list
 
 
-def clean_textual_info(node_list, file_stem):
+def clean_textual_info(node_list):
     """
     For product 1 (cross references)
 
+    "TextualInformation" in xml
+    output:
+    "TextualInformation": [{"Definition": "definition text"}, {"info": "automatic definition text"}]
+    Definition AND info key are both optional, in this case TextualInformation: None
+
     :param node_list: list of disorder
-    :param file_stem: name of file without extension
     :return: list of disorder with reworked textual info
     """
     # for each disorder object in the file
@@ -483,6 +485,12 @@ def upload_es(elastic, processed_json_file):
 
 
 def remap_integer(node_list):
+    """
+    Cast number as integer (from string) using regex
+
+    :param node_list: list of disorder
+    :return:
+    """
     node_list = json.dumps(node_list)
 
     def hexrepl(match):
@@ -504,9 +512,9 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     :param in_file_path: input file path
     :param out_folder: output folder path
     :param elastic: URI to elastic node, False otherwise
-    :param input_encoding:
-    :param indent_output:
-    :param output_encoding:
+    :param input_encoding: str, valid encoding or "auto"
+    :param indent_output: boolean, indent entry in output file with 2 spaces
+    :param output_encoding: str, valid encoding
     :return: None (Write file (mandatory) / upload to elastic cluster)
     """
     file_stem = in_file_path.stem.lower()
@@ -535,20 +543,24 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     node_list = simplify(xml_dict, rename_orpha)
 
     # Output this simplified dictionnary for debug purpose
-    output_simplified_dictionary(out_file_path, index, node_list, indent_output, output_encoding)
+    # output_simplified_dictionary(out_file_path, index, node_list, indent_output, output_encoding)
 
     # Useless since new Orphadata generation
     # Remove orphacode past the main one (/!\ NO QUALITY CHECK)
     # node_list = remove_unwanted_orphacode(node_list)
 
-    # Regroup textual_info for product1
+    # Regroup textual_info for product1 or RDcode orphanomenclature
     if "product1" in file_stem:
-        node_list = clean_textual_info(node_list, file_stem)
+        node_list = clean_textual_info(node_list)
     if "orphanomenclature" in file_stem:
-        node_list = data_RDcode.clean_textual_info_RDcode(node_list, file_stem)
+        node_list = data_RDcode.clean_textual_info_RDcode(node_list)
 
     # Remap object with single "Name" to string
     node_list = clean_single_name_object(node_list)
+
+    # Cast number as integer (from string)
+    if config.cast_as_integer:
+        node_list = remap_integer(node_list)
 
     # Index product6 "gene" by gene symbol
     if "product6" in file_stem:
@@ -562,12 +574,9 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
     # For RDcode API, insert date /!\ RDcode classification got its own process module
     if "orphanomenclature" in file_stem or "orpha_icd10_" in file_stem:
         node_list = data_RDcode.insert_date(node_list, extract_date)
-        node_list = data_RDcode.rename_terms(node_list, file_stem)
+        node_list = data_RDcode.rename_terms(node_list)
     if "orpha_icd10_" in file_stem:
         node_list = data_RDcode.rework_ICD(node_list)
-
-    if config.cast_as_integer:
-        node_list = remap_integer(node_list)
 
     print("convert:", time.time() - start, "s")
 
@@ -623,7 +632,7 @@ if __name__ == "__main__":
             exit(1)
 
     if config.upload:
-        elastic = elasticsearch.Elasticsearch(hosts=["localhost"])
+        elastic = config.elastic_node
     else:
         elastic = False
     print()
@@ -632,10 +641,10 @@ if __name__ == "__main__":
         # Process files in designated folders
         for folder in config.folders:
             for file in folder.iterdir():
-                # Test to remove "product4_HPO_status" from process
-                # this line will be deprecated in future Orphadata generation
                 if not file.is_dir():
                     if file.suffix == ".xml":
+                        # Test to remove "product4_HPO_status" from process
+                        # this line will be deprecated in future Orphadata generation
                         if not str(file.stem).endswith("_status"):
                             if "product3" in file.stem:
                                 orphadata_classifications.process_classification(file,

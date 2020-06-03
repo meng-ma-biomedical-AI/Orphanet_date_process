@@ -9,6 +9,10 @@ import data_RDcode
 import orphadata_elastic
 import config_orphadata_elastic as config
 
+"""
+Alternative process to treat RDcode classification
+"""
+
 
 class Node(dict):
     def __init__(self):
