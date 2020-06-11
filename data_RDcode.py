@@ -12,7 +12,7 @@ def clean_textual_info_RDcode(node_list):
 
     "TextualInformation" in xml
     output:
-    "Definition": "definition text" OR None
+    "Definition": <definition text> OR "None available"
 
     :param node_list: list of disorder
     :return: list of disorder with reworked textual info
