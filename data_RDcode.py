@@ -73,8 +73,6 @@ def rename_terms(node_list):
                 "\"GroupOfType\":": "\"GroupType\":",
                 "\"ExpertLink\":": "\"OrphanetURL\":",
                 "\"DisorderType\":": "\"Type\":",
-                "\"ExternalReference\":": "\"Code ICD\":",
-                "\"Reference\":": "\"Code ICD10\":",
                 }
 
     for key, value in patterns.items():
@@ -88,12 +86,51 @@ def rename_terms(node_list):
 def rework_ICD(node_list):
     """
     remove "source" from ICD external reference
+    rename ExternalReference to Code ICD and reference to Code ICD10
 
     :param node_list:
     :return: node_list with reworked ICD reference
     """
+    node_list = json.dumps(node_list)
+
+    patterns = {"\"ExternalReference\":": "\"Code ICD\":",
+                "\"Reference\":": "\"Code ICD10\":"}
+
+    for key, value in patterns.items():
+        pattern = re.compile(key)
+        node_list = pattern.sub(value, node_list)
+
+    node_list = json.loads(node_list)
+
     for node in node_list:
         if node["Code ICD"]:
             for index, ref in enumerate(node["Code ICD"]):
                 node["Code ICD"][index].pop("Source")
+    return node_list
+
+
+def rework_OMIM(node_list):
+    """
+    remove "source" from OMIM external reference
+    rename ExternalReference and reference to Code OMIM
+
+    :param node_list:
+    :return: node_list with reworked OMIM reference
+    """
+    node_list = json.dumps(node_list)
+
+    patterns = {"\"ExternalReference\":": "\"Code OMIM\":",
+                "\"Reference\":": "\"Code OMIM\":"}
+
+    for key, value in patterns.items():
+        pattern = re.compile(key)
+        node_list = pattern.sub(value, node_list)
+
+    node_list = json.loads(node_list)
+
+    for node in node_list:
+        if node["Code OMIM"]:
+            for index, ref in enumerate(node["Code OMIM"]):
+                node["Code OMIM"][index].pop("Source")
+
     return node_list
