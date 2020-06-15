@@ -101,7 +101,6 @@ def convert(hch_id, xml_dict):
     """
     :param hch_id: String, Orphanet classification number
     :param xml_dict: xml source file parsed as a dictionary
-    :param rename_orpha: boolean, change label OrphaNumber to ORPHAcode
     :return: node_list: List collection of Disorder
     i.e.:
     [

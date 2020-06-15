@@ -154,6 +154,7 @@ def merge_unique(list1, list2):
 def simplify(xml_dict, rename_orpha):
     """
     :param xml_dict: xml source file parsed as a dictionary
+    :param rename_orpha: boolean, force the conversion of ALL OrphaNumber/i or OrphaCode/i to ORPHAcode
     :return: node_list: List of Disorder object with simplified structure
     i.e.:
     [{
@@ -190,6 +191,8 @@ def simplify(xml_dict, rename_orpha):
     pattern = re.compile("List\":")
     node_list = pattern.sub("\":", node_list)
     if rename_orpha:
+        pattern = re.compile("OrphaCode", re.IGNORECASE)
+        node_list = pattern.sub("ORPHAcode", node_list)
         pattern = re.compile("OrphaNumber", re.IGNORECASE)
         node_list = pattern.sub("ORPHAcode", node_list)
     node_list = json.loads(node_list)
