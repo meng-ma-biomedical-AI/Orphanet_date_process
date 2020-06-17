@@ -70,9 +70,9 @@ def rename_terms(node_list):
     patterns = {"\"Totalstatus\":": "\"Status\":",
                 "\"Name\":": "\"Preferred term\":",
                 "\"PreferredTerm\":": "\"Preferred term\":",
-                "\"GroupOfType\":": "\"GroupType\":",
+                "\"GroupOfType\":": "\"ClassificatioLevel\":",
                 "\"ExpertLink\":": "\"OrphanetURL\":",
-                "\"DisorderType\":": "\"Type\":",
+                "\"DisorderType\":": "\"Typology\":",
                 }
 
     for key, value in patterns.items():
