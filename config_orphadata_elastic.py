@@ -28,7 +28,8 @@ folders = list()
 
 ####### RDcode ########
 # RDcode /!\ remember to change index_prefix
-folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN"))
+folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode_2020\\Orphanet_Nomenclature_Pack_EN"))
+folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode_2020\\Orphanet_Nomenclature_Pack_PL"))
 # folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN\\en"))
 
 # for lang in ["CZ", "DE", "EN", "ES", "FR", "IT", "NL", "PL", "PT"]:
@@ -58,7 +59,7 @@ cast_as_integer = True
 indent_output = False
 
 # Upload to elasticsearch node
-upload = False
+upload = True
 elastic_node = elasticsearch.Elasticsearch(hosts=["localhost"])
 
 # Make the yaml schema description
