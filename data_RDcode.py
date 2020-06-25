@@ -10,7 +10,7 @@ def clean_textual_info_RDcode(node_list):
     """
     For RDcode definition
 
-    "TextualInformation" in xml
+    "SummaryInformation" in xml
     output:
     "Definition": <definition text> OR "None available"
 
@@ -27,9 +27,9 @@ def clean_textual_info_RDcode(node_list):
             temp["Info"] = TextAuto
             textual_information_list.append(temp)
             disorder.pop("TextAuto")
-        if "TextualInformation" in disorder:
-            if disorder["TextualInformation"] is not None:
-                for text in disorder["TextualInformation"]:
+        if "SummaryInformation" in disorder:
+            if disorder["SummaryInformation"] is not None:
+                for text in disorder["SummaryInformation"]:
                     if text["TextSection"] is not None:
                         temp = {}
                         key = "Definition"
@@ -37,7 +37,7 @@ def clean_textual_info_RDcode(node_list):
                         textual_information_list.append(temp)
             if textual_information_list:
                 disorder["Definition"] = textual_information_list[0]["Definition"]
-                disorder.pop("TextualInformation")
+                disorder.pop("SummaryInformation")
             else:
                 disorder["Definition"] = "None available"
         else:
@@ -70,7 +70,7 @@ def rename_terms(node_list):
     patterns = {"\"Totalstatus\":": "\"Status\":",
                 "\"Name\":": "\"Preferred term\":",
                 "\"PreferredTerm\":": "\"Preferred term\":",
-                "\"GroupOfType\":": "\"ClassificatioLevel\":",
+                # "\"GroupOfType\":": "\"ClassificationLevel\":",
                 "\"ExpertLink\":": "\"OrphanetURL\":",
                 "\"DisorderType\":": "\"Typology\":",
                 }

@@ -254,10 +254,10 @@ def clean_textual_info(node_list):
     """
     For product 1 (cross references)
 
-    "TextualInformation" in xml
+    "SummaryInformation" in xml
     output:
-    "TextualInformation": [{"Definition": "definition text"}, {"info": "automatic definition text"}]
-    Definition AND info key are both optional, in this case TextualInformation: None
+    "SummaryInformation": [{"Definition": "definition text"}, {"info": "automatic definition text"}]
+    Definition AND info key are both optional, in this case SummaryInformation: None
 
     :param node_list: list of disorder
     :return: list of disorder with reworked textual info
@@ -272,20 +272,20 @@ def clean_textual_info(node_list):
             temp["Info"] = TextAuto
             textual_information_list.append(temp)
             disorder.pop("TextAuto")
-        if "TextualInformation" in disorder:
-            if disorder["TextualInformation"] is not None:
-                for text in disorder["TextualInformation"]:
+        if "SummaryInformation" in disorder:
+            if disorder["SummaryInformation"] is not None:
+                for text in disorder["SummaryInformation"]:
                     if text["TextSection"] is not None:
                         temp = {}
                         key = text["TextSection"][0]["TextSectionType"]["Name"]
                         temp[key] = text["TextSection"][0]["Contents"]
                         textual_information_list.append(temp)
             if textual_information_list:
-                disorder["TextualInformation"] = textual_information_list
+                disorder["SummaryInformation"] = textual_information_list
             else:
-                disorder["TextualInformation"] = None
+                disorder["SummaryInformation"] = None
         else:
-            disorder["TextualInformation"] = None
+            disorder["SummaryInformation"] = None
     return node_list
 
 
