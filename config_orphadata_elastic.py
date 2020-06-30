@@ -29,7 +29,7 @@ folders = list()
 ####### RDcode ########
 # RDcode /!\ remember to change index_prefix
 folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode_2020\\Orphanet_Nomenclature_Pack_EN"))
-folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode_2020\\Orphanet_Nomenclature_Pack_PL"))
+# folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode_2020\\Orphanet_Nomenclature_Pack_PL"))
 # folders.append(pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN\\en"))
 
 # for lang in ["CZ", "DE", "EN", "ES", "FR", "IT", "NL", "PL", "PT"]:
@@ -46,7 +46,7 @@ parse_folder = True
 input_encoding = "auto"
 
 
-######################################################## OUTPUT ########################################################
+# ###################################################### OUTPUT ########################################################
 
 # The prefix MUST be 'rdcode' for RDcode API (lowercase index name is mandatory)
 # Empty string or False otherwise

@@ -525,6 +525,8 @@ def process(in_file_path, out_folder, elastic, input_encoding, indent_output, ou
         file_stem = file_stem.replace("CZ", "CS")
     if "cz" in file_stem:
         file_stem = file_stem.replace("cz", "cs")
+    # Remove the suffixed date
+    file_stem = re.sub("_[0-9]{4}(?![0-9])", "", file_stem)
 
     index = config.index_prefix
     if index:

@@ -160,6 +160,9 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
         file_stem = file_stem.replace("CZ", "CS")
     if "cz" in file_stem:
         file_stem = file_stem.replace("cz", "cs")
+    # Remove the suffixed date
+    file_stem = re.sub("_[0-9]{4}(?![0-9])", "", file_stem)
+
     file_stem_split = file_stem.split("_")
     # remove classification name from input path
     # orphaclassification_146_rare_cardiac_disease_en
