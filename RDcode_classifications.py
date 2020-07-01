@@ -122,8 +122,19 @@ def convert(hch_id, xml_dict, classification_orpha):
     ]
     """
     start = time.time()
-    disorder = {'ORPHAcode': xml_dict["ORPHAcode"], 'ExpertLink': xml_dict["ExpertLink"], 'Name': xml_dict["Name"]}
-    ClassificationNodeChild = xml_dict["ClassificationNode"][0]["ClassificationNodeChild"]
+    # With 2020 dataset the Orphanet classification level appear in the file, it contain only the OrphaNumber(ORPHAcode)
+    # and the name, we need to capture this special case
+    try:
+        disorder = {'ORPHAcode': xml_dict["ORPHAcode"], 'ExpertLink': xml_dict["ExpertLink"], 'Name': xml_dict["Name"]}
+    except KeyError:
+        disorder = {'ORPHAcode': xml_dict["ORPHAcode"], 'ExpertLink': "", 'Name': xml_dict["Name"]}
+
+    # With 2020 dataset the Orphanet classification level appear in the file, it has a scpecial label for hierarchy,
+    # we need to capture this special case
+    try:
+        ClassificationNodeChild = xml_dict["ClassificationNode"][0]["ClassificationNodeChild"]
+    except KeyError:
+        ClassificationNodeChild = xml_dict["ClassificationNodeRoot"][0]["ClassificationNodeChild"]
 
     xml_dict = {"Disorder": disorder, "ClassificationNodeChild": ClassificationNodeChild}
 
@@ -160,6 +171,7 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
         file_stem = file_stem.replace("CZ", "CS")
     if "cz" in file_stem:
         file_stem = file_stem.replace("cz", "cs")
+
     # Remove the suffixed date
     file_stem = re.sub("_[0-9]{4}(?![0-9])", "", file_stem)
 
@@ -188,7 +200,8 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     # Parse source xml file and return the date also reroot the xml to skip the trivial JDBOR/*List/
     xml_dict, extract_date = orphadata_elastic.parse_file(in_file_path, input_encoding, False)
     xml_dict = orphadata_elastic.subset_xml_dict(xml_dict)
-    classification_orpha = xml_dict["Disorder"]["OrphaNumber"]
+
+    classification_orpha = xml_dict["Classification"]["OrphaNumber"]
 
     start = time.time()
     # remove intermediary dictionary (xml conversion artifact) and rename OrphaNumber
