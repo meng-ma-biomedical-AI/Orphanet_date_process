@@ -19,24 +19,18 @@ def clean_textual_info_RDcode(node_list):
     """
     # for each disorder object in the file
     for disorder in node_list:
-        TextAuto = ""
         textual_information_list = []
-        if "TextAuto" in disorder:
-            temp = {}
-            TextAuto = disorder["TextAuto"]["Info"]
-            temp["Info"] = TextAuto
-            textual_information_list.append(temp)
-            disorder.pop("TextAuto")
         if "SummaryInformation" in disorder:
             if disorder["SummaryInformation"] is not None:
-                for text in disorder["SummaryInformation"]:
-                    if text["TextSection"] is not None:
-                        temp = {}
-                        key = "Definition"
-                        temp[key] = text["TextSection"][0]["Contents"]
-                        textual_information_list.append(temp)
-            if textual_information_list:
-                disorder["Definition"] = textual_information_list[0]["Definition"]
+                if "TextAuto" in disorder["SummaryInformation"][0]:
+                    if disorder["SummaryInformation"][0]["TextAuto"] is not None:
+                        TextAuto = disorder["SummaryInformation"][0]["TextAuto"]["Info"]
+                        disorder["Definition"] = TextAuto
+                elif "TextSection" in disorder["SummaryInformation"][0]:
+                    if disorder["SummaryInformation"][0]["TextSection"] is not None:
+                        if disorder["SummaryInformation"][0]["TextSection"][0] is not None:
+                            Definition = disorder["SummaryInformation"][0]["TextSection"][0]["Contents"]
+                            disorder["Definition"] = Definition
                 disorder.pop("SummaryInformation")
             else:
                 disorder["Definition"] = "None available"
