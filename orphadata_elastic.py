@@ -490,6 +490,7 @@ def upload_es(elastic, processed_json_file):
 def remap_integer(node_list):
     """
     Cast number as integer (from string) using regex
+    SKIP number preceded by "Reference: "
 
     :param node_list: list of disorder
     :return:
@@ -501,7 +502,7 @@ def remap_integer(node_list):
         value = match.group()[1:-1]
         return value
 
-    pattern = re.compile("\"\d+\"")
+    pattern = re.compile("(?<!Reference\":\\s)\"\\d+\"")
     node_list = pattern.sub(hexrepl, node_list)
 
     node_list = json.loads(node_list)
