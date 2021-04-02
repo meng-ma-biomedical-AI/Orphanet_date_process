@@ -4,28 +4,28 @@ import pathlib
 # Single file input
 import elasticsearch
 
-in_file_path = pathlib.Path("C:\\Users\\Cyrlynx\\PycharmProjects\\data_RDcode\\Orphanet_Nomenclature_Pack_EN\\en\\ORPHAclassification_146_Rare_cardiac_disease_en.xml")
+in_file_path = pathlib.Path("..\\data\\data_RDcode\\Orphanet_Nomenclature_Pack_EN\\en\\ORPHAclassification_146_Rare_cardiac_disease_en.xml")
 
 # List of path to folder containing data
 folders = list()
 
 ####### API Orphadata ########
 # Product 1 cross-reference
-folders.append(pathlib.Path("data_in\\data_xml\\Rare diseases and classifications\\Cross-referencing of rare diseases\\XML"))
+folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Rare diseases and classifications\\Cross-referencing of rare diseases\\XML"))
 
 # Product 3 Classifications
 # pat_hch_path = pathlib.Path("data_in\\PatHch.Txt")
-folders.append(pathlib.Path("data_in\\data_xml\\Rare diseases and classifications\\Classifications of rare diseases"))
+folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Rare diseases and classifications\\Classifications of rare diseases"))
 
 # Product 4 HPO, phenotype
-folders.append(pathlib.Path("data_in\\data_xml\\Rare diseases with associated phenotypes"))
+folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Rare diseases with associated phenotypes"))
 
 # Product 6 Disorder => Gene, (output also Gene => Disorder)
-folders.append(pathlib.Path("data_in\\data_xml\\Genes associated with rare diseases"))
+folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Genes associated with rare diseases"))
 
 # Product 9
-folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare disease epidemiology"))
-folders.append(pathlib.Path("data_in\\data_xml\\Epidemiological data\\Rare diseases natural history"))
+folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Epidemiological data\\Rare disease epidemiology"))
+folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Epidemiological data\\Rare diseases natural history"))
 ##############################
 
 ####### RDcode ########
