@@ -11,34 +11,33 @@ folders = list()
 
 ####### API Orphadata ########
 # Product 1 cross-reference
-folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Rare diseases and classifications\\Cross-referencing of rare diseases\\XML"))
+# folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Rare diseases and classifications\\Cross-referencing of rare diseases\\XML"))
 
 # Product 3 Classifications
 # pat_hch_path = pathlib.Path("data_in\\PatHch.Txt")
-folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Rare diseases and classifications\\Classifications of rare diseases"))
+# folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Rare diseases and classifications\\Classifications of rare diseases"))
 
 # Product 4 HPO, phenotype
-folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Rare diseases with associated phenotypes"))
+# folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Rare diseases with associated phenotypes"))
 
 # Product 6 Disorder => Gene, (output also Gene => Disorder)
-folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Genes associated with rare diseases"))
+# folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Genes associated with rare diseases"))
 
 # Product 9
-folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Epidemiological data\\Rare disease epidemiology"))
-folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Epidemiological data\\Rare diseases natural history"))
+# folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Epidemiological data\\Rare disease epidemiology"))
+# folders.append(pathlib.Path("..\\data\\Orphadata_2021_04\\Epidemiological data\\Rare diseases natural history"))
 ##############################
 
 ####### RDcode ########
 # RDcode /!\ remember to change index_prefix
-# folders.append(pathlib.Path("..\\data_RDcode_2020\\Orphanet_Nomenclature_Pack_EN"))
-# folders.append(pathlib.Path("..\\data_RDcode_2020\\Orphanet_Nomenclature_Pack_EN\\en"))
-# folders.append(pathlib.Path("..\\data_RDcode_2020\\Orphanet_Nomenclature_Pack_FR"))
-# folders.append(pathlib.Path("..\\data_RDcode_2020\\Orphanet_Nomenclature_Pack_FR\\fr"))
+# folders.append(pathlib.Path("..\\data\\RDcode_2020\\Orphanet_Nomenclature_Pack_EN"))
+# folders.append(pathlib.Path("..\\data\\RDcode_2020\\Orphanet_Nomenclature_Pack_EN\\en"))
+# folders.append(pathlib.Path("..\\data\\RDcode_2020\\Orphanet_Nomenclature_Pack_FR"))
+# folders.append(pathlib.Path("..\\data\\RDcode_2020\\Orphanet_Nomenclature_Pack_FR\\fr"))
 
-
-# for lang in ["CS", "DE", "EN", "ES", "FR", "IT", "NL", "PL", "PT"]:
-#     folders.append(pathlib.Path("..\\data_RDcode_2020\\Orphanet_Nomenclature_Pack_{}".format(lang)))
-#     folders.append(pathlib.Path("..\\data_RDcode_2020\\Orphanet_Nomenclature_Pack_{}\\{}".format(lang, lang.lower())))
+for lang in ["CS", "DE", "EN", "ES", "FR", "IT", "NL", "PL", "PT"]:
+    folders.append(pathlib.Path("..\\data\\RDcode_2020\\Orphanet_Nomenclature_Pack_{}".format(lang)))
+    folders.append(pathlib.Path("..\\data\\RDcode_2020\\Orphanet_Nomenclature_Pack_{}\\{}".format(lang, lang.lower())))
 #########################
 
 out_folder = pathlib.Path("data_out")
@@ -53,7 +52,7 @@ input_encoding = "auto"
 
 # The prefix MUST be 'rdcode' for RDcode API (lowercase index name is mandatory)
 # Empty string or False otherwise
-index_prefix = ""
+index_prefix = "rdcode"
 
 # Remap number as integer
 cast_as_integer = True
