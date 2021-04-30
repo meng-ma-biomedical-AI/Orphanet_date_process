@@ -134,12 +134,12 @@ def convert(hch_id, xml_dict, classification_orpha):
     try:
         ClassificationNodeChild = xml_dict["ClassificationNode"][0]["ClassificationNodeChild"]
     except KeyError:
-        ClassificationNodeChild = xml_dict["ClassificationNodeRoot"][0]["ClassificationNodeChild"]
+        ClassificationNodeChild = xml_dict["ClassificationNodeRoot"]
 
     xml_dict = {"Disorder": disorder, "ClassificationNodeChild": ClassificationNodeChild}
 
     hch_tag = xml_dict["Disorder"]["Name"]
-    parent = xml_dict["Disorder"]["ORPHAcode"]
+    parent = None
 
     node_dict = {}
     node_dict = make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent, classification_orpha)
