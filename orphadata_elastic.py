@@ -46,7 +46,7 @@ def parse_file(in_file_path, input_encoding, xml_attribs):
         xml_declaration = xml_declaration.decode()
         pattern = re.compile("encoding=\"(.*)\"[ ?]")
         encoding = pattern.search(xml_declaration).group(1)
-        print(encoding)
+        print('encoding:', encoding)
 
         with open(in_file_path, "r", encoding=encoding) as ini:
             xml_dict = xmltodict.parse(ini.read(), xml_attribs=xml_attribs)
@@ -462,7 +462,22 @@ def output_elasticsearch_file(out_file_path, index, node_list, indent_output, ou
         for val in node_list:
             out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format(index))
             out.write(json.dumps(val, indent=indent, ensure_ascii=False) + "\n")
+            print(json.dumps(val, indent=indent, ensure_ascii=False) + "\n")
     print("writing:", time.time() - start, "s")
+    exit(1)
+
+
+    test_args_fn = pathlib.Path('./data_out/en_product1_args.json')
+    with open(test_args_fn, "w", encoding=output_encoding) as out:
+        for val in node_list:
+            doc = {
+                "ORPHAcode": val["ORPHAcode"],
+                "Preferred term": val["Preferred term"]
+            }
+
+            out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format("en_product1_args"))
+            out.write(json.dumps(doc, indent=indent, ensure_ascii=False) + "\n")
+            # print(json.dumps(doc, indent=indent, ensure_ascii=False) + "\n")
 
 
 def upload_es(elastic, processed_json_file):
@@ -473,18 +488,45 @@ def upload_es(elastic, processed_json_file):
     :param processed_json_file: path
     :return: None
     """
+
+    # test_args_fn = pathlib.Path('./data_out/en_product1_args.json')
+    # test_args_file = test_args_fn.read_text(encoding="UTF-8")
+
+    # try:
+    #     ES_response = elastic.bulk(body=test_args_file)
+    #     if ES_response["errors"]:
+    #         err_doc_ids = [ x for x in range(len(ES_response["items"])) if ES_response["items"][x]["index"]["status"] != 201 ]
+    #         err_log = "{} ES upload ERROR(S) with {}".format(len(err_doc_ids), processed_json_file.name)
+    #         print("\n" + err_log)
+    #         print("-"*len(err_log))
+
+    #         for err_doc_id in err_doc_ids:
+    #             print(json.dumps(ES_response["items"][err_doc_id]["index"]["error"], indent=2))
+    #         exit(1)
+    # except elasticsearch.exceptions.ConnectionError:
+    #     print("ERROR: elasticsearch node unavailable")
+    #     exit(1)
+
+
     start = time.time()
     full_file = processed_json_file.read_text(encoding="UTF-8")
+
     try:
         ES_response = elastic.bulk(body=full_file)
         if ES_response["errors"]:
-            print("ES upload ERROR")
-            print(ES_response["items"][0]["index"]["error"])
+            err_doc_ids = [ x for x in range(len(ES_response["items"])) if ES_response["items"][x]["index"]["status"] != 201 ]
+            err_log = "{} ES upload ERROR(S) with {}".format(len(err_doc_ids), processed_json_file.name)
+            print("\n" + err_log)
+            print("-"*len(err_log))
+
+            for err_doc_id in err_doc_ids:
+                print(json.dumps(ES_response["items"][err_doc_id]["index"]["error"], indent=2))
             exit(1)
     except elasticsearch.exceptions.ConnectionError:
         print("ERROR: elasticsearch node unavailable")
         exit(1)
     print("upload ES:", time.time() - start, "s")
+
 
 
 def remap_integer(node_list):
@@ -650,10 +692,8 @@ if __name__ == "__main__":
         for folder in config.folders:
             for file in folder.iterdir():
                 if not file.is_dir():
-                    if file.suffix == ".xml":
-                        # Test to remove "product4_HPO_status" from process
-                        # this line will be deprecated in future Orphadata generation
-                        if not str(file.stem).endswith("_status"):
+                    if file.suffix == ".xml":                     
+                        if not str(file.stem).endswith("_status"):  # Test to remove "product4_HPO_status" from process - this line will be deprecated in future Orphadata generation
                             if "product3" in file.stem:
                                 orphadata_classifications.process_classification(file,
                                                                                  config.out_folder,
@@ -669,8 +709,14 @@ if __name__ == "__main__":
                                                                               config.indent_output,
                                                                               config.output_encoding)
                             else:
-                                process(file, config.out_folder, elastic,
-                                        config.input_encoding, config.indent_output, config.output_encoding)
+                                process(
+                                    file,
+                                    config.out_folder,
+                                    elastic,
+                                    config.input_encoding,
+                                    config.indent_output,
+                                    config.output_encoding
+                                    )
 
     else:
         # Process single file

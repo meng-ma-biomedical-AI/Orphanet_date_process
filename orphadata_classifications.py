@@ -8,6 +8,9 @@ import time
 import orphadata_elastic
 import config_orphadata_elastic as config
 
+import RDcode_classifications
+import data_RDcode
+
 """
 Alternative process to treat Orphadata classification
 """
@@ -65,7 +68,19 @@ def make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent):
     :param xml_dict: xml source file parsed as a dictionary
     :param parent: Orpha_ID of parent Disorder
     :return: node_dict
+
+
+    # node_dict = make_node_dict(
+    #     node_dict={},
+    #     xml_dict=xml_dict["ClassificationNode"][0]["ClassificationNodeChild"],  ## ClassificationNodeChild
+    #     hch_id="146",
+    #     hch_tag=xml_dict["Name"],
+    #     parent=xml_dict["ORPHAcode"]
+    # )
+
+
     """
+
     # print(xml_dict)
     node = Node()
     node["ORPHAcode"] = xml_dict["Disorder"]["ORPHAcode"]
@@ -118,11 +133,21 @@ def convert(hch_id, xml_dict):
     hch_tag = xml_dict["Name"]
 
     xml_dict = xml_dict["ClassificationNodeRoot"][0]
+    # ClassificationNodeChild = xml_dict["ClassificationNode"][0]["ClassificationNodeChild"]
 
     parent = xml_dict["Disorder"]["ORPHAcode"]
+    # parent = xml_dict["ORPHAcode"]
 
     node_dict = {}
     node_dict = make_node_dict(node_dict, xml_dict, hch_id, hch_tag, parent)
+    # node_dict = make_node_dict(
+    #     node_dict={},
+    #     xml_dict=xml_dict["ClassificationNode"][0]["ClassificationNodeChild"],
+    #     hch_id="146",
+    #     hch_tag=xml_dict["Name"],
+    #     parent=xml_dict["ORPHAcode"]
+    # )
+
 
     node_list = list(node_dict.values())
 
@@ -131,6 +156,8 @@ def convert(hch_id, xml_dict):
 
     print(time.time() - start, "s")
     return node_list
+
+
 
 
 def process_classification(in_file_path, out_folder, elastic, input_encoding, indent_output, output_encoding):
@@ -175,7 +202,13 @@ def process_classification(in_file_path, out_folder, elastic, input_encoding, in
     rename_orpha = True  # OrphaNumber to ORPHAcode
     xml_dict = orphadata_elastic.simplify(xml_dict, rename_orpha)
 
+    # print(hch_id, xml_dict.keys() ,xml_dict["ClassificationNode"][0].keys())
+
+    
     node_list = convert(hch_id, xml_dict)
+    # node_list = RDcode_classifications.convert(hch_id, xml_dict, hch_id)
+    # node_list = data_RDcode.insert_date(node_list, extract_date)
+
 
     if config.cast_as_integer:
         node_list = orphadata_elastic.remap_integer(node_list)
