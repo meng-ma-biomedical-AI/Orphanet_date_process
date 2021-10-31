@@ -7,7 +7,7 @@ Author: Cyril Bigot
 
 ## Purpose
 Convert JDBOR extract (xml files such as product1-9,
-nomenclature and classification) to elasticsearch files ready for injection.
+nomenclature and classification) to elasticsearch files ready for elasticsearch injection
 
 Transformation process include:
 * Regroup definitions in product1 or RDcode orphanomenclature (see clean_textual_info)
