@@ -464,20 +464,6 @@ def output_elasticsearch_file(out_file_path, index, node_list, indent_output, ou
             out.write(json.dumps(val, indent=indent, ensure_ascii=False) + "\n")
             print(json.dumps(val, indent=indent, ensure_ascii=False) + "\n")
     print("writing:", time.time() - start, "s")
-    exit(1)
-
-
-    test_args_fn = pathlib.Path('./data_out/en_product1_args.json')
-    with open(test_args_fn, "w", encoding=output_encoding) as out:
-        for val in node_list:
-            doc = {
-                "ORPHAcode": val["ORPHAcode"],
-                "Preferred term": val["Preferred term"]
-            }
-
-            out.write("{{\"index\": {{\"_index\":\"{}\"}}}}\n".format("en_product1_args"))
-            out.write(json.dumps(doc, indent=indent, ensure_ascii=False) + "\n")
-            # print(json.dumps(doc, indent=indent, ensure_ascii=False) + "\n")
 
 
 def upload_es(elastic, processed_json_file):

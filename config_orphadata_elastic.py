@@ -19,7 +19,7 @@ index_prefix = ""  # Empty string or False otherwise - The prefix MUST be 'rdcod
 cast_as_integer = True  # Remap number as integer
 indent_output = False  # Indent output file (True for visual data control, need to be False for elasticsearch upload)
 upload = True  # Upload to elasticsearch node if true
-elastic_node = elasticsearch.Elasticsearch(hosts=["localhost"])  #  load elastic node
+elastic_node = elasticsearch.Elasticsearch(hosts=["localhost"], timeout=20)  #  load elastic node
 make_schema = False  # Make the yaml schema description
 output_encoding = "UTF-8"
 
